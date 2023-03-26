@@ -15,6 +15,10 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.2"
+    "react-intl": "^6.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-formatjs": "^10.4.0",
+    "typescript": "^4.1.2"
   }
 }
