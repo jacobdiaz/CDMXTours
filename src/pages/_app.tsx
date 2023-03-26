@@ -1,10 +1,10 @@
 import { useRouter, NextRouter } from "next/router";
 import { IntlProvider } from "react-intl";
 import type { ComponentType } from "react";
-import es from "../lang/es.json";
-import en from "../lang/en.json";
+import es from "../translations/es";
+import en from "../translations/en";
 
-import "../styles/globals.css";
+import "../globals.css";
 
 interface MyAppProps {
   Component: ComponentType<any>;

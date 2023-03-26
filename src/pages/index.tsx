@@ -43,17 +43,12 @@ export default function Home({ dir }: HomeProps) {
 
       <main dir={dir}>
         <h1>
-          <FormattedMessage
-            id='home.title'
-            values={{ b: (chunks) => <b>{chunks}</b> }}
-          />
+          <FormattedMessage id='home.title' />
         </h1>
 
         <p>
           <FormattedMessage id='home.description' />
         </p>
-
-        <Link href='/about'>About</Link>
       </main>
     </div>
   );
