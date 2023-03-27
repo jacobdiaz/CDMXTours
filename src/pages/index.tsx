@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Head from "next/head";
 import { FormattedMessage, useIntl } from "react-intl";
 
@@ -30,13 +31,7 @@ export default function Home({ dir }: HomeProps) {
       <header></header>
 
       <main dir={dir} className='font-ssp'>
-        <h1>
-          <FormattedMessage id='home.title' />
-        </h1>
-
-        <p>
-          <FormattedMessage id='home.description' />
-        </p>
+        <Hero />
       </main>
     </div>
   );
