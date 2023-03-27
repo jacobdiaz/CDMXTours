@@ -8,6 +8,7 @@ import { Fjalla_One, Source_Sans_Pro } from "@next/font/google";
 
 import "@/globals.css";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 interface MyAppProps {
   Component: ComponentType<any>;
@@ -45,6 +46,7 @@ function MyApp({ Component, pageProps }: MyAppProps) {
       <IntlProvider locale={locale ?? "en"} messages={messages[locale ?? "en"]}>
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
       </IntlProvider>
     </>
   );
