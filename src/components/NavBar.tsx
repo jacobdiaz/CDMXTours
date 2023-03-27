@@ -1,72 +1,122 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { FormattedMessage } from "react-intl";
+import LanguageSelect from "./LanguageSelect";
 
-type Props = {};
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const links = [
+    {
+      message: <FormattedMessage id='nav.about' />,
+      href: "/about-us",
+    },
+    {
+      message: <FormattedMessage id='nav.contact' />,
+      href: "/contact",
+    },
+    {
+      message: "Blog",
+      href: "/blog",
+    },
+    {
+      message: "FAQ",
+      href: "/faq",
+    },
+    {
+      message: <FormattedMessage id='nav.gallery' />,
+      href: "/gallery",
+    },
+    {
+      message: <FormattedMessage id='nav.book' />,
+      href: "/book-a-tour",
+    },
+  ];
 
-const NavBar = (props: Props) => {
+  // Set the locale when select changes
+  const handleLanguageChange = (locale: string) =>
+    router.push(router.pathname, router.asPath, { locale: locale });
+
   return (
-    <nav className='navbar bg-black font-fjalla'>
-      {/*  */}
-      <div className='navbar-start'></div>
-      <div className='navbar-center  w-4/5 flex justify-between'>
-        <Link className='text-md ' href='/about-us'>
-          About Us
-        </Link>
-        <Link className='text-md ' href='/contact'>
-          Contact
-        </Link>
-        <Link className='text-md ' href='/blog'>
-          Blog
-        </Link>
+    <nav className='navbar bg-primary font-fjalla text-white text-m-p uppercase'>
+      <div className='navbar-start'>
+        {/* Mobile Links */}
+        <div className='dropdown md:hidden' onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? (
+            <div className='btn btn-ghost text-white'>✕</div>
+          ) : (
+            <label tabIndex={0} className='btn btn-ghost'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-5 w-5'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M4 6h16M4 12h16M4 18h7'
+                />
+              </svg>
+            </label>
+          )}
 
-        <Link className='text-md ' href='/'>
-          <img src='/nav_logo.webp' alt='logo' className='h-24 w-24' />
-        </Link>
-
-        <Link className='text-md ' href='/faq'>
-          FAQ
-        </Link>
-        <Link className='text-md ' href='/gallery'>
-          Gallery
-        </Link>
-        <Link className='text-md' href='/'>
-          Book A Tour
-        </Link>
-
-        {/* Language Select */}
-      </div>
-      <div className='navbar-end'>
-        <div className='dropdown'>
-          <label tabIndex={0} className='btn btn-ghost btn-circle'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-5 w-5'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M4 6h16M4 12h16M4 18h7'
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute right-0 '
-          >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-          </ul>
+          {/* Dropdown Menu */}
+          {isOpen && (
+            <div className='mt-4 w-5/6 fixed bg-primary h-5/6 left-0 px-5 flex flex-col justify-between'>
+              <ul tabIndex={0}>
+                <li className='py-5'>
+                  <Link href='/'>Home</Link>
+                </li>
+                {links.map(({ message, href }, idx) => {
+                  return (
+                    <li key={idx} className='py-5'>
+                      <Link href={href}>{message}</Link>
+                    </li>
+                  );
+                })}
+              </ul>
+              <p className='py-5 text-sm opacity-50'>
+                Language{" "}
+                <button
+                  className='px-3'
+                  onClick={() => handleLanguageChange("en")}
+                >
+                  EN{" "}
+                </button>{" "}
+                <button onClick={() => handleLanguageChange("es")}> ES</button>
+              </p>
+            </div>
+          )}
         </div>
+      </div>
+      <div className='navbar-center  w-3/5 flex justify-center md:justify-between'>
+        {/* Desktop Links */}
+        {links.map(({ message, href }, idx) =>
+          idx === 2 ? (
+            <>
+              <Link key={idx} href={href} className='hidden md:block'>
+                {message}
+              </Link>
+              <Link key='logo' href={`/`}>
+                <img src='/nav_logo.webp' alt='Tours En Bici Logo' width={80} />
+              </Link>
+            </>
+          ) : (
+            <Link key={idx} href={href} className='hidden md:block'>
+              {message}
+            </Link>
+          )
+        )}
+      </div>
+      {/* Language Select */}
+      <div className='navbar-end z-10'>
+        <LanguageSelect
+          onChange={(e: any) => handleLanguageChange(e.target.value)}
+        />
       </div>
     </nav>
   );

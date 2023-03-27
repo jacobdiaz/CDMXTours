@@ -33,7 +33,6 @@ export default function Home({ dir }: HomeProps) {
       </Head>
 
       <header>
-        <NavBar />
         <div className='bg-red-500 font-ssp'>
           {locales &&
             [...locales].sort().map((locale) => (
