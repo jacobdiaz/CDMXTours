@@ -1,3 +1,4 @@
+import NavBar from "@/components/NavBar";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -22,6 +23,7 @@ export default function Home({ dir }: HomeProps) {
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
+
         <link rel='icon' href='/favicon.ico' />
 
         {/* Add hreflang links */}
@@ -31,7 +33,7 @@ export default function Home({ dir }: HomeProps) {
       </Head>
 
       <header>
-        <div>
+        <div className='bg-red-500 font-ssp'>
           {locales &&
             [...locales].sort().map((locale) => (
               <Link key={locale} href='/' locale={locale}>
@@ -41,7 +43,7 @@ export default function Home({ dir }: HomeProps) {
         </div>
       </header>
 
-      <main dir={dir}>
+      <main dir={dir} className='font-ssp'>
         <h1>
           <FormattedMessage id='home.title' />
         </h1>
