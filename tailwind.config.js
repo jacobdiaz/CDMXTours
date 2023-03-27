@@ -23,6 +23,14 @@ module.exports = {
             letterSpacing: "2px",
           },
         ],
+
+        // Page Hero Headers
+        "page-hero": [
+          "4rem",
+          {
+            letterSpacing: "4px",
+          },
+        ],
       },
     },
   },
