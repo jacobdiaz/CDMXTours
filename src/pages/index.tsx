@@ -1,5 +1,6 @@
 import AboutUsSection from "@/components/AboutUsSection";
 import Hero from "@/components/Hero";
+import TourSection from "@/components/ToursSection";
 import Head from "next/head";
 import { useIntl } from "react-intl";
 
@@ -35,6 +36,7 @@ export default function Home({ dir }: HomeProps) {
       <main dir={dir} className='font-ssp'>
         <Hero />
         <AboutUsSection />
+        <TourSection />
       </main>
     </div>
   );

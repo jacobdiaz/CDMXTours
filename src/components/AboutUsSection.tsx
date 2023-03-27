@@ -11,13 +11,13 @@ const AboutUsSection = () => {
         <div className='hidden md:block w-full '>
           <img
             className='w-full h-full object-cover'
-            src='https://cdmxtours.s3.amazonaws.com/Images/dsc00059.webp'
+            src='https://cdmxtours.s3.amazonaws.com/Images/home/dsc00059.webp'
             alt='Tours En Bici Logo'
           />
         </div>
         <div className='w-full flex flex-col justify-center items-center p-16 text-center'>
           {/* Col 2 */}
-          <h2 className='text-3xl font-fjalla text-primary'>
+          <h2 className='text-3xl font-fjalla text-primary mb-5'>
             <FormattedMessage id='home.about.title' />
           </h2>
           <p className='text-lg text-primary'>
@@ -36,7 +36,7 @@ const AboutUsSection = () => {
           className='bg-cover bg-bottom flex justify-center items-center'
           style={{
             backgroundImage:
-              "url(https://cdmxtours.s3.amazonaws.com/Images/dsc00024.webp)",
+              "url(https://cdmxtours.s3.amazonaws.com/Images/home/dsc00024.webp)",
             backgroundPosition: "center bottom 30%",
           }}
         ></div>
@@ -45,7 +45,7 @@ const AboutUsSection = () => {
           className='hidden md:flex bg-cover bg-bottom justify-center items-center'
           style={{
             backgroundImage:
-              "url(https://cdmxtours.s3.amazonaws.com/Images/romacondesabiketour-min.webp)",
+              "url(https://cdmxtours.s3.amazonaws.com/Images/home/romacondesabiketour-min.webp)",
             backgroundPosition: "center bottom 30%",
           }}
         ></div>

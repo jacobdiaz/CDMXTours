@@ -31,6 +31,13 @@ module.exports = {
             letterSpacing: "4px",
           },
         ],
+
+        "card-title": [
+          "22px",
+          {
+            letterSpacing: "2px",
+          },
+        ],
       },
     },
   },

@@ -10,7 +10,7 @@ const Hero = () => {
         style={{
           height: "calc(100vh - 10rem)",
           backgroundImage:
-            "url(https://cdmxtours.s3.amazonaws.com/Images/dsc09609.webp)",
+            "url(https://cdmxtours.s3.amazonaws.com/Images/home/dsc09609.webp)",
         }}
       >
         <div className='w-3/5 flex flex-col'>
