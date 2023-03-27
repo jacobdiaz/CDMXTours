@@ -21,6 +21,10 @@ const NavBar = () => {
       href: "/blog",
     },
     {
+      message: "Home",
+      href: "/",
+    },
+    {
       message: "FAQ",
       href: "/faq",
     },
@@ -93,24 +97,21 @@ const NavBar = () => {
           )}
         </div>
       </div>
-      <div className='navbar-center  w-3/5 flex justify-center md:justify-between'>
+      <div className='navbar-center w-3/5 flex justify-center md:justify-between max-h-20'>
         {/* Desktop Links */}
-        {links.map(({ message, href }, idx) =>
-          idx === 2 ? (
-            <>
-              <Link key={idx} href={href} className='hidden md:block'>
-                {message}
-              </Link>
-              <Link key='logo' href={`/`}>
-                <img src='/nav_logo.webp' alt='Tours En Bici Logo' width={80} />
-              </Link>
-            </>
-          ) : (
-            <Link key={idx} href={href} className='hidden md:block'>
-              {message}
-            </Link>
-          )
-        )}
+        {links.map(({ message, href }, idx) => (
+          <Link
+            key={idx}
+            href={href}
+            className='hidden md:block hover:underline'
+          >
+            {idx === 3 ? (
+              <img src='/nav_logo.webp' alt='Tours En Bici Logo' width={80} />
+            ) : (
+              message
+            )}
+          </Link>
+        ))}
       </div>
       {/* Language Select */}
       <div className='navbar-end z-10'>

@@ -1,7 +1,4 @@
-import NavBar from "@/components/NavBar";
 import Head from "next/head";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 
 type HomeProps = {
@@ -9,7 +6,6 @@ type HomeProps = {
 };
 
 export default function Home({ dir }: HomeProps) {
-  const { locales } = useRouter();
   const intl = useIntl();
 
   const title = intl.formatMessage({ id: "home.head.title" });
@@ -17,7 +13,6 @@ export default function Home({ dir }: HomeProps) {
     id: "home.head.meta.description",
   });
 
-  console.log("locales", locales);
   return (
     <div>
       <Head>
@@ -32,16 +27,7 @@ export default function Home({ dir }: HomeProps) {
         <link rel='alternate' href='http://example.com/es' hrefLang='es' />
       </Head>
 
-      <header>
-        <div className='bg-red-500 font-ssp'>
-          {locales &&
-            [...locales].sort().map((locale) => (
-              <Link key={locale} href='/' locale={locale}>
-                {locale}
-              </Link>
-            ))}
-        </div>
-      </header>
+      <header></header>
 
       <main dir={dir} className='font-ssp'>
         <h1>
