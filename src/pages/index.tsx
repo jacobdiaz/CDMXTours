@@ -1,6 +1,7 @@
+import AboutUsSection from "@/components/AboutUsSection";
 import Hero from "@/components/Hero";
 import Head from "next/head";
-import { FormattedMessage, useIntl } from "react-intl";
+import { useIntl } from "react-intl";
 
 type HomeProps = {
   dir: string;
@@ -23,6 +24,7 @@ export default function Home({ dir }: HomeProps) {
         <link rel='icon' href='/favicon.ico' />
 
         {/* Add hreflang links */}
+        {/* TODOA Add correct head for SEO */}
         <link rel='alternate' href='http://example.com' hrefLang='x-default' />
         <link rel='alternate' href='http://example.com/en' hrefLang='en' />
         <link rel='alternate' href='http://example.com/es' hrefLang='es' />
@@ -32,6 +34,7 @@ export default function Home({ dir }: HomeProps) {
 
       <main dir={dir} className='font-ssp'>
         <Hero />
+        <AboutUsSection />
       </main>
     </div>
   );

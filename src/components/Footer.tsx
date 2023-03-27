@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   // TODO Insert Social Media Links
   return (
-    <footer className='grid footer footer-center p-10 bg-base-300 text-base-content overflow-hidden '>
+    <footer className='grid footer footer-center p-10 bg-primary text-white overflow-hidden '>
       <div>
         <p> Tours en Bici CDMX | Bike Tour Mexico City</p>
         <Link type='address' href='https://goo.gl/maps/HtKFvwCAUWStkY617'>
