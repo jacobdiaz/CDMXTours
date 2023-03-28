@@ -4,7 +4,7 @@ import type { ComponentType } from "react";
 import es from "../translations/es";
 import en from "../translations/en";
 
-import { Fjalla_One, Source_Sans_Pro } from "@next/font/google";
+import { Fjalla_One, Source_Sans_Pro } from "next/font/google";
 
 import "@/globals.css";
 import NavBar from "@/components/NavBar";
