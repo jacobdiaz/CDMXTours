@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cdmxtours-dev-221031-authRole",
+      "UnauthRoleArn": "arn:aws:iam::564762027431:role/amplify-cdmxtours-dev-221031-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::564762027431:role/amplify-cdmxtours-dev-221031-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cdmxtours-dev-221031-deployment",
+      "UnauthRoleName": "amplify-cdmxtours-dev-221031-unauthRole",
+      "StackName": "amplify-cdmxtours-dev-221031",
+      "StackId": "arn:aws:cloudformation:us-east-1:564762027431:stack/amplify-cdmxtours-dev-221031/1a00fb80-cd16-11ed-a97e-0ea5b828913b",
+      "AmplifyAppId": "d355vg8zwj6c52"
+    }
+  }
+}
