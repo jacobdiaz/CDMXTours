@@ -1,5 +1,5 @@
 import { Tour } from "@/utils/tours";
-import CTALink from "./CTALink";
+import CTALink from "../actions/CTALink";
 
 const TourCard = ({
   id,

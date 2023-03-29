@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
-import CTALink from "./CTALink";
+import CTALink from "../actions/CTALink";
 
 const Hero = () => {
   return (

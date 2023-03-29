@@ -1,6 +1,6 @@
-import AboutUsSection from "@/components/AboutUsSection";
-import Hero from "@/components/Hero";
-import TourSection from "@/components/ToursSection";
+import AboutUsSection from "@/components/sections/AboutUsSection";
+import Hero from "@/components/sections/Hero";
+import TourSection from "@/components/tours/ToursSection";
 import Head from "next/head";
 import { useIntl } from "react-intl";
 
