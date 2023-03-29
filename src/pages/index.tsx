@@ -1,6 +1,7 @@
-import AboutUsSection from "@/components/AboutUsSection";
-import Hero from "@/components/Hero";
-import TourSection from "@/components/ToursSection";
+import AboutUsSection from "@/components/sections/AboutUsSection";
+import ContactSection from "@/components/sections/ContactSection";
+import HeroSection from "@/components/sections/HeroSection";
+import TourSection from "@/components/sections/ToursSection";
 import Head from "next/head";
 import { useIntl } from "react-intl";
 
@@ -34,9 +35,13 @@ export default function Home({ dir }: HomeProps) {
       <header></header>
 
       <main dir={dir} className='font-ssp'>
-        <Hero />
+        <HeroSection />
         <AboutUsSection />
-        <TourSection />
+        <div className='px-20'>
+          <TourSection />
+          <ContactSection />
+          <div className='pt-25 h-12'></div>
+        </div>
       </main>
     </div>
   );

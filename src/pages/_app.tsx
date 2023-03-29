@@ -7,8 +7,8 @@ import en from "../translations/en";
 import { Fjalla_One, Source_Sans_Pro } from "next/font/google";
 
 import "@/globals.css";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import NavBar from "@/components/layout/NavBar";
+import Footer from "@/components/layout/Footer";
 
 interface MyAppProps {
   Component: ComponentType<any>;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import LanguageSelect from "./LanguageSelect";
+import LanguageSelect from "../actions/LanguageSelect";
 import PageLinks from "@/utils/pagelinks";
 
 const NavBar = () => {

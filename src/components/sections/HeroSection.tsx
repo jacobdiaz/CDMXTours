@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
-import CTALink from "./CTALink";
+import CTALink from "../actions/CTALink";
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <div>
       <div
@@ -32,4 +32,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;
