@@ -6,18 +6,10 @@
     "framework": "react",
     "config": {
       "SourceDir": "src",
-      "DistributionDir": ".next", 
+      "DistributionDir": ".next",
       "BuildCommand": "npm run-script build",
       "StartCommand": "npm run-script start"
     }
   },
-  "providers": [
-    "awscloudformation"
-  ]
+  "providers": ["awscloudformation"]
 }
-Once you've made this change, try redeploying your app to AWS Amplify to see if the issue is resolved.
-
-
-
-
-
