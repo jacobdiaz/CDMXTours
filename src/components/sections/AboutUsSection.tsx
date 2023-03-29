@@ -3,7 +3,7 @@ import CTALink from "../actions/CTALink";
 import SectionTitle from "./SectionTitle";
 
 const AboutUsSection = () => (
-  <>
+  <section>
     {/* Row 1 */}
     <div className='grid md:grid-cols-2	'>
       {/* Col 1 */}
@@ -50,7 +50,7 @@ const AboutUsSection = () => (
         }}
       ></div>
     </div>
-  </>
+  </section>
 );
 
 export default AboutUsSection;

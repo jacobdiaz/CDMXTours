@@ -1,24 +1,23 @@
-import TourCard from "./TourCard";
+import TourCard from "../tours/TourCard";
 import { tours } from "@/utils/toursdata";
 import { FormattedMessage } from "react-intl";
-import SectionTitle from "../sections/SectionTitle";
+import SectionTitle from "./SectionTitle";
 
 const TourSection = () => (
   <>
-    <div className='pt-20 flex flex-col justify-center items-center w-full px-20'>
+    <div className='pt-24 flex flex-col justify-center items-center w-full'>
       <SectionTitle>
         <FormattedMessage id='home.tours.title' />
       </SectionTitle>
       <p className='text-lg'>
         <FormattedMessage id='home.tours.description' />
       </p>
+      <ul className='py-10 flex flex-wrap justify-center md:justify-between'>
+        {tours.map((t) => (
+          <TourCard {...t} key={t.id.toString()} />
+        ))}
+      </ul>
     </div>
-
-    <ul className='p-10 flex flex-wrap justify-center'>
-      {tours.map((t) => (
-        <TourCard {...t} key={t.id.toString()} />
-      ))}
-    </ul>
   </>
 );
 

@@ -1,4 +1,4 @@
-import { Tour } from "@/utils/tours";
+import { Tour } from "@/utils/toursdata";
 import CTALink from "../actions/CTALink";
 
 const TourCard = ({
@@ -13,7 +13,7 @@ const TourCard = ({
   imgAlt,
 }: Tour) => {
   return (
-    <li className='p-5 ' style={{ width: "28rem" }}>
+    <li className='pr-5 mb-10 md:mb-5 ' style={{ width: "22rem" }}>
       <img
         src={imgSrc}
         alt={imgAlt}
