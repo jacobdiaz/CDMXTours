@@ -13,12 +13,14 @@
     "@types/react": "18.0.29",
     "@types/react-dom": "18.0.11",
     "daisyui": "^2.51.5",
+    "google-map-react": "^2.2.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intl": "^6.3.2"
   },
   "devDependencies": {
+    "@types/google-map-react": "^2.1.7",
     "autoprefixer": "^10.4.14",
     "babel-plugin-formatjs": "^10.4.0",
     "postcss": "^8.4.21",

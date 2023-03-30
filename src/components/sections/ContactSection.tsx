@@ -3,6 +3,7 @@ import { FormattedMessage } from "react-intl";
 import CTALink from "../actions/CTALink";
 import ContactForm from "../contact/ContactForm";
 import SectionTitle from "./SectionTitle";
+import Map from "../layout/Map";
 
 const ContactSection = () => {
   return (
@@ -31,6 +32,7 @@ const ContactSection = () => {
         </div>
         {/* Col 2 */}
         <div className='hidden md:block w-full pl-5'>
+          {/* TODO  */}
           <img
             className='w-full h-full object-cover'
             src='https://cdmxtours.s3.amazonaws.com/Images/home/20211116_233905-0001.webp'
