@@ -4,7 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import TourSection from "@/components/sections/ToursSection";
 import Head from "next/head";
 import { useIntl } from "react-intl";
-
+import Map from "@/components/layout/Map";
 type HomeProps = {
   dir: string;
 };
@@ -42,6 +42,7 @@ export default function Home({ dir }: HomeProps) {
           <ContactSection />
           <div className='pt-25 h-12'></div>
         </div>
+        <Map />
       </main>
     </div>
   );

@@ -40,9 +40,6 @@ const ContactSection = () => {
           />
         </div>
       </div>
-
-      {/* Map */}
-      <Map />
     </>
   );
 };
