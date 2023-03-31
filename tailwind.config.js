@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         primary: "#000000",
       },
+      height: {
+        banner: "24rem",
+      },
       fontSize: {
         // medium paragraph (Nav, Descriptions, etc.)
         "m-p": [

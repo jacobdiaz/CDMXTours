@@ -42,13 +42,13 @@ const Map = () => {
   // TODO setup api key in Amplify env
   return (
     <div>
-      <div className='h-96'>
+      <div className='h-banner'>
         <GoogleMapReact
           bootstrapURLKeys={{
             key: `${process.env.GOOGLE_MAPS_API_KEY}`,
           }}
           defaultCenter={location}
-          defaultZoom={18}
+          defaultZoom={15}
         >
           <LocationPin text='Here' lat={location.lat} lng={location.lng} />
         </GoogleMapReact>

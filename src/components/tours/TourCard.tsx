@@ -13,7 +13,7 @@ const TourCard = ({
   imgAlt,
 }: Tour) => {
   return (
-    <li className='pr-5 mb-10 md:mb-5 ' style={{ width: "22rem" }}>
+    <li className='mb-10 md:mb-5 ' style={{ width: "30rem" }}>
       <img
         src={imgSrc}
         alt={imgAlt}
