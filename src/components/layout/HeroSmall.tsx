@@ -4,13 +4,14 @@ type HeroSmall = {
   children?: React.ReactNode;
   image: string;
   title: string;
+  ariaLabel: string;
 };
 
-const HeroSmall = ({ children, image, title }: HeroSmall) => {
+const HeroSmall = ({ children, image, title, ariaLabel }: HeroSmall) => {
   return (
     <div
-      aria-label='Architectural Bike Tour in Mexico City'
-      className='bg-cover bg-bottom flex justify-center items-center pt-20 h-52 md:h-heroSmall text-white relative'
+      aria-label={ariaLabel}
+      className='bg-cover bg-bottom flex justify-center items-center pt-20 h-72 md:h-heroSmall text-white relative'
       style={{
         backgroundImage: `url(${image})`,
         backgroundPosition: "center bottom 30%",

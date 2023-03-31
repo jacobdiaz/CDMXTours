@@ -5,11 +5,13 @@ import SectionTitle from "./SectionTitle";
 
 const TourSection = () => (
   <>
-    <div className='flex flex-col justify-center items-center w-full'>
-      <SectionTitle>
+    <div className='flex flex-col justify-center md:items-center mt-10 mb-5'>
+      <SectionTitle margin='m-0'>
         <FormattedMessage id='home.tours.title' />
       </SectionTitle>
-      <p className='text-lg'>
+    </div>
+    <div className='flex flex-col justify-center items-center w-full'>
+      <p className='text-lg mb-10'>
         <FormattedMessage id='home.tours.description' />
       </p>
       <ul className='flex flex-wrap justify-center md:justify-between lg:justify-between w-full'>
