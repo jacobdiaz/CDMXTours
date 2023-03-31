@@ -16,7 +16,9 @@ const HeroSmall = ({ children, image, title }: HeroSmall) => {
         backgroundPosition: "center bottom 30%",
       }}
     >
-      <h1 className='font-fjalla text-3xl md:text-4xl z-20'>{title}</h1>
+      <h1 className='font-fjalla text-3xl md:text-4xl z-20 uppercase'>
+        {title}
+      </h1>
       {children}
       <ImageOverlay />
     </div>

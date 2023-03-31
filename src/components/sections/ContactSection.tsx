@@ -7,8 +7,8 @@ import Map from "../layout/Map";
 
 const ContactSection = () => {
   return (
-    <>
-      <div className='grid md:grid-cols-2 pt-8 md:pt-20'>
+    <div>
+      <div className='grid md:grid-cols-2'>
         {/* Col 1 */}
         <div className='w-full flex flex-col pr-0 md:pr-20'>
           <SectionTitle margin='m-0'>Contact Information</SectionTitle>
@@ -40,7 +40,7 @@ const ContactSection = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default ContactSection;

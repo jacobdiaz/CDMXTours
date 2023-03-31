@@ -12,7 +12,7 @@ const TourSection = () => (
       <p className='text-lg'>
         <FormattedMessage id='home.tours.description' />
       </p>
-      <ul className='flex flex-wrap justify-center md:justify-between lg:justify-between'>
+      <ul className='flex flex-wrap justify-center md:justify-between lg:justify-between w-full'>
         {tours.map((t) => (
           <TourCard {...t} key={t.id.toString()} />
         ))}
