@@ -17,6 +17,7 @@ module.exports = {
       },
       height: {
         banner: "24rem",
+        heroSmall: "35vh",
       },
       fontSize: {
         // medium paragraph (Nav, Descriptions, etc.)

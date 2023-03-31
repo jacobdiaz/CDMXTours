@@ -13,7 +13,7 @@ const NavBar = () => {
     router.push(router.pathname, router.asPath, { locale: locale });
 
   return (
-    <nav className='navbar bg-primary font-fjalla text-white text-m-p uppercase fixed z-10'>
+    <nav className='navbar bg-primary font-fjalla text-white text-m-p uppercase fixed z-50'>
       <div className='navbar-start'>
         {/* Mobile Links */}
         <div className='dropdown md:hidden' onClick={() => setIsOpen(!isOpen)}>
