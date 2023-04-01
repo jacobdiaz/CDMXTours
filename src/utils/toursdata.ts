@@ -12,7 +12,7 @@ export type Tour = {
 };
 
 // TODO Turn this into an API Endpoint?
-export const tours: Tour[] = [
+export const Tours: Tour[] = [
   {
     id: 1,
     tourName: "TACO BIKE TOUR / DOWNTOWN CDMX",

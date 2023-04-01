@@ -1,5 +1,5 @@
 import TourCard from "../tours/TourCard";
-import { tours } from "@/utils/toursdata";
+import { Tours } from "@/utils/toursdata";
 import { FormattedMessage } from "react-intl";
 import SectionTitle from "./SectionTitle";
 
@@ -15,7 +15,7 @@ const TourSection = () => (
         <FormattedMessage id='home.tours.description' />
       </p>
       <ul className='flex flex-wrap justify-center md:justify-between lg:justify-between w-full'>
-        {tours.map((t) => (
+        {Tours.map((t) => (
           <TourCard {...t} key={t.id.toString()} />
         ))}
       </ul>
