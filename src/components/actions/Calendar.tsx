@@ -1,7 +1,7 @@
 type Props = {};
 
 const Calendar = (props: Props) => {
-  return <div className='bg-gray-800 h-96'></div>;
+  return <div className='h-96 w-full bg-red-500'></div>;
 };
 
 export default Calendar;
