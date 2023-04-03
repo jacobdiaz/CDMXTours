@@ -6,16 +6,37 @@ import CTALink from "@/components/actions/CTALink";
 const TourPage = () => {
   const router = useRouter();
   const { id } = router.query;
-
   const tour = Tours.find((t) => t.id === parseInt(id as string));
-  console.log(tour);
+
   return (
-    <div className='px-10 pb-10 md:pb-32 md:px-32'>
+    <div className='px-10 pb-10 md:pb-32 md:px-72'>
       <div className='pt-28 md:pt-36 w-full mb-10 flex flex-row font-fjalla items-center justify-between'>
         <h1 className='text-4xl '>{tour?.tourName}</h1>
         <p className='text-2xl'>${tour?.price.toString()}MXN / Person</p>
       </div>
-      <div className='w-full bg-gray-400 h-96'>{/* TODO INSERT IMAGES */}</div>
+      <div className='grid grid-cols-2 gap-2 h-[30rem] overflow-hidden rounded'>
+        <figure className='bg-blue-400 w-full'>
+          <img
+            className='object-cover w-full h-full'
+            src={tour?.gallery[0].src}
+            alt={tour?.gallery[0].alt}
+          />
+        </figure>
+
+        <div className='grid grid-cols-2 gap-2 overflow-hidden'>
+          {tour?.gallery.map(
+            (img, idx) =>
+              idx > 0 &&
+              idx <= 4 && (
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className='w-full h-full object-cover min-h-0'
+                />
+              )
+          )}
+        </div>
+      </div>
 
       <div className='grid grid-cols-3 pt-10 gap-5'>
         {/* Col 1 */}
@@ -31,7 +52,7 @@ const TourPage = () => {
               <h4 className='mb-2 text-xl font-bold'>What's Included</h4>
               <p>This tour includes {tour?.included}</p>
             </div>
-            <div>
+            <div className='ml-10'>
               <h4 className='mb-2 text-xl font-bold'>Group Capacity</h4>
               <p>
                 The capacity for this tour is{" "}

@@ -1,3 +1,8 @@
+type Image = {
+  src: string;
+  alt: string;
+};
+
 export type Tour = {
   id: Number;
   tourName: string;
@@ -9,7 +14,7 @@ export type Tour = {
   imgSrc: string;
   imgAlt: string;
   meetingAddr: string;
-  gallery?: string[];
+  gallery: Image[];
 };
 
 // TODO Turn this into an API Endpoint?
@@ -76,6 +81,27 @@ export const Tours: Tour[] = [
     imgAlt: "Image of Urban Bike Tour in Mexico City",
     meetingAddr:
       "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
-    gallery: [],
+    gallery: [
+      {
+        src: "https://cdmxtours.s3.amazonaws.com/Images/tours/ArchitecturalTour/DSC00024-min.webp",
+        alt: "",
+      },
+      {
+        src: "https://cdmxtours.s3.amazonaws.com/Images/tours/ArchitecturalTour/romacondesabiketour+(2).webp",
+        alt: "",
+      },
+      {
+        src: "https://cdmxtours.s3.amazonaws.com/Images/tours/ArchitecturalTour/20211117_005358.webp",
+        alt: "",
+      },
+      {
+        src: "https://cdmxtours.s3.amazonaws.com/Images/tours/ArchitecturalTour/20220522_115133-min.webp",
+        alt: "",
+      },
+      {
+        src: "https://cdmxtours.s3.amazonaws.com/Images/tours/ArchitecturalTour/DSC09584.webp",
+        alt: "",
+      },
+    ],
   },
 ];
