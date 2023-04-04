@@ -48,12 +48,7 @@ const TourCard = ({
         <p>
           <strong>Group Capacity:</strong> {cap}
         </p>
-        <CTALink
-          variant='dark'
-          grow={true}
-          href={`/tour/${id}-${encodeURI(tourName)}`}
-          bottom={true}
-        >
+        <CTALink variant='dark' grow={true} href={`/tour/${id}`} bottom={true}>
           Book This Tour
         </CTALink>
       </div>

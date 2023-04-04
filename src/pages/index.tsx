@@ -16,6 +16,7 @@ type HomeProps = {
 };
 
 export default function Home({ dir }: HomeProps) {
+  // TODO Change all image files to not be in webp or have fallbacks
   const intl = useIntl();
   // Get the current locale
   const { locale: locales } = useRouter();
