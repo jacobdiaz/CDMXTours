@@ -35,7 +35,7 @@ const ContactSection = () => {
           {/* TODO  */}
           <img
             className='w-full h-full object-cover'
-            src='https://cdmxtours.s3.amazonaws.com/Images/home/20211116_233905-0001.webp'
+            src='https://cdmxtours.s3.amazonaws.com/pages/Home/home_contact.jpg'
             alt='Group of Bikers on a Bike Tour in Mexico City'
           />
         </div>
