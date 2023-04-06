@@ -7,22 +7,15 @@ import ImageGallery from "@/components/tours/ImageGallery";
 import Divider from "@/components/layout/Divider";
 import TourSection from "@/components/tours/TourSection";
 import Link from "next/link";
-import FsLightbox from "fslightbox-react";
 import { useState } from "react";
 
 const TourPage = () => {
-  const [toggler, setToggler] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
-
   const router = useRouter();
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === parseInt(id as string));
   if (tour === undefined) return null;
-  const images = tour.gallery.map((t) => t.src);
-  console.log(images);
   return (
     <>
-      <FsLightbox toggler={toggler} sources={images} />
       // TODO add a head and Language
       <div className='px-6 pb-10 md:pb-32 md:px-72'>
         <div className='pt-28 md:pt-36 w-full mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
@@ -33,12 +26,7 @@ const TourPage = () => {
         </div>
 
         {/* Images */}
-        <ImageGallery
-          gallery={tour.gallery}
-          setToggler={() => setToggler(!toggler)}
-          setImgIndex={setImgIndex}
-          key={imgIndex}
-        />
+        <ImageGallery gallery={tour.gallery} />
 
         {/* Tour Content */}
         <div className='md:grid grid-cols-3 pt-10 gap-5'>
@@ -82,8 +70,10 @@ const TourPage = () => {
                   Get Directions
                 </span>
               </a>
-
-              <Map />
+              {
+                // TODO UNCOMMENT MAP FOR PROD
+              }
+              {/* <Map /> */}
             </TourSection>
 
             {/* Have a Question*/}

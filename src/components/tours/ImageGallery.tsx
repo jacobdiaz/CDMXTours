@@ -7,16 +7,11 @@ type Image = {
 
 type Props = {
   gallery: Image[];
-  setToggler: () => void;
-  setImgIndex: (index: number) => void;
 };
 
-const ImageGallery = ({ gallery, setToggler, setImgIndex }: Props) => {
+const ImageGallery = ({ gallery }: Props) => {
   if (gallery === undefined) return null;
-  const handleToggle = (key: number) => {
-    setToggler();
-    setImgIndex(key);
-  };
+
   return (
     <div className='container md:grid grid-cols-3 gap-2 mx-auto'>
       {/* TODo Should I use figure or picture? */}
@@ -25,7 +20,6 @@ const ImageGallery = ({ gallery, setToggler, setImgIndex }: Props) => {
           className='w-full h-full object-cover'
           src={gallery[0].src}
           alt={gallery[0].alt}
-          onClick={() => handleToggle(0)}
         />
       </div>
 
@@ -40,7 +34,6 @@ const ImageGallery = ({ gallery, setToggler, setImgIndex }: Props) => {
                   src={img.src}
                   alt={img.alt}
                   className='w-full h-full object-cover'
-                  onClick={() => handleToggle(idx)}
                 />
               </div>
             )
