@@ -7,39 +7,47 @@ import ImageGallery from "@/components/tours/ImageGallery";
 import Divider from "@/components/layout/Divider";
 import TourSection from "@/components/tours/TourSection";
 import Link from "next/link";
-import FsLightbox from "fslightbox-react";
 import { useState } from "react";
+import ReserveBar from "@/components/tours/ReserveBar";
 
 const TourPage = () => {
-  const [toggler, setToggler] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
-
   const router = useRouter();
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === parseInt(id as string));
   if (tour === undefined) return null;
-  const images = tour.gallery.map((t) => t.src);
-  console.log(images);
   return (
     <>
-      <FsLightbox toggler={toggler} sources={images} />
       // TODO add a head and Language
-      <div className='px-6 pb-10 md:pb-32 md:px-72'>
-        <div className='pt-28 md:pt-36 w-full mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
+      <div className='px-6 md:pb-32 md:px-72'>
+        // TODO Add a share button to tour
+        <div className='pt-11 md:pt-36 w-full mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
+          <Link
+            href='/book-a-tour'
+            className='text-black opacity-40 flex flex-row py-5 font-medium font-ssp underline'
+          >
+            <span className='pr-2'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='24'
+                height='24'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+                fill='none'
+              >
+                {" "}
+                <path stroke='none' d='M0 0h24v24H0z' fill='none' />{" "}
+                <path d='M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1' />{" "}
+              </svg>
+            </span>
+            View All Tours
+          </Link>
           <h1 className='text-4xl '>{tour?.tourName}</h1>
           <p className='hidden md:block md:text-2xl'>
             ${tour?.price.toString()}MXN / Person
           </p>
         </div>
-
         {/* Images */}
-        <ImageGallery
-          gallery={tour.gallery}
-          setToggler={() => setToggler(!toggler)}
-          setImgIndex={setImgIndex}
-          key={imgIndex}
-        />
-
+        <ImageGallery gallery={tour.gallery} />
         {/* Tour Content */}
         <div className='md:grid grid-cols-3 pt-10 gap-5'>
           {/* Col 1 */}
@@ -56,8 +64,8 @@ const TourPage = () => {
               <Divider orientation='vertical' />
               <TourSection title='Group Capacity' hideDivider>
                 <p>
-                  The capacity for this tour is{" "}
-                  <span className='font-bold'> {tour?.cap} persons</span>
+                  This Tour allows for up to{" "}
+                  <span className='font-bold'> {tour?.cap} people</span>
                 </p>
               </TourSection>
             </div>
@@ -82,7 +90,9 @@ const TourPage = () => {
                   Get Directions
                 </span>
               </a>
-
+              {
+                // TODO UNCOMMENT MAP FOR PROD
+              }
               <Map />
             </TourSection>
 
@@ -116,6 +126,7 @@ const TourPage = () => {
           </div>
         </div>
       </div>
+      <ReserveBar price={tour.price} capacity={tour.cap} />
     </>
   );
 };

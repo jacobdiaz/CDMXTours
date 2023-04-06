@@ -10,8 +10,8 @@ const AboutUsSection = () => (
       <div className='hidden md:block w-full '>
         <img
           className='w-full h-full object-cover'
-          src='https://cdmxtours.s3.amazonaws.com/Images/home/dsc00059.webp'
-          alt='Tours En Bici Logo'
+          src='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg'
+          alt='Image of Mexico City Bike Tour Guide'
         />
       </div>
       <div className='w-full flex flex-col justify-center items-center p-16 text-center'>
@@ -30,25 +30,22 @@ const AboutUsSection = () => (
     </div>
 
     {/* Row 2 */}
-    <div className='grid grid-cols-1 md:grid-cols-2 h-80 max-h-64 overflow-hidden'>
-      <div
-        aria-label='Architectural Bike Tour in Mexico City'
-        className='bg-cover bg-bottom flex justify-center items-center'
-        style={{
-          backgroundImage:
-            "url(https://cdmxtours.s3.amazonaws.com/Images/home/dsc00024.webp)",
-          backgroundPosition: "center bottom 30%",
-        }}
-      ></div>
-      <div
-        aria-label='Image of the Roma Condesa Bike Tour CDMX'
-        className='hidden md:flex bg-cover bg-bottom justify-center items-center'
-        style={{
-          backgroundImage:
-            "url(https://cdmxtours.s3.amazonaws.com/Images/home/romacondesabiketour-min.webp)",
-          backgroundPosition: "center bottom 30%",
-        }}
-      ></div>
+    <div className='grid grid-cols-1 md:grid-cols-2 h-80 overflow-hidden'>
+      <div className='relative'>
+        <img
+          src='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
+          alt='Architectural Bike Tour in Mexico City'
+          className='w-full h-full absolute object-cover'
+        />
+      </div>
+      <div className='hidden md:flex relative'>
+        <img
+          src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_disc_arch_1.jpg'
+          alt='Image of the Roma Condesa Bike Tour CDMX'
+          className='w-full h-full absolute object-cover'
+          style={{ objectPosition: "center 70%" }}
+        />
+      </div>
     </div>
   </section>
 );
