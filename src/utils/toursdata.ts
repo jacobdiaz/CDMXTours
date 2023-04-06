@@ -46,7 +46,7 @@ export const Tours: Tour[] = [
         alt: "",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg%09	",
         alt: "",
       },
       {
@@ -68,7 +68,28 @@ export const Tours: Tour[] = [
     imgAlt: "Image of Coyoacán Bike Tour in CDMX",
     meetingAddr:
       "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
-    gallery: [],
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_1.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_2.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_3.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_4.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_5.jpg",
+        alt: "",
+      },
+    ],
   },
   {
     id: 3,

@@ -17,9 +17,10 @@ const ImageGallery = ({ gallery }: Props) => {
       {/* TODo Should I use figure or picture? */}
       <div className='col-span-2 max-h-[35rem]'>
         <img
-          className='w-full h-full object-cover'
+          className='w-full h-full object-cover rounded -lg md:rounded-none'
           src={gallery[0].src}
           alt={gallery[0].alt}
+          style={{ objectPosition: "center 70%" }}
         />
       </div>
 
@@ -28,14 +29,12 @@ const ImageGallery = ({ gallery }: Props) => {
           (img, idx) =>
             idx > 0 &&
             idx <= 4 && (
-              <div className=' '>
-                <img
-                  key={idx}
-                  src={img.src}
-                  alt={img.alt}
-                  className='w-full h-full object-cover'
-                />
-              </div>
+              <img
+                key={idx}
+                src={img.src}
+                alt={img.alt}
+                className='w-full h-full object-cover'
+              />
             )
         )}
       </div>

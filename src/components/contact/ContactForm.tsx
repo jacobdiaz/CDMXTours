@@ -4,6 +4,7 @@ import SectionTitle from "../sections/SectionTitle";
 const ContactForm = () => {
   const inputClass = "input w-full my-2 bg-[#F7F7F7]";
   // TODO Implement useForm
+  // TODO STYLE FORM
   return (
     <>
       <SectionTitle margin='m-0'>Send us a message</SectionTitle>
