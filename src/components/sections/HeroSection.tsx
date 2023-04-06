@@ -5,7 +5,7 @@ import CTALink from "../actions/CTALink";
 const HeroSection = () => (
   <div className='relative'>
     <img
-      src='https://cdmxtours.s3.amazonaws.com/pages/Home/home_hero.jpg'
+      src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg'
       alt='Bike Tours CDMX'
       className='w-full object-cover'
       style={{ height: "90vh" }}

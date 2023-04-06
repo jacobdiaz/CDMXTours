@@ -16,33 +16,33 @@ const ImageGallery = ({ gallery, setToggler, setImgIndex }: Props) => {
   const handleToggle = (key: number) => {
     setToggler();
     setImgIndex(key);
-
-    console.log("setting idx", key);
   };
   return (
-    <div className='md:grid grid-cols-2 gap-2 h-96 md:h-[30rem] md:overflow-hidden md:rounded cursor-pointer'>
+    <div className='container md:grid grid-cols-3 gap-2 mx-auto'>
       {/* TODo Should I use figure or picture? */}
-      <figure className=' md:w-full h-full '>
+      <div className='col-span-2 max-h-[35rem]'>
         <img
-          className='object-cover w-full h-full rounded md:rounded-none'
+          className='w-full h-full object-cover'
           src={gallery[0].src}
           alt={gallery[0].alt}
           onClick={() => handleToggle(0)}
         />
-      </figure>
+      </div>
 
-      <div className='hidden md:grid grid-cols-2 gap-2 overflow-hidden'>
+      <div className='hidden md:grid grid-cols-2 gap-2'>
         {gallery.map(
           (img, idx) =>
             idx > 0 &&
             idx <= 4 && (
-              <img
-                key={idx}
-                src={img.src}
-                alt={img.alt}
-                className='w-full h-full object-cover min-h-0'
-                onClick={() => handleToggle(idx)}
-              />
+              <div className=' '>
+                <img
+                  key={idx}
+                  src={img.src}
+                  alt={img.alt}
+                  className='w-full h-full object-cover'
+                  onClick={() => handleToggle(idx)}
+                />
+              </div>
             )
         )}
       </div>

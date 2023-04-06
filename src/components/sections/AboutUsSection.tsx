@@ -10,7 +10,7 @@ const AboutUsSection = () => (
       <div className='hidden md:block w-full '>
         <img
           className='w-full h-full object-cover'
-          src='https://cdmxtours.s3.amazonaws.com/gallery_images/Urban/urban_4.jpg'
+          src='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg'
           alt='Image of Mexico City Bike Tour Guide'
         />
       </div>
@@ -33,14 +33,14 @@ const AboutUsSection = () => (
     <div className='grid grid-cols-1 md:grid-cols-2 h-80 overflow-hidden'>
       <div className='relative'>
         <img
-          src='https://cdmxtours.s3.amazonaws.com/gallery_images/Architectural/arch_1.jpg'
+          src='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
           alt='Architectural Bike Tour in Mexico City'
           className='w-full h-full absolute object-cover'
         />
       </div>
       <div className='hidden md:flex relative'>
         <img
-          src='https://cdmxtours.s3.amazonaws.com/pages/Home/home_disc_arch_1.jpg'
+          src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_disc_arch_1.jpg'
           alt='Image of the Roma Condesa Bike Tour CDMX'
           className='w-full h-full absolute object-cover'
           style={{ objectPosition: "center 70%" }}
