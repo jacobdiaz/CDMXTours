@@ -16,7 +16,6 @@ const ReserveBar = ({
       <div>
         <p className='text-lg font-bold'>${price.toString()} MXN / Person</p>
         <p className='text-xs opacity-50'>
-          Group Capacity {capacity} -{" "}
           <span className=''>Availability Pending</span>
         </p>
       </div>

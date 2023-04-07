@@ -17,34 +17,36 @@ const TourPage = () => {
   if (tour === undefined) return null;
   return (
     <>
-      // TODO add a head and Language
+      // TODO add a head and Language // TODO Add a share button to tour
       <div className='px-6 md:pb-32 md:px-72'>
-        // TODO Add a share button to tour
-        <div className='pt-11 md:pt-36 w-full mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
-          <Link
-            href='/book-a-tour'
-            className='text-black opacity-40 flex flex-row py-5 font-medium font-ssp underline'
-          >
-            <span className='pr-2'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                fill='none'
-              >
-                {" "}
-                <path stroke='none' d='M0 0h24v24H0z' fill='none' />{" "}
-                <path d='M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1' />{" "}
-              </svg>
-            </span>
-            View All Tours
-          </Link>
-          <h1 className='text-4xl '>{tour?.tourName}</h1>
-          <p className='hidden md:block md:text-2xl'>
-            ${tour?.price.toString()}MXN / Person
-          </p>
+        <div className='pt-11 md:pt-24 w-full mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
+          <div className='flex flex-col w-full'>
+            <Link
+              href='/book-a-tour'
+              className='text-black opacity-40 flex flex-row py-5 font-medium font-ssp underline w-fit'
+            >
+              <span className='pr-2'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                  fill='none'
+                >
+                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                  <path d='M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1' />
+                </svg>
+              </span>
+              View All Tours
+            </Link>
+            <div className='w-full flex justify-between'>
+              <h1 className='text-4xl '>{tour?.tourName}</h1>
+              <p className='hidden md:block md:text-2xl'>
+                ${tour?.price.toString()}MXN / Person
+              </p>
+            </div>
+          </div>
         </div>
         {/* Images */}
         <ImageGallery gallery={tour.gallery} />
