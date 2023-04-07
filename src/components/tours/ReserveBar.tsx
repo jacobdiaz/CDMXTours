@@ -10,8 +10,6 @@ const ReserveBar = ({ tourData }: { tourData: Tour }) => {
         <label className='modal-box relative p-10' htmlFor='date-picker-moda'>
           <div className='w-full flex justify-end'>
             <label
-              aria-roledescription='close modal'
-              aria-role={"button"}
               htmlFor='date-picker-modal'
               className='btn btn-sm text-black bg-white'
             >
