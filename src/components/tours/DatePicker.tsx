@@ -29,7 +29,7 @@ const DatePicker = ({ tourName, maxQuantity }: DatePickerProps) => {
   // TODO Create more media points for when it starts to shrink!
   // TODO look into a11y of form?
   return (
-    <div className='w-full shadow-xl p-10 rounded-lg sticky top-56'>
+    <div className='w-full md:shadow-xl md:p-10 rounded-lg sticky top-56'>
       <h5 className='text-lg font-bold'>Select A Tour Date</h5>
       <Calendar onChange={onCalendarChange} value={date} className='py-5' />
       <div className='flex flex-row '>

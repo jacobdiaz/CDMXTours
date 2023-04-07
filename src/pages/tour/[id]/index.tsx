@@ -15,9 +15,9 @@ const TourPage = () => {
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === parseInt(id as string));
   if (tour === undefined) return null;
+  // TODO add a head and Language // TODO Add a share button to tour
   return (
     <>
-      // TODO add a head and Language // TODO Add a share button to tour
       <div className='px-6 md:pb-32 md:px-72'>
         <div className='pt-11 md:pt-24 w-full mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
           <div className='flex flex-col w-full'>
@@ -132,7 +132,7 @@ const TourPage = () => {
         </div>
       </div>
       {/* Mobile Reserve Bar */}
-      <ReserveBar price={tour.price} capacity={tour.cap} />
+      <ReserveBar tourData={tour} />
     </>
   );
 };
