@@ -6,7 +6,6 @@ import ImageGallery from "@/components/tours/ImageGallery";
 import Divider from "@/components/layout/Divider";
 import TourSection from "@/components/tours/TourSection";
 import Link from "next/link";
-import { useState } from "react";
 import ReserveBar from "@/components/tours/ReserveBar";
 import DatePicker from "@/components/tours/DatePicker";
 
@@ -18,7 +17,7 @@ const TourPage = () => {
   // TODO add a head and Language // TODO Add a share button to tour
   return (
     <>
-      <div className='px-6 md:pb-32 md:px-72'>
+      <div className='px-12 md:pb-32 md:px-72'>
         <div className='pt-16 md:pt-24 w-full mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
           <div className='flex flex-col w-full'>
             <Link
@@ -92,9 +91,7 @@ const TourPage = () => {
                   Get Directions
                 </span>
               </a>
-              {
-                // TODO UNCOMMENT MAP FOR PROD
-              }
+
               <Map />
             </TourSection>
 

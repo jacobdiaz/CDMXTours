@@ -11,6 +11,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        md: "900px",
+      },
       fontFamily: {
         fjalla: ["var(--font-fjalla)", ...fontFamily.sans],
         ssp: ["var(--font-source-sans-pro)", ...fontFamily.sans],
