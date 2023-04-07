@@ -1,6 +1,5 @@
 import { Tours } from "../../../utils/toursdata";
 import { useRouter } from "next/router";
-import Calendar from "@/components/actions/Calendar";
 import Map from "@/components/layout/Map";
 import CTALink from "@/components/actions/CTALink";
 import ImageGallery from "@/components/tours/ImageGallery";
@@ -9,6 +8,7 @@ import TourSection from "@/components/tours/TourSection";
 import Link from "next/link";
 import { useState } from "react";
 import ReserveBar from "@/components/tours/ReserveBar";
+import DatePicker from "@/components/tours/DatePicker";
 
 const TourPage = () => {
   const router = useRouter();
@@ -51,9 +51,9 @@ const TourPage = () => {
         {/* Images */}
         <ImageGallery gallery={tour.gallery} />
         {/* Tour Content */}
-        <div className='md:grid grid-cols-3 pt-10 gap-5'>
+        <div className='md:grid grid-cols-5 pt-10 gap-5'>
           {/* Col 1 */}
-          <div className='col-span-2 md:pr-10'>
+          <div className='col-span-3 md:pr-10'>
             <TourSection title='Description'>
               <p>{tour?.description}</p>
             </TourSection>
@@ -95,7 +95,7 @@ const TourPage = () => {
               {
                 // TODO UNCOMMENT MAP FOR PROD
               }
-              <Map />
+              {/* <Map /> */}
             </TourSection>
 
             {/* Have a Question*/}
@@ -123,11 +123,12 @@ const TourPage = () => {
           </div>
 
           {/* Col 2 */}
-          <div className='hidden md:block'>
-            <Calendar />
+          <div className='hidden md:block col-span-2'>
+            <DatePicker maxQuantity={parseInt(tour.cap)} />
           </div>
         </div>
       </div>
+      {/* Mobile Reserve Bar */}
       <ReserveBar price={tour.price} capacity={tour.cap} />
     </>
   );
