@@ -24,10 +24,10 @@ const TourCard = ({
             <strong> ${price.toString()}MXN</strong>
           </p>
         </div>
+        <p className='mb-5'>{description}</p>
       </div>
 
       <div>
-        <p className='mb-5'>{description}</p>
         <p>
           <strong>Duration:</strong> {duration}
         </p>

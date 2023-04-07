@@ -6,7 +6,6 @@ import ImageGallery from "@/components/tours/ImageGallery";
 import Divider from "@/components/layout/Divider";
 import TourSection from "@/components/tours/TourSection";
 import Link from "next/link";
-import { useState } from "react";
 import ReserveBar from "@/components/tours/ReserveBar";
 import DatePicker from "@/components/tours/DatePicker";
 
@@ -92,9 +91,7 @@ const TourPage = () => {
                   Get Directions
                 </span>
               </a>
-              {
-                // TODO UNCOMMENT MAP FOR PROD
-              }
+
               <Map />
             </TourSection>
 

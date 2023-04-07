@@ -6,8 +6,8 @@ function ContactUsPage() {
     <>
       <HeroSmall
         title='Contact'
-        image='https://cdmxtours.s3.amazonaws.com/Images/home/dsc00024.webp'
-        ariaLabel='Contact Us Section'
+        image='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
+        ariaLabel='Contact Us'
       />
       <div className='px-8 pb-8 md:pb-32 md:px-32'>
         <ContactSection />

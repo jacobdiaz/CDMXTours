@@ -1,31 +1,38 @@
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
-import CTALink from "../actions/CTALink";
 import ContactForm from "../contact/ContactForm";
 import SectionTitle from "./SectionTitle";
-import Map from "../layout/Map";
+import React, { useState } from "react";
 
 const ContactSection = () => {
   return (
-    <div>
+    <div className='mt-10'>
       <div className='grid md:grid-cols-2'>
         {/* Col 1 */}
         <div className='w-full flex flex-col pr-0 md:pr-20'>
           <SectionTitle margin='m-0'>Contact Information</SectionTitle>
-          <p className='py-2'>
+          <p className='pt-5'>
             Stay in contact with us for any questions or bike tour bookings.
           </p>
-          <p className='pt-2'>
-            <strong className='underline'>WhatsApp: </strong>
-            <a href='+52 1 55 8333 3677' type='phone'>
+          <p className='pt-5'>
+            <strong>WhatsApp: </strong>
+            <Link
+              href='tel:+52-1-55-8333-3677'
+              rel='nofollow'
+              className='underline'
+            >
               +52 1 55 8333 3677
-            </a>
+            </Link>
           </p>
           <p className='pt-2 pb-5'>
-            <strong className='underline'>Email: </strong>
-            <a href='toursenbici@gmail.com' type='email'>
+            <strong>Email: </strong>
+            <a
+              href='mailto:toursenbici@gmail.com'
+              type='email'
+              className='underline'
+            >
               toursenbici@gmail.com
-            </a>{" "}
+            </a>
           </p>
 
           <ContactForm />

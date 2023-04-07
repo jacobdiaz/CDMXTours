@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 import CTALink from "../actions/CTALink";
+import ImageOverlay from "../layout/ImageOverlay";
 
 const HeroSection = () => (
   <div className='relative'>
@@ -11,7 +12,7 @@ const HeroSection = () => (
       style={{ height: "90vh" }}
     />
     <div
-      className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 text-white'
+      className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 text-white z-10'
       style={{
         maxWidth: "800px",
       }}
@@ -31,6 +32,7 @@ const HeroSection = () => (
         </CTALink>
       </div>
     </div>
+    <ImageOverlay />
   </div>
 );
 
