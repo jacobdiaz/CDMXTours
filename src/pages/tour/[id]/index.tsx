@@ -124,7 +124,10 @@ const TourPage = () => {
 
           {/* Col 2 */}
           <div className='hidden md:block '>
-            <DatePicker maxQuantity={parseInt(tour.cap)} />
+            <DatePicker
+              maxQuantity={parseInt(tour.cap)}
+              tourName={tour.tourName}
+            />
           </div>
         </div>
       </div>
