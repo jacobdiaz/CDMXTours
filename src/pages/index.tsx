@@ -8,7 +8,6 @@ import Map from "@/components/layout/Map";
 import SectionTitle from "@/components/sections/SectionTitle";
 import Link from "next/link";
 import CTALink from "@/components/actions/CTALink";
-import Reviews from "@/components/layout/Reviews";
 import { useRouter } from "next/router";
 import Banner from "@/components/layout/Banner";
 type HomeProps = {
@@ -61,7 +60,7 @@ export default function Home({ dir }: HomeProps) {
           )}
           <div className='mt-24'>
             <SectionTitle margin='m-0'>Where we meet</SectionTitle>
-            {/* <Map /> */}
+            <Map />
             <p className='text-lg'>
               We are located north of Roma Norte in the Juarez neighborhood.
             </p>
@@ -80,8 +79,6 @@ export default function Home({ dir }: HomeProps) {
             >
               Get Directions
             </CTALink>
-
-            <Reviews />
           </div>
         </div>
       </main>
