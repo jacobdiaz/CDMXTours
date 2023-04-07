@@ -11,7 +11,7 @@ function BookATourPage() {
         ariaLabel='Book a Bike Tour'
         backgroundPosition='center top 60%'
       />
-      <div className='px-10 pb-10 md:pb-32 md:px-32'>
+      <div className='px-12 md:pb-32 md:px-72'>
         <TourSection />
       </div>
     </>

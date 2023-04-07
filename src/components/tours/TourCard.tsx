@@ -13,22 +13,11 @@ const TourCard = ({
   imgAlt,
 }: Tour) => {
   return (
-    <li
-      className='mb-10 md:mb-5 flex flex-col justify-between'
-      style={{ width: "28rem", minHeight: "600px" }}
-    >
+    <li className='mb-10 flex flex-col justify-between min-h-[600px] w-full mr-5 md:mr-0 md:w-[24rem]'>
       <div>
-        <img
-          src={imgSrc}
-          alt={imgAlt}
-          className='w-full h-64 object-cover'
-          style={{ minWidth: "250px" }}
-        />
+        <img src={imgSrc} alt={imgAlt} className='w-full h-64 object-cover' />
         <div className='flex flex-row justify-between w-full py-5'>
-          <h4
-            className='text-card-title font-fjalla uppercase'
-            style={{ maxWidth: "250px" }}
-          >
+          <h4 className='text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[250px]'>
             {tourName}
           </h4>
           <p className='text-lg'>
