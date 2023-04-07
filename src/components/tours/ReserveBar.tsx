@@ -15,9 +15,7 @@ const ReserveBar = ({
     <div className='bg-white h-20 fixed bottom-0 w-full flex flex-row justify-between items-center px-7 md:hidden border-t-2'>
       <div>
         <p className='text-lg font-bold'>${price.toString()} MXN / Person</p>
-        <p className='text-xs opacity-50'>
-          <span className=''>Availability Pending</span>
-        </p>
+        <p className='text-xs opacity-50'>Availability Pending</p>
       </div>
       <button className='btn bg-primary rounded-none' onClick={handleReserve}>
         Reserve Tour
