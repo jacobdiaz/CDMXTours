@@ -1,15 +1,7 @@
 import GoogleMapReact from "google-map-react";
 import Link from "next/link";
 
-const LocationPin = ({
-  text,
-  lat,
-  lng,
-}: {
-  text: string;
-  lat: number;
-  lng: number;
-}) => (
+const LocationPin = ({ lat, lng }: { lat: number; lng: number }) => (
   <Link href='https://goo.gl/maps/dHSVvem2Y6D4KMrA9' target='_blank'>
     <div
       data-tip='Calle Versalles 88, 06600 Mexico City, Mexico'
@@ -50,7 +42,7 @@ const Map = () => {
           defaultCenter={location}
           defaultZoom={15}
         >
-          <LocationPin text='Here' lat={location.lat} lng={location.lng} />
+          <LocationPin lat={location.lat} lng={location.lng} />
         </GoogleMapReact>
       </div>
     </div>

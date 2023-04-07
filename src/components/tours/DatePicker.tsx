@@ -1,10 +1,9 @@
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import React, { useState } from "react";
-import Link from "next/link";
-import GuestSelect from "./GuestSelectDesktop";
 import GuestSelectDesktop from "./GuestSelectDesktop";
 import GuestSelectMobile from "./GuestSelectMobile";
+
 // TODO Should there be available dates or common days?
 type DatePickerProps = {
   // availableDates: Date[];
