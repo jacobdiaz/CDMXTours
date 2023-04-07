@@ -16,14 +16,14 @@ const DatePicker = ({ maxQuantity }: DatePickerProps) => {
   }
 
   // TODO Create more media points for when it starts to shrink!
-
+  // TODO look into a11y of form?
   return (
-    <div className='w-full shadow-xl p-10 rounded-lg'>
+    <div className='w-full shadow-xl p-10 rounded-lg sticky top-56'>
       <h5 className='text-lg font-bold'>Select A Tour Date</h5>
       <Calendar onChange={onChange} value={value} className='py-5' />
       <div className='flex flex-row '>
         <div className='flex-row justify-between w-full'>
-          <select className='select select-bordered w-fit h-fit'>
+          <select className='select select-bordered w-fit h-fit rounded-none'>
             {[...Array(maxQuantity)].map((_, idx) => (
               <option key={idx} value={idx + 1}>
                 {idx + 1} {idx + 1 === 1 ? "Guest" : "Guests"}
@@ -31,7 +31,7 @@ const DatePicker = ({ maxQuantity }: DatePickerProps) => {
             ))}
           </select>
         </div>
-        <Link href='/' className='btn rounded-none bg-primary w-3/5'>
+        <Link href='/' className='btn rounded-none bg-primary'>
           Book Your Tour
         </Link>
       </div>

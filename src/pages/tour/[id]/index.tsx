@@ -51,9 +51,9 @@ const TourPage = () => {
         {/* Images */}
         <ImageGallery gallery={tour.gallery} />
         {/* Tour Content */}
-        <div className='md:grid grid-cols-5 pt-10 gap-5'>
+        <div className='md:grid grid-cols-3 pt-10 gap-5'>
           {/* Col 1 */}
-          <div className='col-span-3 md:pr-10'>
+          <div className='col-span-2 md:pr-10'>
             <TourSection title='Description'>
               <p>{tour?.description}</p>
             </TourSection>
@@ -95,7 +95,7 @@ const TourPage = () => {
               {
                 // TODO UNCOMMENT MAP FOR PROD
               }
-              {/* <Map /> */}
+              <Map />
             </TourSection>
 
             {/* Have a Question*/}
@@ -123,7 +123,7 @@ const TourPage = () => {
           </div>
 
           {/* Col 2 */}
-          <div className='hidden md:block col-span-2'>
+          <div className='hidden md:block '>
             <DatePicker maxQuantity={parseInt(tour.cap)} />
           </div>
         </div>
