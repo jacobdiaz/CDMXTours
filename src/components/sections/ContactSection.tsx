@@ -10,9 +10,11 @@ const ContactSection = () => {
       <div className='grid md:grid-cols-2'>
         {/* Col 1 */}
         <div className='w-full flex flex-col pr-0 md:pr-20'>
-          <SectionTitle margin='m-0'>Contact Information</SectionTitle>
+          <SectionTitle margin='m-0'>
+            <FormattedMessage id='home.contact.title' />
+          </SectionTitle>
           <p className='pt-5'>
-            Stay in contact with us for any questions or bike tour bookings.
+            <FormattedMessage id='home.contact.description' />
           </p>
           <p className='pt-5'>
             <strong>WhatsApp: </strong>

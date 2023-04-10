@@ -8,5 +8,15 @@
   "home.about.description": "We are a group of architects focused on giving the best Bike Tours in Mexico City. Come and discover our specialized routes in architecture, history, gastronomy and urbanism in places such as the Historic Center, the University City, hotspots like Coyoacán, Roma, Condesa and monumental sites such as Chapultepec park.",
   "home.about.btn": "Our Story",
   "home.tours.title": "Our Bike Tours",
-  "home.tours.description": "We leave during the week by reservation and on the weekend by call.You can find the call in our Bike Tour calendar published in the highlights of Instragram."
+  "home.tours.description": "We leave during the week by reservation and on the weekend by call.You can find the call in our Bike Tour calendar published in the highlights of Instragram.",
+  "home.contact.title": "Contact Information",
+  "home.contact.description": "Stay in contact with us for any questions or bike tour bookings.",
+  "home.contact.sendMessage": "Send Us a Message",
+  "home.contact.form.name": "Name",
+  "home.contact.form.message": "Message",
+  "home.contact.sendBtn": "Send",
+  "home.directions.title": "Where We Meet",
+  "home.directions.description_1": "Our tour guides will meet you at our designated meeting point located at ",
+  "home.directions.description_2": "Our meeting point is conveniently located and easy to find, so you won't have to worry about getting lost on your way to the start of the tour. When you arrive, you'll be greeted by our friendly and knowledgeable staff who will get you set up with your bike and all the gear you need for a comfortable and safe ride. From there, we'll head out on an adventure together, exploring the city's vibrant neighborhoods, historical landmarks, and hidden gems.",
+  "home.directions.getDirections": "Get Directions"
 }

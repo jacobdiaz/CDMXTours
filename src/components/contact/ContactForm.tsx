@@ -2,11 +2,15 @@ import Link from "next/link";
 import SectionTitle from "../sections/SectionTitle";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
+import { FormattedMessage, useIntl } from "react-intl";
 
-const ContactForm = ({ header = "Send us a message" }: { header?: string }) => {
+const ContactForm = ({ header }: { header?: string }) => {
   const inputClass = "input w-full my-2 bg-[#F7F7F7] rounded-none";
   const router = useRouter();
+  const intl = useIntl();
   const { register, handleSubmit, reset } = useForm();
+
+  if (!header) header = intl.formatMessage({ id: "home.contact.sendMessage" });
 
   const onSubmit = ({ name, email, message }: any) => {
     const msg = `Hello Tours en Bici CDMX! My name is ${name}(${email})\n${message}`;
@@ -31,13 +35,13 @@ const ContactForm = ({ header = "Send us a message" }: { header?: string }) => {
         />
         <input
           type='text'
-          placeholder='Name'
+          placeholder={intl.formatMessage({ id: "home.contact.form.name" })}
           className={inputClass}
           {...register("name")}
         />
         <textarea
           className={`${inputClass} p-4 h-32`}
-          placeholder='Message'
+          placeholder={intl.formatMessage({ id: "home.contact.form.message" })}
           {...register("message")}
         ></textarea>
 
@@ -45,7 +49,7 @@ const ContactForm = ({ header = "Send us a message" }: { header?: string }) => {
           type='submit'
           className='btn bg-black rounded-none mt-5 w-full md:w-fit'
         >
-          Send Message
+          <FormattedMessage id='home.contact.sendBtn' />
         </button>
       </form>
     </>
