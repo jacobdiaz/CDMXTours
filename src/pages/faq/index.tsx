@@ -9,7 +9,7 @@ const FAQPage = () => (
   <>
     <HeroSmall
       title='Frequently Asked Questions'
-      image='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_1.jpg'
+      image='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg'
       ariaLabel='Book a Bike Tour'
       backgroundPosition='center top 60%'
     />

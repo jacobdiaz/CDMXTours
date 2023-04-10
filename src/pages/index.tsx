@@ -45,6 +45,7 @@ export default function Home({ dir }: HomeProps) {
         <div className='px-12 md:pb-32 md:px-72'>
           <TourSection />
           <ContactSection />
+          {/* TODO Fix this image to cloudfront */}
           {locales === "es" && (
             <Banner
               background={
