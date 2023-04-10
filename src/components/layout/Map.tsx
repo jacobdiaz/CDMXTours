@@ -31,7 +31,7 @@ const Map = () => {
     lat: 19.42755,
     lng: -99.15569,
   };
-  console.log(process.env.GOOGLE_MAPS_API_KEY);
+
   return (
     <div>
       <div className='h-banner'>
