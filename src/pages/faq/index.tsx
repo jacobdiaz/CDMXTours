@@ -18,7 +18,7 @@ const FAQPage = () => (
         <SectionTitle margin='m-0'>FAQ</SectionTitle>
         <div className='md:grid md:grid-cols-2 md:gap-4 mb-10'>
           {/* Col 1 */}
-          <div className=''>
+          <div>
             <FaqItem question='What safety equipment is provided?'>
               <p>
                 We believe the best way to see Mexico City is by bicycle! Our

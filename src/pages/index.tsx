@@ -5,16 +5,16 @@ import TourSection from "@/components/sections/ToursSection";
 import Head from "next/head";
 import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
-import Banner from "@/components/layout/Banner";
 import DirectionSections from "@/components/sections/DirectionSections";
+import dynamic from "next/dynamic";
+const Banner = dynamic(() => import("@/components/layout/Banner"));
+
 type HomeProps = {
   dir: string;
 };
 
 export default function Home({ dir }: HomeProps) {
-  // TODO Change all image files to not be in webp or have fallbacks
   const intl = useIntl();
-  // Get the current locale
   const { locale: locales } = useRouter();
 
   const title = intl.formatMessage({ id: "home.head.title" });
@@ -48,9 +48,8 @@ export default function Home({ dir }: HomeProps) {
           {/* TODO Fix this image to cloudfront */}
           {locales === "es" && (
             <Banner
-              background={
-                "https://cdmxtours.s3.amazonaws.com/Images/home/DSC09374.webp"
-              }
+              alt='Discount Banner'
+              src='https://d252kj1i9nz0td.cloudfront.net/pages/Blog/blog_hero.jpg'
             >
               SI VIVES EN CDMX RECIBES UN 10% DE DESCUENTO Y SI
               <br /> DECIDES TRAER TU PROPIA BICI OBTIENES UN 10% EXTRA

@@ -13,6 +13,7 @@ const HeroSection = () => (
       height={1080}
       width={1920}
       loading='eager'
+      priority={true}
     />
     <div
       className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 text-white z-10 leading-[5.0em]'
