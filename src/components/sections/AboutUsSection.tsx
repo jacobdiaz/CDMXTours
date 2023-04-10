@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FormattedMessage } from "react-intl";
 import CTALink from "../actions/CTALink";
 import SectionTitle from "./SectionTitle";
@@ -8,10 +9,13 @@ const AboutUsSection = () => (
     <div className='grid md:grid-cols-2	'>
       {/* Col 1 */}
       <div className='hidden md:block w-full '>
-        <img
+        <Image
           className='w-full h-full object-cover'
           src='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg'
           alt='Image of Mexico City Bike Tour Guide'
+          height={720}
+          width={720}
+          loading='lazy'
         />
       </div>
       <div className='w-full flex flex-col justify-center items-center p-16 text-center'>
@@ -32,18 +36,24 @@ const AboutUsSection = () => (
     {/* Row 2 */}
     <div className='grid grid-cols-1 md:grid-cols-2 h-80 overflow-hidden'>
       <div className='relative'>
-        <img
+        <Image
           src='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
           alt='Architectural Bike Tour in Mexico City'
           className='w-full h-full absolute object-cover'
+          height={540}
+          width={720}
+          loading='lazy'
         />
       </div>
       <div className='hidden md:flex relative'>
-        <img
+        <Image
           src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_disc_arch_1.jpg'
           alt='Image of the Roma Condesa Bike Tour CDMX'
           className='w-full h-full absolute object-cover'
+          height={540}
+          width={720}
           style={{ objectPosition: "center 70%" }}
+          loading='lazy'
         />
       </div>
     </div>

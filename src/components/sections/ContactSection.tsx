@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 import ContactForm from "../contact/ContactForm";
@@ -38,11 +39,13 @@ const ContactSection = () => {
         </div>
         {/* Col 2 */}
         <div className='hidden md:block w-full pl-5'>
-          {/* TODO  */}
-          <img
+          <Image
             className='w-full h-full object-cover'
             src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_contact.jpg'
             alt='Group of Bikers on a Bike Tour in Mexico City'
+            height={900}
+            width={720}
+            loading='lazy'
           />
         </div>
       </div>
