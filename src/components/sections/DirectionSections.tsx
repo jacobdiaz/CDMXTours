@@ -18,6 +18,8 @@ const DirectionSections = () => {
         <Link
           href='https://goo.gl/maps/7r4jXBxTbU3V6RQS7'
           className='underline'
+          target='_blank'
+          rel='nofollow'
         >
           Calle Versalles 88, 06600 Mexico City, Mexico
         </Link>

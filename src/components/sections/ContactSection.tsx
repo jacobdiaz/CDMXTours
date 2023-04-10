@@ -2,7 +2,6 @@ import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 import ContactForm from "../contact/ContactForm";
 import SectionTitle from "./SectionTitle";
-import React, { useState } from "react";
 
 const ContactSection = () => {
   return (

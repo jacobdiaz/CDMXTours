@@ -3,7 +3,7 @@ import SectionTitle from "../sections/SectionTitle";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 
-const ContactForm = () => {
+const ContactForm = ({ header = "Send us a message" }: { header?: string }) => {
   const inputClass = "input w-full my-2 bg-[#F7F7F7] rounded-none";
   const router = useRouter();
   const { register, handleSubmit, reset } = useForm();
@@ -19,8 +19,9 @@ const ContactForm = () => {
   return (
     <>
       <SectionTitle margin='m-0' className='mt-10'>
-        Send us a message
+        {header}
       </SectionTitle>
+
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           type='email'
@@ -40,7 +41,10 @@ const ContactForm = () => {
           {...register("message")}
         ></textarea>
 
-        <button type='submit' className='btn bg-black rounded-none mt-5'>
+        <button
+          type='submit'
+          className='btn bg-black rounded-none mt-5 w-full md:w-fit'
+        >
           Send Message
         </button>
       </form>
