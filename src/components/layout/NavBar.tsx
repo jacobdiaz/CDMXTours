@@ -4,6 +4,7 @@ import { useState } from "react";
 import LanguageSelect from "../actions/LanguageSelect";
 import PageLinks from "@/utils/pagelinks";
 import Image from "next/image";
+// Todo see what main device users use, and lazy load the component that is not used as much
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const NavBar = () => {
         {/* Mobile Links */}
         <div className='dropdown md:hidden' onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
-            <div className='btn btn-ghost text-white'>✕</div>
+            <div className='btn btn-ghost text-white text-2xl'>✕</div>
           ) : (
             <label tabIndex={0} className='btn btn-ghost'>
               <svg
@@ -49,29 +50,41 @@ const NavBar = () => {
 
           {/* Dropdown Menu */}
           {isOpen && (
-            <div className='mt-0 w-5/6 fixed bg-primary h-5/6 left-0 px-5 flex flex-col justify-between'>
-              <ul tabIndex={0}>
+            <div className='mt-0 w-full fixed bg-primary h-5/6 left-0 px-5 flex flex-col justify-between'>
+              <ul
+                tabIndex={0}
+                className='mt-20 w-full flex flex-col items-center'
+              >
                 <li className='py-5'>
-                  <Link href='/'>Home</Link>
+                  <Link href='/' className='px-20 py-5'>
+                    Home
+                  </Link>
                 </li>
                 {PageLinks.map(({ message, href }, idx) => {
                   return (
-                    <li key={idx} className='py-5'>
-                      <Link href={href}>{message}</Link>
-                    </li>
+                    idx !== 3 && ( // Skip the home link
+                      <li key={idx} className='py-5'>
+                        <Link href={href} className='px-20 py-5'>
+                          {message}
+                        </Link>
+                      </li>
+                    )
                   );
                 })}
               </ul>
-              <p className='py-5 text-sm opacity-50'>
-                Language{" "}
+              <div className='py-10 text-sm opacity-50 flex flex-row justify-center w-full'>
+                <p>Language</p>
                 <button
                   className='px-3'
                   onClick={() => handleLanguageChange("en")}
                 >
-                  EN{" "}
+                  English{" "}
                 </button>{" "}
-                <button onClick={() => handleLanguageChange("es")}> ES</button>
-              </p>
+                <button onClick={() => handleLanguageChange("es")}>
+                  {" "}
+                  Español
+                </button>
+              </div>
             </div>
           )}
         </div>
