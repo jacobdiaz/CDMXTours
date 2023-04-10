@@ -74,9 +74,27 @@ const TourPage = () => {
 
             {/* Where to meet */}
             <TourSection title='Where to Meet'>
-              <p>
-                Meet with your group and tour guide at{" "}
-                <span className='font-bold'>{tour?.meetingAddr}</span>.
+              <p className='mt-5'>
+                To ensure a smooth start to your tour, we will meet you at our
+                designated meeting point located at{" "}
+                <span>
+                  <Link
+                    href='https://goo.gl/maps/7r4jXBxTbU3V6RQS7'
+                    className='underline'
+                    target='_blank'
+                    rel='nofollow'
+                  >
+                    Calle Versalles 88, 06600 Mexico City, Mexico
+                  </Link>
+                </span>
+                . Our meeting point is conveniently located and easy to find, so
+                you won't have to worry about getting lost on your way to the
+                start of the tour. When you arrive, you'll be greeted by our
+                friendly and knowledgeable staff who will get you set up with
+                your bike and all the gear you need for a comfortable and safe
+                ride. From there, we'll head out on an adventure together,
+                exploring the city's vibrant neighborhoods, historical
+                landmarks, and hidden gems.
               </p>
 
               {/* TODO CREATE A SEO FRIENDLY DIRECTIONS BUTTON THAT LOOKS LIKE THIS */}

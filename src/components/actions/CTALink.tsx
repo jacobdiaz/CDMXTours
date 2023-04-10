@@ -18,7 +18,7 @@ const CTALink = (props: Props) => {
   } ${grow && "w-full"} ${className}`;
 
   return (
-    <Link className={btnClass} href={href}>
+    <Link className={btnClass} href={href} rel='nofollow'>
       {children}
     </Link>
   );
