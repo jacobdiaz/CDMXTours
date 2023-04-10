@@ -2,7 +2,7 @@ type Props = {
   children?: React.ReactNode;
   color?: "text-primary" | "text-white";
   font?: "font-fjalla" | "font-ssp";
-  margin?: "m-5" | "m-0";
+  margin?: string;
   className?: string;
 };
 

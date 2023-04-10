@@ -27,7 +27,7 @@ const AboutUsSection = () => (
         <p className='text-lg text-primary'>
           <FormattedMessage id='home.about.description' />
         </p>
-        <CTALink href='/' variant='dark'>
+        <CTALink href='/about-us' variant='dark'>
           <FormattedMessage id='home.about.btn' />
         </CTALink>
       </div>
