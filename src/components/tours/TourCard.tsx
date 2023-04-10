@@ -1,4 +1,5 @@
 import { Tour } from "@/utils/toursdata";
+import Image from "next/image";
 import CTALink from "../actions/CTALink";
 
 const TourCard = ({
@@ -13,9 +14,16 @@ const TourCard = ({
   imgAlt,
 }: Tour) => {
   return (
-    <li className='mb-10 flex flex-col justify-between min-h-[600px] w-full mr-5 md:mr-0 md:w-[24rem]'>
+    <li className='mb-10 flex flex-col justify-between min-h-[600px] w-full mr-0 md:mr-0 md:w-[24rem]'>
       <div>
-        <img src={imgSrc} alt={imgAlt} className='w-full h-64 object-cover' />
+        <Image
+          src={imgSrc}
+          alt={imgAlt}
+          className='w-full h-64 object-cover'
+          height={500}
+          width={500}
+          loading='lazy'
+        />
         <div className='flex flex-row justify-between w-full py-5'>
           <h4 className='text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[250px]'>
             {tourName}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 import CTALink from "../actions/CTALink";
@@ -5,14 +6,16 @@ import ImageOverlay from "../layout/ImageOverlay";
 
 const HeroSection = () => (
   <div className='relative'>
-    <img
+    <Image
       src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg'
       alt='Bike Tours CDMX'
-      className='w-full object-cover'
-      style={{ height: "90vh" }}
+      className='w-full object-cover h-[80vh] md:h-[90vh]'
+      height={1080}
+      width={1920}
+      loading='eager'
     />
     <div
-      className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 text-white z-10'
+      className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 text-white z-10 leading-[5.0em]'
       style={{
         maxWidth: "800px",
       }}

@@ -4,6 +4,9 @@ const nextConfig = {
   env: {
     GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY,
   },
+  images: {
+    domains: ["d252kj1i9nz0td.cloudfront.net"],
+  },
   i18n: {
     locales: ["en", "es"],
     defaultLocale: "en",
