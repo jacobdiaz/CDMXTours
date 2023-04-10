@@ -3,11 +3,20 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import LanguageSelect from "../actions/LanguageSelect";
 import PageLinks from "@/utils/pagelinks";
+import Image from "next/image";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-
+  const Logo = () => (
+    <Image
+      src='/logo.png'
+      alt='CDMX Bike Tours Logo'
+      width={80}
+      height={80}
+      className='shadow-xl rounded-full z-20'
+    />
+  );
   // Set the locale when select changes
   const handleLanguageChange = (locale: string) =>
     router.push(router.pathname, router.asPath, { locale: locale });
@@ -67,7 +76,12 @@ const NavBar = () => {
           )}
         </div>
       </div>
-      <div className='navbar-center w-3/5 flex justify-center md:justify-between max-h-20'>
+      <div className='navbar-center md:hidden'>
+        <Link href='/' className='btn btn-ghost normal-case text-xl'>
+          <Logo />
+        </Link>
+      </div>
+      <div className='hidden md:navbar-center w-3/5 md:flex justify-center md:justify-between max-h-20'>
         {/* Desktop Links */}
         {PageLinks.map(({ message, href }, idx) => (
           <Link
@@ -75,11 +89,7 @@ const NavBar = () => {
             href={href}
             className='hidden md:block hover:underline'
           >
-            {idx === 3 ? (
-              <img src='/nav_logo.webp' alt='Tours En Bici Logo' width={80} />
-            ) : (
-              message
-            )}
+            {idx === 3 ? <Logo /> : message}
           </Link>
         ))}
       </div>
