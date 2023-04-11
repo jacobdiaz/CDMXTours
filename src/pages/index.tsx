@@ -29,6 +29,12 @@ export default function Home({ dir }: HomeProps) {
         <meta name='description' content={description} />
 
         <link rel='icon' href='/favicon.ico' />
+        <meta
+          property='og:image'
+          content='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg'
+        />
+        <meta property='og:title' content={`${title}`} />
+        <meta property='og:description' content={`${description}`} />
 
         {/* Add hreflang links */}
         {/* TODOA Add correct head for SEO */}
