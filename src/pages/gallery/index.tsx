@@ -3,10 +3,32 @@ import HeroSmall from "@/components/layout/HeroSmall";
 import SectionTitle from "@/components/sections/SectionTitle";
 import { Gallery } from "@/utils/galleryData";
 import Image from "next/image";
+import { useState } from "react";
+import FsLightbox from "fslightbox-react";
 
 const GalleryPage = () => {
+  const [lightboxController, setLightboxController] = useState({
+    toggler: false,
+    slide: 1,
+  });
+
+  function openLightboxOnSlide(number: number) {
+    setLightboxController({
+      toggler: !lightboxController.toggler,
+      slide: number,
+    });
+  }
+
+  const sources = Gallery.map((img) => img.src);
+
   return (
     <>
+      <FsLightbox
+        toggler={lightboxController.toggler}
+        sources={sources}
+        slide={lightboxController.slide}
+        loadOnlyCurrentSource={true}
+      />
       <HeroSmall
         title='Gallery'
         image='https://d252kj1i9nz0td.cloudfront.net/pages/Gallery/hero.jpg'
@@ -36,17 +58,21 @@ const GalleryPage = () => {
               </CTALink>
             </div>
           </div>
-          <ul className='container grid md:grid-cols-3 gap-5'>
-            {Gallery.map((img) => (
-              <li key={img.src} className='h-[340px] relative overflow-hidden'>
+          <ul className='container grid md:grid-cols-3 gap-5 '>
+            {Gallery.map((img, idx) => (
+              <li
+                key={img.src}
+                className='h-[340px] relative overflow-hidden '
+                onClick={() => openLightboxOnSlide(idx + 1)}
+              >
                 <Image
                   src={img.src}
                   alt={img.alt}
                   width={340}
-                  height={340} // Set height and width to the same value
+                  height={340}
                   sizes='50vw'
                   loading='lazy'
-                  className='absolute left-0 w-full h-full object-cover'
+                  className='absolute left-0 w-full h-full object-cover cursor-pointer duration-300 transform hover:scale-105'
                 />
               </li>
             ))}
