@@ -18,7 +18,7 @@ const AboutUsSection = () => (
           loading='lazy'
         />
       </div>
-      <div className='w-full flex flex-col justify-center items-center p-16 text-center'>
+      <div className='w-full flex flex-col justify-center items-center p-5 md:p-16 text-center'>
         {/* Col 2 */}
         <SectionTitle>
           <FormattedMessage id='home.about.title' />
@@ -27,7 +27,7 @@ const AboutUsSection = () => (
         <p className='text-lg text-primary'>
           <FormattedMessage id='home.about.description' />
         </p>
-        <CTALink href='/about-us' variant='dark'>
+        <CTALink href='/about-us' variant='dark' grow>
           <FormattedMessage id='home.about.btn' />
         </CTALink>
       </div>

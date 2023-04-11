@@ -13,8 +13,8 @@ const FAQPage = () => (
       ariaLabel='Book a Bike Tour'
       backgroundPosition='center top 60%'
     />
-    <div className='px-12 md:pb-32 md:px-72'>
-      <div className='flex flex-col justify-center mt-10 mb-5'>
+    <div className='page-container'>
+      <div className='flex flex-col justify-center my-10'>
         <SectionTitle margin='m-0'>FAQ</SectionTitle>
         <div className='md:grid md:grid-cols-2 md:gap-4 mb-10'>
           {/* Col 1 */}

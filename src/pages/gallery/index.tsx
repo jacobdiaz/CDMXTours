@@ -36,8 +36,8 @@ const GalleryPage = () => {
         backgroundPosition='center 20%'
       />
 
-      <div className='px-12 md:pb-32 md:px-72'>
-        <div className='flex flex-col justify-center mt-10 mb-5'>
+      <div className='page-container'>
+        <div className='flex flex-col justify-center my-10'>
           <div className='grid md:grid-cols-3'>
             <div className='md:col-span-2'>
               <SectionTitle margin='m-0'>Our Favorite Memories</SectionTitle>
