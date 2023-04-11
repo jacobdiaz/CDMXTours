@@ -12,7 +12,6 @@ const DirectionSections = () => {
       <SectionTitle margin='m-0' className='mb-5'>
         {intl.formatMessage({ id: "home.directions.title" })}
       </SectionTitle>
-      <Map />
       <p className='mt-5 text-lg'>
         {intl.formatMessage({ id: "home.directions.description_1" })}
         <span>
@@ -35,6 +34,7 @@ const DirectionSections = () => {
       >
         {intl.formatMessage({ id: "home.directions.getDirections" })}
       </CTALink>
+      <Map />
     </div>
   );
 };

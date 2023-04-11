@@ -53,7 +53,7 @@ const GalleryPage = () => {
               </p>
             </div>
             <div className='flex flex-col items-end justify-end'>
-              <CTALink href='mailto:' variant='dark' grow>
+              <CTALink href='mailto:toursenbici@gmail.com' variant='dark' grow>
                 Send Us Your Photos
               </CTALink>
             </div>
