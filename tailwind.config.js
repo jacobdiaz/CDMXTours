@@ -2,10 +2,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/react-calendar/dist/Calendar.css",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   daisyui: {
     themes: false,
   },
