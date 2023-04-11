@@ -18,7 +18,9 @@ const Banner = ({ src, alt, children }: BannerProps) => (
       loading='lazy'
     />
     <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center text-white'>
-      <h4 className='text-5xl font-fjalla z-10'>{children}</h4>
+      <h4 className='text-3xl p-10 text-center md:text-6xl font-fjalla z-10'>
+        {children}
+      </h4>
     </div>
     <ImageOverlay />
   </div>
