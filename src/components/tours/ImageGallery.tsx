@@ -38,7 +38,6 @@ const ImageGallery = ({ tour }: Props) => {
       />
 
       <div className='container md:grid grid-cols-3 gap-2 mx-auto'>
-        {/* TODo Should I use figure or picture? */}
         <div className='col-span-2 max-h-[35rem]'>
           <Image
             className='w-full h-full object-cover rounded -lg md:rounded-none cursor-pointer'
@@ -49,10 +48,11 @@ const ImageGallery = ({ tour }: Props) => {
             width={720}
             loading='eager'
             onClick={() => openLightboxOnSlide(1)}
+            priority
           />
         </div>
 
-        <ul className='hidden md:grid grid-cols-2 gap-2 overflow-hidden'>
+        <ul className='flex flex-row justify-between h-[100px] mt-5 md:mt-0 md:h-full md:grid md:grid-cols-2 gap-2 overflow-hidden'>
           {tour.gallery.map(
             (img, idx) =>
               idx > 0 &&
@@ -60,9 +60,9 @@ const ImageGallery = ({ tour }: Props) => {
                 <li
                   onClick={() => openLightboxOnSlide(idx + 1)}
                   className='overflow-hidden'
+                  key={idx}
                 >
                   <Image
-                    key={idx}
                     src={img.src}
                     alt={img.alt}
                     className='w-full h-full object-cover cursor-pointer duration-300 transform hover:scale-105'
