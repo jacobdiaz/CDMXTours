@@ -42,7 +42,7 @@ export default function Home({ dir }: HomeProps) {
       <main dir={dir} className='font-ssp'>
         <HeroSection />
         <AboutUsSection />
-        <div className='px-12 md:pb-32 md:px-72'>
+        <div className='page-container'>
           <TourSection />
           <ContactSection />
           {/* TODO Fix this image to cloudfront */}

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-container {
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem /* 20px */;
+  padding-top: 0.1rem /* 80px */;
+}
+@media (min-width: 900px) {
+  .page-container {
+    padding-left: 18rem /* 288px */;
+    padding-right: 18rem /* 288px */;
+    padding-bottom: 8rem /* 128px */;
+    padding-top: 0.1rem /* 80px */;
+  }
+}

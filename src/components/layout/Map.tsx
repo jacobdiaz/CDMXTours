@@ -33,18 +33,16 @@ const Map = () => {
   };
 
   return (
-    <div>
-      <div className='h-banner'>
-        <GoogleMapReact
-          bootstrapURLKeys={{
-            key: `${process.env.GOOGLE_MAPS_API_KEY}`,
-          }}
-          defaultCenter={location}
-          defaultZoom={15}
-        >
-          <LocationPin lat={location.lat} lng={location.lng} />
-        </GoogleMapReact>
-      </div>
+    <div className='h-banner mb-10'>
+      <GoogleMapReact
+        bootstrapURLKeys={{
+          key: `${process.env.GOOGLE_MAPS_API_KEY}`,
+        }}
+        defaultCenter={location}
+        defaultZoom={15}
+      >
+        <LocationPin lat={location.lat} lng={location.lng} />
+      </GoogleMapReact>
     </div>
   );
 };
