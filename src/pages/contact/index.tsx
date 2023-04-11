@@ -8,8 +8,8 @@ const ContactUsPage = () => (
       image='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
       ariaLabel='Contact Us'
     />
-    <div className='px-12 md:pb-32 md:px-72'>
-      <div className='flex flex-col justify-center mt-10 mb-5'>
+    <div className='page-container'>
+      <div className='flex flex-col justify-center mb-10'>
         <ContactSection />
       </div>
     </div>

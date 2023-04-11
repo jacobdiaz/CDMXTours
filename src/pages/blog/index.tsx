@@ -11,7 +11,7 @@ const BlogPage = () => (
       ariaLabel='Blog'
       backgroundPosition='center 60%'
     />
-    <div className='py-12 px-12 md:px-72 flex flex-col justify-center '>
+    <div className='page-container mt-10 flex flex-col justify-center '>
       <SectionTitle margin='m-0' className='w-full text-center'>
         Blog Coming Soon!
       </SectionTitle>

@@ -50,12 +50,12 @@ const NavBar = () => {
 
           {/* Dropdown Menu */}
           {isOpen && (
-            <div className='mt-0 w-full fixed bg-primary h-5/6 left-0 px-5 flex flex-col justify-between'>
+            <div className='mt-0 w-full fixed bg-primary h-4/7 left-0 px-5 flex flex-col justify-between'>
               <ul
                 tabIndex={0}
-                className='mt-20 w-full flex flex-col items-center'
+                className='mt-12 w-full flex flex-col items-center'
               >
-                <li className='py-5'>
+                <li className='py-3'>
                   <Link href='/' className='px-20 py-5'>
                     Home
                   </Link>
@@ -63,7 +63,7 @@ const NavBar = () => {
                 {PageLinks.map(({ message, href }, idx) => {
                   return (
                     idx !== 3 && ( // Skip the home link
-                      <li key={idx} className='py-5'>
+                      <li key={idx} className='py-3'>
                         <Link href={href} className='px-20 py-5'>
                           {message}
                         </Link>
@@ -72,7 +72,7 @@ const NavBar = () => {
                   );
                 })}
               </ul>
-              <div className='py-10 text-sm opacity-50 flex flex-row justify-center w-full'>
+              <div className='py-8 text-sm opacity-50 flex flex-row justify-center w-full'>
                 <p>Language</p>
                 <button
                   className='px-3'
