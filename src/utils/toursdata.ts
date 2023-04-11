@@ -1,4 +1,4 @@
-type Image = {
+export type ImageType = {
   src: string;
   alt: string;
 };
@@ -14,7 +14,7 @@ export type Tour = {
   imgSrc: string;
   imgAlt: string;
   meetingAddr: string;
-  gallery: Image[];
+  gallery: ImageType[];
 };
 
 // TODO Turn this into an API Endpoint?

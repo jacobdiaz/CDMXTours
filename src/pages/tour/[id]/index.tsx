@@ -48,7 +48,7 @@ const TourPage = () => {
           </div>
         </div>
         {/* Images */}
-        <ImageGallery gallery={tour.gallery} />
+        <ImageGallery tour={tour} />
         {/* Tour Content */}
         <div className='md:grid grid-cols-3 pt-10 gap-5'>
           {/* Col 1 */}

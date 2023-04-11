@@ -15,7 +15,7 @@ const CTALink = (props: Props) => {
     variant === "dark"
       ? "bg-primary text-white"
       : "bg-white text-black hover:bg-gray-100"
-  } ${grow && "w-full"} ${className}`;
+  } ${grow && "w-full md:w-fit"} ${className}`;
 
   return (
     <Link className={btnClass} href={href} rel='nofollow'>
