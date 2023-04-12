@@ -36,7 +36,7 @@ const GalleryPage = () => {
         backgroundPosition='center 20%'
       />
 
-      <div className='page-container'>
+      <main className='page-container'>
         <div className='flex flex-col justify-center my-10'>
           <div className='grid md:grid-cols-3'>
             <div className='md:col-span-2'>
@@ -78,7 +78,7 @@ const GalleryPage = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </main>
     </>
   );
 };

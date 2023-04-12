@@ -13,9 +13,9 @@ const SectionTitle = ({
   margin = "m-5",
   className,
 }: Props) => (
-  <h3 className={`text-3xl uppercase ${margin} ${font} ${color} ${className}`}>
+  <h2 className={`text-3xl uppercase ${margin} ${font} ${color} ${className}`}>
     {children}
-  </h3>
+  </h2>
 );
 
 export default SectionTitle;
