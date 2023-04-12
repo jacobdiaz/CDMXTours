@@ -27,23 +27,39 @@ export default function Home({ dir }: HomeProps) {
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
-
-        <link rel='icon' href='/favicon.ico' />
         <meta
           property='og:image'
           content='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg'
         />
+        <meta
+          name='keywords'
+          content='CDMX Bike Tours, Mexico City bike tours, Mexico City Tours'
+        />
         <meta property='og:title' content={`${title}`} />
         <meta property='og:description' content={`${description}`} />
 
-        {/* Add hreflang links */}
-        {/* TODOA Add correct head for SEO */}
-        <link rel='alternate' href='http://example.com' hrefLang='x-default' />
-        <link rel='alternate' href='http://example.com/en' hrefLang='en' />
-        <link rel='alternate' href='http://example.com/es' hrefLang='es' />
-      </Head>
+        <link rel='icon' href='/favicon.ico' />
 
-      <header></header>
+        <link
+          rel='alternate'
+          href='https://main.d355vg8zwj6c52.amplifyapp.com/'
+          hrefLang='x-default'
+        />
+        <link
+          rel='alternate'
+          href='https://main.d355vg8zwj6c52.amplifyapp.com/en'
+          hrefLang='en'
+        />
+        <link
+          rel='alternate'
+          href='https://main.d355vg8zwj6c52.amplifyapp.com/es'
+          hrefLang='es'
+        />
+        <link
+          rel='canonical'
+          href='https://main.d355vg8zwj6c52.amplifyapp.com/'
+        />
+      </Head>
 
       <main dir={dir} className='font-ssp'>
         <HeroSection />

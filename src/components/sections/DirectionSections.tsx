@@ -6,9 +6,8 @@ import { useIntl } from "react-intl";
 
 const DirectionSections = () => {
   const intl = useIntl();
-
   return (
-    <div className='mt-20'>
+    <section className='mt-20'>
       <SectionTitle margin='m-0' className='mb-5'>
         {intl.formatMessage({ id: "home.directions.title" })}
       </SectionTitle>
@@ -35,7 +34,7 @@ const DirectionSections = () => {
         {intl.formatMessage({ id: "home.directions.getDirections" })}
       </CTALink>
       <Map />
-    </div>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import CTALink from "../actions/CTALink";
 import ImageOverlay from "../layout/ImageOverlay";
 
 const HeroSection = () => (
-  <div className='relative'>
+  <section className='relative'>
     <Image
       src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg'
       alt='Bike Tours CDMX'
@@ -28,6 +28,8 @@ const HeroSection = () => (
         <Link
           href='https://www.instagram.com/toursenbici/'
           className='opacity-70 text-lg w-fit pr-8'
+          target='_blank'
+          rel='noopener noreferrer nofollow'
         >
           @toursenbici
         </Link>
@@ -37,7 +39,7 @@ const HeroSection = () => (
       </div>
     </div>
     <ImageOverlay />
-  </div>
+  </section>
 );
 
 export default HeroSection;

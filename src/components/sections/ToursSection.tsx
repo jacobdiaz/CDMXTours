@@ -4,7 +4,7 @@ import { FormattedMessage } from "react-intl";
 import SectionTitle from "./SectionTitle";
 
 const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => (
-  <>
+  <section>
     {!hideHeader && (
       <div className='flex flex-col justify-center md:items-center mt-10 mb-5'>
         <SectionTitle margin='m-0'>
@@ -24,7 +24,7 @@ const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => (
         ))}
       </ul>
     </div>
-  </>
+  </section>
 );
 
 export default TourSection;

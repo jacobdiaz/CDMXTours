@@ -15,7 +15,7 @@ const TourCard = ({
   imgAlt,
 }: Tour) => (
   <li className='mb-10 flex flex-col justify-between min-h-[600px] w-full mr-0 md:mr-0 md:w-[24rem]'>
-    <div>
+    <article>
       <Link href={`/tour/${id}`}>
         <Image
           src={imgSrc}
@@ -35,7 +35,7 @@ const TourCard = ({
         </p>
       </div>
       <p className='mb-5'>{description}</p>
-    </div>
+    </article>
 
     <div>
       <p>
