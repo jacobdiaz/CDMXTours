@@ -8,15 +8,23 @@ import TourSection from "@/components/tours/TourSection";
 import Link from "next/link";
 import ReserveBar from "@/components/tours/ReserveBar";
 import DatePicker from "@/components/tours/DatePicker";
+import PageHeader from "@/components/layout/PageHeader";
 
 const TourPage = () => {
   const router = useRouter();
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === parseInt(id as string));
   if (tour === undefined) return null;
-  // TODO add a head and Language // TODO Add a share button to tour
+  // TODO Add a share button to tour
+  // TODO Add Keywords to each Tour
   return (
-    <>
+    <main>
+      <PageHeader url_path={`/tours/${tour.id}`} page_img={tour.gallery[0].src}>
+        <title>{tour.tourName}</title>
+        <meta name='description' content={tour.description} />
+        <meta property='og:title' content={tour.description} />
+        <meta property='og:description' content={tour.description} />
+      </PageHeader>
       <div className='page-container'>
         <div className='w-full mt-16 md:mt-24 mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
           <div className='flex flex-col w-full'>
@@ -148,7 +156,7 @@ const TourPage = () => {
       </div>
       {/* Mobile Reserve Bar */}
       <ReserveBar tourData={tour} />
-    </>
+    </main>
   );
 };
 
