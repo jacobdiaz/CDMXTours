@@ -20,7 +20,9 @@
     "react-calendar": "^4.2.1",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
-    "react-intl": "^6.3.2"
+    "react-intl": "^6.3.2",
+    "react-share": "^4.4.1",
+    "react-social-icons": "^5.15.0"
   },
   "devDependencies": {
     "@types/fslightbox-react": "^1.7.1",

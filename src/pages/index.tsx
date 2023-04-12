@@ -2,7 +2,6 @@ import AboutUsSection from "@/components/sections/AboutUsSection";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import TourSection from "@/components/sections/ToursSection";
-import Head from "next/head";
 import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
 import DirectionSections from "@/components/sections/DirectionSections";

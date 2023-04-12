@@ -9,6 +9,7 @@ import Link from "next/link";
 import ReserveBar from "@/components/tours/ReserveBar";
 import DatePicker from "@/components/tours/DatePicker";
 import PageHeader from "@/components/layout/PageHeader";
+import Share from "@/components/actions/Share";
 
 const TourPage = () => {
   const router = useRouter();
@@ -26,7 +27,7 @@ const TourPage = () => {
         <meta property='og:description' content={tour.description} />
       </PageHeader>
       <div className='page-container'>
-        <div className='w-full mt-16 md:mt-24 mb-10 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
+        <div className='w-full mt-16 md:mt-24 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
           <div className='flex flex-col w-full'>
             <Link
               href='/book-a-tour'
@@ -54,6 +55,9 @@ const TourPage = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className='flex flex-row justify-end items-center'>
+          <Share tour={tour} />
         </div>
         {/* Images */}
         <ImageGallery tour={tour} />
