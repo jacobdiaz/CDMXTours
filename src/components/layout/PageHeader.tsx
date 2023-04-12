@@ -34,7 +34,7 @@ const PageHeader = ({
     />
     <link
       rel='canonical'
-      href={`https://main.d355vg8zwj6c52.amplifyapp.com ${url_path}`}
+      href={`https://main.d355vg8zwj6c52.amplifyapp.com${url_path}`}
     />
 
     <link rel='apple-touch-icon' href='/apple-touch-icon-iphone-60x60.png' />
