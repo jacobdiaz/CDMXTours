@@ -28,9 +28,9 @@ const TourCard = ({
           />
         </Link>
         <div className='flex flex-row justify-between w-full py-5'>
-          <h4 className='text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[250px]'>
+          <h3 className='text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[250px]'>
             {tourName}
-          </h4>
+          </h3>
           <p className='text-lg font-bold'>${price.toString()}MXN</p>
         </div>
         <p className='mb-5'>{description}</p>
