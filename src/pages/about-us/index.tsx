@@ -1,13 +1,16 @@
-import HeroSmall from "@/components/layout/HeroSmall";
 import PageHeader from "@/components/layout/PageHeader";
 import SectionTitle from "@/components/sections/SectionTitle";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const AboutPage = () => {
-  const title = "About CDMX Bike Tours";
-  const description =
-    "We are a group of passionate and experienced cyclists who have a love for Mexico City and all the amazing sights it has to offer! Our goal is to provide you with an unforgettable bike tour experience that will leave you with a newfound appreciation for this vibrant city.";
+  const intl = useIntl();
+  const title = intl.formatMessage({ id: "about.title" });
+  const description = intl.formatMessage({ id: "about.description_1" });
+  const router = useRouter();
+
   return (
     <div className='page-container'>
       <PageHeader
@@ -21,8 +24,10 @@ const AboutPage = () => {
         <meta property='og:description' content={description} />
       </PageHeader>
       <div className='flex flex-col justify-center mt-16 md:mt-36 md:mb-0'>
-        <Link
-          href='/'
+        <button
+          onClick={() => {
+            router.back();
+          }}
           className='text-black opacity-40 flex flex-row py-5 font-medium font-ssp underline w-fit'
         >
           <span className='pr-2'>
@@ -38,8 +43,8 @@ const AboutPage = () => {
               <path d='M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1' />
             </svg>
           </span>
-          Home
-        </Link>
+          <FormattedMessage id='about.back' />
+        </button>
         <div className='grid md:grid-cols-2 gap-5'>
           <Image
             src='https://d252kj1i9nz0td.cloudfront.net/pages/About/about.jpeg'
@@ -48,44 +53,27 @@ const AboutPage = () => {
             height={750}
             priority
           />
-          <div className='my-5'>
-            <SectionTitle margin='my-5'>About CDMX Bike Tours</SectionTitle>
+          <div className='mb-5'>
+            <SectionTitle margin='mb-5'>
+              <FormattedMessage id='about.title' />
+            </SectionTitle>
             <p>
-              We are a group of passionate and experienced cyclists who have a
-              love for Mexico City and all the amazing sights it has to offer!
-              Our goal is to provide you with an unforgettable bike tour
-              experience that will leave you with a newfound appreciation for
-              this vibrant city.
+              <FormattedMessage id='about.description_1' />
             </p>
-
             <br />
-
             <p>
-              Our team is made up of knowledgeable and friendly guides who are
-              eager to share their love of cycling and the city with you. With
-              years of experience leading bike tours in Mexico City, we have
-              honed our skills and are well-equipped to navigate the city's
-              bustling streets and hidden gems. We take pride in providing safe,
-              informative, and enjoyable bike tours for all ages and skill
-              levels.
+              <FormattedMessage id='about.description_2' />
             </p>
-
             <br />
             <p>
               {" "}
-              Our tours allow you to experience the city in a unique way, taking
-              you off the beaten path to discover hidden gems that you might not
-              otherwise find. We offer a variety of tours that will take you to
-              places such as the Historic Center, the University City, hotspots
-              like Coyoacán, Roma, Condesa and monumental sites such as
-              Chapultepec park.
+              <FormattedMessage id='about.description_3' />
             </p>
-
             <Link
               href='/book-a-tour'
               className='btn text-white bg-primary rounded-none mt-5 w-full md:w-fit'
             >
-              Check out our tours!
+              <FormattedMessage id='about.check_tours' />
             </Link>
           </div>
         </div>
