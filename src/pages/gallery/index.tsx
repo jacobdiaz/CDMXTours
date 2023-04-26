@@ -5,6 +5,7 @@ import { Gallery } from "@/utils/galleryData";
 import Image from "next/image";
 import { useState } from "react";
 import FsLightbox from "fslightbox-react";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const GalleryPage = () => {
   const [lightboxController, setLightboxController] = useState({
@@ -20,7 +21,7 @@ const GalleryPage = () => {
   }
 
   const sources = Gallery.map((img) => img.src);
-
+  const intl = useIntl();
   return (
     <>
       <FsLightbox
@@ -30,9 +31,9 @@ const GalleryPage = () => {
         loadOnlyCurrentSource={true}
       />
       <HeroSmall
-        title='Gallery'
+        title={intl.formatMessage({ id: "gallery.hero.title" })}
         image='https://d252kj1i9nz0td.cloudfront.net/pages/Gallery/hero.jpg'
-        ariaLabel='Gallery'
+        ariaLabel={intl.formatMessage({ id: "gallery.hero.title" })}
         backgroundPosition='center 20%'
       />
 
@@ -40,21 +41,16 @@ const GalleryPage = () => {
         <div className='flex flex-col justify-center my-10'>
           <div className='grid md:grid-cols-3'>
             <div className='md:col-span-2'>
-              <SectionTitle margin='m-0'>Our Favorite Memories</SectionTitle>
+              <SectionTitle margin='m-0'>
+                <FormattedMessage id='gallery.hero.title' />
+              </SectionTitle>
               <p className='my-5'>
-                We take great pride in the experiences we offer and the memories
-                we help create. Here is a showcase of some of our favorite
-                moments from past Mexico City bike tours. We know that the best
-                memories often come from those who lived them. That's why we
-                invite you to share your own photos and stories from your bike
-                tour with us. We love seeing our tours through the eyes of our
-                guests, and your images may even be featured on our website or
-                social media pages.
+                <FormattedMessage id='gallery.meta.description' />
               </p>
             </div>
             <div className='flex flex-col items-end justify-end'>
               <CTALink href='mailto:toursenbici@gmail.com' variant='dark' grow>
-                Send Us Your Photos
+                <FormattedMessage id='gallery.send_us_photos.button' />
               </CTALink>
             </div>
           </div>
