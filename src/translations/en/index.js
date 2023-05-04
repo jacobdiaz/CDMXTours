@@ -4,6 +4,7 @@ import ContactPage from "./ContactPage.json";
 import BlogPage from "./BlogPage.json";
 import FAQ from "./FAQPage.json";
 import GalleryPage from "./GalleryPage.json";
+import Tours from "./Tours.json";
 import Nav from "./Navbar.json";
 
 export default {
@@ -13,5 +14,6 @@ export default {
   ...BlogPage,
   ...FAQ,
   ...GalleryPage,
+  ...Tours,
   ...Nav,
 };

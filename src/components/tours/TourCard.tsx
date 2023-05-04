@@ -1,6 +1,7 @@
 import { Tour } from "@/utils/toursdata";
 import Image from "next/image";
 import Link from "next/link";
+import { FormattedMessage } from "react-intl";
 import CTALink from "../actions/CTALink";
 
 const TourCard = ({
@@ -29,19 +30,33 @@ const TourCard = ({
         </Link>
         <div className='flex flex-row justify-between w-full py-5'>
           <h3 className='text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[250px]'>
-            {tourName}
+            <FormattedMessage id={tourName} />
           </h3>
           <p className='text-lg font-bold'>${price.toString()}MXN</p>
         </div>
-        <p className='mb-5'>{description}</p>
+        <p className='mb-5'>
+          <FormattedMessage id={description} />
+        </p>
       </div>
 
       <div className='font-bold'>
-        <p>Duration: {duration}</p>
-        <p>Included: {included}</p>
-        <p>Group Capacity: {cap} People</p>
+        <p>
+          <FormattedMessage
+            id='tours.duration'
+            values={{ duration: duration }}
+          />
+        </p>
+        <p>
+          <FormattedMessage
+            id='tours.included'
+            values={{ included: included }}
+          />
+        </p>
+        <p>
+          <FormattedMessage id='tours.capacity' values={{ capacity: cap }} />
+        </p>
         <CTALink variant='dark' grow={true} href={`/tour/${id}`} bottom={true}>
-          Book This Tour
+          <FormattedMessage id='tours.cta.button' />
         </CTALink>
       </div>
     </article>

@@ -1,0 +1,18 @@
+{
+  "tours.cta.button": "Más información",
+  "tours.duration": "Duración: {duration}",
+  "tours.included": "Incluidos: Bicis, Tacos, Hidratación",
+  "tours.capacity": "Capacidad: {capacity} personas",
+
+  "taco.name": "Taco Tour / Centro Histórico",
+  "taco.desc": "Ven y descubre los orígenes de la CDMX , recorriendo desde las principales calles y plazas hasta los rincones menos conocidos del Centro Histórico. Durante el recorrido comerás una gran variedad de tacos, desde tacos de pastor, birria, carnitas, suadero hasta tacos de canasta.",
+
+  "coyo.name": "Coyoacán y sus 5 pueblos",
+  "coyo.desc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
+
+  "arch.name": "Tour de Arquitectura / Roma - Condesa",
+  "arch.desc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
+
+  "urban.name": "Tour Urbano / Mansiones Porfirianas",
+  "urban.desc": "El Tour Urbano se enfoca en el crecimiento urbano que tuvo la CDMX , desde los primeros barrios del siglo XIX hasta las zonas industriales de los años 50 en la Ciudad de México."
+}

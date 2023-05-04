@@ -1,0 +1,18 @@
+{
+  "tours.cta.button": "More Information",
+  "tours.duration": "Duration: {duration}",
+  "tours.included": "Included: Bikes, Helmets, Tacos, Hydration",
+  "tours.capacity": "Group Capacity: {capacity} people",
+
+  "taco.name": "TACO BIKE TOUR / DOWNTOWN CDMX",
+  "taco.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
+
+  "coyo.name": "COYOACÁN BIKE TOUR",
+  "coyo.desc": "Coyoacán Bike Tour is more than Frida, come and ride from its wide Porfirian streets of the Carmen neighborhood to the pre-Hispanic alleys of the San Francisco quadrant and the Niño de Jesus neighborhood, without forgetting the classics such as Jardín Centenario and the Concepción Square of the colonial era in Mexico City.",
+
+  "arch.name": "ARCHITECTURAL BIKE TOUR / ROMA - CONDESA",
+  "arch.desc": "The Chic neighborhoods of Mexico City have a secret: they were designed by architects. Come and discover the urban and architectural origin of these neighbourhoods. In addition to knowing the emblematic streets and buildings, you will eat in a legendary taqueria in Condesa and you will visit the largest urban park in the country.",
+
+  "urban.name": "URBAN TOUR / FROM THE PORFIRIAN MANSIONS TO THE INDUSTRIAL NORTH",
+  "urban.desc": "The Urban Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City."
+}
