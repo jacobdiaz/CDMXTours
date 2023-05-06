@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 type SelectProps = {
+  price: number;
   maxQuantity: number;
   whatsAppLink: (q: number) => string;
 };

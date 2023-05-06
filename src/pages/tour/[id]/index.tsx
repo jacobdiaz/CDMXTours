@@ -164,6 +164,7 @@ const TourPage = () => {
           {/* Col 2 */}
           <div className='hidden md:block '>
             <DatePicker
+              price={tour?.price}
               maxQuantity={parseInt(tour.cap)}
               tourName={tour.tourName}
             />

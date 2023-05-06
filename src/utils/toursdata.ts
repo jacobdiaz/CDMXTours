@@ -4,9 +4,9 @@ export type ImageType = {
 };
 
 export type Tour = {
-  id: Number;
+  id: number;
   tourName: string;
-  price: Number;
+  price: number;
   duration: string;
   cap: string;
   description: string;

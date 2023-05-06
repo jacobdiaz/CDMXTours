@@ -7,11 +7,11 @@ import GuestSelectMobile from "./GuestSelectMobile";
 // TODO Should there be available dates or common days?
 type DatePickerProps = {
   // availableDates: Date[];
-  // prices : num
+  price: number;
   tourName: string;
   maxQuantity: number;
 };
-const DatePicker = ({ tourName, maxQuantity }: DatePickerProps) => {
+const DatePicker = ({ price, tourName, maxQuantity }: DatePickerProps) => {
   const [date, setDate] = useState(new Date());
 
   const whatsAppLink = (quantity: number) => {
@@ -37,10 +37,12 @@ const DatePicker = ({ tourName, maxQuantity }: DatePickerProps) => {
         <GuestSelectDesktop
           maxQuantity={maxQuantity}
           whatsAppLink={whatsAppLink}
+          price={price}
         />
         <GuestSelectMobile
           maxQuantity={maxQuantity}
           whatsAppLink={whatsAppLink}
+          price={price}
         />
       </div>
       <p className='text-xs opacity-50'>Availability Pending</p>
