@@ -10,9 +10,11 @@ import ReserveBar from "@/components/tours/ReserveBar";
 import DatePicker from "@/components/tours/DatePicker";
 import PageHeader from "@/components/layout/PageHeader";
 import Share from "@/components/actions/Share";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const TourPage = () => {
   const router = useRouter();
+  const Intl = useIntl();
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === parseInt(id as string));
   if (tour === undefined) return null;
@@ -21,10 +23,19 @@ const TourPage = () => {
   return (
     <main>
       <PageHeader url_path={`/tours/${tour.id}`} page_img={tour.gallery[0].src}>
-        <title>{tour.tourName}</title>
-        <meta name='description' content={tour.description} />
-        <meta property='og:title' content={tour.description} />
-        <meta property='og:description' content={tour.description} />
+        <title>{Intl.formatMessage({ id: tour?.tourName })}</title>
+        <meta
+          name='description'
+          content={Intl.formatMessage({ id: tour?.description })}
+        />
+        <meta
+          property='og:title'
+          content={Intl.formatMessage({ id: tour?.tourName })}
+        />
+        <meta
+          property='og:description'
+          content={Intl.formatMessage({ id: tour?.description })}
+        />
       </PageHeader>
       <div className='page-container'>
         <div className='w-full mt-16 md:mt-24 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
@@ -49,7 +60,9 @@ const TourPage = () => {
               View All Tours
             </Link>
             <div className='w-full flex justify-between'>
-              <h1 className='text-4xl '>{tour?.tourName}</h1>
+              <h1 className='text-4xl '>
+                <FormattedMessage id={tour?.tourName} />
+              </h1>
               <p className='hidden md:block md:text-2xl'>
                 ${tour?.price.toString()}MXN / Person
               </p>
@@ -65,48 +78,43 @@ const TourPage = () => {
         <div className='md:grid grid-cols-3 pt-10 gap-5'>
           {/* Col 1 */}
           <div className='col-span-2 md:pr-10'>
-            <TourSection title='Description'>
-              <p>{tour?.description}</p>
+            <TourSection
+              title={Intl.formatMessage({ id: "tours.section.description" })}
+            >
+              <FormattedMessage id={tour?.description} />
             </TourSection>
 
             {/* Whats Included & Group Capacity */}
             <div className='flex flex-row gap-1 md:gap-0'>
-              <TourSection title={`What's Included`} hideDivider>
-                <p>This tour includes {tour?.included}</p>
+              <TourSection
+                title={Intl.formatMessage({ id: "tours.section.included" })}
+                hideDivider
+              >
+                <p>
+                  <FormattedMessage id='tours.included' />
+                </p>
               </TourSection>
               <Divider orientation='vertical' />
-              <TourSection title='Group Capacity' hideDivider>
+              <TourSection
+                title={Intl.formatMessage({ id: "tours.section.capacity" })}
+                hideDivider
+              >
                 <p>
-                  This Tour allows for up to{" "}
-                  <span className='font-bold'> {tour?.cap} people</span>
+                  <FormattedMessage
+                    id='tours.capacity'
+                    values={{ capacity: tour?.cap }}
+                  />
                 </p>
               </TourSection>
             </div>
             <Divider />
 
             {/* Where to meet */}
-            <TourSection title='Where to Meet'>
+            <TourSection
+              title={Intl.formatMessage({ id: "tours.section.meet" })}
+            >
               <p className='mt-5'>
-                To ensure a smooth start to your tour, we will meet you at our
-                designated meeting point located at{" "}
-                <span>
-                  <Link
-                    href='https://goo.gl/maps/7r4jXBxTbU3V6RQS7'
-                    className='underline'
-                    target='_blank'
-                    rel='nofollow'
-                  >
-                    Calle Versalles 88, 06600 Mexico City, Mexico
-                  </Link>
-                </span>
-                . Our meeting point is conveniently located and easy to find, so
-                you won't have to worry about getting lost on your way to the
-                start of the tour. When you arrive, you'll be greeted by our
-                friendly and knowledgeable staff who will get you set up with
-                your bike and all the gear you need for a comfortable and safe
-                ride. From there, we'll head out on an adventure together,
-                exploring the city's vibrant neighborhoods, historical
-                landmarks, and hidden gems.
+                <FormattedMessage id='tours.meet.desc' />
               </p>
 
               {/* TODO CREATE A SEO FRIENDLY DIRECTIONS BUTTON THAT LOOKS LIKE THIS */}
@@ -118,7 +126,7 @@ const TourPage = () => {
                 className='btn bg-primary text-white py-2 rounded-none px-5 font-normal my-5 text-lg w-full md:w-fit'
               >
                 <span itemProp='Tours en Bici - Architectural Bike Tours CDMX'>
-                  Get Directions
+                  <FormattedMessage id='tours.meet.get_directions' />
                 </span>
               </a>
 
@@ -126,10 +134,14 @@ const TourPage = () => {
             </TourSection>
 
             {/* Have a Question*/}
-            <TourSection title='Have a Question?' hideDivider>
+            <TourSection
+              title={Intl.formatMessage({
+                id: "tours.section.have_a_question",
+              })}
+              hideDivider
+            >
               <p>
-                Check out our FAQs page, or send us a message! You can reach a
-                member of CDMX Tours at{" "}
+                <FormattedMessage id='tours.have_a_question.desc' />{" "}
                 <Link
                   href='tel:+52-1-55-8333-3677'
                   rel='nofollow'
@@ -144,7 +156,7 @@ const TourPage = () => {
                 href='/contact'
                 className='w-full md:w-fit'
               >
-                Contact Us
+                <FormattedMessage id='tours.contactus' />
               </CTALink>
             </TourSection>
           </div>

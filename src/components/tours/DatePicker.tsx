@@ -7,6 +7,7 @@ import GuestSelectMobile from "./GuestSelectMobile";
 // TODO Should there be available dates or common days?
 type DatePickerProps = {
   // availableDates: Date[];
+  // prices : num
   tourName: string;
   maxQuantity: number;
 };
@@ -25,6 +26,7 @@ const DatePicker = ({ tourName, maxQuantity }: DatePickerProps) => {
     setDate(nextValue);
   }
 
+  // TODO Add Prices
   // TODO Create more media points for when it starts to shrink!
   // TODO look into a11y of form?
   return (

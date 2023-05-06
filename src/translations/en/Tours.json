@@ -3,6 +3,19 @@
   "tours.duration": "Duration: {duration}",
   "tours.included": "Included: Bikes, Helmets, Tacos, Hydration",
   "tours.capacity": "Group Capacity: {capacity} people",
+  "tours.calendar_of_tours.title": "Tour Calendar for May ",
+  "tours.calendar_of_tours.desc": "Departures at 9am only with prior reservation. Limited availability",
+  "tours.current_month": "May",
+
+  "tours.section.description": "Description",
+  "tours.section.included": "What is included?",
+  "tours.section.capacity": "Group Capacity",
+  "tours.section.meet": "Where will we meet?",
+  "tours.section.have_a_question": "Have a question?",
+  "tours.have_a_question.desc": "If you have any questions about our tours, please do not hesitate to contact us. We have friendly, knowledgeable representatives to assist you. Check out our FAQ page or send us a message! You can contact us at",
+  "tours.meet.desc": "Our meeting point is conveniently located and easy to find, so you won't have to worry about getting lost on your way to the start of the tour. When you arrive, you'll be greeted by our friendly and knowledgeable staff who will get you set up with your bike and all the gear you need for a comfortable and safe ride. From there, we'll head out on an adventure together, exploring the city's vibrant neighborhoods, historical landmarks, and hidden gems.",
+  "tours.meet.get_directions": "Directions",
+  "tours.contactus": "Contact Us",
 
   "taco.name": "TACO BIKE TOUR / DOWNTOWN CDMX",
   "taco.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
@@ -14,5 +27,17 @@
   "arch.desc": "The Chic neighborhoods of Mexico City have a secret: they were designed by architects. Come and discover the urban and architectural origin of these neighbourhoods. In addition to knowing the emblematic streets and buildings, you will eat in a legendary taqueria in Condesa and you will visit the largest urban park in the country.",
 
   "urban.name": "URBAN TOUR / FROM THE PORFIRIAN MANSIONS TO THE INDUSTRIAL NORTH",
-  "urban.desc": "The Urban Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City."
+  "urban.desc": "The Urban Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City.",
+
+  "markets.name": "Markets Tour / Jamaica a San juan",
+  "markets.desc": "Mexico City has a very old commercial culture, from the street markets (tianguis) of the pre-Hispanic towns, to the markets built in the 50s. On this tour you will visit a variety of different markets for food, handicrafts, tools, antiques, etc. You will also try different foods and drinks during the tour.",
+
+  "modernarch.name": "Modern Architecture / De San Angel a C.U",
+  "modernarch.desc": "Explore the story of how the cities of the 20th century were built with concrete, steel and glass. During the tour you will visit the largest university campus in the American continent and also the first modern houses in CDMX, built for Diego Rivera and Frida Kahlo!",
+
+  "galleries.name": "Art Galleries / Polanco - San Miguel Chapultepec",
+  "galleries.desc": "CDMX is the cultural epicenter of Mexico and Latin America, come and take a tour of some of the most important art galleries while you get to know Polanco and the neighborhood with the most art galleries, San Miguel Chapultepec.",
+
+  "tlatelolco.name": "Tlatelolco / From the Mexican Market to the City of the Future",
+  "tlatelolco.desc": "Mexica migration from Aztlán reached Lake Texcoco, founding 2 cities: México-Tenochtitlán and México-Tlatelolco, the latter functioning as the commercial epicenter of Mesoamerica. Come and tour the pre-Hispanic vestiges and the modern city of the future in the Nonoalco Tlatelolco Housing Complex, which houses more than 80,000 inhabitants and has witnessed transcendental historical events."
 }

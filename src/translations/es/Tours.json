@@ -3,6 +3,19 @@
   "tours.duration": "Duración: {duration}",
   "tours.included": "Incluidos: Bicis, Tacos, Hidratación",
   "tours.capacity": "Capacidad: {capacity} personas",
+  "tours.calendar_of_tours.title": "Calendario de Tours / Mayo",
+  "tours.calendar_of_tours.desc": "Salidas 9am solo con reservación previa. Cupo límitado",
+  "tours.current_month": "Mayo",
+
+  "tours.section.description": "Descripción",
+  "tours.section.included": "Incluidos",
+  "tours.section.capacity": "Capacidad",
+  "tours.section.meet": "Dónde nos vemos",
+  "tours.section.have_a_question": "¿Tengo una pregunta?",
+  "tours.have_a_question.desc": "¡Consulte nuestra página de preguntas frecuentes o envíenos un mensaje! Puede comunicarse con un miembro de CDMX Tours en",
+  "tours.meet.desc": "Para garantizar un comienzo sin problemas de su recorrido, nos reuniremos con usted en nuestro punto de encuentro designado ubicado en Calle Versalles 88, 06600 Ciudad de México, México. Nuestro punto de encuentro está convenientemente ubicado y es fácil de encontrar, por lo que no tendrá que preocuparse por perderse de camino al inicio del recorrido. Cuando llegue, será recibido por nuestro personal amable y experto que lo preparará con su bicicleta y todo el equipo que necesita para un viaje cómodo y seguro. A partir de ahí, emprenderemos una aventura juntos, explorando los barrios vibrantes de la ciudad, los monumentos históricos y las gemas ocultas.",
+  "tours.meet.get_directions": "Direcciones",
+  "tours.contactus": "Contacto",
 
   "taco.name": "Taco Tour / Centro Histórico",
   "taco.desc": "Ven y descubre los orígenes de la CDMX , recorriendo desde las principales calles y plazas hasta los rincones menos conocidos del Centro Histórico. Durante el recorrido comerás una gran variedad de tacos, desde tacos de pastor, birria, carnitas, suadero hasta tacos de canasta.",
@@ -14,5 +27,17 @@
   "arch.desc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
 
   "urban.name": "Tour Urbano / Mansiones Porfirianas",
-  "urban.desc": "El Tour Urbano se enfoca en el crecimiento urbano que tuvo la CDMX , desde los primeros barrios del siglo XIX hasta las zonas industriales de los años 50 en la Ciudad de México."
+  "urban.desc": "El Tour Urbano se enfoca en el crecimiento urbano que tuvo la CDMX , desde los primeros barrios del siglo XIX hasta las zonas industriales de los años 50 en la Ciudad de México.",
+
+  "markets.name": "Tour de Mercados / De Jamaica a San juan",
+  "markets.desc": "La Ciudad de México tiene una cultura comercial muy antigua, desde los tianguis de los pueblos prehispánicos, hasta los mercados construídos en los años 50. En este recorrido conocerás una variedad de distintos mercados de alimentos, artesanías, herramientas, antigüedades, etc. Además probaras distintos alimentos y bebidas durante el recorrido.",
+
+  "modernarch.name": "Arquitectura Moderna / De San Angel a C.U",
+  "modernarch.desc": "La historia de como con concreto, acero y vidrio se construyeron las ciudades del siglo XX . durante el tour visitarás el campus universitario más grande del continente americano y además las primeras casas modernas en CDMX, construidas para  Diego Rivera y Frida Kahlo.",
+
+  "galleries.name": "Galerías de Arte / Polanco - San Miguel Chapultepec",
+  "galleries.desc": "La CDMX es el epicentro cultural de México y  América Latina, ven a dar un recorrido por algunas de las más importantes galerías de arte mientras conoces Polanco y la colonia con más galerías de arte, la San Miguel Chapultepec",
+
+  "tlatelolco.name": "Tlatelolco / Del Mercado Mexica a la Ciudad del Futuro",
+  "tlatelolco.desc": "La migración mexica desde aztlán llegó al lago de Texcoco fundando 2 ciudades: México-Tenochtitlán y México-Tlatelolco, esta última funcionando como epicentro comercial de mesoámerica. Ven a recorrer los vestigios prehispánicos y la moderna ciudad del futuro el conjunto Habitacional Nonoalco Tlatelolco, el cual alberga más de 80mil habitantes y ha sido testigo de sucesos históricos trascendental"
 }

@@ -18,6 +18,7 @@ export type Tour = {
 };
 
 // TODO Turn this into an API Endpoint?
+// TODO Instead of explicityly stating the image paths, we should look into grabbing the folder and dynamically generating the paths
 export const Tours: Tour[] = [
   {
     id: 1,
@@ -132,7 +133,7 @@ export const Tours: Tour[] = [
     cap: "10",
     description: "urban.desc",
     included: "Bikes, Helmets, Tacos, Hydration ",
-    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_taco.jpg",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_urb.jpg",
     imgAlt: "Image of Urban Bike Tour in Mexico City",
     meetingAddr:
       "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
@@ -155,6 +156,147 @@ export const Tours: Tour[] = [
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_5.jpg",
+        alt: "",
+      },
+    ],
+  },
+  {
+    id: 5,
+    tourName: "markets.name",
+    price: 550,
+    duration: "5hrs - 15km",
+    cap: "12",
+    description: "markets.desc",
+    included: "Bikes, Helmets, Tacos, Hydration ",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_mercados.png",
+    imgAlt: "Image of Market Bike Tour in Mexico City",
+    meetingAddr:
+      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets1.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets2.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets3.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets4.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets5.jpg",
+        alt: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    tourName: "modernarch.name",
+    price: 450,
+    duration: "5hrs - 10km",
+    cap: "12",
+    description: "modernarch.desc",
+    included: "Bikes, Helmets, Tacos, Hydration ",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_modArch.jpg",
+    imgAlt:
+      "Image of Modern Architecture Tour, San Angel a C.U. in Mexico City",
+    meetingAddr:
+      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch1.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch2.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch3.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch4.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch5.jpg",
+        alt: "",
+      },
+    ],
+  },
+  {
+    id: 7,
+    tourName: "galleries.name",
+    price: 550,
+    duration: "4hrs - 10km",
+    cap: "12",
+    description: "galleries.desc",
+    included: "Bikes, Helmets, Tacos, Hydration ",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_gallery.jpg",
+    imgAlt: "Image of Gallery Tour in Mexico City",
+    meetingAddr:
+      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_1.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_2.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_3.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_5.jpg",
+        alt: "",
+      },
+    ],
+  },
+  {
+    id: 8,
+    tourName: "tlatelolco.name",
+    price: 550,
+    duration: "4hrs - 10km",
+    cap: "15",
+    description: "tlatelolco.desc",
+    included: "Bikes, Helmets, Tacos, Hydration ",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_tlatelolco.jpg",
+    imgAlt: "Image of Tlatelolco Tour in Mexico City",
+    meetingAddr:
+      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco2.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco1.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco3.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco4.jpg",
+        alt: "",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco5.jpg",
         alt: "",
       },
     ],
