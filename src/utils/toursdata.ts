@@ -35,23 +35,23 @@ export const Tours: Tour[] = [
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_1.jpg",
-        alt: "",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg",
-        alt: "",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3.jpg",
-        alt: "",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg%09	",
-        alt: "",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5.jpg",
-        alt: "",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
     ],
   },
@@ -140,23 +140,23 @@ export const Tours: Tour[] = [
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_1.jpg",
-        alt: "",
+        alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_2.jpg",
-        alt: "",
+        alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_3.jpg",
-        alt: "",
+        alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg",
-        alt: "",
+        alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_5.jpg",
-        alt: "",
+        alt: "Photo from the Urban Bike Tour CDMX",
       },
     ],
   },
@@ -175,23 +175,23 @@ export const Tours: Tour[] = [
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets1.jpg",
-        alt: "",
+        alt: "Photo from Mexico City markets bike tour",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets2.jpg",
-        alt: "",
+        alt: "Photo from Mexico City markets bike tour",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets3.jpg",
-        alt: "",
+        alt: "Photo from Mexico City markets bike tour",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets4.jpg",
-        alt: "",
+        alt: "Photo from Mexico City markets bike tour",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets5.jpg",
-        alt: "",
+        alt: "Photo from Mexico City markets bike tour",
       },
     ],
   },
@@ -245,24 +245,24 @@ export const Tours: Tour[] = [
       "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_1.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_1.jpg",
+        alt: "Photo from the art galleries bike tour, Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_2.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_2.jpg",
+        alt: "Photo from the art galleries bike tour, Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_3.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_3.jpg",
+        alt: "Photo from the art galleries bike tour, Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_4.jpg",
+        alt: "Photo from the art galleries bike tour, Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_5.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_5.jpg",
+        alt: "Photo from the art galleries bike tour, Mexico City",
       },
     ],
   },
@@ -281,23 +281,23 @@ export const Tours: Tour[] = [
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco2.jpg",
-        alt: "",
+        alt: "Photo from Tlatelolco bike tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco1.jpg",
-        alt: "",
+        alt: "Photo from Tlatelolco bike tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco3.jpg",
-        alt: "",
+        alt: "Photo from Tlatelolco bike tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco4.jpg",
-        alt: "",
+        alt: "Photo from Tlatelolco bike tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco5.jpg",
-        alt: "",
+        alt: "Photo from Tlatelolco bike tour in Mexico City",
       },
     ],
   },
