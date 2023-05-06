@@ -3,6 +3,7 @@ import "react-calendar/dist/Calendar.css";
 import React, { useState } from "react";
 import GuestSelectDesktop from "./GuestSelectDesktop";
 import GuestSelectMobile from "./GuestSelectMobile";
+import { useIntl } from "react-intl";
 
 // TODO Should there be available dates or common days?
 type DatePickerProps = {
@@ -13,12 +14,16 @@ type DatePickerProps = {
 };
 const DatePicker = ({ price, tourName, maxQuantity }: DatePickerProps) => {
   const [date, setDate] = useState(new Date());
+  const Intl = useIntl();
 
-  const whatsAppLink = (quantity: number) => {
-    const msg = `Hello Tours en Bici CDMX! \nI would like to schedule a ${tourName} on ${date.toLocaleString(
-      "en-US",
-      { weekday: "long", day: "numeric", month: "long" }
-    )} for ${quantity} guest(s).`;
+  const whatsAppLink = (quantity: number, totalPrice: number) => {
+    const msg = `Hello Tours en Bici CDMX! \nI would like to book\nTour: ${Intl.formatMessage(
+      { id: tourName }
+    )}\nDate: ${date.toLocaleString("en-US", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+    })} \nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
 
     return `https://wa.me/5215583333677?text=${encodeURI(msg)}`;
   };

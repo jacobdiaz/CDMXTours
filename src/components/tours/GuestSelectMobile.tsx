@@ -5,7 +5,7 @@ import Divider from "../layout/Divider";
 type SelectProps = {
   price: number;
   maxQuantity: number;
-  whatsAppLink: (q: number) => string;
+  whatsAppLink: (quantity: number, totalPrice: number) => string;
 };
 
 const GuestSelectMobile = ({
@@ -51,7 +51,7 @@ const GuestSelectMobile = ({
         </p>
       </div>
       <Link
-        href={whatsAppLink(quantity)}
+        href={whatsAppLink(quantity, totalPrice)}
         target='_blank'
         className='btn rounded-none bg-black w-full my-5'
       >

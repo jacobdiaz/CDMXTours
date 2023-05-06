@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 type SelectProps = {
   price: number;
   maxQuantity: number;
-  whatsAppLink: (q: number) => string;
+  whatsAppLink: (quantity: number, totalPrice: number) => string;
 };
 
 const GuestSelectDesktop = ({
@@ -42,7 +42,7 @@ const GuestSelectDesktop = ({
       </div>
 
       <Link
-        href={whatsAppLink(quantity)}
+        href={whatsAppLink(quantity, totalPrice)}
         target='_blank'
         className='btn rounded-none bg-black w-full my-5'
       >
