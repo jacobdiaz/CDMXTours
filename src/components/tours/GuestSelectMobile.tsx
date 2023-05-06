@@ -1,5 +1,6 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Divider from "../layout/Divider";
 
 type SelectProps = {
   price: number;
@@ -7,8 +8,17 @@ type SelectProps = {
   whatsAppLink: (q: number) => string;
 };
 
-const GuestSelectMobile = ({ maxQuantity, whatsAppLink }: SelectProps) => {
-  const [quantity, setQuantity] = useState(1);
+const GuestSelectMobile = ({
+  price,
+  whatsAppLink,
+  maxQuantity,
+}: SelectProps) => {
+  const [quantity, setQuantity] = useState<number>(1);
+  const [totalPrice, setTourPrice] = useState<number>(price || 0);
+
+  useEffect(() => {
+    setTourPrice(price * quantity);
+  }, [quantity]);
 
   return (
     <div className='flex flex-col md:hidden items-center h-full w-full'>
@@ -32,6 +42,13 @@ const GuestSelectMobile = ({ maxQuantity, whatsAppLink }: SelectProps) => {
         >
           +
         </button>
+      </div>
+      <Divider />
+      <div className='flex flex-row w-full justify-between'>
+        <p>Total</p>
+        <p className='font-bold font-fjalla text-base'>
+          ${totalPrice?.toLocaleString()} <span>MXN</span>
+        </p>
       </div>
       <Link
         href={whatsAppLink(quantity)}

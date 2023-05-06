@@ -7,7 +7,11 @@ type SelectProps = {
   whatsAppLink: (q: number) => string;
 };
 
-const GuestSelect = ({ price, whatsAppLink, maxQuantity }: SelectProps) => {
+const GuestSelectDesktop = ({
+  price,
+  whatsAppLink,
+  maxQuantity,
+}: SelectProps) => {
   const [quantity, setQuantity] = useState<number>(1);
   const [totalPrice, setTourPrice] = useState<number>(price);
 
@@ -32,7 +36,7 @@ const GuestSelect = ({ price, whatsAppLink, maxQuantity }: SelectProps) => {
         <div className='flex flex-col items-end'>
           <p>Total</p>
           <p className='font-bold font-fjalla text-base'>
-            ${totalPrice?.toString()} <span>MXN</span>
+            ${totalPrice?.toLocaleString()} <span>MXN</span>
           </p>
         </div>
       </div>
@@ -48,4 +52,4 @@ const GuestSelect = ({ price, whatsAppLink, maxQuantity }: SelectProps) => {
   );
 };
 
-export default GuestSelect;
+export default GuestSelectDesktop;
