@@ -18,6 +18,7 @@ const ReserveBar = ({ tourData }: { tourData: Tour }) => {
           </div>
 
           <DatePicker
+            availability={tourData.availability}
             price={tourData.price}
             maxQuantity={parseInt(tourData.cap)}
             tourName={tourData.tourName}

@@ -1,18 +1,21 @@
 import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
 import React, { useState } from "react";
 import GuestSelectDesktop from "./GuestSelectDesktop";
 import GuestSelectMobile from "./GuestSelectMobile";
 import { useIntl } from "react-intl";
 
-// TODO Should there be available dates or common days?
 type DatePickerProps = {
-  // availableDates: Date[];
+  availability: string;
   price: number;
   tourName: string;
   maxQuantity: number;
 };
-const DatePicker = ({ price, tourName, maxQuantity }: DatePickerProps) => {
+const DatePicker = ({
+  availability,
+  price,
+  tourName,
+  maxQuantity,
+}: DatePickerProps) => {
   const [date, setDate] = useState(new Date());
   const Intl = useIntl();
 
@@ -31,13 +34,39 @@ const DatePicker = ({ price, tourName, maxQuantity }: DatePickerProps) => {
     setDate(nextValue);
   }
 
-  // TODO Add Prices
+  function setDisabledDates({ date, view }: { date: Date; view: string }) {
+    const day = date.getDay();
+    if (availability === "Weekday") {
+      return view === "month" && (day === 6 || day === 0); // Disable weekends
+    } else if (availability === "Weekend") {
+      return view === "month" && day >= 1 && day <= 5; // Disable weekdays
+    } else {
+      return date === new Date();
+    }
+  }
+
+  const availabilityText = () => {
+    if (availability === "Weekday") {
+      return "Tour is available on weekdays only";
+    } else if (availability === "Weekend") {
+      return "Tour is available on weekdays only";
+    } else {
+      return "By Reservation Only";
+    }
+  };
+
+  // TODO Add Translations
   // TODO Create more media points for when it starts to shrink!
-  // TODO look into a11y of form?
   return (
     <div className='w-full md:shadow-xl md:p-10 rounded-lg sticky top-56'>
       <h5 className='text-lg font-bold'>Select A Tour Date</h5>
-      <Calendar onChange={onCalendarChange} value={date} className='py-5' />
+      <p className='text-xs text-gray-500'>{availabilityText()}</p>
+      <Calendar
+        onChange={onCalendarChange}
+        value={date}
+        className='py-5'
+        tileDisabled={setDisabledDates}
+      />
       <div className='flex flex-row w-full justify-between'>
         <GuestSelectDesktop
           maxQuantity={maxQuantity}

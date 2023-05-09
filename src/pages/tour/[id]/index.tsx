@@ -18,8 +18,6 @@ const TourPage = () => {
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === parseInt(id as string));
   if (tour === undefined) return null;
-  // TODO Add a share button to tour
-  // TODO Add Keywords to each Tour
   return (
     <main>
       <PageHeader url_path={`/tours/${tour.id}`} page_img={tour.gallery[0].src}>
@@ -167,6 +165,7 @@ const TourPage = () => {
               price={tour?.price}
               maxQuantity={parseInt(tour.cap)}
               tourName={tour.tourName}
+              availability={tour.availability}
             />
           </div>
         </div>

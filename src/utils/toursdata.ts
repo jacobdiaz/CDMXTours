@@ -5,6 +5,7 @@ export type ImageType = {
 
 export type Tour = {
   id: number;
+  availability: "Weekend" | "Weekday" | "Reservation";
   tourName: string;
   price: number;
   duration: string;
@@ -22,6 +23,7 @@ export type Tour = {
 export const Tours: Tour[] = [
   {
     id: 1,
+    availability: "Weekend",
     tourName: "taco.name", // Translation ID in /translations/Tours.json
     price: 650,
     duration: "4hrs - 15km",
@@ -57,6 +59,7 @@ export const Tours: Tour[] = [
   },
   {
     id: 2,
+    availability: "Weekday",
     tourName: "coyo.name",
     price: 550,
     duration: "4hrs - 15km",
@@ -92,6 +95,7 @@ export const Tours: Tour[] = [
   },
   {
     id: 3,
+    availability: "Weekend",
     tourName: "arch.name",
     price: 650,
     duration: "4hrs -20km",
@@ -128,6 +132,7 @@ export const Tours: Tour[] = [
   {
     id: 4,
     tourName: "urban.name",
+    availability: "Reservation",
     price: 650,
     duration: "4hrs - 25km",
     cap: "10",
@@ -162,6 +167,7 @@ export const Tours: Tour[] = [
   },
   {
     id: 5,
+    availability: "Reservation",
     tourName: "markets.name",
     price: 550,
     duration: "5hrs - 15km",
@@ -197,6 +203,7 @@ export const Tours: Tour[] = [
   },
   {
     id: 6,
+    availability: "Reservation",
     tourName: "modernarch.name",
     price: 450,
     duration: "5hrs - 10km",
@@ -233,6 +240,7 @@ export const Tours: Tour[] = [
   },
   {
     id: 7,
+    availability: "Reservation",
     tourName: "galleries.name",
     price: 550,
     duration: "4hrs - 10km",
@@ -268,6 +276,7 @@ export const Tours: Tour[] = [
   },
   {
     id: 8,
+    availability: "Reservation",
     tourName: "tlatelolco.name",
     price: 550,
     duration: "4hrs - 10km",
