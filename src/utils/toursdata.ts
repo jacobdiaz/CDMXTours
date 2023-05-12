@@ -1,3 +1,5 @@
+import googleMapReact from "google-map-react";
+
 export type ImageType = {
   src: string;
   alt: string;
@@ -15,6 +17,8 @@ export type Tour = {
   imgSrc: string;
   imgAlt: string;
   meetingAddr: string;
+  googleMapsLink: string;
+  coords: googleMapReact.Coords;
   gallery: ImageType[];
 };
 
@@ -32,8 +36,9 @@ export const Tours: Tour[] = [
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_taco.jpg",
     imgAlt: "Image of Taco Bike Tour of Downtown Mexico City",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_1.jpg",
@@ -61,15 +66,16 @@ export const Tours: Tour[] = [
     id: 2,
     availability: "Weekday",
     tourName: "coyo.name",
-    price: 550,
-    duration: "4hrs - 15km",
+    price: 850,
+    duration: "4hrs - 18km",
     cap: "15",
     description: "coyo.desc",
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_coyo.jpg",
     imgAlt: "Image of Coyoacán Bike Tour in CDMX",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
+    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
+    coords: { lat: 19.35203, lng: -99.17984 },
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_1.jpg",
@@ -104,8 +110,9 @@ export const Tours: Tour[] = [
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_arch.jpg",
     imgAlt: "Image of Architectural Bike Tour in Mexico City",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg",
@@ -140,8 +147,9 @@ export const Tours: Tour[] = [
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_urb.jpg",
     imgAlt: "Image of Urban Bike Tour in Mexico City",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_1.jpg",
@@ -176,8 +184,9 @@ export const Tours: Tour[] = [
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_mercados.png",
     imgAlt: "Image of Market Bike Tour in Mexico City",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets1.jpg",
@@ -213,8 +222,9 @@ export const Tours: Tour[] = [
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_modArch.jpg",
     imgAlt:
       "Image of Modern Architecture Tour, San Angel a C.U. in Mexico City",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch1.jpg",
@@ -249,8 +259,9 @@ export const Tours: Tour[] = [
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_gallery.jpg",
     imgAlt: "Image of Gallery Tour in Mexico City",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_1.jpg",
@@ -285,8 +296,9 @@ export const Tours: Tour[] = [
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_tlatelolco.jpg",
     imgAlt: "Image of Tlatelolco Tour in Mexico City",
-    meetingAddr:
-      "C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX, Mexico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco2.jpg",

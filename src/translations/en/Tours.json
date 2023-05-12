@@ -13,15 +13,15 @@
   "tours.section.meet": "Where will we meet?",
   "tours.section.have_a_question": "Have a question?",
   "tours.have_a_question.desc": "If you have any questions about our tours, please do not hesitate to contact us. We have friendly, knowledgeable representatives to assist you. Check out our FAQ page or send us a message! You can contact us at",
-  "tours.meet.desc": "Our meeting point is conveniently located and easy to find, so you won't have to worry about getting lost on your way to the start of the tour. When you arrive, you'll be greeted by our friendly and knowledgeable staff who will get you set up with your bike and all the gear you need for a comfortable and safe ride. From there, we'll head out on an adventure together, exploring the city's vibrant neighborhoods, historical landmarks, and hidden gems.",
+  "tours.meet.desc": "To ensure a smooth start to your tour, we will meet you at our designated meeting point located at {location}  . Our meeting point is conveniently located and easy to find, so you won't have to worry about getting lost on your way to the start of the tour. When you arrive, you'll be greeted by our friendly and knowledgeable staff who will get you set up with your bike and all the gear you need for a comfortable and safe ride. From there, we'll head out on an adventure together, exploring the city's vibrant neighborhoods, historical landmarks, and hidden gems.",
   "tours.meet.get_directions": "Directions",
   "tours.contactus": "Contact Us",
 
   "taco.name": "TACO BIKE TOUR / DOWNTOWN CDMX",
   "taco.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
 
-  "coyo.name": "COYOACÁN BIKE TOUR",
-  "coyo.desc": "Coyoacán Bike Tour is more than Frida, come and ride from its wide Porfirian streets of the Carmen neighborhood to the pre-Hispanic alleys of the San Francisco quadrant and the Niño de Jesus neighborhood, without forgetting the classics such as Jardín Centenario and the Concepción Square of the colonial era in Mexico City.",
+  "coyo.name": "Mexico City South Side",
+  "coyo.desc": "<p>Bike throught the spanish 16th century towns (San Angel & Coyoacán) and the modernist campus of the National University. In this tour you will visit this neighborhoods/ places:{br} • San Ángel Town{br} • Frida Kahlo & Diego Rivera Studio{br} • National University Campus{br} • Tacos and Hydratation stop{br} • Coyoacán Town{br} • Frida Kahlo Blue House (outside)</p>",
 
   "arch.name": "ARCHITECTURAL BIKE TOUR / ROMA - CONDESA",
   "arch.desc": "The Chic neighborhoods of Mexico City have a secret: they were designed by architects. Come and discover the urban and architectural origin of these neighbourhoods. In addition to knowing the emblematic streets and buildings, you will eat in a legendary taqueria in Condesa and you will visit the largest urban park in the country.",

@@ -16,7 +16,7 @@ const TourCard = ({
   imgAlt,
 }: Tour) => (
   <li className='mb-10 flex flex-col justify-between min-h-[600px] w-full mr-0 md:mr-0 md:w-[24rem]'>
-    <article>
+    <article className='h-full flex flex-col justify-between'>
       <div>
         <Link href={`/tour/${id}`}>
           <Image
@@ -29,14 +29,19 @@ const TourCard = ({
           />
         </Link>
         <div className='flex flex-row justify-between w-full py-5'>
-          <h3 className='text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[250px]'>
+          <h3 className='text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[250px] min-h-[60px]'>
             <FormattedMessage id={tourName} />
           </h3>
           <p className='text-lg font-bold'>${price.toString()}MXN</p>
         </div>
-        <p className='mb-5'>
-          <FormattedMessage id={description} />
-        </p>
+
+        <FormattedMessage
+          id={description}
+          values={{
+            p: (...chunks) => <p>{chunks}</p>,
+            br: <br />,
+          }}
+        />
       </div>
 
       <div className='font-bold'>
@@ -55,7 +60,13 @@ const TourCard = ({
         <p>
           <FormattedMessage id='tours.capacity' values={{ capacity: cap }} />
         </p>
-        <CTALink variant='dark' grow={true} href={`/tour/${id}`} bottom={true}>
+        <CTALink
+          variant='dark'
+          grow={true}
+          className='w-full'
+          href={`/tour/${id}`}
+          bottom={true}
+        >
           <FormattedMessage id='tours.cta.button' />
         </CTALink>
       </div>

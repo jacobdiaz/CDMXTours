@@ -1,10 +1,20 @@
 import GoogleMapReact from "google-map-react";
 import Link from "next/link";
 
-const LocationPin = ({ lat, lng }: { lat: number; lng: number }) => (
-  <Link href='https://goo.gl/maps/dHSVvem2Y6D4KMrA9' target='_blank'>
+const LocationPin = ({
+  lat,
+  lng,
+  address,
+  googleMapsLink = "https://goo.gl/maps/dHSVvem2Y6D4KMrA9",
+}: {
+  lat: number;
+  lng: number;
+  address: string;
+  googleMapsLink: string;
+}) => (
+  <Link href={googleMapsLink} target='_blank'>
     <div
-      data-tip='Calle Versalles 88, 06600 Mexico City, Mexico'
+      data-tip={address}
       className='tooltip tooltip-open absolute top-0 left-{{lng}}% transform -translate-x-1/2 -translate-y-full flex justify-center'
     >
       <div className='w-20 h-20 rounded-full bg-gray-500 bg-opacity-50 relative'>
@@ -25,23 +35,32 @@ const LocationPin = ({ lat, lng }: { lat: number; lng: number }) => (
   </Link>
 );
 
-const Map = () => {
-  const location = {
-    address: "Calle Versalles 88, 06600 Mexico City, Mexico",
-    lat: 19.42755,
-    lng: -99.15569,
-  };
+type MapProps = {
+  address: string;
+  googleMapsLink: string;
+  coords: GoogleMapReact.Coords;
+};
 
+const Map = ({
+  address,
+  googleMapsLink,
+  coords = { lat: 19.42755, lng: -99.15569 },
+}: MapProps) => {
   return (
     <div className='h-banner mb-10'>
       <GoogleMapReact
         bootstrapURLKeys={{
           key: `${process.env.GOOGLE_MAPS_API_KEY}`,
         }}
-        defaultCenter={location}
+        defaultCenter={coords}
         defaultZoom={15}
       >
-        <LocationPin lat={location.lat} lng={location.lng} />
+        <LocationPin
+          lat={coords.lat}
+          lng={coords.lng}
+          address={address}
+          googleMapsLink={googleMapsLink}
+        />
       </GoogleMapReact>
     </div>
   );

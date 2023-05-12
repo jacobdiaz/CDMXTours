@@ -18,6 +18,9 @@ const TourPage = () => {
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === parseInt(id as string));
   if (tour === undefined) return null;
+
+  console.log(tour.googleMapsLink);
+
   return (
     <main>
       <PageHeader url_path={`/tours/${tour.id}`} page_img={tour.gallery[0].src}>
@@ -79,7 +82,13 @@ const TourPage = () => {
             <TourSection
               title={Intl.formatMessage({ id: "tours.section.description" })}
             >
-              <FormattedMessage id={tour?.description} />
+              <FormattedMessage
+                id={tour?.description}
+                values={{
+                  p: (...chunks) => <p>{chunks}</p>,
+                  br: <br />,
+                }}
+              />
             </TourSection>
 
             {/* Whats Included & Group Capacity */}
@@ -112,12 +121,27 @@ const TourPage = () => {
               title={Intl.formatMessage({ id: "tours.section.meet" })}
             >
               <p className='mt-5'>
-                <FormattedMessage id='tours.meet.desc' />
+                <FormattedMessage
+                  id='tours.meet.desc'
+                  values={{
+                    location: (
+                      <span>
+                        <Link
+                          href={tour.googleMapsLink}
+                          className='underline'
+                          target='_blank'
+                          rel='nofollow'
+                        >
+                          {tour.meetingAddr}
+                        </Link>
+                      </span>
+                    ),
+                  }}
+                />
               </p>
 
-              {/* TODO CREATE A SEO FRIENDLY DIRECTIONS BUTTON THAT LOOKS LIKE THIS */}
-              <a
-                href='https://goo.gl/maps/qyY8KLrSGXXNxEoe7'
+              <Link
+                href={tour.googleMapsLink}
                 target='_blank'
                 rel='noopener noreferrer'
                 itemProp='url'
@@ -126,9 +150,13 @@ const TourPage = () => {
                 <span itemProp='Tours en Bici - Architectural Bike Tours CDMX'>
                   <FormattedMessage id='tours.meet.get_directions' />
                 </span>
-              </a>
+              </Link>
 
-              <Map />
+              <Map
+                address={tour.meetingAddr}
+                googleMapsLink={tour.googleMapsLink}
+                coords={tour.coords}
+              />
             </TourSection>
 
             {/* Have a Question*/}
