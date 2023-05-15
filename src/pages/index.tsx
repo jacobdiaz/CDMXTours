@@ -17,7 +17,6 @@ type HomeProps = {
 export default function Home({ dir }: HomeProps) {
   const intl = useIntl();
   const { locale: locales } = useRouter();
-
   const title = intl.formatMessage({ id: "home.head.title" });
   const description = intl.formatMessage({
     id: "home.head.meta.description",

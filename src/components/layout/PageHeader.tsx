@@ -3,19 +3,32 @@ import Head from "next/head";
 type HeaderProps = {
   children?: React.ReactNode;
   page_img?: string;
+  type?: string;
   keywords?: string;
   url_path?: string;
+  socialTitle?: string;
+  socialDescription?: string;
 };
 
 const PageHeader = ({
   children,
+  type = "website",
   page_img = "https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg",
   keywords = "CDMX Bike Tours, Mexico City bike tours, Mexico City Tours",
   url_path = "/",
+  socialTitle = "CDMX Bike Tours",
+  socialDescription = "Discover Mexico City by bike with our guided tours. We offer a variety of tours to suit your needs. Book your tour today!",
 }: HeaderProps) => (
   <Head>
-    <meta property='og:image' content={`${page_img}`} />
+    <meta property='og:image' content={page_img} />
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
     <meta name='keywords' content={keywords} />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='og:type' content={type} />
+    <meta name='twitter:title' content={socialTitle} />
+    <meta name='twitter:description' content={socialDescription} />
+    <meta name='twitter:image' content={page_img} />
     <link rel='icon' href='/favicon.ico' />
     <link
       rel='alternate'

@@ -122,23 +122,23 @@ export const Tours: Tour[] = [
     coords: { lat: 19.35203, lng: -99.17984 },
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_1.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg",
         alt: "",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_2.jpg",
         alt: "",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_3.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_3.jpg",
         alt: "",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_4.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_4.jpg",
         alt: "",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_5.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
         alt: "",
       },
     ],

@@ -19,11 +19,15 @@ const TourPage = () => {
   const tour = Tours.find((t) => t.id === (id as string));
   if (tour === undefined) return null;
 
-  console.log(tour.googleMapsLink);
-
   return (
     <main>
-      <PageHeader url_path={`/tours/${tour.id}`} page_img={tour.gallery[0].src}>
+      <PageHeader
+        url_path={`/tours/${tour.id}`}
+        page_img={tour.imgSrc}
+        socialTitle={tour.tourName}
+        socialDescription={tour.description}
+        content='article'
+      >
         <title>{Intl.formatMessage({ id: tour?.tourName })}</title>
         <meta
           name='description'
