@@ -23,6 +23,8 @@ const PageHeader = ({
     <meta property='og:image' content={page_img} />
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='630' />
+    <meta property='og:image:secure_url' content={page_img} />
+    <meta property='og:image:type' content='image/jpeg' />
     <meta name='keywords' content={keywords} />
     <meta name='twitter:card' content='summary_large_image' />
     <meta property='og:type' content={type} />

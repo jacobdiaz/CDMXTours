@@ -28,7 +28,6 @@ const TourPage = () => {
         socialDescription={tour.description}
         type='article'
       >
-        <title>{Intl.formatMessage({ id: tour?.tourName })}</title>
         <meta
           name='description'
           content={Intl.formatMessage({ id: tour?.description })}
