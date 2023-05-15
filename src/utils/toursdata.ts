@@ -6,8 +6,12 @@ export type ImageType = {
 };
 
 export type Tour = {
-  id: number;
-  availability: "Weekend" | "Weekday" | "Reservation";
+  id: string;
+  locales: string[];
+  availability: {
+    type: "Weekend" | "Weekday" | "Reservation";
+    time?: string;
+  };
   tourName: string;
   price: number;
   duration: string;
@@ -26,8 +30,47 @@ export type Tour = {
 // TODO Instead of explicityly stating the image paths, we should look into grabbing the folder and dynamically generating the paths
 export const Tours: Tour[] = [
   {
-    id: 1,
-    availability: "Weekend",
+    id: "cdmx-essentials-tour",
+    locales: ["en"],
+    availability: { type: "Weekend", time: "10:00am - 2:00pm" },
+    tourName: "essentials.name", // Translation ID in /translations/Tours.json
+    price: 950,
+    duration: "4hrs - 15km",
+    cap: "10",
+    description: "essentials.desc",
+    included: "Bikes, Helmets, Tacos, Hydration",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_essentials.jpg",
+    imgAlt: "Image of Essential Bike Tour of Downtown Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_1.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg%09	",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+    ],
+  },
+  {
+    id: "cdmx-taco-tour",
+    locales: ["en", "es"],
+    availability: { type: "Weekend", time: "10:00am - 2:00pm" },
     tourName: "taco.name", // Translation ID in /translations/Tours.json
     price: 650,
     duration: "4hrs - 15km",
@@ -63,8 +106,9 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: 2,
-    availability: "Weekday",
+    id: "cdmx-coyoacan-tour",
+    locales: ["en", "es"],
+    availability: { type: "Weekday", time: "10:00am - 2:00pm" },
     tourName: "coyo.name",
     price: 850,
     duration: "4hrs - 18km",
@@ -100,10 +144,11 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: 3,
-    availability: "Weekend",
+    id: "cdmx-architectural-tour",
+    locales: ["en", "es"],
+    availability: { type: "Weekend" },
     tourName: "arch.name",
-    price: 650,
+    price: 500,
     duration: "4hrs -20km",
     cap: "15",
     description: "arch.desc",
@@ -116,31 +161,32 @@ export const Tours: Tour[] = [
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg",
-        alt: "",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
-        alt: "",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
-        alt: "",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
-        alt: "",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
-        alt: "",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
     ],
   },
   {
-    id: 4,
+    id: "cdmx-urban-tour",
     tourName: "urban.name",
-    availability: "Reservation",
-    price: 650,
+    locales: ["es", "en"],
+    availability: { type: "Reservation" },
+    price: 550,
     duration: "4hrs - 25km",
     cap: "10",
     description: "urban.desc",
@@ -174,8 +220,9 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: 5,
-    availability: "Reservation",
+    id: "cdmx-markets-tour",
+    locales: ["en", "es"],
+    availability: { type: "Reservation" },
     tourName: "markets.name",
     price: 550,
     duration: "5hrs - 15km",
@@ -211,8 +258,9 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: 6,
-    availability: "Reservation",
+    id: "cdmx-modern-architecture-tour",
+    locales: ["es"],
+    availability: { type: "Reservation" },
     tourName: "modernarch.name",
     price: 450,
     duration: "5hrs - 10km",
@@ -249,8 +297,9 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: 7,
-    availability: "Reservation",
+    id: "cdmx-gallery-tour",
+    locales: ["es"],
+    availability: { type: "Reservation" },
     tourName: "galleries.name",
     price: 550,
     duration: "4hrs - 10km",
@@ -286,8 +335,9 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: 8,
-    availability: "Reservation",
+    id: "cdmx-tlatelolco-tour",
+    locales: ["es"],
+    availability: { type: "Reservation" },
     tourName: "tlatelolco.name",
     price: 550,
     duration: "4hrs - 10km",

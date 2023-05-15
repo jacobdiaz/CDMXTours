@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import DirectionSections from "@/components/sections/DirectionSections";
 import dynamic from "next/dynamic";
 import PageHeader from "@/components/layout/PageHeader";
+import TourTypeSection from "@/components/sections/TourTypeSection";
 const Banner = dynamic(() => import("@/components/layout/Banner"));
 
 type HomeProps = {
@@ -33,7 +34,9 @@ export default function Home({ dir }: HomeProps) {
       <HeroSection />
       <AboutUsSection />
       <div className='page-container'>
+        {/* <TourTypeSection /> */}
         <TourSection />
+
         <ContactSection />
         {locales === "es" && (
           <Banner

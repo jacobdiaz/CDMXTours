@@ -16,7 +16,7 @@ const TourPage = () => {
   const router = useRouter();
   const Intl = useIntl();
   const { id } = router.query;
-  const tour = Tours.find((t) => t.id === parseInt(id as string));
+  const tour = Tours.find((t) => t.id === (id as string));
   if (tour === undefined) return null;
 
   console.log(tour.googleMapsLink);
@@ -190,10 +190,10 @@ const TourPage = () => {
           {/* Col 2 */}
           <div className='hidden md:block '>
             <DatePicker
-              price={tour?.price}
-              maxQuantity={parseInt(tour.cap)}
-              tourName={tour.tourName}
               availability={tour.availability}
+              price={tour.price}
+              tourName={tour.tourName}
+              cap={parseInt(tour.cap)}
             />
           </div>
         </div>

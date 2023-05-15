@@ -20,16 +20,18 @@ const ReserveBar = ({ tourData }: { tourData: Tour }) => {
           <DatePicker
             availability={tourData.availability}
             price={tourData.price}
-            maxQuantity={parseInt(tourData.cap)}
+            cap={parseInt(tourData.cap)}
             tourName={tourData.tourName}
           />
         </label>
       </label>
       <div className='bg-white h-20 fixed bottom-0 w-full flex flex-row justify-between items-center px-7 md:hidden border-t-2'>
         <div>
-          <p className='text-lg font-bold'>
-            ${tourData.price.toString()} MXN / Person
-          </p>
+          <div>
+            <p className='text-lg font-bold'>
+              ${tourData.price.toString()} MXN / Person
+            </p>
+          </div>
           <p className='text-xs opacity-50'>Availability Pending</p>
         </div>
         <label

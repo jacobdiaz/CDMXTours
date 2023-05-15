@@ -10,7 +10,7 @@ type SelectProps = {
 const GuestSelectDesktop = ({
   price,
   whatsAppLink,
-  maxQuantity,
+  maxQuantity = 9,
 }: SelectProps) => {
   const [quantity, setQuantity] = useState<number>(1);
   const [totalPrice, setTourPrice] = useState<number>(price);

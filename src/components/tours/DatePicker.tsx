@@ -3,19 +3,19 @@ import React, { useState } from "react";
 import GuestSelectDesktop from "./GuestSelectDesktop";
 import GuestSelectMobile from "./GuestSelectMobile";
 import { useIntl } from "react-intl";
+import { Tour } from "@/utils/toursdata";
 
-type DatePickerProps = {
-  availability: string;
+type DatePickerType = {
+  availability: {
+    type: "Weekend" | "Weekday" | "Reservation";
+    time?: string;
+  };
   price: number;
   tourName: string;
-  maxQuantity: number;
+  cap: number;
 };
-const DatePicker = ({
-  availability,
-  price,
-  tourName,
-  maxQuantity,
-}: DatePickerProps) => {
+
+const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
   const [date, setDate] = useState(new Date());
   const Intl = useIntl();
 
@@ -36,9 +36,9 @@ const DatePicker = ({
 
   function setDisabledDates({ date, view }: { date: Date; view: string }) {
     const day = date.getDay();
-    if (availability === "Weekday") {
+    if (availability.type === "Weekday") {
       return view === "month" && (day === 6 || day === 0); // Disable weekends
-    } else if (availability === "Weekend") {
+    } else if (availability.type === "Weekend") {
       return view === "month" && day >= 1 && day <= 5; // Disable weekdays
     } else {
       return date === new Date();
@@ -46,10 +46,10 @@ const DatePicker = ({
   }
 
   const availabilityText = () => {
-    if (availability === "Weekday") {
+    if (availability.type === "Weekday") {
       return "Tour is available on weekdays only";
-    } else if (availability === "Weekend") {
-      return "Tour is available on weekdays only";
+    } else if (availability.type === "Weekend") {
+      return "Tour is available on weekend days only";
     } else {
       return "By Reservation Only";
     }
@@ -67,14 +67,19 @@ const DatePicker = ({
         className='py-5'
         tileDisabled={setDisabledDates}
       />
+      {availability.time && (
+        <div className='flex justify-center md:justify-start'>
+          <p className='text-xs py-2'>Time: {availability.time}</p>
+        </div>
+      )}
       <div className='flex flex-row w-full justify-between'>
         <GuestSelectDesktop
-          maxQuantity={maxQuantity}
+          maxQuantity={cap}
           whatsAppLink={whatsAppLink}
           price={price}
         />
         <GuestSelectMobile
-          maxQuantity={maxQuantity}
+          maxQuantity={cap}
           whatsAppLink={whatsAppLink}
           price={price}
         />

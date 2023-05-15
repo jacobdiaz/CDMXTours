@@ -3,9 +3,16 @@ import { Tours } from "@/utils/toursdata";
 import { FormattedMessage, useIntl } from "react-intl";
 import SectionTitle from "./SectionTitle";
 import CalendarOfToursCard from "../tours/CalendarOfToursCard";
+import { useRouter } from "next/router";
 
 const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
   const Intl = useIntl();
+  const { locale: locales } = useRouter();
+  if (locales === undefined || locales === null || locales === "undefined")
+    return null;
+
+  const filteredTours = Tours.filter((tour) => tour.locales.includes(locales));
+
   return (
     <section>
       {!hideHeader && (
@@ -22,10 +29,10 @@ const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
           </p>
         )}
         <ul className='flex flex-wrap justify-center md:justify-between w-full'>
-          {Tours.map((t) => (
+          {filteredTours.map((t) => (
             <TourCard {...t} key={t.id.toString()} />
           ))}
-          <CalendarOfToursCard />
+          {locales === "es" && <CalendarOfToursCard />}
         </ul>
       </div>
     </section>

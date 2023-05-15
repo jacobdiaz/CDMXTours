@@ -20,8 +20,11 @@
   "taco.name": "TACO BIKE TOUR / DOWNTOWN CDMX",
   "taco.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
 
-  "coyo.name": "Mexico City South Side",
-  "coyo.desc": "<p>Bike throught the spanish 16th century towns (San Angel & Coyoacán) and the modernist campus of the National University. In this tour you will visit this neighborhoods/ places:{br} • San Ángel Town{br} • Frida Kahlo & Diego Rivera Studio{br} • National University Campus{br} • Tacos and Hydratation stop{br} • Coyoacán Town{br} • Frida Kahlo Blue House (outside)</p>",
+  "coyo.name": "Coyoacán Bike Tour",
+  "coyo.desc": "Coyoacán Bike Tour is more than Frida, come and ride from its wide Porfirian streets of the Carmen neighborhood to the pre-Hispanic alleys of the San Francisco quadrant and the Niño de Jesus neighborhood, without forgetting the classics such as Jardín Centenario and the Concepción Square of the colonial era in Mexico City",
+
+  "essentials.name": "Mexico City Essentials / Downtown, Reforma, Roma, Condesa",
+  "essentials.desc": "<p>Bike throught the spanish 16th century towns (San Angel & Coyoacán) and the modernist campus of the National University. In this tour you will visit this neighborhoods/ places:{br} • San Ángel Town{br} • Frida Kahlo & Diego Rivera Studio{br} • National University Campus{br} • Tacos and Hydratation stop{br} • Coyoacán Town{br} • Frida Kahlo Blue House (outside)</p>",
 
   "arch.name": "ARCHITECTURAL BIKE TOUR / ROMA - CONDESA",
   "arch.desc": "The Chic neighborhoods of Mexico City have a secret: they were designed by architects. Come and discover the urban and architectural origin of these neighbourhoods. In addition to knowing the emblematic streets and buildings, you will eat in a legendary taqueria in Condesa and you will visit the largest urban park in the country.",
@@ -29,8 +32,8 @@
   "urban.name": "URBAN TOUR / FROM THE PORFIRIAN MANSIONS TO THE INDUSTRIAL NORTH",
   "urban.desc": "The Urban Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City.",
 
-  "markets.name": "Markets Tour / Jamaica a San juan",
-  "markets.desc": "Mexico City has a very old commercial culture, from the street markets (tianguis) of the pre-Hispanic towns, to the markets built in the 50s. On this tour you will visit a variety of different markets for food, handicrafts, tools, antiques, etc. You will also try different foods and drinks during the tour.",
+  "markets.name": "Markets Tour / From jamaica flowers market to san juan gourmet market",
+  "markets.desc": "Mexico its one of the most famous tourist destinies in terms of gastonomy around the world. Join us to visit the epicenter of food and culture: the markets. During the experience your 5 senses will turn on, due to  the large amount of food, people, products and places you are going to visit.",
 
   "modernarch.name": "Modern Architecture / De San Angel a C.U",
   "modernarch.desc": "Explore the story of how the cities of the 20th century were built with concrete, steel and glass. During the tour you will visit the largest university campus in the American continent and also the first modern houses in CDMX, built for Diego Rivera and Frida Kahlo!",
