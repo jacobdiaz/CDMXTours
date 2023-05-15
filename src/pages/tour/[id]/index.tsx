@@ -26,7 +26,7 @@ const TourPage = () => {
         page_img={tour.imgSrc}
         socialTitle={tour.tourName}
         socialDescription={tour.description}
-        content='article'
+        type='article'
       >
         <title>{Intl.formatMessage({ id: tour?.tourName })}</title>
         <meta

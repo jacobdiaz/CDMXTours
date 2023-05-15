@@ -33,7 +33,11 @@ const DirectionSections = () => {
       >
         {intl.formatMessage({ id: "home.directions.getDirections" })}
       </CTALink>
-      <Map />
+      <Map
+        address='Calle Versalles 88, 06600 Mexico City'
+        googleMapsLink='https://goo.gl/maps/7r4jXBxTbU3V6RQS7'
+        coords={{ lat: 19.42755, lng: -99.15569 }}
+      />
     </section>
   );
 };
