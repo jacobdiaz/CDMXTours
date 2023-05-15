@@ -14,7 +14,7 @@ const PageHeader = ({
   children,
   type = "website",
   page_img = "https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg",
-  keywords = "CDMX Bike Tours, Mexico City bike tours, Mexico City Tours",
+  keywords = "CDMX Tours, Bike Tours Mexico City, CDMX Bike Tours, Tours En Bici, Mexico City bike tours, Mexico City Tours, Bike Tours CDMX, Bike Tours, Architecture Tours Mexico City, Taco Tours CDMX, Tours En Bici CDMX ",
   url_path = "/",
   socialTitle = "CDMX Bike Tours",
   socialDescription = "Discover Mexico City by bike with our guided tours. We offer a variety of tours to suit your needs. Book your tour today!",
