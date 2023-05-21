@@ -92,7 +92,7 @@ export const Tours: Tour[] = [
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3v3.jpg",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
@@ -100,7 +100,7 @@ export const Tours: Tour[] = [
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5v2.jpg",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
     ],
@@ -160,7 +160,7 @@ export const Tours: Tour[] = [
     googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
@@ -176,7 +176,7 @@ export const Tours: Tour[] = [
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
     ],
@@ -202,15 +202,15 @@ export const Tours: Tour[] = [
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_2_v2.jpg",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_3.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_3v2.jpg",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4v2.jpg",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
