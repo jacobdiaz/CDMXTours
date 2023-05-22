@@ -18,28 +18,23 @@ const TourPage = () => {
   const { id } = router.query;
   const tour = Tours.find((t) => t.id === (id as string));
   if (tour === undefined) return null;
+  const title = Intl.formatMessage({ id: tour.tourName });
+  const description = Intl.formatMessage({ id: tour.description });
 
   return (
     <main>
+      {/* TODO Add Keywords to Data to pass to pageheader */}
       <PageHeader
         url_path={`/tours/${tour.id}`}
         page_img={tour.imgSrc}
-        socialTitle={tour.tourName}
-        socialDescription={tour.description}
+        socialTitle={title}
+        socialDescription={description}
         type='article'
       >
-        <meta
-          name='description'
-          content={Intl.formatMessage({ id: tour?.description })}
-        />
-        <meta
-          property='og:title'
-          content={Intl.formatMessage({ id: tour?.tourName })}
-        />
-        <meta
-          property='og:description'
-          content={Intl.formatMessage({ id: tour?.description })}
-        />
+        <title>{title}</title>
+        <meta name='description' content={description} />
+        <meta property='og:title' content={Intl.formatMessage({ id: title })} />
+        <meta property='og:description' content={description} />
       </PageHeader>
       <div className='page-container'>
         <div className='w-full mt-16 md:mt-24 flex flex-col md:flex-row font-fjalla md:items-center justify-between'>
