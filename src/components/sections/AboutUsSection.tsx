@@ -11,7 +11,7 @@ const AboutUsSection = () => (
       <div className='hidden md:block w-full '>
         <Image
           className='w-full h-full object-cover'
-          src='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4.jpg'
+          src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_about.jpg'
           alt='Image of Mexico City Bike Tour Guide'
           height={720}
           width={720}
