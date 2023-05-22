@@ -7,7 +7,7 @@ function BookATourPage() {
     <>
       <HeroSmall
         title='Book a Tour'
-        image='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_1.jpg'
+        image='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg	'
         ariaLabel='Book a Bike Tour'
         backgroundPosition='center top 60%'
       />

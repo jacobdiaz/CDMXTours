@@ -11,7 +11,7 @@ const BlogPage = () => {
   return (
     <>
       <PageHeader
-        page_img='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
+        page_img='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg'
         keywords='Blog, Bike Tours CDMX, Mexico City Bike Tours, CDMX Bike Tours Blog'
       >
         <title>{title}</title>

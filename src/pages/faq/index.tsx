@@ -13,10 +13,7 @@ const FAQPage = () => {
   const description = intl.formatMessage({ id: "faq.meta.description" });
   return (
     <>
-      <PageHeader
-        page_img='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
-        keywords='Contact Us, Bike Tours CDMX, Mexico City Bike Tours, Contact CDMX Bike Tours'
-      >
+      <PageHeader keywords='FAQ, Bike Tours CDMX, Mexico City Bike Tours, Contact CDMX Bike Tours'>
         <title>{title}</title>
         <meta name='description' content={description} />
         <meta property='og:title' content={title} />

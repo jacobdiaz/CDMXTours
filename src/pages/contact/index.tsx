@@ -10,7 +10,7 @@ const ContactUsPage = () => {
   return (
     <main>
       <PageHeader
-        page_img='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
+        page_img='https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg'
         keywords='Contact Us, Bike Tours CDMX, Mexico City Bike Tours, Contact CDMX Bike Tours'
       >
         <title>{title}</title>
@@ -20,7 +20,7 @@ const ContactUsPage = () => {
       </PageHeader>
       <HeroSmall
         title={intl.formatMessage({ id: "contact.hero.title" })}
-        image='https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1.jpg'
+        image='https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg'
         ariaLabel='Contact Us'
       />
       <div className='page-container'>
