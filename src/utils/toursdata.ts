@@ -32,7 +32,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-essentials-tour",
     locales: ["en"],
-    availability: { type: "Weekend", time: "10:00am - 2:00pm" },
+    availability: { type: "Weekend", time: "10:00am" },
     tourName: "essentials.name", // Translation ID in /translations/Tours.json
     price: 950,
     duration: "4hrs - 15km",
@@ -46,24 +46,63 @@ export const Tours: Tour[] = [
     coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_1.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_1.jpg",
+        alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_3.jpg",
+        alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_2.jpg",
+        alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg%09	",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_4.jpg	",
+        alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_5.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+    ],
+  },
+  {
+    id: "cdmx-south-side-bike-tour",
+    locales: ["en"],
+    availability: { type: "Weekday", time: "10:00am" },
+    tourName: "southside.name", // Translation ID in /translations/Tours.json
+    price: 850,
+    duration: "4.5hrs",
+    cap: "10",
+    description: "southside.desc",
+    included: "Bikes, Helmets, Tacos, Hydration",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_southside_v2.png",
+    imgAlt: "Image of south side Mexico City tour",
+    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
+    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
+    coords: { lat: 19.35203, lng: -99.17984 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/SouthSide/southside_v2_1.jpg",
+        alt: "Photo from the South Side Tour Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/SouthSide/southside_v2_2.jpg",
+        alt: "Photo from the South Side Tour Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/SouthSide/southside_v2_3.jpg",
+        alt: "Photo from the South Side Tour Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/SouthSide/southside_v2_4.jpg	",
+        alt: "Photo from the South Side Tour Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/SouthSide/southside_v2_5.jpg",
+        alt: "Photo from the South Side Tour Mexico City",
       },
     ],
   },
@@ -108,7 +147,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-coyoacan-tour",
     locales: ["en", "es"],
-    availability: { type: "Weekday", time: "10:00am - 2:00pm" },
+    availability: { type: "Weekday", time: "10:00am" },
     tourName: "coyo.name",
     price: 850,
     duration: "4hrs - 18km",

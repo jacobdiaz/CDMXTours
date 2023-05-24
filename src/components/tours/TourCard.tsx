@@ -25,8 +25,8 @@ const TourCard = ({
     const { type, time } = availability;
     let text = "Availability: ";
     // Days available
-    if (type === "Weekend") text += "Sat - Sun";
-    else if (type === "Weekday") text += "Mon - Fri";
+    if (type === "Weekend") text += "Sat - Sun  ";
+    else if (type === "Weekday") text += "Mon - Fri ";
     else text += "Calendar or reservation only";
 
     //concat time
