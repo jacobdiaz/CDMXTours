@@ -32,7 +32,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-essentials-tour",
     locales: ["en"],
-    availability: { type: "Weekend", time: "10:00am" },
+    availability: { type: "Weekday", time: "10:00am" },
     tourName: "essentials.name", // Translation ID in /translations/Tours.json
     price: 950,
     duration: "4hrs - 15km",
@@ -78,7 +78,7 @@ export const Tours: Tour[] = [
     description: "southside.desc",
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_southside_v2.png",
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_southside_v3.jpg",
     imgAlt: "Image of south side Mexico City tour",
     meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
     googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
