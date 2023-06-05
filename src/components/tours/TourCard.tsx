@@ -36,7 +36,7 @@ const TourCard = ({
   };
 
   return (
-    <li className="mb-10 flex flex-col justify-between h-fit w-full mr-0 md:mr-0 md:w-[24rem]">
+    <li className="mb-10 flex flex-col justify-between h-fit w-full mr-0 md:mr-0 md:w-[21rem]">
       <article className="h-full flex flex-col justify-between">
         <div>
           <Link href={`/tour/${id}`}>
