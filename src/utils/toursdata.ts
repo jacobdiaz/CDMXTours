@@ -84,23 +84,23 @@ export const Tours: Tour[] = [
     coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_1.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-1.jpeg",
         alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_3.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-4.jpeg",
         alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-3.jpeg",
         alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_4.jpg	",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-2.jpeg",
         alt: "Photo from the essentials tour mexico",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_5.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-5.jpeg",
         alt: "Photo from the essentials tour mexico",
       },
     ],

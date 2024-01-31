@@ -45,7 +45,7 @@ const AboutUsSection = () => (
 
     {/* Row 2 */}
     <div className="grid grid-cols-1 md:grid-cols-2 h-[750px] md:h-[30rem] overflow-hidden">
-      <a className="relative" href="http://localhost:3000/es/book-a-tour ">
+      <a className="relative" href="https://www.cdmxtours.com/es/book-a-tour ">
         <Image
           src="https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg"
           alt="Architectural Bike Tour in Mexico City"
@@ -61,7 +61,7 @@ const AboutUsSection = () => (
           </p>
         </div>
       </a>
-      <a className="relative" href="http://localhost:3000/book-a-tour ">
+      <a className="relative" href="https://www.cdmxtours.com/book-a-tour ">
         <Image
           src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_disc_arch_1.jpg"
           alt="Image of the Roma Condesa Bike Tour CDMX"
