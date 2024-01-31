@@ -68,6 +68,44 @@ export const Tours: Tour[] = [
     ],
   },
   {
+    id: "ruta-galerias",
+    locales: ["es"],
+    availability: { type: "Weekend", time: "10:00am" },
+    tourName: "galerias.name", // Translation ID in /translations/Tours.json
+    price: 550,
+    duration: "4.5hrs - 18km",
+    cap: "10",
+    description: "galerias.desc",
+    included: "Renta de bicicleta, Comida, Hidratación, Guia",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_essentials.jpg",
+    imgAlt: "Image of Ruta Galerias Tour",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_1.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_3.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_2.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_4.jpg	",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_5.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+    ],
+  },
+  {
     id: "cdmx-south-side-bike-tour",
     locales: ["en"],
     availability: { type: "Weekday", time: "10:00am" },
