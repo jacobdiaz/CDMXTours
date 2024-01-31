@@ -33,9 +33,6 @@ const HeroSection = () => (
         >
           @toursenbici
         </Link>
-        <CTALink href='/book-a-tour'>
-          <FormattedMessage id='home.hero.book.btn' />
-        </CTALink>
       </div>
     </div>
     <ImageOverlay />
