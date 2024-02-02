@@ -1,14 +1,14 @@
-import TourCard from '../tours/TourCard';
-import { Tours } from '@/utils/toursdata';
-import { FormattedMessage, useIntl } from 'react-intl';
-import SectionTitle from './SectionTitle';
-import CalendarOfToursCard from '../tours/CalendarOfToursCard';
-import { useRouter } from 'next/router';
+import TourCard from "../tours/TourCard";
+import { Tours } from "@/utils/toursdata";
+import { FormattedMessage, useIntl } from "react-intl";
+import SectionTitle from "./SectionTitle";
+import CalendarOfToursCard from "../tours/CalendarOfToursCard";
+import { useRouter } from "next/router";
 
 const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
   const Intl = useIntl();
   const { locale: locales } = useRouter();
-  if (locales === undefined || locales === null || locales === 'undefined')
+  if (locales === undefined || locales === null || locales === "undefined")
     return null;
 
   const filteredTours = Tours.filter((tour) => tour.locales.includes(locales));
@@ -32,7 +32,6 @@ const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
           {filteredTours.map((t) => (
             <TourCard {...t} key={t.id.toString()} />
           ))}
-          {locales === 'es' && <CalendarOfToursCard />}
         </ul>
       </div>
     </section>

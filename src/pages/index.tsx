@@ -1,15 +1,15 @@
-import AboutUsSection from '@/components/sections/AboutUsSection';
-import ContactSection from '@/components/sections/ContactSection';
-import HeroSection from '@/components/sections/HeroSection';
-import TourSection from '@/components/sections/ToursSection';
-import { useIntl } from 'react-intl';
-import { useRouter } from 'next/router';
-import DirectionSections from '@/components/sections/DirectionSections';
-import dynamic from 'next/dynamic';
-import PageHeader from '@/components/layout/PageHeader';
-import GoogleReviews from '@/components/layout/GoogleReviews';
+import AboutUsSection from "@/components/sections/AboutUsSection";
+import ContactSection from "@/components/sections/ContactSection";
+import HeroSection from "@/components/sections/HeroSection";
+import TourSection from "@/components/sections/ToursSection";
+import { useIntl } from "react-intl";
+import { useRouter } from "next/router";
+import DirectionSections from "@/components/sections/DirectionSections";
+import dynamic from "next/dynamic";
+import PageHeader from "@/components/layout/PageHeader";
+import GoogleReviews from "@/components/layout/GoogleReviews";
 
-const Banner = dynamic(() => import('@/components/layout/Banner'));
+const Banner = dynamic(() => import("@/components/layout/Banner"));
 
 type HomeProps = {
   dir: string;
@@ -18,9 +18,9 @@ type HomeProps = {
 export default function Home({ dir }: HomeProps) {
   const intl = useIntl();
   const { locale: locales } = useRouter();
-  const title = intl.formatMessage({ id: 'home.head.title' });
+  const title = intl.formatMessage({ id: "home.head.title" });
   const description = intl.formatMessage({
-    id: 'home.head.meta.description',
+    id: "home.head.meta.description",
   });
 
   return (
@@ -38,7 +38,7 @@ export default function Home({ dir }: HomeProps) {
         <TourSection />
         <GoogleReviews />
         <ContactSection />
-        {locales === 'es' && (
+        {locales === "es" && (
           <Banner
             alt="Discount Banner"
             src="https://d252kj1i9nz0td.cloudfront.net/pages/Blog/blog_hero.jpg"

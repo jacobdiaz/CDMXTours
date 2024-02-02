@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { FormattedMessage } from "react-intl";
-import CTALink from "../actions/CTALink";
 import SectionTitle from "./SectionTitle";
 import ImageOverlay from "../layout/ImageOverlay";
 
@@ -56,12 +54,16 @@ const AboutUsSection = () => (
         />
         <ImageOverlay />
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-4xl font-bold text-white">
-            Tours En Bici (Español)
+          <p className="text-4xl font-bold text-white text-center">
+            TOURS EN BICI <br />
+            (Español)
           </p>
         </div>
       </a>
-      <a className="relative" href="https://www.cdmxtours.com/book-a-tour ">
+      <a
+        className="relative mt-10 md:mt-0"
+        href="https://www.cdmxtours.com/book-a-tour "
+      >
         <Image
           src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_disc_arch_1.jpg"
           alt="Image of the Roma Condesa Bike Tour CDMX"
@@ -73,8 +75,9 @@ const AboutUsSection = () => (
         />
         <ImageOverlay />
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-4xl font-bold text-white">
-            Bike Tours (English)
+          <p className="text-4xl font-bold text-white text-center">
+            BIKE TOURS <br />
+            (English)
           </p>
         </div>
       </a>

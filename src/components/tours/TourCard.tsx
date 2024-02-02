@@ -15,6 +15,8 @@ const TourCard = ({
   description,
   included,
   imgSrc,
+  thumbEN,
+  thumbES,
   imgAlt,
   locales,
   availability,
@@ -35,15 +37,21 @@ const TourCard = ({
     return <p> {text} </p>;
   };
 
+  const getCardImage = () => {
+    if (locale === 'es' && thumbES) return thumbES;
+    if (locale === 'en' && thumbEN) return thumbEN;
+    return imgSrc;
+  }
+
   return (
     <li className="mb-10 flex flex-col justify-between h-fit w-full mr-0 md:mr-0 md:w-[21rem]">
       <article className="h-full flex flex-col justify-between">
         <div>
           <Link href={`/tour/${id}`}>
             <Image
-              src={imgSrc}
+              src={getCardImage()}
               alt={imgAlt}
-              className="w-full h-64 object-cover cursor-pointer"
+              className="w-full h-full object-cover cursor-pointer"
               height={500}
               width={500}
               loading="lazy"
