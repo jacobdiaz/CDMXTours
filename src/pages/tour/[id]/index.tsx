@@ -1,16 +1,17 @@
-import { Tours } from '../../../utils/toursdata';
-import { useRouter } from 'next/router';
-import Map from '@/components/layout/Map';
-import CTALink from '@/components/actions/CTALink';
-import ImageGallery from '@/components/tours/ImageGallery';
-import Divider from '@/components/layout/Divider';
-import TourSection from '@/components/tours/TourSection';
-import Link from 'next/link';
-import ReserveBar from '@/components/tours/ReserveBar';
-import DatePicker from '@/components/tours/DatePicker';
-import PageHeader from '@/components/layout/PageHeader';
-import Share from '@/components/actions/Share';
-import { FormattedMessage, useIntl } from 'react-intl';
+import { Tours } from "../../../utils/toursdata";
+import { useRouter } from "next/router";
+import Map from "@/components/layout/Map";
+import CTALink from "@/components/actions/CTALink";
+import ImageGallery from "@/components/tours/ImageGallery";
+import Divider from "@/components/layout/Divider";
+import TourSection from "@/components/tours/TourSection";
+import Link from "next/link";
+import ReserveBar from "@/components/tours/ReserveBar";
+import DatePicker from "@/components/tours/DatePicker";
+import PageHeader from "@/components/layout/PageHeader";
+import Share from "@/components/actions/Share";
+import { FormattedMessage, useIntl } from "react-intl";
+import { useEffect } from "react";
 
 const TourPage = () => {
   const router = useRouter();
@@ -37,7 +38,7 @@ const TourPage = () => {
         <meta property="og:description" content={description} />
       </PageHeader>
       <div className="page-container">
-        <div className="w-full mt-16 md:mt-24 flex flex-col md:flex-row font-fjalla md:items-center justify-between">
+        <div className="w-full mt-16 md:mt-24 flex flex-col md:flex-row font-spartan font-bold md:items-center justify-between">
           <div className="flex flex-col w-full">
             <Link
               href="/book-a-tour"
@@ -56,7 +57,7 @@ const TourPage = () => {
                   <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
                 </svg>
               </span>
-              View All Tours
+              View All
             </Link>
             <div className="w-full flex justify-between">
               <h1 className="text-4xl ">
@@ -78,7 +79,7 @@ const TourPage = () => {
           {/* Col 1 */}
           <div className="col-span-2 md:pr-10">
             <TourSection
-              title={Intl.formatMessage({ id: 'tours.section.description' })}
+              title={Intl.formatMessage({ id: "tours.section.description" })}
             >
               <FormattedMessage
                 id={tour?.description}
@@ -92,7 +93,7 @@ const TourPage = () => {
             {/* Whats Included & Group Capacity */}
             <div className="flex flex-row gap-1 md:gap-0">
               <TourSection
-                title={Intl.formatMessage({ id: 'tours.section.included' })}
+                title={Intl.formatMessage({ id: "tours.section.included" })}
                 hideDivider
               >
                 <p>
@@ -101,7 +102,7 @@ const TourPage = () => {
               </TourSection>
               <Divider orientation="vertical" />
               <TourSection
-                title={Intl.formatMessage({ id: 'tours.section.capacity' })}
+                title={Intl.formatMessage({ id: "tours.section.capacity" })}
                 hideDivider
               >
                 <p>
@@ -116,7 +117,7 @@ const TourPage = () => {
 
             {/* Where to meet */}
             <TourSection
-              title={Intl.formatMessage({ id: 'tours.section.meet' })}
+              title={Intl.formatMessage({ id: "tours.section.meet" })}
             >
               <p className="mt-5">
                 <FormattedMessage
@@ -160,12 +161,12 @@ const TourPage = () => {
             {/* Have a Question*/}
             <TourSection
               title={Intl.formatMessage({
-                id: 'tours.section.have_a_question',
+                id: "tours.section.have_a_question",
               })}
               hideDivider
             >
               <p>
-                <FormattedMessage id="tours.have_a_question.desc" />{' '}
+                <FormattedMessage id="tours.have_a_question.desc" />{" "}
                 <Link
                   href="tel:+52-1-55-8333-3677"
                   rel="nofollow"

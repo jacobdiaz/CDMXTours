@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         fjalla: ["var(--font-fjalla)", ...fontFamily.sans],
         ssp: ["var(--font-source-sans-pro)", ...fontFamily.sans],
+        spartan: ["var(--font-league-spartan)", ...fontFamily.sans],
       },
       colors: {
         primary: "#000000",

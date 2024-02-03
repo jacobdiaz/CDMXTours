@@ -10,7 +10,7 @@ const FaqItem = ({ question, children }: Props) => {
       tabIndex={0}
     >
       <input type='checkbox' />
-      <div className='collapse-title text-xl font-medium uppercase font-fjalla'>
+      <div className='collapse-title text-xl font-medium uppercase font-spartan'>
         {question}
       </div>
       <div className='collapse-content'>{children}</div>

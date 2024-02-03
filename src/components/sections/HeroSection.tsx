@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
-import CTALink from "../actions/CTALink";
 import ImageOverlay from "../layout/ImageOverlay";
 
 const HeroSection = () => (
@@ -22,7 +21,7 @@ const HeroSection = () => (
       }}
     >
       <div className='flex flex-col'>
-        <h1 className='text-page-hero uppercase font-fjalla'>
+        <h1 className='text-page-hero uppercase font-spartan font-black tracking-normal'>
           <FormattedMessage id='home.hero.title' />
         </h1>
         <Link

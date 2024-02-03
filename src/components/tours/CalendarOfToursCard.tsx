@@ -21,7 +21,7 @@ const CalendarOfToursCard = () => {
             />
           </div>
           <div className='justify-between w-full py-5'>
-            <h3 className='text-card-title font-fjalla uppercase  w-full'>
+            <h3 className='text-card-title font-spartan font-bold uppercase  w-full'>
               <FormattedMessage id='tours.calendar_of_tours.title' />
               {new Date().getFullYear()}
             </h3>

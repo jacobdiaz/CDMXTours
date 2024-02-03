@@ -35,7 +35,7 @@ const GuestSelectDesktop = ({
 
         <div className='flex flex-col items-end'>
           <p>Total</p>
-          <p className='font-bold font-fjalla text-base'>
+          <p className='font-black font-spartan text-base'>
             ${totalPrice?.toLocaleString()} <span>MXN</span>
           </p>
         </div>

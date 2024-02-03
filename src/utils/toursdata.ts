@@ -41,7 +41,8 @@ export const Tours: Tour[] = [
     cap: "10",
     description: "essentials.desc",
     included: "Bikes, Helmets, Tacos, Hydration",
-    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_essentials.jpg",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-essentials.jpg",
     thumbEN:
       "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-essentials.jpg",
     imgAlt: "Image of Essential Bike Tour of Downtown Mexico City",
@@ -206,7 +207,7 @@ export const Tours: Tour[] = [
     cap: "10",
     description: "taco.desc",
     included: "Bikes, Helmets, Tacos, Hydration",
-    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_taco.jpg",
+    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-taco.jpeg",
     thumbEN:
       "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-taco.jpeg",
     thumbES:

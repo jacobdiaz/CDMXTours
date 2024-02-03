@@ -46,7 +46,7 @@ const GuestSelectMobile = ({
       <Divider />
       <div className='flex flex-row w-full justify-between'>
         <p>Total</p>
-        <p className='font-bold font-fjalla text-base'>
+        <p className='font-black font-spartan text-base'>
           ${totalPrice?.toLocaleString()} <span>MXN</span>
         </p>
       </div>

@@ -1,7 +1,7 @@
 type Props = {
   children?: React.ReactNode;
   color?: "text-primary" | "text-white";
-  font?: "font-fjalla" | "font-ssp";
+  font?: string;
   margin?: string;
   className?: string;
 };
@@ -9,7 +9,7 @@ type Props = {
 const SectionTitle = ({
   children,
   color = "text-primary",
-  font = "font-fjalla",
+  font = "font-spartan font-bold",
   margin = "m-5",
   className,
 }: Props) => (

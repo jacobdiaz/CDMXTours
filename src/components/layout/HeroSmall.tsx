@@ -24,7 +24,7 @@ const HeroSmall = ({
         backgroundPosition: backgroundPosition,
       }}
     >
-      <h1 className='font-fjalla text-3xl md:text-4xl z-20 uppercase'>
+      <h1 className='font-spartan text-3xl md:text-4xl z-20 uppercase'>
         {title}
       </h1>
       {children}

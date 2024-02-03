@@ -13,7 +13,7 @@ type HeaderProps = {
 const PageHeader = ({
   children,
   type = "website",
-  page_img = "https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg",
+  page_img = "https://d252kj1i9nz0td.cloudfront.net/tours_logo.jpg",
   keywords = "CDMX Tours, bike tours, Bike Tours Mexico City, CDMX Bike Tours, Tours En Bici, Mexico City bike tours, Mexico City Tours, Bike Tours CDMX, Bike Tours, Architecture Tours Mexico City, Taco Tours CDMX, Tours En Bici CDMX ",
   url_path = "",
   socialTitle = "CDMX Bike Tours",
@@ -24,46 +24,45 @@ const PageHeader = ({
 
   return (
     <Head>
-      <meta property='og:image' content={page_img} />
-      <meta property='og:image:width' content='1200' />
-      <meta property='og:image:height' content='630' />
-      <meta property='og:image:secure_url' content={page_img} />
-      <meta property='og:image:type' content='image/jpeg' />
+      {/* Open Graph / Facebook */}
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image" content={page_img} />
+      <meta property="og:image:secure_url" content={page_img} />
       <link
-        rel='alternate'
+        rel="alternate"
         href={`${domainUrl}/${url_path}`}
-        hrefLang='x-default'
+        hrefLang="x-default"
       />
-      <link rel='alternate' href={`${domainUrl}/${url_path}`} hrefLang='en' />
+      <link rel="alternate" href={`${domainUrl}/${url_path}`} hrefLang="en" />
       <link
-        rel='alternate'
+        rel="alternate"
         href={`${domainUrl}/es/${url_path}`}
-        hrefLang='es'
+        hrefLang="es"
       />
-      <link rel='canonical' href={`${domainUrl}/${url_path}`} />
-      <meta property='og:url' content={`${domainUrl}/${url_path}`} />
-      <meta name='keywords' content={keywords} />
-      <meta name='twitter:card' content='summary_large_image' />
-      <meta property='og:type' content={type} />
-      <meta name='twitter:title' content={socialTitle} />
-      <meta name='twitter:description' content={socialDescription} />
-      <meta name='twitter:image' content={page_img} />
-      <link rel='icon' href='/favicon.ico' />
-      <link rel='apple-touch-icon' href='/apple-touch-icon-iphone-60x60.png' />
+      <link rel="canonical" href={`${domainUrl}/${url_path}`} />
+      <meta property="og:url" content={`${domainUrl}/${url_path}`} />
+      <meta name="keywords" content={keywords} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:type" content={type} />
+      <meta name="twitter:title" content={socialTitle} />
+      <meta name="twitter:description" content={socialDescription} />
+      <meta name="twitter:image" content={page_img} />
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon-iphone-60x60.png" />
       <link
-        rel='apple-touch-icon'
-        sizes='60x60'
-        href='/apple-touch-icon-ipad-76x76.png'
-      />
-      <link
-        rel='apple-touch-icon'
-        sizes='114x114'
-        href='/apple-touch-icon-iphone-retina-120x120.png'
+        rel="apple-touch-icon"
+        sizes="60x60"
+        href="/apple-touch-icon-ipad-76x76.png"
       />
       <link
-        rel='apple-touch-icon'
-        sizes='144x144'
-        href='/apple-touch-icon-ipad-retina-152x152.png'
+        rel="apple-touch-icon"
+        sizes="114x114"
+        href="/apple-touch-icon-iphone-retina-120x120.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="144x144"
+        href="/apple-touch-icon-ipad-retina-152x152.png"
       />
       {children}
     </Head>

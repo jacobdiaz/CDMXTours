@@ -57,8 +57,8 @@ const TourCard = ({
               loading="lazy"
             />
           </Link>
-          <div className="flex flex-row justify-between w-full py-5">
-            <h3 className="text-card-title font-fjalla uppercase max-w-[75%] md:max-w-[275px] min-h-[90px]">
+          <div className="flex flex-row justify w-full py-5">
+            <h3 className="text-card-title font-spartan font-black uppercase max-w-[75%] md:max-w-[85%] min-h-[90px]">
               <FormattedMessage id={tourName} />
             </h3>
             <p className="text-lg font-bold">${price.toString()}MXN</p>

@@ -19,9 +19,7 @@ const AboutUsSection = () => (
       </div>
       <div className="w-full flex flex-col justify-center items-center p-5 md:p-16 text-center">
         {/* Col 2 */}
-        <SectionTitle>
-          CONOCE LA CDMX EN BICICLETA - DISCOVER CDMX BY BIKE
-        </SectionTitle>
+        <SectionTitle>Architecture Bike Tours</SectionTitle>
 
         <p className="text-lg text-primary">
           Somos un grupo de arquitectos enfocados en dar los mejores Tours en
@@ -42,19 +40,20 @@ const AboutUsSection = () => (
     </div>
 
     {/* Row 2 */}
-    <div className="grid grid-cols-1 md:grid-cols-2 h-[750px] md:h-[30rem] overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 h-[800px] md:h-[30rem] overflow-hidden">
       <a className="relative" href="https://www.cdmxtours.com/es/book-a-tour ">
         <Image
-          src="https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg"
+          src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/btn-toursenbici.jpeg"
           alt="Architectural Bike Tour in Mexico City"
-          className="w-full h-full absolute object-cover"
+          className="w-full h-full absolute object-cover md:object-center"
           height={540}
+          style={{ objectPosition: "center 70%" }}
           width={720}
           loading="lazy"
         />
         <ImageOverlay />
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-4xl font-bold text-white text-center">
+          <p className="text-4xl font-bold text-white text-center font-spartan">
             TOURS EN BICI <br />
             (Español)
           </p>
@@ -65,7 +64,7 @@ const AboutUsSection = () => (
         href="https://www.cdmxtours.com/book-a-tour "
       >
         <Image
-          src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_disc_arch_1.jpg"
+          src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/btn-biketourscdmx.jpeg"
           alt="Image of the Roma Condesa Bike Tour CDMX"
           className="w-full h-full absolute object-cover"
           height={540}
