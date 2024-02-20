@@ -2,7 +2,6 @@ import TourCard from "../tours/TourCard";
 import { Tours } from "@/utils/toursdata";
 import { FormattedMessage, useIntl } from "react-intl";
 import SectionTitle from "./SectionTitle";
-import CalendarOfToursCard from "../tours/CalendarOfToursCard";
 import { useRouter } from "next/router";
 
 const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
@@ -28,11 +27,13 @@ const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
             <FormattedMessage id="home.tours.description" />
           </p>
         )}
-        <ul className="flex flex-wrap justify-center md:justify-between w-full">
-          {filteredTours.map((t) => (
-            <TourCard {...t} key={t.id.toString()} />
-          ))}
-        </ul>
+    <ul className="flex flex-wrap justify-center md:justify-between w-full">
+      {filteredTours.map((t, idx) => (
+        <li className="w-[95%] md:w-auto px-2" key={idx}>
+          <TourCard {...t} key={t.id.toString()} />
+        </li>
+      ))}
+    </ul>
       </div>
     </section>
   );

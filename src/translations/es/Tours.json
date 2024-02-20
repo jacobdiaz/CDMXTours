@@ -1,5 +1,5 @@
 {
-  "tours.cta.button": "Más información",
+  "tours.cta.button": "Reservar →",
   "tours.duration": "Duración: {duration}",
   "tours.included": "Incluidos: Bicis, Tacos, Hidratación",
   "tours.capacity": "Capacidad: {capacity} personas",
@@ -22,7 +22,8 @@
 
   "coyo.name": "Coyoacán y sus 5 pueblos",
   "coyo.desc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
-
+  "coyo.shortDesc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
+  
   "essentials.name": "Mexico City Essentials / Downtown, Reforma, Roma, Condesa",
   "essentials.desc": "<p>Bike throught the spanish 16th century towns (San Angel & Coyoacán) and the modernist campus of the National University. In this tour you will visit this neighborhoods/ places:{br} • San Ángel Town{br} • Frida Kahlo & Diego Rivera Studio{br} • National University Campus{br} • Tacos and Hydratation stop{br} • Coyoacán Town{br} • Frida Kahlo Blue House (outside)</p>",
 
@@ -45,5 +46,6 @@
   "tlatelolco.desc": "La migración mexica desde aztlán llegó al lago de Texcoco fundando 2 ciudades: México-Tenochtitlán y México-Tlatelolco, esta última funcionando como epicentro comercial de mesoámerica. Ven a recorrer los vestigios prehispánicos y la moderna ciudad del futuro el conjunto Habitacional Nonoalco Tlatelolco, el cual alberga más de 80mil habitantes y ha sido testigo de sucesos históricos trascendental",
 
   "galerias.name": "Ruta de Galerías en Bici",
-  "galerias.desc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa.{br}{br}Durante el recorrido visitarás estas colonias: {br} ● Roma Norte{br} ● Juárez{br} ● Condesa{br} ● San Miguel Chapultepec{br} ● Bosque de Chapultepec{br} ● Polanco {br}{br}Algúnas de la galerías a visitar:{br} ● Kurimanzutto{br} ● OMR{br} ● Lago Algo{br} ● Proyectos Monclova{br} ● Laguna"
+  "galerias.desc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa.{br}{br}Durante el recorrido visitarás estas colonias: {br} ● Roma Norte{br} ● Juárez{br} ● Condesa{br} ● San Miguel Chapultepec{br} ● Bosque de Chapultepec{br} ● Polanco {br}{br}Algúnas de la galerías a visitar:{br} ● Kurimanzutto{br} ● OMR{br} ● Lago Algo{br} ● Proyectos Monclova{br} ● Laguna",
+  "galerias.shortDesc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa."
 }

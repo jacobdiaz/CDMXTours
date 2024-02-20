@@ -17,6 +17,7 @@ export type Tour = {
   duration: string;
   cap: string;
   description: string;
+  shortDescription?: string;
   included: string;
   imgSrc: string;
   imgAlt: string;
@@ -81,6 +82,7 @@ export const Tours: Tour[] = [
     duration: "4.5hrs - 18km",
     cap: "10",
     description: "galerias.desc",
+    shortDescription: "galerias.shortDesc",
     included: "Renta de bicicleta, Comida, Hidratación, Guia",
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-galerias.jpeg",
@@ -122,6 +124,7 @@ export const Tours: Tour[] = [
     duration: "4.5hrs",
     cap: "10",
     description: "southside.desc",
+    shortDescription: "southside.shortDesc",
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-cdmx-south.jpeg",
@@ -201,7 +204,7 @@ export const Tours: Tour[] = [
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
     availability: { type: "Weekend", time: "10:00am - 2:00pm" },
-    tourName: "taco.name", // Translation ID in /translations/Tours.json
+    tourName: "taco.name",
     price: 650,
     duration: "4hrs - 15km",
     cap: "10",
@@ -248,6 +251,7 @@ export const Tours: Tour[] = [
     duration: "4hrs - 18km",
     cap: "15",
     description: "coyo.desc",
+    shortDescription: "coyo.shortDesc",
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-coyo.jpeg",
