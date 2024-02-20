@@ -7,10 +7,10 @@ const AboutUsSection = () => (
     {/* Row 1 */}
     <div className="grid md:grid-cols-2	">
       {/* Col 1 */}
-      <div className="hidden md:block w-full ">
+      <div className="hidden md:block w-full h-full">
         <Image
-          className="w-full h-full object-cover"
-          src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_about.jpg"
+          className="w-full object-cover max-h-[30rem] md:max-h-[800px]"
+          src="https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg"
           alt="Image of Mexico City Bike Tour Guide"
           height={720}
           width={720}
