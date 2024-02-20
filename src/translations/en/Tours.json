@@ -6,7 +6,6 @@
   "tours.calendar_of_tours.title": "Tour Calendar for May ",
   "tours.calendar_of_tours.desc": "Departures at 9am only with prior reservation. Limited availability",
   "tours.current_month": "May",
-
   "tours.section.description": "Description",
   "tours.section.included": "What is included?",
   "tours.section.capacity": "Group Capacity",
@@ -16,35 +15,26 @@
   "tours.meet.desc": "To ensure a smooth start to your tour, we will meet you at our designated meeting point located at {location}  . Our meeting point is conveniently located and easy to find, so you won't have to worry about getting lost on your way to the start of the tour. When you arrive, you'll be greeted by our friendly and knowledgeable staff who will get you set up with your bike and all the gear you need for a comfortable and safe ride. From there, we'll head out on an adventure together, exploring the city's vibrant neighborhoods, historical landmarks, and hidden gems.",
   "tours.meet.get_directions": "Directions",
   "tours.contactus": "Contact Us",
-
   "taco.name": "Downtown Tacos & History Tour",
   "taco.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
-
   "coyo.name": "Coyoacán Bike Tour",
   "coyo.desc": "<p>Coyoacán is more than Frida, come and walk from its wide Porfirian streets of the Carmen neighborhood to the pre-Hispanic alleys of the San Francisco quadrant and the Niño de Jesus neighborhood, without forgetting the classics such as the Centennial garden and the Concepción of the colonial era . More than 500 years surround Coyoácan and its surroundings, come to learn and learn about its stories and events by touring them by bicycle. During the tour these places are visited and toured:{br}{br}- Chimalistac {br}- Santa Catarina neighborhood{br}- Niño de Jesus neighborhood {br}- San Francisco Quadrant {br}-  Concepción neighborhood {br}-  Centennial Garden {br}- Indian Fernandez House {br}- Frida Kahlo House (outside)</p>",
   "coyo.shortDesc": "More than 500 years surround Coyoácan and its surroundings, come to learn and learn about its stories and events by touring them by bicycle.",
   "essentials.name": "Mexico City Essentials",
   "essentials.desc": "Come and ride from  the Aztec Ruins to the hipster neighborhoods, while you eat 3 delicious varieties of tacos and learn about history, society and architecture.",
-
   "southside.name": "Mexico City South Side",
   "southside.desc": "<p>Bike throught the spanish 16th century towns (San Angel & Coyoacán) and the modernist campus of the National University. In this tour you will visit this neighborhoods/ places:{br} • San Ángel Town{br} • Frida Kahlo & Diego Rivera Studio{br} • National University Campus{br} • Tacos and Hydratation stop{br} • Coyoacán Town{br} • Frida Kahlo Blue House (outside)</p>",
   "southside.shortDesc": "Bike throught the spanish 16th century towns (San Angel & Coyoacán) and the modernist campus of the National University.",
-  
   "arch.name": "ARCHITECTURAL BIKE TOUR / ROMA - CONDESA",
   "arch.desc": "The Chic neighborhoods of Mexico City have a secret: they were designed by architects. Come and discover the urban and architectural origin of these neighbourhoods. In addition to knowing the emblematic streets and buildings, you will eat in a legendary taqueria in Condesa and you will visit the largest urban park in the country.",
-
   "urban.name": "Mexico City North Side",
   "urban.desc": "The Urban Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City.",
-
   "markets.name": "Markets Tour / From jamaica flowers market to san juan gourmet market",
   "markets.desc": "Mexico its one of the most famous tourist destinies in terms of gastonomy around the world. Join us to visit the epicenter of food and culture: the markets. During the experience your 5 senses will turn on, due to  the large amount of food, people, products and places you are going to visit.",
-
   "modernarch.name": "Modern Architecture / De San Angel a C.U",
   "modernarch.desc": "Explore the story of how the cities of the 20th century were built with concrete, steel and glass. During the tour you will visit the largest university campus in the American continent and also the first modern houses in CDMX, built for Diego Rivera and Frida Kahlo!",
-
   "galleries.name": "Art Galleries / Polanco - San Miguel Chapultepec",
   "galleries.desc": "CDMX is the cultural epicenter of Mexico and Latin America, come and take a tour of some of the most important art galleries while you get to know Polanco and the neighborhood with the most art galleries, San Miguel Chapultepec.",
-
   "tlatelolco.name": "Tlatelolco / From the Mexican Market to the City of the Future",
   "tlatelolco.desc": "Mexica migration from Aztlán reached Lake Texcoco, founding 2 cities: México-Tenochtitlán and México-Tlatelolco, the latter functioning as the commercial epicenter of Mesoamerica. Come and tour the pre-Hispanic vestiges and the modern city of the future in the Nonoalco Tlatelolco Housing Complex, which houses more than 80,000 inhabitants and has witnessed transcendental historical events."
 }

@@ -6,7 +6,6 @@
   "tours.calendar_of_tours.title": "Calendario de Tours / Mayo",
   "tours.calendar_of_tours.desc": "Salidas 9am solo con reservación previa. Cupo límitado",
   "tours.current_month": "Mayo",
-
   "tours.section.description": "Descripción",
   "tours.section.included": "Incluidos",
   "tours.section.capacity": "Capacidad",
@@ -16,35 +15,25 @@
   "tours.meet.desc": "Para garantizar un comienzo sin problemas de su recorrido, nos reuniremos con usted en nuestro punto de encuentro designado ubicado en Calle Versalles 88, 06600 Ciudad de México, México. Nuestro punto de encuentro está convenientemente ubicado y es fácil de encontrar, por lo que no tendrá que preocuparse por perderse de camino al inicio del recorrido. Cuando llegue, será recibido por nuestro personal amable y experto que lo preparará con su bicicleta y todo el equipo que necesita para un viaje cómodo y seguro. A partir de ahí, emprenderemos una aventura juntos, explorando los barrios vibrantes de la ciudad, los monumentos históricos y edificios emblemáticos.",
   "tours.meet.get_directions": "Direcciones",
   "tours.contactus": "Contacto",
-
   "taco.name": "Taco Tour / Centro Histórico",
   "taco.desc": "Ven y descubre los orígenes de la CDMX , recorriendo desde las principales calles y plazas hasta los rincones menos conocidos del Centro Histórico. Durante el recorrido comerás una gran variedad de tacos, desde tacos de pastor, birria, carnitas, suadero hasta tacos de canasta.",
-
   "coyo.name": "Coyoacán y sus 5 pueblos",
   "coyo.desc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
   "coyo.shortDesc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
-  
   "essentials.name": "Mexico City Essentials / Downtown, Reforma, Roma, Condesa",
   "essentials.desc": "<p>Bike throught the spanish 16th century towns (San Angel & Coyoacán) and the modernist campus of the National University. In this tour you will visit this neighborhoods/ places:{br} • San Ángel Town{br} • Frida Kahlo & Diego Rivera Studio{br} • National University Campus{br} • Tacos and Hydratation stop{br} • Coyoacán Town{br} • Frida Kahlo Blue House (outside)</p>",
-
   "arch.name": "Tour de Arquitectura / Roma - Condesa",
   "arch.desc": "Los barrios Chic de la CDMX tienen un secreto: fueron diseñados por arquitectos. Ven y descubre el origen urbano y arquitectónico de estos barrios. Además de conocer las calles y edificios emblemáticos, comerás en una legendaria taquería de Condesa y visitarás el parque urbano más grande del país.",
-
   "urban.name": "Tour Urbano / Mansiones Porfirianas",
   "urban.desc": "El Tour Urbano se enfoca en el crecimiento urbano que tuvo la CDMX , desde los primeros barrios del siglo XIX hasta las zonas industriales de los años 50 en la Ciudad de México.",
-
   "markets.name": "Tour de Mercados / De Jamaica a San juan",
   "markets.desc": "La Ciudad de México tiene una cultura comercial muy antigua, desde los tianguis de los pueblos prehispánicos, hasta los mercados construídos en los años 50. En este recorrido conocerás una variedad de distintos mercados de alimentos, artesanías, herramientas, antigüedades, etc. Además probaras distintos alimentos y bebidas durante el recorrido.",
-
   "modernarch.name": "Arquitectura Moderna / De San Angel a C.U",
   "modernarch.desc": "La historia de como con concreto, acero y vidrio se construyeron las ciudades del siglo XX . durante el tour visitarás el campus universitario más grande del continente americano y además las primeras casas modernas en CDMX, construidas para  Diego Rivera y Frida Kahlo.",
-
   "galleries.name": "Galerías de Arte / Polanco - San Miguel Chapultepec",
   "galleries.desc": "La CDMX es el epicentro cultural de México y  América Latina, ven a dar un recorrido por algunas de las más importantes galerías de arte mientras conoces Polanco y la colonia con más galerías de arte, la San Miguel Chapultepec",
-
   "tlatelolco.name": "Tlatelolco / Del Mercado Mexica a la Ciudad del Futuro",
   "tlatelolco.desc": "La migración mexica desde aztlán llegó al lago de Texcoco fundando 2 ciudades: México-Tenochtitlán y México-Tlatelolco, esta última funcionando como epicentro comercial de mesoámerica. Ven a recorrer los vestigios prehispánicos y la moderna ciudad del futuro el conjunto Habitacional Nonoalco Tlatelolco, el cual alberga más de 80mil habitantes y ha sido testigo de sucesos históricos trascendental",
-
   "galerias.name": "Ruta de Galerías en Bici",
   "galerias.desc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa.{br}{br}Durante el recorrido visitarás estas colonias: {br} ● Roma Norte{br} ● Juárez{br} ● Condesa{br} ● San Miguel Chapultepec{br} ● Bosque de Chapultepec{br} ● Polanco {br}{br}Algúnas de la galerías a visitar:{br} ● Kurimanzutto{br} ● OMR{br} ● Lago Algo{br} ● Proyectos Monclova{br} ● Laguna",
   "galerias.shortDesc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa."
