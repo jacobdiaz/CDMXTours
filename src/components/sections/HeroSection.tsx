@@ -6,7 +6,7 @@ import ImageOverlay from "../layout/ImageOverlay";
 const HeroSection = () => (
   <section className='relative'>
     <Image
-      src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg'
+      src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero_v2.jpeg'
       alt='Bike Tours CDMX'
       className='w-full object-cover h-[80vh] md:h-[90vh]'
       height={1080}
