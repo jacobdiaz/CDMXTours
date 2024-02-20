@@ -34,7 +34,7 @@ const TourPage = () => {
       >
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta property="og:title" content={Intl.formatMessage({ id: title })} />
+        <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
       </PageHeader>
       <div className="page-container">

@@ -39,8 +39,8 @@ const TourCard = ({
   };
 
   return (
-    <li className="mb-10 flex flex-col justify-between h-fit w-full mr-0 md:mr-0 md:w-[21rem]">
-      <article className=" min-h-[47rem] h-full flex flex-col justify-between">
+    <div className="mb-10 flex flex-col justify-between h-fit w-full mr-0 md:mr-0 md:w-[21rem]">
+      <article className=" md:min-h-[47rem] h-full flex flex-col justify-between">
         <div>
           <Link href={`/tour/${id}`}>
             <Image
@@ -52,8 +52,8 @@ const TourCard = ({
               loading="lazy"
             />
           </Link>
-          <div className="flex flex-row justify w-full py-2 justify-center">
-            <h3 className="text-card-title font-spartan font-black text-center uppercase max-w-[75] md:max-w-[85%] min-h-[70px]">
+          <div className="flex flex-row justify w-full py-5 justify-center">
+            <h3 className="text-card-title font-spartan font-black text-center uppercase max-w-[75] md:max-w-[85%] md:min-h-[70px]">
               <FormattedMessage id={tourName} />
             </h3>
           </div>
@@ -74,7 +74,7 @@ const TourCard = ({
           </Link>
         </div>
       </article>
-    </li>
+    </div>
   );
 };
 

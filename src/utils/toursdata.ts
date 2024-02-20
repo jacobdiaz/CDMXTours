@@ -204,7 +204,7 @@ export const Tours: Tour[] = [
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
     availability: { type: "Weekend", time: "10:00am - 2:00pm" },
-    tourName: "taco.name", // Translation ID in /translations/Tours.json
+    tourName: "taco.name",
     price: 650,
     duration: "4hrs - 15km",
     cap: "10",
