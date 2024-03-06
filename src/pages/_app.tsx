@@ -9,8 +9,9 @@ import { Fjalla_One, Source_Sans_Pro, League_Spartan } from "next/font/google";
 import "@/globals.css";
 import NavBar from "@/components/layout/NavBar";
 import Footer from "@/components/layout/Footer";
-import DatePicker from "@/components/tours/DatePicker";
+// import DatePicker from "@/components/tours/DatePicker";
 import DatePickerStyle from "@/components/tours/DatePickerStyle";
+import WhatsAppBtn from "@/components/actions/WhatsAppBtn";
 
 interface MyAppProps {
   Component: ComponentType<any>;
@@ -47,6 +48,7 @@ function MyApp({ Component, pageProps }: MyAppProps) {
       <DatePickerStyle FjallaOne={FjallaOne} SourceSansPro={SourceSansPro} />
       <IntlProvider locale={locale ?? "en"} messages={messages[locale ?? "en"]}>
         <NavBar />
+        <WhatsAppBtn/>
         <Component {...pageProps} />
         <Footer />
       </IntlProvider>
