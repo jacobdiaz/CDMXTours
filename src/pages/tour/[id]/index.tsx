@@ -57,7 +57,10 @@ const TourPage = () => {
                   <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
                 </svg>
               </span>
-              View All
+              {Intl.formatMessage({
+                id: "tours.view_all_tours",
+                defaultMessage: "View All Tours",
+              })}
             </Link>
             <div className="w-full flex justify-between">
               <h1 className="text-4xl ">
