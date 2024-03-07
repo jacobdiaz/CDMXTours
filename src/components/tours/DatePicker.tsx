@@ -46,33 +46,51 @@ const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
   }
 
   const availabilityText = () => {
-    if (availability.type === "Weekday") {
-      return "Tour is available on weekdays only";
-    } else if (availability.type === "Weekend") {
-      return "Tour is available on weekend days only";
+    if (intl.locale === "en") {
+      if (availability.type === "Weekday") {
+        return "Tour is available on weekdays only";
+      } else if (availability.type === "Weekend") {
+        return "Tour is available on weekend days only";
+      } else {
+        return "By Reservation Only";
+      }
     } else {
-      return "By Reservation Only";
+      if (availability.type === "Weekday") {
+        return "Tour solo disponible entre semana";
+      } else if (availability.type === "Weekend") {
+        return "Tour solo disponible en fin de semana";
+      } else {
+        return "Solo por reservación";
+      }
     }
   };
 
+  const intl = useIntl();
   // TODO Add Translations
   // TODO Create more media points for when it starts to shrink!
   return (
-    <div className='w-full md:shadow-xl md:p-10 rounded-lg sticky top-56'>
-      <h5 className='text-lg font-bold'>Select A Tour Date</h5>
-      <p className='text-xs text-gray-500'>{availabilityText()}</p>
+    <div className="w-full md:shadow-xl md:p-10 rounded-lg sticky top-56">
+      <h5 className="text-lg font-bold">
+        {intl.formatMessage({ id: "datepicker.select_date" })}
+      </h5>
+      <p className="text-xs text-gray-500">{availabilityText()}</p>
       <Calendar
         onChange={onCalendarChange}
         value={date}
-        className='py-5'
+        className="py-5"
         tileDisabled={setDisabledDates}
       />
       {availability.time && (
-        <div className='flex justify-center md:justify-start'>
-          <p className='text-xs py-2'>Time: {availability.time}</p>
+        <div className="flex justify-center md:justify-start">
+          <p className="text-xs py-2">
+            {intl.formatMessage({
+              id: "datepicker.time",
+            })}
+            : {availability.time}
+          </p>
         </div>
       )}
-      <div className='flex flex-row w-full justify-between'>
+      <div className="flex flex-row w-full justify-between">
         <GuestSelectDesktop
           maxQuantity={cap}
           whatsAppLink={whatsAppLink}
@@ -84,7 +102,7 @@ const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
           price={price}
         />
       </div>
-      <p className='text-xs opacity-50'>Availability Pending</p>
+      <p className="text-xs opacity-50">Availability Pending</p>
     </div>
   );
 };
