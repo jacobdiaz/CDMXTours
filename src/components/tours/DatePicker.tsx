@@ -4,6 +4,7 @@ import GuestSelectDesktop from "./GuestSelectDesktop";
 import GuestSelectMobile from "./GuestSelectMobile";
 import { useIntl } from "react-intl";
 import { Tour } from "@/utils/toursdata";
+import { log } from "console";
 
 type DatePickerType = {
   availability: {
@@ -20,15 +21,27 @@ const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
   const Intl = useIntl();
 
   const whatsAppLink = (quantity: number, totalPrice: number) => {
-    const msg = `Hello Tours en Bici CDMX! \nI would like to book\nTour: ${Intl.formatMessage(
+    const tour = Intl.formatMessage({ id: tourName });
+
+    const msgEn = `Hello Tours en Bici CDMX! \nI would like to book\nTour: ${tour}\nDate: ${date.toLocaleString(
+      "en-US",
+      {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+      }
+    )} \nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
+
+    const msgEs = `Hola Tours en Bici CDMX! \nMe gustaría reservar\nTour: ${Intl.formatMessage(
       { id: tourName }
-    )}\nDate: ${date.toLocaleString("en-US", {
+    )}\nFecha: ${date.toLocaleString("es-MX", {
       weekday: "long",
       day: "numeric",
       month: "long",
-    })} \nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
+    })} \nInvitados: ${quantity}\nTotal: $${totalPrice} MXN`;
 
-    return `https://wa.me/5215583333677?text=${encodeURI(msg)}`;
+    const encodedMsg = encodeURIComponent(Intl.locale === "en" ? msgEn : msgEs);
+    return `https://wa.me/5215583333677?text=${encodedMsg}`;
   };
   function onCalendarChange(nextValue: any) {
     setDate(nextValue);
