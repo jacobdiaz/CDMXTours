@@ -33,6 +33,93 @@ export type Tour = {
 // TODO Instead of explicityly stating the image paths, we should look into grabbing the folder and dynamically generating the paths
 export const Tours: Tour[] = [
   {
+    id: "cdmx-taco-tour",
+    locales: ["en", "es"],
+    availability: { type: "Weekend", time: "10:00am - 2:00pm" },
+    tourName: "taco.name",
+    price: 650,
+    duration: "4hrs - 15km",
+    cap: "10",
+    description: "taco.desc",
+    included: "Bikes, Helmets, Tacos, Hydration",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-taco.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-taco.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-taco.jpeg",
+    imgAlt: "Image of Taco Bike Tour of Downtown Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_1.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3v3.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg%09	",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5v2.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+    ],
+  },
+
+  {
+    id: "cdmx-architectural-tour",
+    locales: ["en", "es"],
+    availability: { type: "Weekend" },
+    tourName: "arch.name",
+    price: 500,
+    duration: "4hrs -20km",
+    cap: "15",
+    description: "arch.desc",
+    included: "Bikes, Helmets, Tacos, Hydration",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
+    imgAlt: "Image of Architectural Bike Tour in Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
+      },
+    ],
+  },
+  {
     id: "cdmx-essentials-tour",
     locales: ["en"],
     availability: { type: "Weekday", time: "10:00am" },
@@ -201,48 +288,6 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: "cdmx-taco-tour",
-    locales: ["en", "es"],
-    availability: { type: "Weekend", time: "10:00am - 2:00pm" },
-    tourName: "taco.name",
-    price: 650,
-    duration: "4hrs - 15km",
-    cap: "10",
-    description: "taco.desc",
-    included: "Bikes, Helmets, Tacos, Hydration",
-    imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-taco.jpeg",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-taco.jpeg",
-    thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-taco.jpeg",
-    imgAlt: "Image of Taco Bike Tour of Downtown Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
-    coords: { lat: 19.42755, lng: -99.15569 },
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_1.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3v3.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg%09	",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5v2.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
-      },
-    ],
-  },
-  {
     id: "cdmx-coyoacan-tour",
     locales: ["en", "es"],
     availability: { type: "Weekday", time: "10:00am" },
@@ -286,50 +331,6 @@ export const Tours: Tour[] = [
       },
     ],
   },
-  {
-    id: "cdmx-architectural-tour",
-    locales: ["en", "es"],
-    availability: { type: "Weekend" },
-    tourName: "arch.name",
-    price: 500,
-    duration: "4hrs -20km",
-    cap: "15",
-    description: "arch.desc",
-    included: "Bikes, Helmets, Tacos, Hydration",
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
-    thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
-    imgAlt: "Image of Architectural Bike Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-    ],
-  },
-
   {
     id: "cdmx-markets-tour",
     locales: ["es"],
