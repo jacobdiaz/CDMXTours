@@ -33,6 +33,49 @@ export type Tour = {
 // TODO Instead of explicityly stating the image paths, we should look into grabbing the folder and dynamically generating the paths
 export const Tours: Tour[] = [
   {
+    id: "cdmx-essentials-tour",
+    locales: ["en", "es"],
+    availability: { type: "Weekday", time: "10:00am" },
+    tourName: "essentials.name", // Translation ID in /translations/Tours.json
+    price: 950,
+    duration: "4hrs - 15km",
+    cap: "10",
+    description: "essentials.desc",
+    included: "Bikes, Helmets, Tacos, Hydration",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-essentials.jpg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-essentials.jpg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-essentials.jpg",
+    imgAlt: "Image of Essential Bike Tour of Downtown Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_1.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_3.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_2.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_4.jpg	",
+        alt: "Photo from the essentials tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_5.jpg",
+        alt: "Photo from the essentials tour mexico",
+      },
+    ],
+  },
+  {
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
     availability: { type: "Weekend", time: "10:00am - 2:00pm" },
@@ -116,47 +159,6 @@ export const Tours: Tour[] = [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-    ],
-  },
-  {
-    id: "cdmx-essentials-tour",
-    locales: ["en"],
-    availability: { type: "Weekday", time: "10:00am" },
-    tourName: "essentials.name", // Translation ID in /translations/Tours.json
-    price: 950,
-    duration: "4hrs - 15km",
-    cap: "10",
-    description: "essentials.desc",
-    included: "Bikes, Helmets, Tacos, Hydration",
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-essentials.jpg",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-essentials.jpg",
-    imgAlt: "Image of Essential Bike Tour of Downtown Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
-    coords: { lat: 19.42755, lng: -99.15569 },
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_1.jpg",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_3.jpg",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_2.jpg",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_4.jpg	",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_5.jpg",
-        alt: "Photo from the essentials tour mexico",
       },
     ],
   },

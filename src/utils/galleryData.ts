@@ -16,10 +16,6 @@ export const Gallery: ImageType[] = [
     alt: "",
   },
   {
-    src: cloudFrontUri + "4.jpg",
-    alt: "",
-  },
-  {
     src: cloudFrontUri + "5.jpg",
     alt: "",
   },
@@ -37,10 +33,6 @@ export const Gallery: ImageType[] = [
   },
   {
     src: cloudFrontUri + "9.jpg",
-    alt: "",
-  },
-  {
-    src: cloudFrontUri + "10.jpg",
     alt: "",
   },
   {
