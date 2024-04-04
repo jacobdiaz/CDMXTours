@@ -251,7 +251,7 @@ export const Tours: Tour[] = [
     tourName: "urban.name",
     locales: ["en", "es"],
     availability: { type: "Reservation" },
-    price: 550,
+    price: 750,
     duration: "4hrs - 25km",
     cap: "10",
     description: "urban.desc",
