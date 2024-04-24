@@ -9,13 +9,14 @@ export type Tour = {
   id: string;
   locales: string[];
   availability: {
-    type: "Weekend" | "Weekday" | "Reservation";
-    time?: string;
+    type: "Weekend" | "Weekday" | "Reservation" | number[];
+    time?: string[];
   };
   tourName: string;
   price: number;
   duration: string;
   cap: string;
+  minGuests: string;
   description: string;
   shortDescription?: string;
   included: string;
@@ -35,11 +36,12 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-essentials-tour",
     locales: ["en", "es"],
-    availability: { type: "Weekday", time: "10:00am" },
+    availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["9:30am"] },
     tourName: "essentials.name", // Translation ID in /translations/Tours.json
     price: 950,
     duration: "4hrs - 15km",
     cap: "10",
+    minGuests: "1",
     description: "essentials.desc",
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc:
@@ -78,11 +80,12 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
-    availability: { type: "Weekend", time: "10:00am - 2:00pm" },
+    availability: { type: [2, 3, 4, 5], time: ["10:00am", "2:00pm"] },
     tourName: "taco.name",
-    price: 650,
+    price: 750,
     duration: "4hrs - 15km",
     cap: "10",
+    minGuests: "1",
     description: "taco.desc",
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc:
@@ -122,11 +125,12 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-architectural-tour",
     locales: ["en", "es"],
-    availability: { type: "Weekend" },
+    availability: { type: [1, 3, 5], time: ["2:00pm"] },
     tourName: "arch.name",
-    price: 500,
+    price: 550,
     duration: "4hrs -20km",
     cap: "15",
+    minGuests: "1",
     description: "arch.desc",
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc:
@@ -165,11 +169,12 @@ export const Tours: Tour[] = [
   {
     id: "ruta-galerias",
     locales: ["es"],
-    availability: { type: "Weekend", time: "10:00am" },
+    availability: { type: "Weekend", time: ["10:00am"] },
     tourName: "galerias.name", // Translation ID in /translations/Tours.json
     price: 550,
     duration: "4.5hrs - 18km",
     cap: "10",
+    minGuests: "1",
     description: "galerias.desc",
     shortDescription: "galerias.shortDesc",
     included: "Renta de bicicleta, Comida, Hidratación, Guia",
@@ -207,11 +212,12 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-south-side-bike-tour",
     locales: ["en"],
-    availability: { type: "Weekday", time: "10:00am" },
+    availability: { type: [2, 3, 4, 6], time: ["9:30am"] },
     tourName: "southside.name", // Translation ID in /translations/Tours.json
     price: 850,
-    duration: "4.5hrs",
+    duration: "4hrs",
     cap: "10",
+    minGuests: "2",
     description: "southside.desc",
     shortDescription: "southside.shortDesc",
     included: "Bikes, Helmets, Tacos, Hydration",
@@ -250,10 +256,11 @@ export const Tours: Tour[] = [
     id: "cdmx-urban-tour",
     tourName: "urban.name",
     locales: ["en", "es"],
-    availability: { type: "Reservation" },
+    availability: { type: [2, 4, 6], time: ["9:30am"] },
     price: 750,
-    duration: "4hrs - 25km",
+    duration: "4hrs",
     cap: "10",
+    minGuests: "2",
     description: "urban.desc",
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc:
@@ -292,11 +299,12 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-coyoacan-tour",
     locales: ["en", "es"],
-    availability: { type: "Weekday", time: "10:00am" },
+    availability: { type: "Weekday", time: ["10:00am"] },
     tourName: "coyo.name",
     price: 550,
     duration: "4hrs - 18km",
     cap: "15",
+    minGuests: "1",
     description: "coyo.desc",
     shortDescription: "coyo.shortDesc",
     included: "Bikes, Helmets, Tacos, Hydration ",
@@ -336,11 +344,12 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-markets-tour",
     locales: ["es"],
-    availability: { type: "Reservation" },
+    availability: { type: [6], time: ["9:30am"] },
     tourName: "markets.name",
-    price: 600,
+    price: 1500,
     duration: "5hrs - 15km",
     cap: "12",
+    minGuests: "2",
     description: "markets.desc",
     included: "Bikes, Helmets, Tacos, Hydration ",
     imgSrc:

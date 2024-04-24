@@ -1,18 +1,14 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-
-type SelectProps = {
-  price: number;
-  maxQuantity: number;
-  whatsAppLink: (quantity: number, totalPrice: number) => string;
-};
+import { GuestSelectProps } from "./GuestSelectMobile";
 
 const GuestSelectDesktop = ({
   price,
   whatsAppLink,
+  minQuantity,
   maxQuantity = 9,
-}: SelectProps) => {
-  const [quantity, setQuantity] = useState<number>(1);
+}: GuestSelectProps) => {
+  const [quantity, setQuantity] = useState<number>(minQuantity);
   const [totalPrice, setTourPrice] = useState<number>(price);
 
   useEffect(() => {
@@ -26,9 +22,9 @@ const GuestSelectDesktop = ({
           className='select select-bordered rounded-none'
           onChange={(e) => setQuantity(parseInt(e.target.value))}
         >
-          {[...Array(maxQuantity)].map((_, idx) => (
-            <option key={idx} value={idx + 1}>
-              {idx + 1} {idx + 1 === 1 ? "Guest" : "Guests"}
+          {[...Array(maxQuantity - minQuantity + 1)].map((_, idx) => (
+            <option key={idx} value={minQuantity + idx}>
+              {minQuantity + idx} {minQuantity + idx === 1 ? "Guest" : "Guests"}
             </option>
           ))}
         </select>

@@ -3,20 +3,25 @@ import React, { useState } from "react";
 import GuestSelectDesktop from "./GuestSelectDesktop";
 import GuestSelectMobile from "./GuestSelectMobile";
 import { useIntl } from "react-intl";
-import { Tour } from "@/utils/toursdata";
-import { log } from "console";
 
 type DatePickerType = {
   availability: {
-    type: "Weekend" | "Weekday" | "Reservation";
-    time?: string;
+    type: "Weekend" | "Weekday" | "Reservation" | number[];
+    time?: string[];
   };
   price: number;
   tourName: string;
   cap: number;
+  minGuests: number;
 };
 
-const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
+const DatePicker = ({
+  availability,
+  price,
+  tourName,
+  cap,
+  minGuests,
+}: DatePickerType) => {
   const [date, setDate] = useState(new Date());
   const Intl = useIntl();
 
@@ -49,7 +54,11 @@ const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
 
   function setDisabledDates({ date, view }: { date: Date; view: string }) {
     const day = date.getDay();
-    if (availability.type === "Weekday") {
+
+    // if type == [number] then it is an array of days that are available
+    if (Array.isArray(availability.type)) {
+      return view === "month" && !availability.type.includes(day);
+    } else if (availability.type === "Weekday") {
       return view === "month" && (day === 6 || day === 0); // Disable weekends
     } else if (availability.type === "Weekend") {
       return view === "month" && day >= 1 && day <= 5; // Disable weekdays
@@ -60,19 +69,11 @@ const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
 
   const availabilityText = () => {
     if (intl.locale === "en") {
-      if (availability.type === "Weekday") {
-        return "Tour is available on weekdays only";
-      } else if (availability.type === "Weekend") {
-        return "Tour is available on weekend days only";
-      } else {
+      if (availability.type === "Reservation") {
         return "By Reservation Only";
       }
     } else {
-      if (availability.type === "Weekday") {
-        return "Tour solo disponible entre semana";
-      } else if (availability.type === "Weekend") {
-        return "Tour solo disponible en fin de semana";
-      } else {
+      if (availability.type === "Reservation") {
         return "Solo por reservación";
       }
     }
@@ -82,20 +83,20 @@ const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
   // TODO Add Translations
   // TODO Create more media points for when it starts to shrink!
   return (
-    <div className="w-full md:shadow-xl md:p-10 rounded-lg sticky top-56">
-      <h5 className="text-lg font-bold">
+    <div className='w-full md:shadow-xl md:p-10 rounded-lg sticky top-56'>
+      <h5 className='text-lg font-bold'>
         {intl.formatMessage({ id: "datepicker.select_date" })}
       </h5>
-      <p className="text-xs text-gray-500">{availabilityText()}</p>
+      <p className='text-xs text-gray-500'>{availabilityText()}</p>
       <Calendar
         onChange={onCalendarChange}
         value={date}
-        className="py-5"
+        className='py-5'
         tileDisabled={setDisabledDates}
       />
       {availability.time && (
-        <div className="flex justify-center md:justify-start">
-          <p className="text-xs py-2">
+        <div className='flex justify-center md:justify-start'>
+          <p className='text-xs py-2'>
             {intl.formatMessage({
               id: "datepicker.time",
             })}
@@ -103,19 +104,21 @@ const DatePicker = ({ availability, price, tourName, cap }: DatePickerType) => {
           </p>
         </div>
       )}
-      <div className="flex flex-row w-full justify-between">
+      <div className='flex flex-row w-full justify-between'>
         <GuestSelectDesktop
           maxQuantity={cap}
           whatsAppLink={whatsAppLink}
+          minQuantity={minGuests}
           price={price}
         />
         <GuestSelectMobile
           maxQuantity={cap}
+          minQuantity={minGuests}
           whatsAppLink={whatsAppLink}
           price={price}
         />
       </div>
-      <p className="text-xs opacity-50">Availability Pending</p>
+      <p className='text-xs opacity-50'>Availability Pending</p>
     </div>
   );
 };
