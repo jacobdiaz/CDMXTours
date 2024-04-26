@@ -343,7 +343,7 @@ export const Tours: Tour[] = [
   },
   {
     id: "cdmx-markets-tour",
-    locales: ["es"],
+    locales: ["es", "en"],
     availability: { type: [0], time: ["9:30am"] },
     tourName: "markets.name",
     price: 1500,
