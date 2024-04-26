@@ -47,7 +47,7 @@ const ReserveBar = ({ tourData }: { tourData: Tour }) => {
         </div>
         <label
           htmlFor='date-picker-modal'
-          className='btn bg-primary rounded-none'
+          className='btn bg-orange rounded-none border-none'
         >
           {bookText}
         </label>

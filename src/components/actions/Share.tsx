@@ -14,7 +14,7 @@ const Share = ({ tour }: { tour: Tour }) => {
     <>
       <label
         htmlFor='share-modal'
-        className='cursor-pointer flex flex-row items-center justify-end underline font-medium'
+        className='cursor-pointer flex flex-row items-center justify-end underline font-medium decoration-orange'
       >
         <div className='w-[18%] mr-2 my-5'>
           <Image
@@ -24,7 +24,7 @@ const Share = ({ tour }: { tour: Tour }) => {
             height={10}
           />
         </div>
-        <p>Share</p>
+        <p className="text-orange">Share</p>
       </label>
 
       <input type='checkbox' id='share-modal' className='modal-toggle' />

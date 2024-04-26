@@ -40,7 +40,7 @@ const GuestSelectDesktop = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         target='_blank'
-        className='btn rounded-none bg-black w-full my-5'
+        className='btn rounded-none bg-orange border-none w-full my-5 hover:bg-orange hover:opacity-80'
       >
         Book Your Tour
       </Link>

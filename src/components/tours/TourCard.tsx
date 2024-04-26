@@ -70,6 +70,7 @@ const TourCard = ({
             href={`/tour/${id}`}
             className="font-bold text-lg hover:font-black text-center"
           >
+            {/* Book Now */}
             <FormattedMessage id="tours.cta.button" />
           </Link>
         </div>

@@ -30,7 +30,7 @@ const GuestSelectMobile = ({
         <button
           className='btn-circle border'
           onClick={() => {
-            if (quantity >= 2) setQuantity(quantity - 1);
+            if (quantity >= minQuantity + 1) setQuantity(quantity - 1);
           }}
         >
           -
@@ -57,7 +57,7 @@ const GuestSelectMobile = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         target='_blank'
-        className='btn rounded-none bg-black w-full my-5'
+        className='btn rounded-none bg-orange border-none w-full my-5'
       >
         {intl.formatMessage({ id: "tours.book.btn" })}
       </Link>
