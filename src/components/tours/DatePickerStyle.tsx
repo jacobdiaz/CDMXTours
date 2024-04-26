@@ -150,12 +150,12 @@ const DatePickerStyle = ({ FjallaOne, SourceSansPro }: Props) => (
 
       .react-calendar__tile--active {
         color: white;
-        background: black;
+        background: #FFA500;
       }
 
       .react-calendar__tile--active:enabled:hover,
       .react-calendar__tile--active:enabled:focus {
-        background: black;
+        background: #FFA500;
       }
 
       .react-calendar--selectRange .react-calendar__tile--hover {
