@@ -80,7 +80,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
-    availability: { type: [2, 3, 4, 5], time: ["10:00am", "2:00pm"] },
+    availability: { type: [3, 4, 5, 6], time: ["10:00am", "2:00pm"] },
     tourName: "taco.name",
     price: 750,
     duration: "4hrs - 15km",
@@ -125,7 +125,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-architectural-tour",
     locales: ["en", "es"],
-    availability: { type: [1, 3, 5], time: ["2:00pm"] },
+    availability: { type: [2, 4, 6], time: ["2:00pm"] },
     tourName: "arch.name",
     price: 550,
     duration: "4hrs -20km",
@@ -169,7 +169,7 @@ export const Tours: Tour[] = [
   {
     id: "ruta-galerias",
     locales: ["es"],
-    availability: { type: "Weekend", time: ["10:00am"] },
+    availability: { type: [6], time: ["10:00am"] },
     tourName: "galerias.name", // Translation ID in /translations/Tours.json
     price: 550,
     duration: "4.5hrs - 18km",
@@ -212,7 +212,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-south-side-bike-tour",
     locales: ["en"],
-    availability: { type: [2, 3, 4, 6], time: ["9:30am"] },
+    availability: { type: [2, 4, 6], time: ["9:30am"] },
     tourName: "southside.name", // Translation ID in /translations/Tours.json
     price: 850,
     duration: "4hrs",
@@ -256,7 +256,7 @@ export const Tours: Tour[] = [
     id: "cdmx-urban-tour",
     tourName: "urban.name",
     locales: ["en", "es"],
-    availability: { type: [2, 4, 6], time: ["9:30am"] },
+    availability: { type: [0, 3, 5], time: ["9:30am"] },
     price: 750,
     duration: "4hrs",
     cap: "10",
@@ -344,7 +344,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-markets-tour",
     locales: ["es"],
-    availability: { type: [6], time: ["9:30am"] },
+    availability: { type: [0], time: ["9:30am"] },
     tourName: "markets.name",
     price: 1500,
     duration: "5hrs - 15km",
