@@ -4,42 +4,128 @@ import Divider from "../layout/Divider";
 import { useIntl } from "react-intl";
 
 export type GuestSelectProps = {
-  price: number;
-  maxQuantity: number;
-  minQuantity: number;
+  price?: number;
+  maxQuantity?: number;
+  minQuantity?: number;
   whatsAppLink: (quantity: number, totalPrice: number) => string;
+  isRentalBike?: Boolean | undefined;
 };
 
 const GuestSelectMobile = ({
-  price,
+  price = 0,
   whatsAppLink,
-  minQuantity,
-  maxQuantity,
+  minQuantity = 0,
+  maxQuantity = 0,
+  isRentalBike,
 }: GuestSelectProps) => {
   const [quantity, setQuantity] = useState<number>(minQuantity || 1);
   const [totalPrice, setTourPrice] = useState<number>(price || 0);
+  const [selectedTime, setSelectedTime] = useState("2hrs");
+
+  // Handler to update state when a radio button is selected
+  const handleChange = (event: any) => {
+    setSelectedTime(event.target.value);
+  };
   console.log("minQuantity", minQuantity);
   useEffect(() => {
-    setTourPrice(price * quantity);
-  }, [quantity]);
+    if (isRentalBike) {
+      switch (selectedTime) {
+        case "1hr":
+          setTourPrice(quantity * 80);
+          break;
+        case "2hrs":
+          setTourPrice(quantity * 150);
+          break;
+        case "5hrs":
+          setTourPrice(quantity * 250);
+          break;
+        case "24hrs":
+          setTourPrice(quantity * 350);
+          break;
+      }
+    } else {
+      setTourPrice(price * quantity);
+    }
+  }, [quantity, selectedTime]);
 
   const intl = useIntl();
   return (
-    <div className='flex flex-col md:hidden items-center h-full w-full'>
-      <div className='flex-row'>
+    <div className="flex flex-col md:hidden items-center h-full w-full">
+      {isRentalBike && (
+        // select time for rental bike
+        <div className="mb-2">
+          {/* Radio buttons for selecting rental time */}
+          <h5 className="text-lg font-bold mb-2">Select Rental Time (Hours)</h5>
+          <div className="flex flex-row justify-center md:justify-start">
+            <input
+              type="radio"
+              name="rentalTime"
+              id="time1"
+              value="1hr"
+              className="square-radio mr-2"
+              onChange={handleChange}
+              checked={selectedTime === "1hr"}
+            />
+            <label htmlFor="time1" className="mr-4">
+              1 Hrs
+            </label>
+
+            <input
+              type="radio"
+              name="rentalTime"
+              id="time2"
+              value="2hrs"
+              className="square-radio mr-2"
+              onChange={handleChange}
+              checked={selectedTime === "2hrs"}
+            />
+            <label htmlFor="time2" className="mr-4">
+              2 Hrs
+            </label>
+
+            <input
+              type="radio"
+              name="rentalTime"
+              id="time3"
+              value="5hrs"
+              className="square-radio mr-2"
+              onChange={handleChange}
+              checked={selectedTime === "5hrs"}
+            />
+            <label htmlFor="time3" className="mr-4">
+              5 Hrs
+            </label>
+
+            <input
+              type="radio"
+              name="rentalTime"
+              id="time4"
+              value="24hrs"
+              className="square-radio mr-2"
+              onChange={handleChange}
+              checked={selectedTime === "24hrs"}
+            />
+            <label htmlFor="time4">24 Hrs</label>
+          </div>
+        </div>
+      )}
+      <div className="flex-row">
         <button
-          className='btn-circle border'
+          className="btn-circle border"
           onClick={() => {
             if (quantity >= minQuantity + 1) setQuantity(quantity - 1);
           }}
         >
           -
         </button>
-        <span className='px-5 font-semibold'>
-          {quantity} {intl.formatMessage({ id: "datepicker.guest" })}
+        <span className="px-5 font-semibold">
+          {quantity}{" "}
+          {isRentalBike
+            ? "Bike"
+            : intl.formatMessage({ id: "datepicker.guest" })}
         </span>
         <button
-          className='btn-circle border'
+          className="btn-circle border"
           onClick={() => {
             if (quantity < maxQuantity) setQuantity(quantity + 1);
           }}
@@ -48,18 +134,23 @@ const GuestSelectMobile = ({
         </button>
       </div>
       <Divider />
-      <div className='flex flex-row w-full justify-between'>
+      <div className="flex flex-row w-full justify-between">
         <p>Total</p>
-        <p className='font-black font-spartan text-base'>
+        <p className="font-black font-spartan text-base">
           ${totalPrice?.toLocaleString()} <span>MXN</span>
         </p>
       </div>
       <Link
         href={whatsAppLink(quantity, totalPrice)}
-        target='_blank'
-        className='btn rounded-none bg-orange border-none w-full my-5'
+        target="_blank"
+        className="btn rounded-none bg-orange border-none w-full my-5"
       >
-        {intl.formatMessage({ id: "tours.book.btn" })}
+        {
+          isRentalBike
+            ? "Rent Bike"
+            : intl.formatMessage({ id: "tours.book.btn" })
+        
+        }
       </Link>
     </div>
   );
