@@ -16,21 +16,21 @@ const TourTypeSection = ({ hideHeader }: Props) => {
   return (
     <section>
       {!hideHeader && (
-        <div className='flex flex-col justify-center md:items-center mt-10 mb-5'>
-          <SectionTitle margin='m-0'>
-            <FormattedMessage id='home.tours.title' />
+        <div className="flex flex-col justify-center md:items-center mt-10 mb-5">
+          <SectionTitle margin="m-0">
+            <FormattedMessage id="home.tours.title" />
           </SectionTitle>
         </div>
       )}
-      <div className='flex flex-col justify-center items-center w-full'>
+      <div className="flex flex-col justify-center items-center w-full">
         {!hideHeader && (
-          <p className='text-lg mb-10'>
-            <FormattedMessage id='home.tours.description' />
+          <p className="text-lg mb-10">
+            <FormattedMessage id="home.tours.description" />
           </p>
         )}
-        <ul className='flex flex-row justify-center md:justify-between w-full'>
+        <ul className="flex flex-row justify-center md:justify-between w-full">
           {tourTypes.map((t, idx) => (
-            <TourTypeCard tourType={t} imageSrc={cardImages[idx]} />
+            <TourTypeCard tourType={t} imageSrc={cardImages[idx]} key={idx} />
           ))}
         </ul>
       </div>

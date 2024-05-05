@@ -39,7 +39,7 @@ const GuestSelectDesktop = ({
     } else {
       setTourPrice(price * quantity);
     }
-  }, [quantity, selectedTime]);
+  }, [quantity, selectedTime, price, isRentalBike]);
 
   useEffect(() => {
     setTourPrice(price * quantity);

@@ -17,6 +17,6 @@
   "rental.included_3": "Bicycle Padlock",
   "rental.availability_pending": "Availability Pending",
   "rental.bike": "Bike",
-  "rental.rent.cta": "Renta Bike",
+  "rental.rent.cta": "Rent Bike",
   "rental_whatsapp_msg": "Hello Tours en Bici CDMX! \nI would like to rent {quantity} bike(s) \nDate: {date} \nTotal: ${totalPrice} MXN"
 }

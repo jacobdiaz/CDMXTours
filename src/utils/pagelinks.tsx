@@ -6,11 +6,11 @@ type Link = {
 
 const PageLinks: Link[] = [
   {
-    message: <FormattedMessage id='nav.about' />,
-    href: "/about-us",
+    message: <FormattedMessage id="nav.about" />,
+    href: "/cdmx-bike-rentals",
   },
   {
-    message: <FormattedMessage id='nav.contact' />,
+    message: <FormattedMessage id="nav.contact" />,
     href: "/contact",
   },
   {
@@ -26,11 +26,11 @@ const PageLinks: Link[] = [
     href: "/faq",
   },
   {
-    message: <FormattedMessage id='nav.gallery' />,
+    message: <FormattedMessage id="nav.gallery" />,
     href: "/gallery",
   },
   {
-    message: <FormattedMessage id='nav.book' />,
+    message: <FormattedMessage id="nav.book" />,
     href: "/book-a-tour",
   },
 ];

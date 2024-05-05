@@ -8,30 +8,26 @@ import { useEffect, useState } from "react";
 
 const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
   const Intl = useIntl();
-  const { locale: locales } = useRouter();
-  if (locales === undefined || locales === null || locales === "undefined")
-    return null;
+  const { locale } = useRouter();
 
-  const filteredTours = Tours.filter((tour) => tour.locales.includes(locales));
+  const filteredTours = Tours.filter((tour) => tour.locales.includes(locale ?? ""));
 
   const lang = Intl.locale === "en" ? "en" : "es";
-
   const [langBtnStyle, setLangBtnStyle] = useState({
     en: "",
     es: "",
   });
   useEffect(() => {
-    if (lang === "en") {
-      setLangBtnStyle({
-        en: "w-[48%] p-5 bg-black text-white text-center",
-        es: "w-[48%] p-5 bg-white text-black text-center border-2 border-black",
-      });
-    } else {
-      setLangBtnStyle({
-        en: "w-[48%] p-5 bg-white text-black text-center border-2 border-black",
-        es: "w-[48%] p-5 bg-black text-white text-center",
-      });
-    }
+    setLangBtnStyle({
+      en:
+        lang === "en"
+          ? "w-[48%] p-5 bg-black text-white text-center"
+          : "w-[48%] p-5 bg-white text-black text-center border-2 border-black",
+      es:
+        lang === "es"
+          ? "w-[48%] p-5 bg-black text-white text-center"
+          : "w-[48%] p-5 bg-white text-black text-center border-2 border-black",
+    });
   }, [lang]);
   return (
     <section>
@@ -47,11 +43,7 @@ const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
         <Link href="/book-a-tour" locale="en" className={`${langBtnStyle.en}`}>
           English
         </Link>
-        <Link
-          href="/book-a-tour/"
-          locale="es"
-          className={`${langBtnStyle.es}`}
-        >
+        <Link href="/book-a-tour/" locale="es" className={`${langBtnStyle.es}`}>
           Español
         </Link>
       </div>
