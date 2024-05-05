@@ -6,7 +6,7 @@ import FAQ from "./FAQPage.json";
 import GalleryPage from "./GalleryPage.json";
 import Tours from "./Tours.json";
 import Nav from "./Navbar.json";
-
+import Rental from "./Rental.json";
 export default {
   ...HomePage,
   ...AboutPage,
@@ -16,4 +16,5 @@ export default {
   ...GalleryPage,
   ...Tours,
   ...Nav,
+  ...Rental
 };

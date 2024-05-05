@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GuestSelectProps } from "./GuestSelectMobile";
+import { useIntl } from "react-intl";
 
 const GuestSelectDesktop = ({
   price = 0,
@@ -17,7 +18,8 @@ const GuestSelectDesktop = ({
   const handleChange = (event: any) => {
     setSelectedTime(event.target.value);
   };
-  console.log("minQuantity", minQuantity);
+
+  const intl = useIntl();
   useEffect(() => {
     if (isRentalBike) {
       switch (selectedTime) {
@@ -134,7 +136,9 @@ const GuestSelectDesktop = ({
         target="_blank"
         className="btn rounded-none bg-orange border-none w-full my-5 hover:bg-orange hover:opacity-80"
       >
-        {isRentalBike ? "Rent Bicycle" : "Book Your Tour"}
+        {isRentalBike
+          ? intl.formatMessage({ id: "rental.rent.cta" })
+          : intl.formatMessage({ id: "tours.book.btn" })}
       </Link>
     </div>
   );

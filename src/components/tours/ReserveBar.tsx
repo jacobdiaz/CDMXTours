@@ -11,7 +11,10 @@ const ReserveBar = ({
 }) => {
   const intl = useIntl();
   const bookText = isRentalBike
-    ? "Rent Bike"
+    ? intl.formatMessage({
+        id: "rental.rent.cta",
+        defaultMessage: "Book Rental",
+      })
     : intl.formatMessage({
         id: "tours.book.btn",
         defaultMessage: "Book Tour",

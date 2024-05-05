@@ -26,7 +26,6 @@ const GuestSelectMobile = ({
   const handleChange = (event: any) => {
     setSelectedTime(event.target.value);
   };
-  console.log("minQuantity", minQuantity);
   useEffect(() => {
     if (isRentalBike) {
       switch (selectedTime) {
@@ -55,7 +54,9 @@ const GuestSelectMobile = ({
         // select time for rental bike
         <div className="mb-2">
           {/* Radio buttons for selecting rental time */}
-          <h5 className="text-lg font-bold mb-2">Select Rental Time (Hours)</h5>
+          <h5 className="text-lg font-bold mb-2">
+            {intl.formatMessage({ id: "rental.select.time" })}
+          </h5>
           <div className="flex flex-row justify-center md:justify-start">
             <input
               type="radio"
@@ -121,7 +122,7 @@ const GuestSelectMobile = ({
         <span className="px-5 font-semibold">
           {quantity}{" "}
           {isRentalBike
-            ? "Bike"
+            ? intl.formatMessage({ id: "rental.bike" })
             : intl.formatMessage({ id: "datepicker.guest" })}
         </span>
         <button
@@ -145,12 +146,9 @@ const GuestSelectMobile = ({
         target="_blank"
         className="btn rounded-none bg-orange border-none w-full my-5"
       >
-        {
-          isRentalBike
-            ? "Rent Bike"
-            : intl.formatMessage({ id: "tours.book.btn" })
-        
-        }
+        {isRentalBike
+          ? intl.formatMessage({ id: "rental.rent.cta" })
+          : intl.formatMessage({ id: "tours.book.btn" })}
       </Link>
     </div>
   );

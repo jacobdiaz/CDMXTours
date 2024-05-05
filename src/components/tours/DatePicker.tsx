@@ -24,19 +24,27 @@ const DatePicker = ({
   minGuests,
   isRentalBike,
 }: DatePickerType) => {
-  const [date, setDate] = useState(new Date());
+  // create a var to store tomorrows date
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  const [date, setDate] = useState(tomorrow);
   const Intl = useIntl();
 
   const whatsAppLink = (quantity: number, totalPrice: number) => {
     if (isRentalBike) {
-      const rentalMsg = `Hello Tours en Bici CDMX! \nI would like to rent ${quantity} bike(s) \nDate: ${date.toLocaleString(
-        "en-US",
+      const rentalMsg = intl.formatMessage(
+        { id: "rental_whatsapp_msg" },
         {
-          weekday: "long",
-          day: "numeric",
-          month: "long",
+          quantity,
+          date: date.toLocaleString("en-US", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+          }),
+          totalPrice,
         }
-      )} \nTotal: $${totalPrice} MXN`;
+      );
 
       const encodedMsg = encodeURIComponent(rentalMsg);
       return `https://wa.me/5215583333677?text=${encodedMsg}`;
@@ -101,9 +109,7 @@ const DatePicker = ({
   return (
     <div className="w-full md:shadow-xl md:p-10 rounded-lg sticky top-56">
       <h5 className="text-lg font-bold">
-        {isRentalBike
-          ? "Select A Date"
-          : intl.formatMessage({ id: "datepicker.select_date" })}
+        {intl.formatMessage({ id: "datepicker.select_date" })}
       </h5>
       <p className="text-xs text-gray-500">{availabilityText()}</p>
       <Calendar
@@ -141,7 +147,11 @@ const DatePicker = ({
           isRentalBike={isRentalBike}
         />
       </div>
-      <p className="text-xs opacity-50">Availability Pending</p>
+      <p className="text-xs opacity-50">
+        {isRentalBike
+          ? intl.formatMessage({ id: "rental.deposit" })
+          : intl.formatMessage({ id: "rental.availability_pending" })}
+      </p>
     </div>
   );
 };

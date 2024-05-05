@@ -1,0 +1,22 @@
+{
+  "rental.title": "Bicycle Rental",
+  "rental.description.title": "Rent a Bike!",
+  "rental.description": "Pedal through the culture and colors of Mexico City with our reliable rental bikes. Each bike is maintained to the highest standards to ensure a safe and comfortable ride as you explore CDMX. Conveniently located and easy to book, our bikes come with flexible rental options to suit all your travel needs. Experience Mexico City like never before—up close and at your own pace, with the freedom and joy of biking!",
+  "rental.requirements.title": "Requirements",
+  "rental.requirement_1": "Valid Identification Documents (INE, Passport, License).",
+  "rental.requirement_2": "Must sign a safety and liability waiver to rent a bicycle.",
+  "rental.cost.title": "Cost",
+  "rental.hour": "hour",
+  "rental.select.time": "Select Rental Time (Hours)",
+  "rental.allowedareas.title": "Allowed Areas",
+  "rental.deposit.title": "Deposit",
+  "rental.deposit": "A deposit of $500 MXN is required for each bike rented and will be returned upon the return of the bike.",
+  "rental.included.title": "Included",
+  "rental.included_1": "Bicycle",
+  "rental.included_2": "Helmet & Safety Vest",
+  "rental.included_3": "Bicycle Padlock",
+  "rental.availability_pending": "Availability Pending",
+  "rental.bike": "Bike",
+  "rental.rent.cta": "Renta Bike",
+  "rental_whatsapp_msg": "Hello Tours en Bici CDMX! \nI would like to rent {quantity} bike(s) \nDate: {date} \nTotal: ${totalPrice} MXN"
+}

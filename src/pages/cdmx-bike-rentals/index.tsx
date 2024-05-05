@@ -7,12 +7,13 @@ import TourSection from "@/components/tours/TourSection";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 
 type Props = {};
 
 const BikeRentalsPage = (props: Props) => {
   const title = "Bike Rentals in Mexico City";
+  const intl = useIntl();
   return (
     <>
       <PageHeader type="article" url_path="book-a-tour">
@@ -43,7 +44,9 @@ const BikeRentalsPage = (props: Props) => {
               Back
             </Link>
             <div className="w-full flex justify-between mb-5">
-              <h1 className="text-4xl ">Bicycle Rental</h1>
+              <h1 className="text-4xl ">
+                {intl.formatMessage({ id: "rental.title" })}
+              </h1>
             </div>
           </div>
         </div>
@@ -63,52 +66,50 @@ const BikeRentalsPage = (props: Props) => {
         <div className="md:grid grid-cols-3 pt-10 gap-5">
           {/* Col 1 */}
           <div className="col-span-2 md:pr-10">
-            <TourSection title={"Rent a Bike!"}>
-              <p>
-                Pedal through the culture and colors of Mexico City with our
-                reliable rental bikes. Each bike is maintained to the highest
-                standards to ensure a safe and comfortable ride as you explore
-                CDMX. Conveniently located and easy to book, our bikes come with
-                flexible rental options to suit all your travel needs.
-                Experience Mexico City like never before—up close and at your
-                own pace, with the freedom and joy of biking!
-              </p>
+            <TourSection
+              title={intl.formatMessage({ id: "rental.description.title" })}
+            >
+              <p>{intl.formatMessage({ id: "rental.description" })}</p>
             </TourSection>
 
             {/* Whats Included & Group Capacity */}
             <div className="flex flex-row gap-1 md:gap-0">
               <TourSection
-                title={"Requirements"}
+                title={intl.formatMessage({ id: "rental.requirements.title" })}
                 hideDivider
                 className="max-w-[180px] md:max-w-[450px]"
               >
                 <ul>
                   <li className="list-disc ml-3">
-                    Valid Identification Documents (INE, Passport, License).
+                    {intl.formatMessage({
+                      id: "rental.requirement_1",
+                    })}
                   </li>
                   <li className="list-disc ml-3">
-                    Must sign a safety and liability waiver to rent a bicycle.
+                    {intl.formatMessage({
+                      id: "rental.requirement_1",
+                    })}
                   </li>
                 </ul>
               </TourSection>
               <Divider orientation="vertical" />
               <TourSection
-                title={"Cost"}
+                title={intl.formatMessage({ id: "rental.cost.title" })}
                 hideDivider
                 // className="hidden md:block"
               >
                 <ul>
                   <li>
-                    1 Hour : <span className="font-bold">$80 MXN</span>
+                    1 Hr : <span className="font-bold">$80 MXN</span>
                   </li>
                   <li>
-                    2 Hours : <span className="font-bold">$150 MXN</span>
+                    2 Hrs : <span className="font-bold">$150 MXN</span>
                   </li>
                   <li>
-                    5 Hours : <span className="font-bold">$250 MXN</span>
+                    5 Hrs : <span className="font-bold">$250 MXN</span>
                   </li>
                   <li>
-                    24 Hours : <span className="font-bold">$300 MXN</span>
+                    24 Hrs : <span className="font-bold">$300 MXN</span>
                   </li>
                 </ul>
               </TourSection>
@@ -116,7 +117,9 @@ const BikeRentalsPage = (props: Props) => {
             <Divider />
 
             {/* Allowed Areas */}
-            <TourSection title={"Allowed Areas"}>
+            <TourSection
+              title={intl.formatMessage({ id: "rental.allowedareas.title" })}
+            >
               <ul className="columns-2">
                 <li className="list-disc ml-3">REFORMA</li>
                 <li className="list-disc ml-3">CHAPULTEPEC</li>
@@ -131,19 +134,29 @@ const BikeRentalsPage = (props: Props) => {
             </TourSection>
 
             {/* Deposit */}
-            <TourSection title={"Deposit"}>
+            <TourSection
+              title={intl.formatMessage({ id: "rental.deposit.title" })}
+            >
               <p className="mb-2 italic">
-                * A deposit of $500 MXN is required for each bike rented and
-                will be returned upon the return of the bike.
+                {intl.formatMessage({ id: "rental.deposit" })}
               </p>
             </TourSection>
 
             {/* Included */}
-            <TourSection title={"Included"} hideDivider>
+            <TourSection
+              title={intl.formatMessage({ id: "rental.included.title" })}
+              hideDivider
+            >
               <ul>
-                <li className="list-disc ml-3">Bicycle</li>
-                <li className="list-disc ml-3">Helmet & Safety Vest</li>
-                <li className="list-disc ml-3">Bicycle Padlock</li>
+                <li className="list-disc ml-3">
+                  {intl.formatMessage({ id: "rental.included_1" })}
+                </li>
+                <li className="list-disc ml-3">
+                  {intl.formatMessage({ id: "rental.included_2" })}
+                </li>
+                <li className="list-disc ml-3">
+                  {intl.formatMessage({ id: "rental.included_3" })}
+                </li>
               </ul>
             </TourSection>
             <Divider />

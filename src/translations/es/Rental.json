@@ -1,0 +1,22 @@
+{
+  "rental.title": "Renta De Bici",
+  "rental.description.title": "Renta De Bici",
+  "rental.description": "Pedalea por la cultura y los colores de la Ciudad de México con nuestras confiables bicicletas de alquiler. Cada bicicleta se mantiene con los más altos estándares para garantizar un viaje seguro y cómodo mientras exploras la CDMX. Convenientemente ubicadas y fáciles de reservar, nuestras bicicletas vienen con opciones de alquiler flexibles para satisfacer todas sus necesidades de viaje. Experimenta la Ciudad de México como nunca antes: de cerca y a tu propio ritmo, ¡con la libertad y la alegría de andar en bicicleta!",
+  "rental.requirements.title": "Requisitos",
+  "rental.requirement_1": "Entrega de identificación (INE, PASAPORTE O LICENCIA)",
+  "rental.requirement_2": "Firma de carta responsiva (debe coincidir con la firma de tu identificación)",
+  "rental.cost.title": "Costo",
+  "rental.hour": "hora",
+  "rental.select.time": "Seleccionar tiempo de alquiler (horas)",
+  "rental.allowedareas.title": "Areas de Circulacion",
+  "rental.deposit.title": "Deposito",
+  "rental.deposit": "*El deposito en garantía se realiza en nuestra tienda y se regresa una vez que devuelvas la bicicleta y sus accesorios",
+  "rental.included.title": "Incluye",
+  "rental.included_1": "Renta De Bici",
+  "rental.included_2": "Casco-Chaleco",
+  "rental.included_3": "Candado",
+  "rental.availability_pending": "Disponibilidad Pendiente",
+  "rental.bike": "Bici",
+  "rental.rent.cta": "Alquila La Bicicleta",
+  "rental_whatsapp_msg": "Hola Tours en Bici CDMX! \nMe gustaría alquilar {quantity} bici(s) \nFecha: {date} \nTotal: ${totalPrice} MXN"
+}
