@@ -1,4 +1,5 @@
 {
+  "tours.select_time": "Seleccione una hora",
   "tours.cta.button": "Reservar →",
   "tours.duration": "Duración: {duration}",
   "tours.included": "Incluidos: Bicis, Tacos, Hidratación",

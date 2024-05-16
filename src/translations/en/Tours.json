@@ -1,4 +1,5 @@
 {
+  "tours.select_time": "Select a tour time",
   "tours.cta.button": "Book Now →",
   "tours.duration": "Duration: {duration}",
   "tours.included": "Included: Bikes, Helmets, Tacos, Hydration",

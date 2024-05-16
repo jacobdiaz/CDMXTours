@@ -27,7 +27,7 @@ const DatePicker = ({
   // create a var to store tomorrows date
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
-
+  const [selectedTourTime, setSelectedTourTime] = useState("");
   const [date, setDate] = useState(tomorrow);
   const Intl = useIntl();
 
@@ -59,7 +59,7 @@ const DatePicker = ({
         day: "numeric",
         month: "long",
       }
-    )} \nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
+    )} ${selectedTourTime} \nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
 
     const msgEs = `Hola Tours en Bici CDMX! \nMe gustaría reservar\nTour: ${Intl.formatMessage(
       { id: tourName }
@@ -67,7 +67,7 @@ const DatePicker = ({
       weekday: "long",
       day: "numeric",
       month: "long",
-    })} \nInvitados: ${quantity}\nTotal: $${totalPrice} MXN`;
+    })} ${selectedTourTime}\nInvitados: ${quantity}\nTotal: $${totalPrice} MXN`;
 
     const encodedMsg = encodeURIComponent(Intl.locale === "en" ? msgEn : msgEs);
     return `https://wa.me/5215583333677?text=${encodedMsg}`;
@@ -121,14 +121,31 @@ const DatePicker = ({
 
       {/* Tour Time */}
       {availability?.time && !isRentalBike && (
-        <div className="flex justify-center md:justify-start">
-          <p className="text-xs py-2">
-            {intl.formatMessage({
-              id: "datepicker.time",
-            })}
-            : {availability?.time}
-          </p>
-        </div>
+        <>
+          <div className="flex justify-center md:justify-start">
+            <p className="text-xs py-2">
+              {intl.formatMessage({ id: "tours.select_time" })}
+            </p>
+          </div>
+          {/* Create a select for availability.time */}
+          {availability.time && Array.isArray(availability.time) && (
+            <div className="flex flex-row justify-center md:justify-start mb-5">
+              {availability.time.map((time) => (
+                <button
+                  key={time}
+                  className={`p-4 border  ${
+                    time === selectedTourTime ? "bg-black text-white" : ""
+                  }`}
+                  onClick={() => {
+                    setSelectedTourTime(time);
+                  }}
+                >
+                  {time}
+                </button>
+              ))}
+            </div>
+          )}
+        </>
       )}
 
       <div className="flex flex-row w-full justify-between">
