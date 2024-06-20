@@ -27,9 +27,10 @@
   "datepicker.select_date": "Select A Tour Date",
   "datepicker.time": "Time",
 
-  "coyo.name": "Coyoacán Bike Tour",
-  "coyo.desc": "<p>Coyoacán is more than Frida, come and walk from its wide Porfirian streets of the Carmen neighborhood to the pre-Hispanic alleys of the San Francisco quadrant and the Niño de Jesus neighborhood, without forgetting the classics such as the Centennial garden and the Concepción of the colonial era . More than 500 years surround Coyoácan and its surroundings, come to learn and learn about its stories and events by touring them by bicycle. During the tour these places are visited and toured:{br}{br}- Chimalistac {br}- Santa Catarina neighborhood{br}- Niño de Jesus neighborhood {br}- San Francisco Quadrant {br}-  Concepción neighborhood {br}-  Centennial Garden {br}- Indian Fernandez House {br}- Frida Kahlo House (outside)</p>",
-  "coyo.shortDesc": "More than 500 years surround Coyoácan and its surroundings, come to learn and learn about its stories and events by touring them by bicycle.",
+  "coyo.name": "Frida Bike Tour",
+  "coyo.desc": "Frida Kahlo grew up in the oldest spanish neighborhood of Mexico City, more than 500 years of history involve Coyoácan and San Ángel, come to learn about its stories and events, visit Frida Kahlo and Diego Rivera Studio House and finish the tour with tacos and churros.",
+  "coyo.shortDesc": "Frida Kahlo grew up in the oldest spanish neighborhood of Mexico City, more than 500 years of history involve Coyoácan and San Ángel, come to learn about its stories and events, visit Frida Kahlo and Diego Rivera Studio House and finish the tour with tacos and churros.",
+  
   "essentials.name": "Mexico City Essentials",
   "essentials.desc": "Come and ride from  the Aztec Ruins to the hipster neighborhoods, while you eat 3 delicious varieties of tacos and learn about history, society and architecture.",
 
@@ -39,6 +40,18 @@
 
   "arch.name": "ARCHITECTURAL BIKE TOUR / ROMA - CONDESA",
   "arch.desc": "The Chic neighborhoods of Mexico City have a secret: they were designed by architects. Come and discover the urban and architectural origin of these neighbourhoods. In addition to knowing the emblematic streets and buildings, you will eat in a legendary taqueria in Condesa and you will visit the largest urban park in the country.",
+
+  "arch_walk_downtown.name":"Walking Architecture Tour - Downtown Mexico City",
+  "arch_walk_downtown.desc":"Come and discover the origins of the city by the hand of a local architect that will show you how does Mexico City pass from the captial of the aztec empire to the capital of New Spain and then the capital of Mexico.",
+
+  "arch_walk_reforma.name":"Walking Architecture Tour Reforma - Chapultepec",
+  "arch_walk_reforma.desc":"Reforma the main avenue in Mexico City is surrounded by the best examples of architecture since 1860's. Enjoy and learn about eclectic, art decó, modernism, brutalism, hightech and contemporary architecture. Guided by a local architect.",
+  
+  "arch_walk_roma.name":"Walking Architecture Tour Roma - Condesa",
+  "arch_walk_roma.desc":"Reforma the main avenue in Mexico City is surrounded by the best examples of architecture since 1860's. Enjoy and learn about eclectic, art decó, modernism, brutalism, hightech and contemporary architecture. Guided by a local architect.",
+
+  "taco_walking_downtown.name": "Walking Taco Tour - Downtown Mexico City",
+  "taco_walking_downtown.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
 
   "urban.name": "Mexico City North Side",
   "urban.desc": "The Urban Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City.",

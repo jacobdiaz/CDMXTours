@@ -27,9 +27,11 @@
   "datepicker.select_date": "Seleccione un día",
   "datepicker.time": "Tiempo",
 
-  "coyo.name": "Coyoacán y sus 5 pueblos",
-  "coyo.desc": "Coyoacán es más que Frida, ven a recorrer desde sus amplias calles Porfirianas de la colonia del Carmen hasta sus callejones prehispánicos, sin olvidar los clasicos como el jardín Centenario y la Concepción de la época colonial.\nMás de 500 años envuelven a Coyoácan y sus alrededores, ven a aprender y conocer sus historias y sucesos recorriendolos en bicicleta.",
-  "coyo.shortDesc": "Coyoacán es más que Frida, ven a recorrer desde sus amplias calles Porfirianas de la colonia del Carmen hasta sus callejones prehispánicos, sin olvidar los clasicos como el jardín Centenario y la Concepción de la época colonial.",
+  "coyo.name": "Colonial - Coyoacán, San Ángel",
+  "coyo.desc": "Tras la conquista la ciudad de México - Tenochtitlán quedó devastada he inhabitable, es por eso que los españoles se mudan cerca a sus alieados de Coyoacán. Ven a descubrir las plazas, parque he iglesias que fueron construídas en aque periodo conocido como México - Colonial.",
+  
+  "porfiriana.name": "Porfiriana - San Rafael, Santa María la Ribera",
+  "porfiriana.desc": "El Porfiriato fue un periodo de gran crecimiento urbano en la Ciudad de México, durante el recorrido observaras como se construyeron nuevos barrios con amplias calles, suntuosas mansiones y atractivos edificios de vivienda.",
   
   "essentials.name": "Esenciales CDMX",
   "essentials.desc": "Descubre el corazón de la CDMX rodando desde las ruinas aztecas del Templo Mayor, hasta la zona 'hipster' de la ciudad. Durante el recorrido verás arquitectura colonial española en el centro histórico, grandes rascacielos en Av. Reforma, recorreras Chapultepec y conocerás la Roma y la Condesa.",
@@ -41,16 +43,28 @@
   "urban.desc": "El Tour Urbano se enfoca en el crecimiento urbano que tuvo la CDMX , desde los primeros barrios del siglo XIX hasta las zonas industriales de los años 50 en la Ciudad de México.",
 
   "markets.name": "Tour de Mercados / De Jamaica a San juan",
-  "markets.desc": "La Ciudad de México tiene una cultura comercial muy antigua, desde los tianguis de los pueblos prehispánicos, hasta los mercados construídos en los años 50. En este recorrido conocerás una variedad de distintos mercados de alimentos, artesanías, herramientas, antigüedades, etc. Además probaras distintos alimentos y bebidas durante el recorrido.",
+  "markets.desc": "Los mercados en la CDMX representan puntos de reunión social y económica. Ven a conocer 5 de los mercados más importantes de la ciudad, además de aprender la historia vas a caminarlos y degustar algunos alimentos durante el recorrido.",
+
+  "taco-bike-nocturno.name": "Taco Tour - Nocturno",
+  "taco-bike-nocturno.desc": "Ven a conocer los orígenes de la Ciudad de México, recorriendo desde las principales calles y plazas hasta los rincones menos conocidos del Centro Histórico. Durante el recorrido comerás tacos de mixiote, pastor, birria, suadero, bistek, campechano.",
+
+  "taco-bike-centro.name": "Taco Tour - Centro Historico",
+  "taco-bike-centro.desc": "Ven a conocer los orígenes de la Ciudad de México, recorriendo desde las principales calles y plazas hasta los rincones menos conocidos del Centro Histórico. Durante el recorrido comerás tacos de mixiote, pastor, birria, suadero, bistek, campechano.",
 
   "modernarch.name": "Arquitectura Moderna / De San Angel a C.U",
   "modernarch.desc": "La historia de como con concreto, acero y vidrio se construyeron las ciudades del siglo XX . durante el tour visitarás el campus universitario más grande del continente americano y además las primeras casas modernas en CDMX, construidas para  Diego Rivera y Frida Kahlo.",
 
-  "galleries.name": "Galerías de Arte / Polanco - San Miguel Chapultepec",
-  "galleries.desc": "La CDMX es el epicentro cultural de México y  América Latina, ven a dar un recorrido por algunas de las más importantes galerías de arte mientras conoces Polanco y la colonia con más galerías de arte, la San Miguel Chapultepec",
+  "galleries.name": "Galerías - Roma Norte, San Muguel Chapultepec",
+  "galleries.desc": "El porfirirato fue un periodo de grandes cambios socioeconómicos y culturales para México. Durante el recorrido observaras como se construyeron nuevos barrios con amplias calles, suntuosas mansiones y atractivos edificios de vivienda.",
 
-  "tlatelolco.name": "Tlatelolco / Del Mercado Mexica a la Ciudad del Futuro",
-  "tlatelolco.desc": "La migración mexica desde aztlán llegó al lago de Texcoco fundando 2 ciudades: México-Tenochtitlán y México-Tlatelolco, esta última funcionando como epicentro comercial de mesoámerica. Ven a recorrer los vestigios prehispánicos y la moderna ciudad del futuro el conjunto Habitacional Nonoalco Tlatelolco, el cual alberga más de 80mil habitantes y ha sido testigo de sucesos históricos trascendental",
+  "tlatelolco.name":"Tlatelolco - La Ciudad del Futuro",
+  "tlatelolco.desc":"Mexico - Tlatelolco una gran isla al norte de Tenochtitlán fue la capital comercial del imperio Mexica, albergando el mercado (tianguis) mas grande del continente en su momento. A 650 años de su fundación el gobierno de la ciudad de mexico decidió construir encima (la utopía del Mexico sin vecindades)",
+
+  "moderna.name": "",
+  "moderna.desc": "",
+
+  "contemporary.name": "Contemporanea - Mixcoac, Del Valle",
+  "contemporary.desc": "Los antiguos pueblos prehispánicos que rodeaban el lago de texcoco terminaron convirtiendose en colonias de esta gran ciudad. Ven a descubrir sus calles y casas antiguas y el contraste que hacen con obras emblemáticas de la arquitectura contemporanea que le rodean.",
 
   "galerias.name": "Ruta de Galerías en Bici",
   "galerias.desc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa.{br}{br}Durante el recorrido visitarás estas colonias: {br} ● Roma Norte{br} ● Juárez{br} ● Condesa{br} ● San Miguel Chapultepec{br} ● Bosque de Chapultepec{br} ● Polanco {br}{br}Algúnas de la galerías a visitar:{br} ● Kurimanzutto{br} ● OMR{br} ● Lago Algo{br} ● Proyectos Monclova{br} ● Laguna",

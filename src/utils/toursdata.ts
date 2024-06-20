@@ -13,6 +13,8 @@ export type Tour = {
     time?: string[];
   };
   tourName: string;
+  tourType?: "Bike" | "Walking" | "All"; //todo make this required
+  placesToVisit?: string[];
   price: number;
   duration: string;
   cap: string;
@@ -38,6 +40,7 @@ export const Tours: Tour[] = [
     locales: ["en", "es"],
     availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["9:30am"] },
     tourName: "essentials.name", // Translation ID in /translations/Tours.json
+    tourType: "Bike",
     price: 950,
     duration: "4hrs - 15km",
     cap: "10",
@@ -79,11 +82,20 @@ export const Tours: Tour[] = [
   },
   {
     id: "cdmx-taco-tour",
-    locales: ["en", "es"],
-    availability: { type: [3, 4, 5, 6], time: ["10:00am", "2:00pm"] },
+    locales: ["en"],
+    availability: { type: [3, 4, 5, 6], time: ["11:30am", "5:30pm"] },
     tourName: "taco.name",
-    price: 750,
-    duration: "4hrs - 15km",
+    tourType: "Bike",
+    price: 950,
+    duration: "4.5hrs - 20km",
+    placesToVisit: [
+      "Ciudadela",
+      "Regina Street",
+      "Zocalo",
+      "Templo Mayor",
+      "Garibaldi",
+      "Alameda",
+    ],
     cap: "10",
     minGuests: "1",
     description: "taco.desc",
@@ -123,10 +135,11 @@ export const Tours: Tour[] = [
   },
 
   {
-    id: "cdmx-architectural-tour",
+    id: "cdmx-architectural-tour-bike",
     locales: ["en", "es"],
     availability: { type: [2, 4, 6], time: ["2:00pm"] },
     tourName: "arch.name",
+    tourType: "Bike",
     price: 550,
     duration: "4hrs -20km",
     cap: "15",
@@ -167,17 +180,336 @@ export const Tours: Tour[] = [
     ],
   },
   {
+    id: "architectural-tour-walking-downtown",
+    locales: ["en"],
+    availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["2:00pm"] },
+    tourName: "arch_walk_downtown.name",
+    tourType: "Walking",
+    placesToVisit: [
+      "Alameda",
+      "Bellas Artes",
+      "Plaza Tolsá",
+      "Madero",
+      "Zocalo",
+      "Templo Mayor",
+    ],
+    price: 550,
+    duration: "3hrs -4km",
+    cap: "15",
+    minGuests: "1",
+    description: "arch_walk_downtown.desc",
+    included: "Guide, Taco Stop, Hydration",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
+    imgAlt: "Image of Architectural Walking Tour in Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+    ],
+  },
+  {
+    id: "architectural-tour-walking-reforma",
+    locales: ["en"],
+    availability: { type: [2, 3, 4, 5], time: ["2:00pm"] },
+    tourName: "arch_walk_reforma.name",
+    tourType: "Walking",
+    placesToVisit: ["Reforma Ave.", "Juárez", "Cuauhtemoc", "Chapultepec"],
+    price: 550,
+    duration: "3hrs - 5km",
+    cap: "15",
+    minGuests: "1",
+    description: "arch_walk_reforma.desc",
+    included: "Guide, Taco Stop, Hydration",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
+    imgAlt: "Image of Architectural Walking Tour in Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+    ],
+  },
+  {
+    id: "architectural-tour-walking-roma",
+    locales: ["en"],
+    availability: { type: [1, 3, 5], time: ["2:00pm"] },
+    tourName: "arch_walk_reforma.name",
+    tourType: "Walking",
+    placesToVisit: [
+      "La Romita",
+      "Roma Norte",
+      "Rio de Janeiro Square",
+      "Parque Mexico",
+      "Condesa",
+    ],
+    price: 550,
+    duration: "3hrs - 5km",
+    cap: "15",
+    minGuests: "1",
+    description: "arch_walk_reforma.desc",
+    included: "Guide, Taco Stop, Hydration",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
+    imgAlt: "Image of Architectural Walking Tour in Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+    ],
+  },
+  {
+    id: "taco-walking-downtown-cdmx",
+    locales: ["en"],
+    availability: { type: [3, 4, 5], time: ["2:00pm"] },
+    tourName: "arch_walk_reforma.name",
+    tourType: "Walking",
+    placesToVisit: [
+      "Ciudadela",
+      "Regina Street",
+      "Zocalo",
+      "Templo Mayor",
+      "Garibaldi",
+    ],
+    price: 750,
+    duration: "4hrs - 5km",
+    cap: "15",
+    minGuests: "1",
+    description: "arch_walk_reforma.desc",
+    included: "Guide, 5-6 Tacos, Hydration, 1 Beer",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
+    imgAlt: "Image of Architectural Walking Tour in Mexico City",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Architectural Walking Tour in Mexico City",
+      },
+    ],
+  },
+  {
+    id: "taco-bike-nocturno-cdmx",
+    locales: ["es"],
+    availability: { type: "Weekend", time: [] },
+    tourName: "taco-bike-nocturno.name",
+    tourType: "Bike",
+    placesToVisit: [
+      "Ciudadela",
+      "Regina",
+      "Zocalo",
+      "Templo Mayor",
+      "Garibaldi",
+      "Alameda",
+    ],
+    price: 950,
+    duration: "4.5hrs - 14km",
+    cap: "15",
+    minGuests: "1",
+    description: "taco-bike-nocturno.desc",
+    included: "Bicicleta, 5-6 Tacos, Hidratación, 1 Cerveza",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
+    imgAlt: "Image of Taco bike Tour in Centro Historico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+    ],
+  },
+  {
+    id: "taco-bike-centro-historico-cdmx",
+    locales: ["es"],
+    availability: { type: "Weekend", time: [] },
+    tourName: "taco-bike-centro.name",
+    tourType: "Bike",
+    placesToVisit: [
+      "Ciudadela",
+      "Regina",
+      "Zocalo",
+      "Templo Mayor",
+      "Garibaldi",
+      "Alameda",
+    ],
+    price: 950,
+    duration: "4.5hrs - 20km",
+    cap: "15",
+    minGuests: "1",
+    description: "taco-bike-centro.desc",
+    included: "Bicicleta, 5-6 Tacos, Hidratación, 1 Cerveza",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-arch.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-arquitectura.jpeg",
+    imgAlt: "Image of Taco bike Tour in Centro Historico",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Taco bike Tour in Centro Historico",
+      },
+    ],
+  },
+  
+  {
     id: "ruta-galerias",
     locales: ["es"],
     availability: { type: [6], time: ["10:00am"] },
     tourName: "galerias.name", // Translation ID in /translations/Tours.json
-    price: 550,
-    duration: "4.5hrs - 18km",
+    tourType: "Bike",
+    price: 750,
+    duration: "4.5hrs - 20km",
+    placesToVisit: [
+      "Ciudadela",
+      "Regina",
+      "Zocalo",
+      "Templo Mayor",
+      "Garibaldi",
+      "Alameda",
+    ],
     cap: "10",
     minGuests: "1",
     description: "galerias.desc",
     shortDescription: "galerias.shortDesc",
-    included: "Renta de bicicleta, Comida, Hidratación, Guia",
+    included: "Bicicleta, 5-6 Tacos, 1 cerveza, Hidratación",
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-galerias.jpeg",
     thumbEN:
@@ -210,10 +542,63 @@ export const Tours: Tour[] = [
     ],
   },
   {
+    id: "contemporary-bike-tour",
+    locales: ["es"],
+    availability: { type: [5,6], time: ["10:30am"] },
+    tourName: "contemporary.name", // Translation ID in /translations/Tours.json
+    tourType: "Bike",
+    price: 750,
+    duration: "4.5hrs - 15km",
+    placesToVisit: [
+      "Guadalupe Inn",
+      "San José Insurg.",
+      "Mixcoac",
+      "P. Toros / E. Azul",
+      "CUPA",
+      "Del Valle",
+      "Xoco",
+    ],
+    cap: "10",
+    minGuests: "2",
+    description: "contemporary.desc",
+    included: "Bicicleta, 5-6 Tacos, 1 cerveza, Hidratación",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-galerias.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-galerias.jpeg",
+    imgAlt: "Image of Ruta Galerias Tour",
+    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    coords: { lat: 19.42755, lng: -99.15569 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-1.jpeg",
+        alt: "Photo from the contemporary tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-4.jpeg",
+        alt: "Photo from the contemporary tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-3.jpeg",
+        alt: "Photo from the contemporary tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-2.jpeg",
+        alt: "Photo from the contemporary tour mexico",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-5.jpeg",
+        alt: "Photo from the contemporary tour mexico",
+      },
+    ],
+  },
+  {
     id: "cdmx-south-side-bike-tour",
     locales: ["en"],
     availability: { type: [2, 4, 6], time: ["9:30am"] },
     tourName: "southside.name", // Translation ID in /translations/Tours.json
+    tourType: "Bike",
     price: 850,
     duration: "4hrs",
     cap: "10",
@@ -255,6 +640,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-urban-tour",
     tourName: "urban.name",
+    tourType: "Bike",
     locales: ["en", "es"],
     availability: { type: [0, 3, 5], time: ["9:30am"] },
     price: 750,
@@ -297,12 +683,20 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: "cdmx-coyoacan-tour",
+    id: "frida-coyoacan-tour",
     locales: ["en", "es"],
     availability: { type: "Weekday", time: ["10:00am"] },
     tourName: "coyo.name",
-    price: 550,
-    duration: "4hrs - 18km",
+    tourType: "Bike",
+    placesToVisit: [
+      "San Ángel",
+      "Frida Kahlo Studio",
+      "Santa Catarina",
+      "Jardín Hidalgo",
+      "FK House outside",
+    ],
+    price: 950,
+    duration: "4hrs - 14km",
     cap: "15",
     minGuests: "1",
     description: "coyo.desc",
@@ -342,12 +736,186 @@ export const Tours: Tour[] = [
     ],
   },
   {
+    id: "porfiriana-bike-tour",
+    locales: ["es"],
+    availability: { type: "Weekday", time: ["10:00am"] },
+    tourName: "porfiriana.name",
+    tourType: "Bike",
+    placesToVisit: [
+      "Col. Juárez",
+      "San Rafael",
+      "Sta Maria La Ribera",
+      "Atlampa",
+      "Clavería",
+    ],
+    price: 750,
+    duration: "4hrs - 20km",
+    cap: "15",
+    minGuests: "1",
+    description: "porfiriana.desc",
+    included: "Bicicleta, Alimentos, Hidratación ",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-coyo.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-coyo.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-coyoacan.jpeg",
+    imgAlt: "Image of Coyoacán Bike Tour in CDMX",
+    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
+    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
+    coords: { lat: 19.35203, lng: -99.17984 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg",
+        alt: "Image of porfiriana bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_2.jpg",
+        alt: "Image of porfiriana bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_3.jpg",
+        alt: "Image of porfiriana bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_4.jpg",
+        alt: "Image of porfiriana bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
+        alt: "Image of porfiriana bike tour in Mexico City",
+      },
+    ],
+  },
+
+
+  {
+    id: "tlatelolco-bike-tour",
+    locales: ["es"],
+    availability: { type: [5,6], time: ["2:30"] },
+    tourName: "tlatelolco.name",
+    tourType: "Bike",
+    placesToVisit: [
+      "M. A la Rev.",
+      "B. Vasconcelos",
+      "T. Chopo (Sab)",
+      "T. Lagunilla (Dom)",
+      "U.H. Tlatelolco",
+      "P. 3 culturas",
+      "Terraza Kaluz",
+    ],
+    price: 750,
+    duration: "4.5hrs - 20km",
+    cap: "15",
+    minGuests: "1",
+    description: "tlatelolco.desc",
+    included: "Bicicleta, Cafe y pan, Hidratación, Guia",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-coyo.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-coyo.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-coyoacan.jpeg",
+    imgAlt: "Image of Tlatelolco Bike Tour in CDMX",
+    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
+    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
+    coords: { lat: 19.35203, lng: -99.17984 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_2.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_3.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_4.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+    ],
+  },
+
+
+  {
+    id: "tlatelolco-bike-tour",
+    locales: ["es"],
+    availability: { type: "Weekday", time: [""] },
+    tourName: "tlatelolco.name",
+    tourType: "Bike",
+    placesToVisit: [
+      "M. A la Rev.",
+      "B. Vasconcelos",
+      "T. Chopo (Sab)",
+      "T. Lagunilla (Dom)",
+      "U.H. Tlatelolco",
+      "P. 3 culturas",
+      "Terraza Kaluz",
+    ],
+    price: 750,
+    duration: "4.5hrs - 20km",
+    cap: "15",
+    minGuests: "1",
+    description: "tlatelolco.desc",
+    included: "Bicicleta, Cafe y pan, Hidratación, Guia",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-coyo.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/EN/thumb-coyo.jpeg",
+    thumbES:
+      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-coyoacan.jpeg",
+    imgAlt: "Image of Tlatelolco Bike Tour in CDMX",
+    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
+    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
+    coords: { lat: 19.35203, lng: -99.17984 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_2.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_3.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_4.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
+        alt: "Image of Tlatelolco bike tour in Mexico City",
+      },
+    ],
+  },
+
+  {
     id: "cdmx-markets-tour",
     locales: ["es", "en"],
     availability: { type: [0], time: ["9:30am"] },
     tourName: "markets.name",
-    price: 1500,
+    tourType: "Bike",
+    price: 850,
     duration: "5hrs - 15km",
+    placesToVisit: [
+      "Juárez",
+      "Ant. Doctores",
+      "Hidalgo",
+      "Jamaica",
+      "San Juan",
+      "Ciudadela"
+    ],
     cap: "12",
     minGuests: "2",
     description: "markets.desc",
@@ -385,119 +953,4 @@ export const Tours: Tour[] = [
       },
     ],
   },
-  // {
-  //   id: "cdmx-modern-architecture-tour",
-  //   locales: ["es"],
-  //   availability: { type: "Reservation" },
-  //   tourName: "modernarch.name",
-  //   price: 450,
-  //   duration: "5hrs - 10km",
-  //   cap: "12",
-  //   description: "modernarch.desc",
-  //   included: "Bikes, Helmets, Tacos, Hydration ",
-  //   imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_modArch.jpg",
-  //   imgAlt:
-  //     "Image of Modern Architecture Tour, San Angel a C.U. in Mexico City",
-  //   meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-  //   coords: { lat: 19.42755, lng: -99.15569 },
-  //   googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
-  //   gallery: [
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch1.jpg",
-  //       alt: "",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch2.jpg",
-  //       alt: "",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch3.jpg",
-  //       alt: "",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch4.jpg",
-  //       alt: "",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/ModernArch/modern_arch5.jpg",
-  //       alt: "",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: "cdmx-gallery-tour",
-  //   locales: ["es"],
-  //   availability: { type: "Reservation" },
-  //   tourName: "galleries.name",
-  //   price: 550,
-  //   duration: "4hrs - 10km",
-  //   cap: "12",
-  //   description: "galleries.desc",
-  //   included: "Bikes, Helmets, Tacos, Hydration ",
-  //   imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_gallery.jpg",
-  //   imgAlt: "Image of Gallery Tour in Mexico City",
-  //   meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-  //   coords: { lat: 19.42755, lng: -99.15569 },
-  //   googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
-  //   gallery: [
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_1.jpg",
-  //       alt: "Photo from the art galleries bike tour, Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_2.jpg",
-  //       alt: "Photo from the art galleries bike tour, Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_3.jpg",
-  //       alt: "Photo from the art galleries bike tour, Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_4.jpg",
-  //       alt: "Photo from the art galleries bike tour, Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Galleries/galleries_5.jpg",
-  //       alt: "Photo from the art galleries bike tour, Mexico City",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: "cdmx-tlatelolco-tour",
-  //   locales: ["es"],
-  //   availability: { type: "Reservation" },
-  //   tourName: "tlatelolco.name",
-  //   price: 550,
-  //   duration: "4hrs - 10km",
-  //   cap: "15",
-  //   description: "tlatelolco.desc",
-  //   included: "Bikes, Helmets, Tacos, Hydration ",
-  //   imgSrc: "https://d252kj1i9nz0td.cloudfront.net/thumbnails/t_tlatelolco.jpg",
-  //   imgAlt: "Image of Tlatelolco Tour in Mexico City",
-  //   meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-  //   coords: { lat: 19.42755, lng: -99.15569 },
-  //   googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
-  //   gallery: [
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco2.jpg",
-  //       alt: "Photo from Tlatelolco bike tour in Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco1.jpg",
-  //       alt: "Photo from Tlatelolco bike tour in Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco3.jpg",
-  //       alt: "Photo from Tlatelolco bike tour in Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco4.jpg",
-  //       alt: "Photo from Tlatelolco bike tour in Mexico City",
-  //     },
-  //     {
-  //       src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Tlatelolco/tlatelolco5.jpg",
-  //       alt: "Photo from Tlatelolco bike tour in Mexico City",
-  //     },
-  //   ],
-  // },
 ];
