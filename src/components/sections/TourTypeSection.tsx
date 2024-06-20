@@ -1,39 +1,72 @@
 import { FormattedMessage } from "react-intl";
 import SectionTitle from "./SectionTitle";
-import TourTypeCard from "../tours/TourTypeCard";
-
-type Props = {
-  hideHeader?: boolean;
+import CTALink from "../actions/CTALink";
+import ImageOverlay from "../layout/ImageOverlay";
+import Image from "next/image";
+type CenterContainerProps = {
+  children: React.ReactNode;
+  bgImage: string;
 };
 
-const TourTypeSection = ({ hideHeader }: Props) => {
-  const tourTypes = ["Weekend", "Weekday", "Reservation"];
-  const cardImages = [
-    "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_1.jpg",
-    "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
-    "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets1.jpg",
+type TypeCardProps = {
+  title: string;
+  url: string;
+  bgImage: string;
+};
+
+// TODO translate
+const CenterContainer = ({ children, bgImage }: CenterContainerProps) => (
+  <div className="relative w-full min-h-[20rem] md:min-h-[30rem] md:w-1/3 p-4 flex flex-col justify-center items-center">
+    <Image
+      src={bgImage}
+      alt="Tour Type Card"
+      className="absolute inset-0 object-cover w-full h-full"
+      width={1080}
+      height={720}
+      loading="lazy"
+    />
+    <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+    <div className=" z-10 flex flex-col justify-center items-center">
+      {children}
+    </div>
+  </div>
+);
+
+const TypeCard = ({ title, url, bgImage }: TypeCardProps) => (
+  <CenterContainer bgImage={bgImage}>
+    <SectionTitle color="text-white">{title}</SectionTitle>
+    <CTALink href={url} className="bg-primary">
+      View
+    </CTALink>
+  </CenterContainer>
+);
+
+const TourTypeSection = () => {
+  const TourTypeData = [
+    {
+      title: "Bike Tours",
+      url: "/book-a-tour",
+      bgImage:
+        "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+    },
+    {
+      title: "Walking Tours",
+      url: "/book-a-tour",
+      bgImage:
+        "https://d252kj1i9nz0td.cloudfront.net/gallery_images/SouthSide/southside_v2_2.jpg",
+    },
+    {
+      title: "Bike Rentals",
+      url: "/cdmx-bike-rentals",
+      bgImage: "https://d252kj1i9nz0td.cloudfront.net/bike.jpeg",
+    },
   ];
+
   return (
-    <section>
-      {!hideHeader && (
-        <div className="flex flex-col justify-center md:items-center mt-10 mb-5">
-          <SectionTitle margin="m-0">
-            <FormattedMessage id="home.tours.title" />
-          </SectionTitle>
-        </div>
-      )}
-      <div className="flex flex-col justify-center items-center w-full">
-        {!hideHeader && (
-          <p className="text-lg mb-10">
-            <FormattedMessage id="home.tours.description" />
-          </p>
-        )}
-        <ul className="flex flex-row justify-center md:justify-between w-full">
-          {tourTypes.map((t, idx) => (
-            <TourTypeCard tourType={t} imageSrc={cardImages[idx]} key={idx} />
-          ))}
-        </ul>
-      </div>
+    <section className="flex flex-col md:flex-row">
+      {TourTypeData.map((t, idx) => (
+        <TypeCard {...t} key={idx} />
+      ))}
     </section>
   );
 };

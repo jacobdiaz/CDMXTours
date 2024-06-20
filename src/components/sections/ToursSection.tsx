@@ -6,6 +6,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+// This is used on the Home page to display the list of tours available
+
 const TourSection = ({ hideHeader = false }: { hideHeader?: boolean }) => {
   const Intl = useIntl();
   const { locale } = useRouter();

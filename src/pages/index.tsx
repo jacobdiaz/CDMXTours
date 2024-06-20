@@ -8,6 +8,7 @@ import DirectionSections from "@/components/sections/DirectionSections";
 import dynamic from "next/dynamic";
 import PageHeader from "@/components/layout/PageHeader";
 import GoogleReviews from "@/components/layout/GoogleReviews";
+import TourTypeSection from "@/components/sections/TourTypeSection";
 
 const Banner = dynamic(() => import("@/components/layout/Banner"));
 
@@ -33,8 +34,8 @@ export default function Home({ dir }: HomeProps) {
       </PageHeader>
       <HeroSection />
       <AboutUsSection />
+      <TourTypeSection />
       <div className="page-container">
-        {/* <TourTypeSection /> */}
         <TourSection />
         <GoogleReviews />
         <ContactSection />
