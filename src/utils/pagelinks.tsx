@@ -14,24 +14,24 @@ const PageLinks: Link[] = [
     href: "/contact",
   },
   {
-    message: "Blog",
-    href: "/blog",
+    message: "FAQ",
+    href: "/faq",
   },
   {
     message: "Home",
     href: "/",
   },
   {
-    message: "FAQ",
-    href: "/faq",
-  },
-  {
     message: <FormattedMessage id="nav.gallery" />,
     href: "/gallery",
   },
   {
-    message: <FormattedMessage id="nav.book" />,
-    href: "/book-a-tour",
+    message: <FormattedMessage id="nav.walking-tour" />,
+    href: "/cdmx-walking-tours",
+  },
+  {
+    message: <FormattedMessage id="nav.bike-tour" />,
+    href: "/cdmx-bike-tours",
   },
 ];
 

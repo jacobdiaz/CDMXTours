@@ -2,5 +2,6 @@
   "nav.about": "Bike Rentals",
   "nav.contact": "Contact",
   "nav.gallery": "Gallery",
-  "nav.book": "Book A Tour"
+  "nav.walking-tour": "Walking Tours",
+  "nav.bike-tour": "Bike Tours"
 }

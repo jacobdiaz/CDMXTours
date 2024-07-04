@@ -40,8 +40,8 @@ const TourPage = () => {
       <div className="page-container">
         <div className="w-full mt-16 md:mt-24 flex flex-col md:flex-row font-spartan font-bold md:items-center justify-between">
           <div className="flex flex-col w-full">
-            <Link
-              href="/book-a-tour"
+            <button
+              onClick={() => router.back()}
               className="text-black opacity-40 flex flex-row py-5 font-medium font-ssp underline w-fit"
             >
               <span className="pr-2">
@@ -61,9 +61,9 @@ const TourPage = () => {
                 id: "tours.view_all_tours",
                 defaultMessage: "View All Tours",
               })}
-            </Link>
+            </button>
             <div className="w-full flex justify-between">
-              <h1 className="text-4xl ">
+              <h1 className="text-4xl uppercase">
                 <FormattedMessage id={tour?.tourName} />
               </h1>
               <p className="hidden md:block md:text-2xl">

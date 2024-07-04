@@ -1,5 +1,7 @@
 {
   "tours.select_time": "Seleccione una hora",
+  "tours.bike.meta.title": "Tours En Bici CDMX | CDMX Tours",
+  "tours.walking.meta.title": "Tours de Caminata CDMX | CDMX Tours",
   "tours.cta.button": "Reservar →",
   "tours.duration": "Duración: {duration}",
   "tours.included": "Incluidos: Bicis, Tacos, Hidratación",
@@ -22,17 +24,17 @@
   "tours.view_all_tours": "Todos los tours",
   "taco.name": "Taco Tour / Centro Histórico",
   "taco.desc": "Ven y descubre los orígenes de la CDMX , recorriendo desde las principales calles y plazas hasta los rincones menos conocidos del Centro Histórico. Durante el recorrido comerás una gran variedad de tacos, desde tacos de pastor, birria, carnitas, suadero hasta tacos de canasta.",
-  
+
   "datepicker.guest": "Persona(s)",
   "datepicker.select_date": "Seleccione un día",
   "datepicker.time": "Tiempo",
 
   "coyo.name": "Colonial - Coyoacán, San Ángel",
   "coyo.desc": "Tras la conquista la ciudad de México - Tenochtitlán quedó devastada he inhabitable, es por eso que los españoles se mudan cerca a sus alieados de Coyoacán. Ven a descubrir las plazas, parque he iglesias que fueron construídas en aque periodo conocido como México - Colonial.",
-  
+
   "porfiriana.name": "Porfiriana - San Rafael, Santa María la Ribera",
   "porfiriana.desc": "El Porfiriato fue un periodo de gran crecimiento urbano en la Ciudad de México, durante el recorrido observaras como se construyeron nuevos barrios con amplias calles, suntuosas mansiones y atractivos edificios de vivienda.",
-  
+
   "essentials.name": "Esenciales CDMX",
   "essentials.desc": "Descubre el corazón de la CDMX rodando desde las ruinas aztecas del Templo Mayor, hasta la zona 'hipster' de la ciudad. Durante el recorrido verás arquitectura colonial española en el centro histórico, grandes rascacielos en Av. Reforma, recorreras Chapultepec y conocerás la Roma y la Condesa.",
 
@@ -57,8 +59,8 @@
   "galleries.name": "Galerías - Roma Norte, San Muguel Chapultepec",
   "galleries.desc": "El porfirirato fue un periodo de grandes cambios socioeconómicos y culturales para México. Durante el recorrido observaras como se construyeron nuevos barrios con amplias calles, suntuosas mansiones y atractivos edificios de vivienda.",
 
-  "tlatelolco.name":"Tlatelolco - La Ciudad del Futuro",
-  "tlatelolco.desc":"Mexico - Tlatelolco una gran isla al norte de Tenochtitlán fue la capital comercial del imperio Mexica, albergando el mercado (tianguis) mas grande del continente en su momento. A 650 años de su fundación el gobierno de la ciudad de mexico decidió construir encima (la utopía del Mexico sin vecindades)",
+  "tlatelolco.name": "Tlatelolco - La Ciudad del Futuro",
+  "tlatelolco.desc": "Mexico - Tlatelolco una gran isla al norte de Tenochtitlán fue la capital comercial del imperio Mexica, albergando el mercado (tianguis) mas grande del continente en su momento. A 650 años de su fundación el gobierno de la ciudad de mexico decidió construir encima (la utopía del Mexico sin vecindades)",
 
   "moderna.name": "",
   "moderna.desc": "",
@@ -68,5 +70,9 @@
 
   "galerias.name": "Ruta de Galerías en Bici",
   "galerias.desc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa.{br}{br}Durante el recorrido visitarás estas colonias: {br} ● Roma Norte{br} ● Juárez{br} ● Condesa{br} ● San Miguel Chapultepec{br} ● Bosque de Chapultepec{br} ● Polanco {br}{br}Algúnas de la galerías a visitar:{br} ● Kurimanzutto{br} ● OMR{br} ● Lago Algo{br} ● Proyectos Monclova{br} ● Laguna",
-  "galerias.shortDesc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa."
+  "galerias.shortDesc": "El tour de galerías en bici es un recorrido guiado por un arquitecto quien te explica los origenes urbano y arquitectónicos  de las colonias y edificios más emblematicos del recorrido, además te explicará el diseño de arquitectónico de las galerías a visitar y comerás en una legendaria taqueria de la Condesa.",
+  "walkingtaco.name": "Taco Tour - WALKING TOUR DOWNTOWN MEXICO CITY",
+  "walkingtaco.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
+  "walkingroma.name": "Walking Tour - Roma Condesa",
+  "walkingroma.desc": "The trendy neighborhoods in CDMX have a secret, all of them where designed by architects beforw cars exist. Come and discover why this areas are so comfortable for pedestrians, cyclist and dogs."
 }

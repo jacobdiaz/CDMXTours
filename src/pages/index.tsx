@@ -36,7 +36,7 @@ export default function Home({ dir }: HomeProps) {
       <AboutUsSection />
       <TourTypeSection />
       <div className="page-container">
-        <TourSection />
+        <TourSection tourType="Bike" showRental/>
         <GoogleReviews />
         <ContactSection />
         {locales === "es" && (
