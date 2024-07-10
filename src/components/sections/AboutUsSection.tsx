@@ -18,7 +18,7 @@ const AboutUsSection = () => (
 
       <div className="w-full flex flex-col justify-center items-center p-5 md:p-16 text-center">
         {/* Col 2 */}
-        <SectionTitle>Architecture Bike Tours</SectionTitle>
+        <SectionTitle>Discover Mexico City With Local Architects</SectionTitle>
 
         <p className="text-lg text-primary">
           Somos un grupo de arquitectos enfocados en dar los mejores Tours en

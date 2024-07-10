@@ -3,6 +3,7 @@
   "tours.bike.meta.title": "Bike Tours in Mexico City | CDMX Tours",
   "tours.walking.meta.title": "Walking Tours in Mexico City | CDMX Tours",
   "tours.cta.button": "Book Now →",
+  "tours.cta.booknow": "Book Now",
   "tours.duration": "Duration: {duration}",
   "tours.included": "Included: Bikes, Helmets, Tacos, Hydration",
   "tours.capacity": "Group Capacity: {capacity} people",

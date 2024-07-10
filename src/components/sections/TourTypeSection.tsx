@@ -2,6 +2,7 @@ import { FormattedMessage } from "react-intl";
 import SectionTitle from "./SectionTitle";
 import CTALink from "../actions/CTALink";
 import Image from "next/image";
+import Link from "next/link";
 type CenterContainerProps = {
   children: React.ReactNode;
   bgImage: string;
@@ -15,7 +16,7 @@ type TypeCardProps = {
 
 // TODO translate
 const CenterContainer = ({ children, bgImage }: CenterContainerProps) => (
-  <div className="relative w-full min-h-[20rem] md:min-h-[30rem] md:w-1/3 p-4 flex flex-col justify-center items-center mb-2">
+  <div className="relative w-full min-h-[15rem] md:min-h-[30rem] md:w-1/3 p-4 flex flex-col justify-center items-center mb-2">
     <Image
       src={bgImage}
       alt="Tour Type Card"
@@ -33,10 +34,12 @@ const CenterContainer = ({ children, bgImage }: CenterContainerProps) => (
 
 const TypeCard = ({ title, url, bgImage }: TypeCardProps) => (
   <CenterContainer bgImage={bgImage}>
-    <SectionTitle color="text-white">{title}</SectionTitle>
-    <CTALink href={url} className="bg-primary">
-      View
-    </CTALink>
+    <h3 className="text-white text-5xl md:text-3xl uppercase font-bold">{title}</h3>
+    <Link href={url} className="bg-black px-6 py-1.5 mt-2">
+      <p className="text-white uppercase">
+        Book Now
+      </p>
+    </Link>
   </CenterContainer>
 );
 
@@ -51,7 +54,7 @@ const TourTypeData = [
     title: "Walking Tours",
     url: "/cdmx-walking-tours",
     bgImage:
-      "https://d252kj1i9nz0td.cloudfront.net/gallery_images/SouthSide/southside_v2_2.jpg",
+      "https://d252kj1i9nz0td.cloudfront.net/pages/Gallery/gallery_6.jpg",
   },
   {
     title: "Bike Rentals",

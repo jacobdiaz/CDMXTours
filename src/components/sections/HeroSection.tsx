@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 import ImageOverlay from "../layout/ImageOverlay";
+import CTALink from "../actions/CTALink";
 
 const HeroSection = () => (
   <section className="relative">
@@ -37,6 +38,11 @@ const HeroSection = () => (
         <h1 className="text-page-hero uppercase font-spartan font-black tracking-normal">
           <FormattedMessage id="home.hero.title" />
         </h1>
+
+        <CTALink href="/book-a-tour" variant="light" grow>
+          <FormattedMessage id="tours.cta.booknow" />
+        </CTALink>
+
         <Link
           href="https://www.instagram.com/toursenbici/"
           className="opacity-70 text-lg w-fit pr-8"
