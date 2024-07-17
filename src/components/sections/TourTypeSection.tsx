@@ -35,7 +35,7 @@ const CenterContainer = ({ children, bgImage }: CenterContainerProps) => (
 const TypeCard = ({ title, url, bgImage }: TypeCardProps) => (
   <CenterContainer bgImage={bgImage}>
     <h3 className="text-white text-5xl md:text-3xl uppercase font-bold">{title}</h3>
-    <Link href={url} className="bg-black px-6 py-1.5 mt-2">
+    <Link href={url} className="bg-black px-6 py-1.5 mt-2 rounded-btn">
       <p className="text-white uppercase">
         Book Now
       </p>

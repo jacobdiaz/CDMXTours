@@ -6,7 +6,7 @@ type Props = {
 const FaqItem = ({ question, children }: Props) => {
   return (
     <div
-      className='collapse  bg-[#F7F7F7] collapse-arrow rounded-none my-2'
+      className='collapse  rounded-md bg-[#F7F7F7] collapse-arrow rounded-none my-2'
       tabIndex={0}
     >
       <input type='checkbox' />

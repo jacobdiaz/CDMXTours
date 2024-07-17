@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
 
 const ContactForm = ({ header }: { header?: string }) => {
-  const inputClass = "input w-full my-2 bg-[#F7F7F7] rounded-none";
+  const inputClass = "input w-full my-2 bg-[#F7F7F7] rounded-md";
   const router = useRouter();
   const intl = useIntl();
   const { register, handleSubmit, reset } = useForm();
@@ -47,7 +47,7 @@ const ContactForm = ({ header }: { header?: string }) => {
 
         <button
           type='submit'
-          className='btn bg-black rounded-none mt-5 w-full md:w-fit'
+          className='btn rounded-md bg-black mt-5 w-full md:w-fit'
         >
           <FormattedMessage id='home.contact.sendBtn' />
         </button>

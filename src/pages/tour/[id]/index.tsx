@@ -147,7 +147,7 @@ const TourPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 itemProp="url"
-                className="btn bg-primary text-white py-2 rounded-none px-5 font-normal my-5 text-lg w-full md:w-fit"
+                className="btn rounded-md bg-primary text-white py-2 rounded-none px-5 font-normal my-5 text-lg w-full md:w-fit"
               >
                 <span itemProp="Tours en Bici - Architectural Bike Tours CDMX">
                   <FormattedMessage id="tours.meet.get_directions" />

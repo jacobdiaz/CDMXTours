@@ -11,7 +11,7 @@ type Props = {
 
 const CTALink = (props: Props) => {
   const { children, variant = "light", href, grow, className } = props;
-  const btnClass = `btn py-2 w-fit rounded-none px-5 font-normal my-5 text-lg ${
+  const btnClass = `rounded-md btn py-2 w-fit rounded-none px-5 font-normal my-5 text-lg ${
     variant === "dark"
       ? "bg-primary text-white"
       : "bg-white text-black hover:bg-gray-100"

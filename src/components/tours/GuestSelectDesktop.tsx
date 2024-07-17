@@ -107,7 +107,7 @@ const GuestSelectDesktop = ({
       )}
       <div className="flex flex-row w-full justify-between items-center ">
         <select
-          className="select select-bordered rounded-none"
+          className="select select-bordered rounded-md"
           onChange={(e) => setQuantity(parseInt(e.target.value))}
         >
           {[...Array(maxQuantity - minQuantity + 1)].map((_, idx) => {
@@ -134,7 +134,7 @@ const GuestSelectDesktop = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         target="_blank"
-        className="btn rounded-none bg-orange border-none w-full my-5 hover:bg-orange hover:opacity-80"
+        className="btn rounded-md bg-orange border-none w-full my-5 hover:bg-orange hover:opacity-80"
       >
         {isRentalBike
           ? intl.formatMessage({ id: "rental.rent.cta" })

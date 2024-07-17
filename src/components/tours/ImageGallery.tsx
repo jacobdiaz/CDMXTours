@@ -38,7 +38,7 @@ const ImageGallery = ({ tour }: Props) => {
       <div className="container md:grid grid-cols-3 gap-2 mx-auto">
         <div className="col-span-2 max-h-[35rem]">
           <Image
-            className="w-full h-full object-cover rounded -lg md:rounded-none cursor-pointer"
+            className="w-full h-full object-cover rounded-md cursor-pointer"
             src={tour.gallery[0].src}
             alt={tour.gallery[0].alt}
             style={{ objectPosition: "center 70%" }}
@@ -63,7 +63,7 @@ const ImageGallery = ({ tour }: Props) => {
                   <Image
                     src={img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover cursor-pointer duration-300 transform hover:scale-105"
+                    className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
                     height={720}
                     width={540}
                   />

@@ -97,10 +97,10 @@ const TourSection = ({
       )}
       {/* Row of english and espanol bottons */}
       <div className="flex flex-row justify-between mb-10">
-        <Link href={currentPath} locale="en" className={`${langBtnStyle.en}`}>
+        <Link href={currentPath} locale="en" className={`${langBtnStyle.en} rounded-md`}>
           English
         </Link>
-        <Link href={currentPath} locale="es" className={`${langBtnStyle.es}`}>
+        <Link href={currentPath} locale="es" className={`${langBtnStyle.es} rounded-md`}>
           Español
         </Link>
       </div>

@@ -133,7 +133,7 @@ const DatePicker = ({
               {availability.time.map((time) => (
                 <button
                   key={time}
-                  className={`p-4 border  ${
+                  className={`p-4 border  rounded-md ${
                     time === selectedTourTime ? "bg-black text-white" : ""
                   }`}
                   onClick={() => {

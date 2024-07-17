@@ -112,7 +112,7 @@ const GuestSelectMobile = ({
       )}
       <div className="flex-row">
         <button
-          className="btn-circle border"
+          className="btn-circle border rounded-md"
           onClick={() => {
             if (quantity >= minQuantity + 1) setQuantity(quantity - 1);
           }}
@@ -126,7 +126,7 @@ const GuestSelectMobile = ({
             : intl.formatMessage({ id: "datepicker.guest" })}
         </span>
         <button
-          className="btn-circle border"
+          className="btn-circle border rounded-md"
           onClick={() => {
             if (quantity < maxQuantity) setQuantity(quantity + 1);
           }}
@@ -144,7 +144,7 @@ const GuestSelectMobile = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         target="_blank"
-        className="btn rounded-none bg-orange border-none w-full my-5"
+        className="btn rounded-md bg-orange border-none w-full my-5"
       >
         {isRentalBike
           ? intl.formatMessage({ id: "rental.rent.cta" })
