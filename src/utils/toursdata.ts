@@ -37,46 +37,45 @@ export type Tour = {
 export const Tours: Tour[] = [
   {
     id: "cdmx-essentials-tour",
-    locales: ["en", "es"],
-    availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["9:30am"] },
-    tourName: "essentials.name", // Translation ID in /translations/Tours.json
+    locales: ["en"],
+    availability: { type: [2, 4, 6], time: ["2:00pm"] },
+    tourName: "arch.name",
     tourType: "Bike",
-    price: 950,
-    duration: "4hrs - 15km",
-    cap: "10",
+    price: 550,
+    duration: "4hrs -20km",
+    cap: "15",
     minGuests: "1",
-    description: "essentials.desc",
+    description: "arch.desc",
     included: "Bikes, Helmets, Tacos, Hydration",
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_essentials_v2.png",
+      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_essentials_v2.png",
-    thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_essentials_v2.png",
-    imgAlt: "Image of Essential Bike Tour of Downtown Mexico City",
+      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
+    thumbES: "",
+    imgAlt: "Image of Architectural Bike Tour in Mexico City",
     meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     coords: { lat: 19.42755, lng: -99.15569 },
+    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_1.jpg",
-        alt: "Photo from the essentials tour mexico",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_3.jpg",
-        alt: "Photo from the essentials tour mexico",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_2.jpg",
-        alt: "Photo from the essentials tour mexico",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_4.jpg	",
-        alt: "Photo from the essentials tour mexico",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/essential_v2_5.jpg",
-        alt: "Photo from the essentials tour mexico",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
     ],
   },
@@ -182,50 +181,6 @@ export const Tours: Tour[] = [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
         alt: "",
-      },
-    ],
-  },
-  {
-    id: "cdmx-architectural-tour-bike",
-    locales: ["en"],
-    availability: { type: [2, 4, 6], time: ["2:00pm"] },
-    tourName: "arch.name",
-    tourType: "Bike",
-    price: 550,
-    duration: "4hrs -20km",
-    cap: "15",
-    minGuests: "1",
-    description: "arch.desc",
-    included: "Bikes, Helmets, Tacos, Hydration",
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
-    thumbES: "",
-    imgAlt: "Image of Architectural Bike Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
-        alt: "Image of Architectural Bike Tour in Mexico City",
       },
     ],
   },
