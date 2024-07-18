@@ -11,7 +11,7 @@ const HeroSection = () => (
       <Image
         src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero_v3.jpeg"
         alt="Bike Tours CDMX"
-        className="w-full object-cover h-[80vh] md:h-[90vh]"
+        className="w-full object-cover h-[85vh] md:h-[90vh]"
         height={1080}
         width={1920}
         loading="eager"
@@ -22,24 +22,27 @@ const HeroSection = () => (
     <Image
       src="https://d252kj1i9nz0td.cloudfront.net/gallery_images/bike_tours_tour_type.jpeg"
       alt="Bike Tours CDMX"
-      className="w-full object-cover h-[80vh] visible md:h-[90vh] md:hidden"
+      className="w-full object-cover h-[85vh] visible md:h-[90vh] md:hidden"
       height={1080}
       width={1920}
       loading="eager"
       priority={true}
     />
     <div
-      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5 text-white z-10 leading-[5.0em]"
+      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 text-white z-10 leading-[5.0em]"
       style={{
         maxWidth: "800px",
       }}
     >
-      <div className="flex flex-col">
-        <h1 className="text-page-hero uppercase font-spartan font-black tracking-normal">
-          <FormattedMessage id="home.hero.title" />
+      <div className="flex flex-col items-center">
+        <h1 className="text-[40px] uppercase font-spartan font-bold leading-snug tracking-widest">
+          Tours En Bici
         </h1>
 
-        <CTALink href="/book-a-tour" variant="light" grow>
+        <p className="leading-none text-lg uppercase font-bold">
+          Architecture Tours in Mexico City
+        </p>
+        <CTALink href="/book-a-tour" variant="light"  className="">
           <FormattedMessage id="tours.cta.booknow" />
         </CTALink>
       </div>
