@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FormattedMessage } from "react-intl";
 import ImageOverlay from "../layout/ImageOverlay";
 import CTALink from "../actions/CTALink";
@@ -35,13 +34,13 @@ const HeroSection = () => (
       }}
     >
       <div className="flex flex-col items-center">
-        <h1 className="text-[40px] uppercase font-spartan font-bold leading-snug tracking-widest">
+        <h1 className="text-[40px] uppercase font-spartan font-black leading-snug tracking-widest">
           Tours En Bici
         </h1>
 
-        <p className="leading-none text-lg uppercase font-bold">
+        <h3 className="leading-none text-lg uppercase font-bold">
           Architecture Tours in Mexico City
-        </p>
+        </h3>
         <CTALink href="/book-a-tour" variant="light"  className="">
           <FormattedMessage id="tours.cta.booknow" />
         </CTALink>

@@ -31,6 +31,8 @@ const DatePicker = ({
   const [date, setDate] = useState(tomorrow);
   const Intl = useIntl();
 
+  const rentalPhoneNumnber = "525614720497";
+  const tourPhoneNumber = "5215583333677";
   const whatsAppLink = (quantity: number, totalPrice: number) => {
     if (isRentalBike) {
       const rentalMsg = intl.formatMessage(
@@ -47,7 +49,9 @@ const DatePicker = ({
       );
 
       const encodedMsg = encodeURIComponent(rentalMsg);
-      return `https://wa.me/5215583333677?text=${encodedMsg}`;
+      return `https://wa.me/${
+        isRentalBike ? rentalPhoneNumnber : tourPhoneNumber
+      }?text=${encodedMsg}`;
     }
 
     const tour = Intl.formatMessage({ id: tourName });
