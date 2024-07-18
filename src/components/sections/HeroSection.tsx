@@ -33,7 +33,7 @@ const HeroSection = () => (
         maxWidth: "800px",
       }}
     >
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center h-90">
         <h1 className="text-[40px] whitespace-nowrap uppercase font-spartan font-black leading-snug tracking-widest">
           Tours En Bici
         </h1>
@@ -41,7 +41,10 @@ const HeroSection = () => (
         <h3 className="leading-none text-lg uppercase font-bold whitespace-nowrap">
           Architecture Tours in Mexico City
         </h3>
-        <CTALink href="/book-a-tour" variant="light"  className="">
+      </div>
+
+      <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 translate-y-48">
+        <CTALink href="/book-a-tour" variant="light" className="">
           <FormattedMessage id="tours.cta.booknow" />
         </CTALink>
       </div>
