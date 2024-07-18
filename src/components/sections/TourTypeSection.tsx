@@ -17,7 +17,7 @@ type TypeCardProps = {
 // TODO translate
 const CenterContainer = ({ children, bgImage }: CenterContainerProps) => (
   <div
-    className="relative w-full min-h-[12rem] md:min-h-[30rem] md:w-1/3 p-4 flex flex-col justify-center items-center mb-6"
+    className="relative w-full min-h-[12rem] md:min-h-[30rem] md:w-1/3 flex flex-col justify-center items-center mb-6"
     style={{
       backgroundImage: `url(${bgImage})`,
       backgroundPosition: "center bottom 30%",
@@ -62,7 +62,7 @@ const TourTypeData = [
   },
 ];
 const TourTypeSection = () => (
-  <section className="flex flex-col md:flex-row pt-5 px-2">
+  <section className="flex flex-col md:flex-row pt-5">
     {TourTypeData.map((t, idx) => (
       <TypeCard {...t} key={idx} />
     ))}
