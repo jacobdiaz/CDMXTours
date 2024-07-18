@@ -4,9 +4,10 @@ import PageHeader from "@/components/layout/PageHeader";
 import DatePicker from "@/components/tours/DatePicker";
 import ReserveBar from "@/components/tours/ReserveBar";
 import TourSection from "@/components/tours/TourSection";
+import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
 
 type Props = {};
@@ -14,6 +15,25 @@ type Props = {};
 const BikeRentalsPage = (props: Props) => {
   const title = "Bike Rentals in Mexico City";
   const intl = useIntl();
+
+  const [lightboxController, setLightboxController] = useState({
+    toggler: false,
+    slide: 1,
+  });
+
+  function openLightboxOnSlide(number: number) {
+    setLightboxController({
+      toggler: !lightboxController.toggler,
+      slide: number,
+    });
+  }
+
+  const sources = [
+    "https://d252kj1i9nz0td.cloudfront.net/bike.jpeg",
+    "https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg",
+    "https://d252kj1i9nz0td.cloudfront.net/rental/rental_2.jpg",
+    "https://d252kj1i9nz0td.cloudfront.net/rental/rental_3.jpg",
+  ];
   return (
     <>
       <PageHeader type="article" url_path="book-a-tour">
@@ -52,16 +72,84 @@ const BikeRentalsPage = (props: Props) => {
         </div>
 
         {/* Images */}
+        <FsLightbox
+          toggler={lightboxController.toggler}
+          sources={sources}
+          slide={lightboxController.slide}
+          loadOnlyCurrentSource={true}
+        />
+
         <div className="w-full">
-          <Image
-            src="https://d252kj1i9nz0td.cloudfront.net/bike.jpeg"
-            alt="Bike Rentals in Mexico City"
-            layout="responsive"
-            width={800} // This is the aspect ratio width
-            height={200} // This is the aspect ratio height
-            className="w-full"
-          />
+          {/* Biggest image */}
+          <div className="container md:grid grid-cols-2 gap-2 mx-auto">
+            <div
+              className="col-span-1 max-h-[35rem]"
+              onClick={() => openLightboxOnSlide(1)}
+            >
+              <Image
+                src="https://d252kj1i9nz0td.cloudfront.net/bike.jpeg"
+                alt="Bike Rentals in Mexico City"
+                layout="responsive"
+                width={1080} // This is the aspect ratio width
+                height={720} // This is the aspect ratio height
+                className="w-full rounded-md"
+                style={{ objectPosition: "center 70%" }}
+              />
+            </div>
+            {/* 4 other images */}
+            <ul className="flex flex-row justify-between h-[100px] mt-5 md:mt-0 md:h-full md:grid md:grid-cols-2 gap-2 overflow-hidden">
+              <li
+                className="overflow-hidden"
+                onClick={() => openLightboxOnSlide(2)}
+              >
+                <Image
+                  src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg"
+                  alt="Photo of CDMX Rental Bike"
+                  className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
+                  height={200}
+                  width={540}
+                />
+              </li>
+              <li
+                className="overflow-hidden"
+                onClick={() => openLightboxOnSlide(3)}
+              >
+                <Image
+                  src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_2.jpg"
+                  alt="Photo of CDMX Rental Bike"
+                  className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
+                  height={200}
+                  width={540}
+                />
+              </li>
+              <li
+                className="overflow-hidden"
+                onClick={() => openLightboxOnSlide(4)}
+              >
+                <Image
+                  src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_3.jpg"
+                  alt="Photo of CDMX Rental Bike"
+                  className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
+                  height={200}
+                  width={540}
+                />
+              </li>
+              <li
+                className="overflow-hidden"
+                onClick={() => openLightboxOnSlide(1)}
+              >
+                <Image
+                  src="https://d252kj1i9nz0td.cloudfront.net/bike.jpeg"
+                  alt="Photo of CDMX Rental Bike"
+                  className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
+                  height={200}
+                  width={540}
+                />
+              </li>
+            </ul>
+          </div>
         </div>
+
         {/* Tour Content */}
         <div className="md:grid grid-cols-3 pt-10 gap-5">
           {/* Col 1 */}

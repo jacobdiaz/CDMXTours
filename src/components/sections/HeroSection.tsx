@@ -20,7 +20,7 @@ const HeroSection = () => (
     </div>
 
     <Image
-      src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero_v33.jpeg"
+      src="https://d252kj1i9nz0td.cloudfront.net/gallery_images/bike_tours_tour_type.jpeg"
       alt="Bike Tours CDMX"
       className="w-full object-cover h-[80vh] visible md:h-[90vh] md:hidden"
       height={1080}
@@ -42,15 +42,6 @@ const HeroSection = () => (
         <CTALink href="/book-a-tour" variant="light" grow>
           <FormattedMessage id="tours.cta.booknow" />
         </CTALink>
-
-        <Link
-          href="https://www.instagram.com/toursenbici/"
-          className="opacity-70 text-lg w-fit pr-8"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          @toursenbici
-        </Link>
       </div>
     </div>
     <ImageOverlay />

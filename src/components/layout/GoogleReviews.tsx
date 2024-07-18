@@ -89,7 +89,7 @@ const GoogleReviews = (props: Props) => {
         <div className="flex flex-row mb-5 mt-2">
           <StarRating rating={5} showRatingText />
           <a className="opacity-50" href="https://g.co/kgs/ANcNN7F">
-            503 Reviews
+            648 Reviews
           </a>
         </div>
         {/* <Link href={writeReviewLink}>Write A Review</Link> */}

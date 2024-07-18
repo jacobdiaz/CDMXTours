@@ -13,16 +13,16 @@ export type Review = {
 
 export const reviews = [
   {
-    author_name: "Miller Nickel Resor",
+    author_name: "Brandon M",
     author_url:
-      "https://www.google.com/maps/contrib/115816613010548947877/reviews",
+      "https://g.co/kgs/qDE5KpK",
     language: "en",
     original_language: "en",
     profile_photo_url:
       "https://lh3.googleusercontent.com/a-/AD_cMMQjzTDL2eD-De3ka1VW5lYDMVCaJ8pADXCSTWru9Q=s128-c0x00000000-cc-rp-mo",
     rating: 5,
-    relative_time_description: "a year ago",
-    text: "Raul took us on his famous Taco tour, which is much more than a taco tour. We learned about the history of the city, its mix of religions and people and the resulting parks and architecture. Great tour by a great guy. Good bikes! Highly recommend!",
+    relative_time_description: "4 Months Ago",
+    text: "The bike tour was wonderful!!! Our guide Lee, was very knowledgeable and kept us safe at all times. It was just over 10 miles long and consisted of various historic stops along the city. We even stopped for tacos, coffee and pastries on separate occasions. In addition, the tour was very informative because we were able to learn so much about the rich history of Mexico City.",
     time: 1646679564,
     translated: false,
   },

@@ -16,15 +16,14 @@ type TypeCardProps = {
 
 // TODO translate
 const CenterContainer = ({ children, bgImage }: CenterContainerProps) => (
-  <div className="relative w-full min-h-[15rem] md:min-h-[30rem] md:w-1/3 p-4 flex flex-col justify-center items-center mb-2">
-    <Image
-      src={bgImage}
-      alt="Tour Type Card"
-      className="absolute inset-0 object-cover w-full h-full"
-      width={1080}
-      height={720}
-      loading="lazy"
-    />
+  <div
+    className="relative w-full min-h-[12rem] md:min-h-[30rem] md:w-1/3 p-4 flex flex-col justify-center items-center mb-6"
+    style={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundPosition: "center bottom 30%",
+      backgroundSize: "cover",
+    }}
+  >
     <div className="absolute inset-0 bg-black bg-opacity-30"></div>
     <div className=" z-10 flex flex-col justify-center items-center">
       {children}
@@ -34,11 +33,11 @@ const CenterContainer = ({ children, bgImage }: CenterContainerProps) => (
 
 const TypeCard = ({ title, url, bgImage }: TypeCardProps) => (
   <CenterContainer bgImage={bgImage}>
-    <h3 className="text-white text-5xl md:text-3xl uppercase font-bold">{title}</h3>
+    <h3 className="text-white text-xl md:text-3xl uppercase font-bold">
+      {title}
+    </h3>
     <Link href={url} className="bg-black px-6 py-1.5 mt-2 rounded-btn">
-      <p className="text-white uppercase">
-        Book Now
-      </p>
+      <p className="text-white uppercase">Book Now</p>
     </Link>
   </CenterContainer>
 );
