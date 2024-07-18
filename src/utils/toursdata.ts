@@ -38,15 +38,15 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-essentials-tour",
     locales: ["en"],
-    availability: { type: [2, 4, 6], time: ["2:00pm"] },
+    availability: { type: [2, 4, 6], time: ["9:30am"] },
     tourName: "arch.name",
     tourType: "Bike",
-    price: 550,
-    duration: "4hrs -20km",
+    price: 950,
+    duration: "4.5hrs -20km",
     cap: "15",
     minGuests: "1",
     description: "arch.desc",
-    included: "Bikes, Helmets, Tacos, Hydration",
+    included: "Dutch Bikes, Helmets, Tacos, Hydration",
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
     thumbEN:
@@ -58,23 +58,23 @@ export const Tours: Tour[] = [
     googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_6.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_2.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_3.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_4.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_8.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
     ],
