@@ -34,11 +34,11 @@ const HeroSection = () => (
       }}
     >
       <div className="flex flex-col items-center">
-        <h1 className="text-[40px] uppercase font-spartan font-black leading-snug tracking-widest">
+        <h1 className="text-[40px] whitespace-nowrap uppercase font-spartan font-black leading-snug tracking-widest">
           Tours En Bici
         </h1>
 
-        <h3 className="leading-none text-lg uppercase font-bold">
+        <h3 className="leading-none text-lg uppercase font-bold whitespace-nowrap">
           Architecture Tours in Mexico City
         </h3>
         <CTALink href="/book-a-tour" variant="light"  className="">
