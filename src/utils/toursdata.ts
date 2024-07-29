@@ -38,7 +38,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-essentials-tour",
     locales: ["en"],
-    availability: { type: [2, 4, 6], time: ["9:30am"] },
+    availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["9:30am"] },
     tourName: "arch.name",
     tourType: "Bike",
     price: 950,
@@ -355,11 +355,11 @@ export const Tours: Tour[] = [
     description: "walkingtaco.desc",
     included: "Guide, 5-6 Tacos, Hydration, 1 Beer",
     imgSrc:
-    "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
+      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
     thumbEN:
-    "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
+      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
     thumbES:
-    "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
+      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
     meetingAddr: "Calle Versalles 88, 06600 Mexico City",
     coords: { lat: 19.42755, lng: -99.15569 },
