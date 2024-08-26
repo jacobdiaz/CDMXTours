@@ -188,16 +188,16 @@ const BikeRentalsPage = (props: Props) => {
               >
                 <ul>
                   <li>
-                    1 Hr : <span className="font-bold">$80 MXN</span>
-                  </li>
-                  <li>
                     2 Hrs : <span className="font-bold">$150 MXN</span>
                   </li>
                   <li>
-                    5 Hrs : <span className="font-bold">$250 MXN</span>
+                    6 Hrs : <span className="font-bold">$300 MXN</span>
                   </li>
                   <li>
-                    24 Hrs : <span className="font-bold">$300 MXN</span>
+                    24 Hrs : <span className="font-bold">$450 MXN</span>
+                  </li>
+                  <li>
+                    {intl.formatMessage({ id: "rental.week" }) + " : "} <span className="font-bold">$1250 MXN</span>
                   </li>
                 </ul>
               </TourSection>

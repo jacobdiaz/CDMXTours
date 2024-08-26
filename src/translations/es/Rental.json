@@ -18,5 +18,6 @@
   "rental.availability_pending": "Disponibilidad Pendiente",
   "rental.bike": "Bici",
   "rental.rent.cta": "Alquila La Bicicleta",
-  "rental_whatsapp_msg": "Hola Tours en Bici CDMX! \nMe gustaría alquilar {quantity} bici(s) \nFecha: {date} \nTotal: ${totalPrice} MXN"
+  "rental_whatsapp_msg": "Hola Tours en Bici CDMX! \nMe gustaría alquilar {quantity} bici(s) \nFecha: {date} \nTotal: ${totalPrice} MXN",
+  "rental.week": "1 Semana"
 }

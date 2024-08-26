@@ -18,5 +18,6 @@
   "rental.availability_pending": "Availability Pending",
   "rental.bike": "Bike",
   "rental.rent.cta": "Rent Bike",
-  "rental_whatsapp_msg": "Hello Tours en Bici CDMX! \nI would like to rent {quantity} bike(s) \nDate: {date} \nTotal: ${totalPrice} MXN"
+  "rental_whatsapp_msg": "Hello Tours en Bici CDMX! \nI would like to rent {quantity} bike(s) \nDate: {date} \nTotal: ${totalPrice} MXN",
+  "rental.week": "1 Week"
 }

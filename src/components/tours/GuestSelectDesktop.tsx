@@ -23,17 +23,17 @@ const GuestSelectDesktop = ({
   useEffect(() => {
     if (isRentalBike) {
       switch (selectedTime) {
-        case "1hr":
-          setTourPrice(quantity * 80);
-          break;
         case "2hrs":
           setTourPrice(quantity * 150);
           break;
-        case "5hrs":
-          setTourPrice(quantity * 250);
+        case "6hrs":
+          setTourPrice(quantity * 300);
           break;
         case "24hrs":
-          setTourPrice(quantity * 350);
+          setTourPrice(quantity * 450);
+          break;
+        case "1 week":
+          setTourPrice(quantity * 1250);
           break;
       }
     } else {
@@ -57,51 +57,53 @@ const GuestSelectDesktop = ({
               type="radio"
               name="rentalTime"
               id="time1"
-              value="1hr"
-              className="square-radio mr-2"
-              onChange={handleChange}
-              checked={selectedTime === "1hr"}
-            />
-            <label htmlFor="time1" className="mr-4">
-              1 Hrs
-            </label>
-
-            <input
-              type="radio"
-              name="rentalTime"
-              id="time2"
               value="2hrs"
               className="square-radio mr-2"
               onChange={handleChange}
               checked={selectedTime === "2hrs"}
             />
-            <label htmlFor="time2" className="mr-4">
+            <label htmlFor="time1" className="mr-4">
               2 Hrs
             </label>
 
             <input
               type="radio"
               name="rentalTime"
-              id="time3"
-              value="5hrs"
+              id="time2"
+              value="6hrs"
               className="square-radio mr-2"
               onChange={handleChange}
-              checked={selectedTime === "5hrs"}
+              checked={selectedTime === "6hrs"}
+            />
+            <label htmlFor="time2" className="mr-4">
+              6 Hrs
+            </label>
+
+            <input
+              type="radio"
+              name="rentalTime"
+              id="time3"
+              value="24hrs"
+              className="square-radio mr-2"
+              onChange={handleChange}
+              checked={selectedTime === "24hrs"}
             />
             <label htmlFor="time3" className="mr-4">
-              5 Hrs
+              24 Hrs
             </label>
 
             <input
               type="radio"
               name="rentalTime"
               id="time4"
-              value="24hrs"
+              value="1 week"
               className="square-radio mr-2"
               onChange={handleChange}
-              checked={selectedTime === "24hrs"}
+              checked={selectedTime === "1 week"}
             />
-            <label htmlFor="time4">24 Hrs</label>
+            <label htmlFor="time4">{intl.formatMessage(
+              { id: "rental.week" }
+            )}</label>
           </div>
         </div>
       )}
