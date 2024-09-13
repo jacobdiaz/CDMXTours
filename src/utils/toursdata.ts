@@ -37,11 +37,11 @@ export type Tour = {
 export const Tours: Tour[] = [
   {
     id: "cdmx-essentials-tour",
-    locales: ["en"],
+    locales: ["en", "es"],
     availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["9:30am"] },
     tourName: "arch.name",
     tourType: "Bike",
-    price: 950,
+    price: 750,
     duration: "4.5hrs -20km",
     cap: "15",
     minGuests: "1",
@@ -105,7 +105,7 @@ export const Tours: Tour[] = [
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_taco.png",
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco.png",
-    imgAlt: "Image of Taco Bike Tour of Downtown Mexico City",
+    imgAlt: "Image of Taco Bike Tour Mexico City",
     meetingAddr: "Calle Versalles 88, 06600 Mexico City",
     googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     coords: { lat: 19.42755, lng: -99.15569 },

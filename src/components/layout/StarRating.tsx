@@ -2,17 +2,20 @@ type StarRatingProps = {
   totalStars?: number;
   rating: number;
   showRatingText?: boolean;
+  lgStars?: boolean;
 };
 
 const StarRating: React.FC<StarRatingProps> = ({
   totalStars = 5,
   rating,
   showRatingText = false,
+  lgStars = false,
 }) => {
+  const starSize = lgStars ? "h-8 w-8" : "h-5 w-5";
   const filledStars = Array.from({ length: rating }, (_, index) => (
     <svg
       key={index}
-      className="h-5 w-5 fill-current text-yellow-500"
+      className={`${starSize} fill-current text-yellow-500`}
       viewBox="0 0 20 20"
     >
       <path
@@ -25,7 +28,7 @@ const StarRating: React.FC<StarRatingProps> = ({
   const emptyStars = Array.from({ length: totalStars - rating }, (_, index) => (
     <svg
       key={index}
-      className="h-5 w-5 fill-current text-gray-300"
+      className={`${starSize} fill-current text-gray-300`}
       viewBox="0 0 20 20"
     >
       <path
@@ -36,8 +39,8 @@ const StarRating: React.FC<StarRatingProps> = ({
   ));
 
   return (
-    <div className="flex items-center">
-      <div className="flex">
+    <>
+      <div className="flex justify-center ">
         {filledStars}
         {emptyStars}
       </div>
@@ -45,7 +48,7 @@ const StarRating: React.FC<StarRatingProps> = ({
         {/* if show rating text exsist */}
         {showRatingText && <span>{rating}.0 Stars</span>}
       </span>
-    </div>
+    </>
   );
 };
 

@@ -13,30 +13,28 @@ export type Review = {
 
 export const reviews = [
   {
-    author_name: "Brandon M",
-    author_url:
-      "https://g.co/kgs/qDE5KpK",
+    author_name: "Judith Diaz",
+    author_url: "https://g.co/kgs/EWa8zvQ",
     language: "en",
     original_language: "en",
     profile_photo_url:
-      "https://lh3.googleusercontent.com/a-/AD_cMMQjzTDL2eD-De3ka1VW5lYDMVCaJ8pADXCSTWru9Q=s128-c0x00000000-cc-rp-mo",
+      "https://lh3.googleusercontent.com/a-/ALV-UjUILCUidd6LqOe-_x-T5Im-GMsu57-uxCY9LiIbjzN2ZYgBx7C64g=w120-h120-p-rp-mo-ba3-br100",
     rating: 5,
-    relative_time_description: "4 Months Ago",
-    text: "The bike tour was wonderful!!! Our guide Lee, was very knowledgeable and kept us safe at all times. It was just over 10 miles long and consisted of various historic stops along the city. We even stopped for tacos, coffee and pastries on separate occasions. In addition, the tour was very informative because we were able to learn so much about the rich history of Mexico City.",
+    relative_time_description: "2 Weeks Ago",
+    text: "We did the 'Architecture - Walking tour, Roma - Condesa'. Our guide, Ricardo, was very knowledgeable about the architecture of the city and always answered any questions we had with a smile. He also recommended several other notable spots to visit while we were there. In the end, we stopped for some famous delicious tacos. I recommend this walking tour as it allowed us to be like locals and really stop and look at some cool historic buildings. Overall, it was a wonderful experience! 10/10 would do it again!",
     time: 1646679564,
     translated: false,
   },
   {
-    author_name: "Rebekah M",
-    author_url:
-      "https://www.google.com/maps/contrib/102375211362571889476/reviews",
+    author_name: "Laura Spencer",
+    author_url: "https://g.co/kgs/XWd7KsJ",
     language: "en",
     original_language: "en",
     profile_photo_url:
-      "https://lh3.googleusercontent.com/a-/AD_cMMQ42aAlTaLe2nJtgWkDVCAO4Pcg3BA9RHRNxFM33Q=s128-c0x00000000-cc-rp-mo",
+      "https://lh3.googleusercontent.com/a/ACg8ocJGSzULVz0JeSvNgu2wxA-OspaEX8JHj0jKpEX0Bby5qnY55A=w120-h120-p-rp-mo-br100",
     rating: 5,
-    relative_time_description: "10 months ago",
-    text: "The tour was amazing, start to finish! Raul was super friendly, gave us a lot of information on the city, and made sure we were safe and having fun! The taco stops were all wonderful and delicious!",
+    relative_time_description: "a week ago",
+    text: "While in town my partner and I took the private architecture tour on bike with our guide, Ricardo. It was my favorite thing we did while visiting CDMX, not only did we get to learn so much interesting history but we got to do it with an excellent guide. Ricardo was kind, friendly, knowledgeable, and extremely attentive. We ourselves are very avid bikers and were very happy that we got to experience biking in CDMX. Could not recommend enough, it was a wonderful way to spend a half day in the city!",
     time: 1657916233,
     translated: false,
   },

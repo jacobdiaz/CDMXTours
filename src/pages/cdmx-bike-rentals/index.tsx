@@ -63,8 +63,8 @@ const BikeRentalsPage = (props: Props) => {
               </span>
               Back
             </Link>
-            <div className="w-full flex justify-between mb-5">
-              <h1 className="text-4xl ">
+            <div className="w-full flex justify-center md:justify-between mb-5">
+              <h1 className="text-4xl md:text-6xl ">
                 {intl.formatMessage({ id: "rental.title" })}
               </h1>
             </div>
@@ -87,7 +87,7 @@ const BikeRentalsPage = (props: Props) => {
               onClick={() => openLightboxOnSlide(1)}
             >
               <Image
-                src="https://d252kj1i9nz0td.cloudfront.net/bike.jpeg"
+                src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg"
                 alt="Bike Rentals in Mexico City"
                 layout="responsive"
                 width={1080} // This is the aspect ratio width
@@ -134,18 +134,6 @@ const BikeRentalsPage = (props: Props) => {
                   width={540}
                 />
               </li>
-              <li
-                className="overflow-hidden"
-                onClick={() => openLightboxOnSlide(1)}
-              >
-                <Image
-                  src="https://d252kj1i9nz0td.cloudfront.net/bike.jpeg"
-                  alt="Photo of CDMX Rental Bike"
-                  className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
-                  height={200}
-                  width={540}
-                />
-              </li>
             </ul>
           </div>
         </div>
@@ -168,11 +156,6 @@ const BikeRentalsPage = (props: Props) => {
                 className="max-w-[180px] md:max-w-[450px]"
               >
                 <ul>
-                  <li className="list-disc ml-3">
-                    {intl.formatMessage({
-                      id: "rental.requirement_1",
-                    })}
-                  </li>
                   <li className="list-disc ml-3">
                     {intl.formatMessage({
                       id: "rental.requirement_1",

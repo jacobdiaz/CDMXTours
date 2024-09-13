@@ -4,8 +4,8 @@ import ImageOverlay from "../layout/ImageOverlay";
 import CTALink from "../actions/CTALink";
 
 const HeroSection = () => (
-  <section className="relative">
-    {/* image 1 */}
+  <section className="relative overflow-hidden">
+    {/* Desktop Hero Image */}
     <div className="hidden md:block">
       <Image
         src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero_v3.jpeg"
@@ -18,10 +18,11 @@ const HeroSection = () => (
       />
     </div>
 
+    {/* Mobile Hero Image */}
     <Image
-      src="https://d252kj1i9nz0td.cloudfront.net/gallery_images/bike_tours_tour_type.jpeg"
+      src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero_v4_mobile.jpeg"
       alt="Bike Tours CDMX"
-      className="w-full object-cover h-[85vh] visible md:h-[90vh] md:hidden"
+      className="w-full object-cover h-[85vh] visible md:h-[90vh] md:hidden scale-105"
       height={1080}
       width={1920}
       loading="eager"

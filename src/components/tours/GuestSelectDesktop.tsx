@@ -140,7 +140,7 @@ const GuestSelectDesktop = ({
       >
         {isRentalBike
           ? intl.formatMessage({ id: "rental.rent.cta" })
-          : intl.formatMessage({ id: "tours.book.btn" })}
+          : intl.formatMessage({ id: "tours.bookWhatsapp.btn" })}
       </Link>
     </div>
   );

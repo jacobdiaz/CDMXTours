@@ -21,7 +21,7 @@ const ReviewCard = (review: Review) => {
             <p className='text-lg font-semibold'>{review.author_name}</p>
             <div className='flex flex-row'>
               <StarRating rating={review.rating} />
-              <p>{review.relative_time_description}</p>
+              <p className="ml-5">{review.relative_time_description}</p>
             </div>
           </div>
         </div>

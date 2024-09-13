@@ -11,7 +11,7 @@ import DatePicker from "@/components/tours/DatePicker";
 import PageHeader from "@/components/layout/PageHeader";
 import Share from "@/components/actions/Share";
 import { FormattedMessage, useIntl } from "react-intl";
-import { useEffect } from "react";
+import SectionText from "@/components/tours/SectionText";
 
 const TourPage = () => {
   const router = useRouter();
@@ -62,10 +62,12 @@ const TourPage = () => {
                 defaultMessage: "View All Tours",
               })}
             </button>
-            <div className="w-full flex justify-between">
-              <h1 className="text-4xl uppercase">
-                <FormattedMessage id={tour?.tourName} />
-              </h1>
+            <div className="w-full flex justify-center md:justify-between">
+              <div>
+                <h1 className="font-spartan text-4xl md:text-4xl uppercase md:text-start text-center">
+                  <FormattedMessage id={tour?.tourName} />
+                </h1>
+              </div>
               <p className="hidden md:block md:text-2xl">
                 ${tour?.price.toString()}MXN / Person
               </p>
@@ -84,13 +86,16 @@ const TourPage = () => {
             <TourSection
               title={Intl.formatMessage({ id: "tours.section.description" })}
             >
-              <FormattedMessage
-                id={tour?.description}
-                values={{
-                  p: (...chunks) => <p>{chunks}</p>,
-                  br: <br />,
-                }}
-              />
+              {/* Description */}
+              <SectionText>
+                <FormattedMessage
+                  id={tour?.description}
+                  values={{
+                    p: (...chunks) => <p>{chunks}</p>,
+                    br: <br />,
+                  }}
+                />
+              </SectionText>
             </TourSection>
 
             {/* Whats Included & Group Capacity */}
@@ -99,21 +104,21 @@ const TourPage = () => {
                 title={Intl.formatMessage({ id: "tours.section.included" })}
                 hideDivider
               >
-                <p>
+                <SectionText>
                   <FormattedMessage id="tours.included" />
-                </p>
+                </SectionText>
               </TourSection>
               <Divider orientation="vertical" />
               <TourSection
                 title={Intl.formatMessage({ id: "tours.section.capacity" })}
                 hideDivider
               >
-                <p>
+                <SectionText>
                   <FormattedMessage
                     id="tours.capacity"
                     values={{ capacity: tour?.cap }}
                   />
-                </p>
+                </SectionText>
               </TourSection>
             </div>
             <Divider />
@@ -122,7 +127,7 @@ const TourPage = () => {
             <TourSection
               title={Intl.formatMessage({ id: "tours.section.meet" })}
             >
-              <p className="mt-5">
+              <SectionText className="mt-5">
                 <FormattedMessage
                   id="tours.meet.desc"
                   values={{
@@ -140,7 +145,7 @@ const TourPage = () => {
                     ),
                   }}
                 />
-              </p>
+              </SectionText>
 
               <Link
                 href={tour.googleMapsLink}
@@ -168,7 +173,7 @@ const TourPage = () => {
               })}
               hideDivider
             >
-              <p>
+              <SectionText>
                 <FormattedMessage id="tours.have_a_question.desc" />{" "}
                 <Link
                   href="tel:+52-1-55-8333-3677"
@@ -178,7 +183,7 @@ const TourPage = () => {
                   +52 1 55 8333 3677
                 </Link>
                 .
-              </p>
+              </SectionText>
               <CTALink
                 variant="dark"
                 href="/contact"

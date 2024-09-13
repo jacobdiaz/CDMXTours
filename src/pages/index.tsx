@@ -26,7 +26,7 @@ export default function Home({ dir }: HomeProps) {
 
   return (
     <main dir={dir} className="font-ssp">
-      <PageHeader>
+      <PageHeader keywords="Taco Bike Tour Mexico City, Architecture tours MC, Paseo en Bicicleta, Bike Rentals MC">
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta property="og:title" content={`${title}`} />
@@ -34,10 +34,12 @@ export default function Home({ dir }: HomeProps) {
       </PageHeader>
       <HeroSection />
       <AboutUsSection />
+      <div className="page-container mt-10 mb-0">
+        <GoogleReviews />
+      </div>
       <TourTypeSection />
       <div className="page-container">
-        <TourSection tourType="Bike" showRental/>
-        <GoogleReviews />
+        <TourSection tourType="Bike" showRental />
         <ContactSection />
         {locales === "es" && (
           <Banner

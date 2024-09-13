@@ -25,8 +25,8 @@ const GoogleReviews = (props: Props) => {
   const GoogleIcon = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      width="30"
+      height="30"
       preserveAspectRatio="xMidYMid"
       viewBox="0 0 256 262"
       id="google"
@@ -80,17 +80,20 @@ const GoogleReviews = (props: Props) => {
   return (
     <>
       <div className="w-full flex flex-col justify-center items-center">
-        <div className="flex flex-row items-center">
-          <GoogleIcon />
-          <SectionTitle margin="0" className="ml-3">
-            Google Reviews
-          </SectionTitle>
+          <p className="text-3xl font-bold">Excellent</p>
+        <div className="mt-2">
+          <StarRating rating={5} lgStars/>
         </div>
-        <div className="flex flex-row mb-5 mt-2">
-          <StarRating rating={5} showRatingText />
-          <a className="opacity-50" href="https://g.co/kgs/ANcNN7F">
-            648 Reviews
-          </a>
+        <div>
+          <p>
+            Based On {" "}
+            <a className="font-bold underline" href="https://g.co/kgs/ANcNN7F">
+              740 Reviews
+            </a>
+          </p>
+        </div>
+        <div className="flex flex-row items-center mt-5">
+          <GoogleIcon /> <p className="ml-2">Google Reviews</p>
         </div>
         {/* <Link href={writeReviewLink}>Write A Review</Link> */}
       </div>

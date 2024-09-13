@@ -14,7 +14,7 @@ const TourSection = ({
   hideDivider = false,
 }: SectionProps) => (
   <div className={`mb-5 ${className}`}>
-    <h4 className="mb-2 text-xl font-bold">{title}</h4>
+    <h4 className="mb-2 text-2xl font-bold">{title}</h4>
     {children}
 
     {!hideDivider && <Divider />}
