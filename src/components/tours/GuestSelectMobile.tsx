@@ -143,11 +143,11 @@ const GuestSelectMobile = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         target="_blank"
-        className="btn rounded-md bg-[#25D366] border-none w-full my-5"
+        className="btn rounded-md bg-green border-none w-full my-5"
       >
         {isRentalBike
           ? intl.formatMessage({ id: "rental.rent.cta" })
-          : intl.formatMessage({ id: "tours.bookWhatsapp.btn" })}
+          : intl.formatMessage({ id: "tours.book.btn" })}
       </Link>
     </div>
   );

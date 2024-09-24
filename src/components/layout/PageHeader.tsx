@@ -13,7 +13,7 @@ type HeaderProps = {
 const PageHeader = ({
   children,
   type = "website",
-  page_img = "https://d252kj1i9nz0td.cloudfront.net/tours_logo.jpg",
+  page_img = "https://lh3.googleusercontent.com/p/AF1QipNdeoOBnjIPTYodfH6CINCsEFXZdwWKhGma1lHI=s1360-w1360-h1020",
   keywords = "CDMX Tours, bike tours, Bike Tours Mexico City, CDMX Bike Tours, Tours En Bici, Mexico City bike tours, Mexico City Tours, Bike Tours CDMX, Bike Tours, Architecture Tours Mexico City, Taco Tours CDMX, Tours En Bici CDMX ",
   url_path = "",
   socialTitle = "CDMX Bike Tours",

@@ -136,11 +136,11 @@ const GuestSelectDesktop = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         target="_blank"
-        className="btn rounded-md bg-orange border-none w-full my-5 hover:bg-orange hover:opacity-80"
+        className="btn rounded-md bg-green border-none w-full my-5 hover:bg-green hover:opacity-80"
       >
         {isRentalBike
           ? intl.formatMessage({ id: "rental.rent.cta" })
-          : intl.formatMessage({ id: "tours.bookWhatsapp.btn" })}
+          : intl.formatMessage({ id: "tours.book.btn" })}
       </Link>
     </div>
   );

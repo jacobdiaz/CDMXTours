@@ -47,7 +47,7 @@ const TourTypeData = [
     title: "Bike Tours",
     url: "/cdmx-bike-tours",
     bgImage:
-      "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+    "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_2.jpg",
   },
   {
     title: "Walking Tours",
@@ -58,7 +58,7 @@ const TourTypeData = [
   {
     title: "Bike Rentals",
     url: "/cdmx-bike-rentals",
-    bgImage: "https://d252kj1i9nz0td.cloudfront.net/bike.jpeg",
+    bgImage: "https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg",
   },
 ];
 const TourTypeSection = () => (

@@ -27,7 +27,8 @@ const DatePicker = ({
   // create a var to store tomorrows date
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
-  const [selectedTourTime, setSelectedTourTime] = useState("");
+  // const [selectedTourTime, setSelectedTourTime] = useState("");
+  const [selectedGroupOrPrivate, setSelectedGroupOrPrivate] = useState<"group" | "private">("group");
   const [date, setDate] = useState(tomorrow);
   const Intl = useIntl();
 
@@ -63,7 +64,7 @@ const DatePicker = ({
         day: "numeric",
         month: "long",
       }
-    )} ${selectedTourTime} \nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
+    )} ${selectedGroupOrPrivate === 'group' ? "Group Tour ": "Private Tour" }\nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
 
     const msgEs = `Hola Tours en Bici CDMX! \nMe gustaría reservar\nTour: ${Intl.formatMessage(
       { id: tourName }
@@ -71,7 +72,7 @@ const DatePicker = ({
       weekday: "long",
       day: "numeric",
       month: "long",
-    })} ${selectedTourTime}\nInvitados: ${quantity}\nTotal: $${totalPrice} MXN`;
+    })} ${selectedGroupOrPrivate === 'group' ? "Group Tour ": "Private Tour" }nInvitados: ${quantity}\nTotal: $${totalPrice} MXN`;
 
     const encodedMsg = encodeURIComponent(Intl.locale === "en" ? msgEn : msgEs);
     return `https://wa.me/5215583333677?text=${encodedMsg}`;
@@ -124,33 +125,62 @@ const DatePicker = ({
       />
 
       {/* Tour Time */}
-      {availability?.time && !isRentalBike && (
-        <>
-          <div className="flex justify-center md:justify-start">
-            <p className="text-xs py-2">
-              {intl.formatMessage({ id: "tours.select_time" })}
-            </p>
-          </div>
-          {/* Create a select for availability.time */}
-          {availability.time && Array.isArray(availability.time) && (
-            <div className="flex flex-row justify-center md:justify-start mb-5">
-              {availability.time.map((time) => (
-                <button
-                  key={time}
-                  className={`p-4 border  rounded-md ${
-                    time === selectedTourTime ? "bg-black text-white" : ""
-                  }`}
-                  onClick={() => {
-                    setSelectedTourTime(time);
-                  }}
-                >
-                  {time}
-                </button>
-              ))}
-            </div>
-          )}
-        </>
-      )}
+      {
+        // availability?.time && !isRentalBike && (
+        //   <>
+        //     <div className="flex justify-center md:justify-start">
+        //       <p className="text-xs py-2">
+        //         {intl.formatMessage({ id: "tours.select_time" })}
+        //       </p>
+        //     </div>
+        //     {/* Create a select for availability.time */}
+        //     {availability.time && Array.isArray(availability.time) && (
+        //       <div className="flex flex-row justify-center md:justify-start mb-5">
+        //         {availability.time.map((time) => (
+        //           <button
+        //             key={time}
+        //             className={`p-4 border  rounded-md ${
+        //               time === selectedTourTime ? "bg-black text-white" : ""
+        //             }`}
+        //             onClick={() => {
+        //               setSelectedTourTime(time);
+        //             }}
+        //           >
+        //             {time}
+        //           </button>
+        //         ))}
+        //       </div>
+        //     )}
+        //   </>
+        // )
+      }
+
+      {/* Group or Private */}
+
+      <div className="flex flex-row w-full justify-evenly mb-5">
+        <button
+          onClick={() => setSelectedGroupOrPrivate("group")}
+          className={`p-4 border rounded-md ${
+            selectedGroupOrPrivate === "group" ? "bg-green text-white" : ""
+          }`}
+        >
+          {intl.formatMessage({
+            id: "datepicker.group",
+            defaultMessage: "Group",
+          })}
+        </button>
+        <button
+          onClick={() => setSelectedGroupOrPrivate("private")}
+          className={`p-4 border  rounded-md ${
+          selectedGroupOrPrivate === "private" ? "bg-green text-white" : ""
+          }`}
+        >
+          {intl.formatMessage({
+            id: "datepicker.private",
+            defaultMessage: "Private",
+          })}
+        </button>
+      </div>
 
       <div className="flex flex-row w-full justify-between">
         <GuestSelectDesktop

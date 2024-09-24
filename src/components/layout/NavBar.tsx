@@ -64,7 +64,9 @@ const NavBar = () => {
                   return (
                     idx !== 3 && ( // Skip the home link
                       <li key={idx} className='py-3'>
-                        <Link href={href} className='px-20 py-5'>
+                        <Link href={href} className='py-5
+                        flex-nowrap
+                        '>
                           {message}
                         </Link>
                       </li>

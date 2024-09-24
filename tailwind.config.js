@@ -18,7 +18,7 @@ module.exports = {
       },
       colors: {
         primary: "#000000",
-        orange: "#000000"
+        green: "#289f33"
       },
       height: {
         banner: "24rem",

@@ -35,6 +35,7 @@ export type Tour = {
 // TODO Turn this into an API Endpoint?
 // TODO Instead of explicityly stating the image paths, we should look into grabbing the folder and dynamically generating the paths
 export const Tours: Tour[] = [
+  // !THIS IS THE ARCH TOUR
   {
     id: "cdmx-essentials-tour",
     locales: ["en", "es"],

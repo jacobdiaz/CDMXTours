@@ -24,7 +24,7 @@ const Share = ({ tour }: { tour: Tour }) => {
             height={10}
           />
         </div>
-        <p className="text-orange">Share</p>
+        <p>Share</p>
       </label>
 
       <input type='checkbox' id='share-modal' className='modal-toggle' />
