@@ -20,6 +20,7 @@ const StarRating: React.FC<StarRatingProps> = ({
       viewBox="0 0 24 24"
       fill="currentColor"
       className={`text-yellow-500 ${starSize}`}
+      key={index}
     >
       <path d="M0 0h24v24H0z" fill="none"></path>
       <path d="M0 0h24v24H0z" fill="none"></path>

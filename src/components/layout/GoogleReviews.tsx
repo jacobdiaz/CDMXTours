@@ -120,7 +120,7 @@ const GoogleReviews = (props: Props) => {
         {/* Desktop */}
         <div className="hidden md:flex w-full flex-col md:flex-row justify-between ">
           {reviews.slice(1, 4).map((review: Review, idx: number) => (
-            <ReviewCard {...review} key={idx} />
+              <ReviewCard {...review} key={idx}/>
           ))}
         </div>
       </div>

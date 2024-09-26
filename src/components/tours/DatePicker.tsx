@@ -64,7 +64,7 @@ const DatePicker = ({
         day: "numeric",
         month: "long",
       }
-    )} ${selectedGroupOrPrivate === 'group' ? "Group Tour ": "Private Tour" }\nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
+    )} ${selectedGroupOrPrivate === 'group' ? "Group Tour ": "Private Tour " }\nGuests: ${quantity}\nTotal: $${totalPrice} MXN`;
 
     const msgEs = `Hola Tours en Bici CDMX! \nMe gustaría reservar\nTour: ${Intl.formatMessage(
       { id: tourName }

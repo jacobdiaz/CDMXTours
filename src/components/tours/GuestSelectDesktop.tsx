@@ -43,7 +43,7 @@ const GuestSelectDesktop = ({
 
   useEffect(() => {
     setTourPrice(price * quantity);
-  }, [quantity]);
+  }, [quantity, price]);
 
   return (
     <div className=" justify-between w-full text-xs md:text-md hidden md:block">

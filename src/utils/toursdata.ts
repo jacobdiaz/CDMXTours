@@ -42,7 +42,7 @@ export const Tours: Tour[] = [
     availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["9:30am"] },
     tourName: "arch.name",
     tourType: "Bike",
-    price: 750,
+    price: 950,
     duration: "4.5hrs -20km",
     cap: "15",
     minGuests: "1",
