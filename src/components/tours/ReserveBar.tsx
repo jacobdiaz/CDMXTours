@@ -59,7 +59,7 @@ const ReserveBar = ({
         </div>
         <label
           htmlFor="date-picker-modal"
-          className={`btn bg-green rounded-none border-none ${
+          className={`btn bg-green rounded-md border-none ${
             isRentalBike ? "w-full" : ""
           } `}
         >

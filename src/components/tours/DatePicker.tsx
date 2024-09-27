@@ -1,5 +1,5 @@
 import Calendar from "react-calendar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GuestSelectDesktop from "./GuestSelectDesktop";
 import GuestSelectMobile from "./GuestSelectMobile";
 import { useIntl } from "react-intl";
@@ -108,6 +108,14 @@ const DatePicker = ({
     }
   };
 
+  useEffect(() => {
+    // if selectedGroupOrPrivate is private then set the minGuests to 1 and totalPrice to price + 0
+    if (selectedGroupOrPrivate === "private" && price) {
+      minGuests = 1;
+      price += 150;
+    }
+  }, [selectedGroupOrPrivate, price]);
+
   const intl = useIntl();
   // TODO Add Translations
   // TODO Create more media points for when it starts to shrink!
@@ -189,6 +197,7 @@ const DatePicker = ({
           minQuantity={minGuests}
           price={price}
           isRentalBike={isRentalBike}
+          isPrivateTour={selectedGroupOrPrivate === "private"}
         />
         <GuestSelectMobile
           maxQuantity={cap}
@@ -196,6 +205,7 @@ const DatePicker = ({
           whatsAppLink={whatsAppLink}
           price={price}
           isRentalBike={isRentalBike}
+          isPrivateTour={selectedGroupOrPrivate === "private"}
         />
       </div>
       <p className="text-xs opacity-50">

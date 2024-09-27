@@ -9,9 +9,11 @@ const GuestSelectDesktop = ({
   minQuantity = 1,
   maxQuantity = 9,
   isRentalBike,
+  isPrivateTour,
 }: GuestSelectProps) => {
   const [quantity, setQuantity] = useState<number>(minQuantity);
-  const [totalPrice, setTourPrice] = useState<number>(price);
+  const [ogPrice] = useState<number>(price || 0);
+  const [totalPrice, setTotalPrice] = useState<number>(price);
   const [selectedTime, setSelectedTime] = useState("2hrs");
 
   // Handler to update state when a radio button is selected
@@ -24,26 +26,35 @@ const GuestSelectDesktop = ({
     if (isRentalBike) {
       switch (selectedTime) {
         case "2hrs":
-          setTourPrice(quantity * 150);
+          setTotalPrice(quantity * 150);
           break;
         case "6hrs":
-          setTourPrice(quantity * 300);
+          setTotalPrice(quantity * 300);
           break;
         case "24hrs":
-          setTourPrice(quantity * 450);
+          setTotalPrice(quantity * 450);
           break;
         case "1 week":
-          setTourPrice(quantity * 1250);
+          setTotalPrice(quantity * 1250);
           break;
       }
     } else {
-      setTourPrice(price * quantity);
+      setTotalPrice(price * quantity);
     }
   }, [quantity, selectedTime, price, isRentalBike]);
 
   useEffect(() => {
-    setTourPrice(price * quantity);
+    setTotalPrice(price * quantity);
   }, [quantity, price]);
+
+  // Update total price when isPrivateTour changes
+  useEffect(() => {
+    if(isPrivateTour){
+      setTotalPrice(() => (ogPrice * quantity) + 150);
+    } else{
+      setTotalPrice(ogPrice * quantity);
+    }
+  }, [isPrivateTour, quantity, ogPrice]);
 
   return (
     <div className=" justify-between w-full text-xs md:text-md hidden md:block">

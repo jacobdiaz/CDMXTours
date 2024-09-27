@@ -9,6 +9,7 @@ export type GuestSelectProps = {
   minQuantity?: number;
   whatsAppLink: (quantity: number, totalPrice: number) => string;
   isRentalBike?: Boolean | undefined;
+  isPrivateTour?: Boolean | undefined;
 };
 
 const GuestSelectMobile = ({
@@ -17,9 +18,11 @@ const GuestSelectMobile = ({
   minQuantity = 0,
   maxQuantity = 0,
   isRentalBike,
+  isPrivateTour
 }: GuestSelectProps) => {
   const [quantity, setQuantity] = useState<number>(minQuantity || 1);
-  const [totalPrice, setTourPrice] = useState<number>(price || 0);
+  const [ogPrice] = useState<number>(price || 0);
+  const [totalPrice, setTotalPrice] = useState<number>(price || 0);
   const [selectedTime, setSelectedTime] = useState("2hrs");
 
   // Handler to update state when a radio button is selected
@@ -31,23 +34,31 @@ const GuestSelectMobile = ({
     if (isRentalBike) {
       switch (selectedTime) {
         case "2hrs":
-          setTourPrice(quantity * 150);
+          setTotalPrice(quantity * 150);
           break;
         case "6hrs":
-          setTourPrice(quantity * 300);
+          setTotalPrice(quantity * 300);
           break;
         case "24hrs":
-          setTourPrice(quantity * 450);
+          setTotalPrice(quantity * 450);
           break;
         case "1 week":
-          setTourPrice(quantity * 1250);
+          setTotalPrice(quantity * 1250);
           break;
       }
     } else {
-      setTourPrice(price * quantity);
+      setTotalPrice(price * quantity);
     }
   }, [quantity, selectedTime, price, isRentalBike]);
 
+  // Update total price when isPrivateTour changes
+  useEffect(() => {
+    if(isPrivateTour){
+      setTotalPrice(() => (ogPrice * quantity) + 150);
+    } else{
+      setTotalPrice(ogPrice * quantity);
+    }
+  }, [isPrivateTour, quantity, ogPrice]);
   return (
     <div className="flex flex-col md:hidden items-center h-full w-full">
       {isRentalBike && (
