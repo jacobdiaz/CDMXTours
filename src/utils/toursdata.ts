@@ -81,6 +81,58 @@ export const Tours: Tour[] = [
     ],
   },
   {
+    id: "dia-de-los-muertos-bike-tour",
+    locales: ["en","es"],
+    availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["10:00am"] },
+    tourName: "muertos.name",
+    tourType: "Bike",
+    placesToVisit: [
+      "Col. Juarez",
+      "Col. Doctores",
+      "Centro Historica",
+      "Reforma",
+      "Col. Cuauhtemoc",
+    ],
+    price: 550,
+    duration: "3.5hrs - 12km",
+    cap: "15",
+    minGuests: "1",
+    description: "muertos.desc",
+    shortDescription: "muertos.desc",
+    included: "Bikes, Helmets, Day of the dead bread, Coffee ",
+    imgSrc:
+      "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/thumb-muertos.jpeg",
+    thumbEN:
+      "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/thumb-muertos.jpeg",
+    thumbES: "",
+    imgAlt: "Image of Dia De Los Muertos Bike Tour in CDMX",
+    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
+    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
+    coords: { lat: 19.35203, lng: -99.17984 },
+    gallery: [
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-1.jpg",
+        alt: "Image of dia de los muertos bike ride in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-2.jpg",
+        alt: "Image of dia de los muertos bike ride in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-3.jpg",
+        alt: "Image of dia de los muertos bike ride in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-4.jpg",
+        alt: "Image of dia de los muertos bike ride in Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-5.jpg",
+        alt: "Image of dia de los muertos bike ride in Mexico City",
+      },
+    ],
+  },
+  {
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
     availability: { type: [3, 4, 5, 6], time: ["11:30am", "5:30pm"] },

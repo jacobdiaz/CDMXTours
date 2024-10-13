@@ -5,7 +5,7 @@
   "tours.cta.button": "Book Now →",
   "tours.cta.booknow": "Book Now",
   "tours.duration": "Duration: {duration}",
-  "tours.included": "Included: Bikes, Helmets, Tacos, Hydration",
+  "tours.included": "Included: Bikes, Helmets, Hydration",
   "tours.capacity": "Group Capacity: {capacity} people",
   "tours.calendar_of_tours.title": "Tour Calendar for May ",
   "tours.calendar_of_tours.desc": "Departures at 9am only with prior reservation. Limited availability",
@@ -76,4 +76,8 @@
   "walkingtaco.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
   "walkingroma.name": "Walking Tour - Roma Condesa",
   "walkingroma.desc": "The trendy neighborhoods in CDMX have a secret, all of them where designed by architects beforw cars exist. Come and discover why this areas are so comfortable for pedestrians, cyclist and dogs."
+
+  ,"muertos.name": "Day Of The Dead",
+  "muertos.desc": "During the tour, we will visit colorful offerings in different parts of the city, while we listen to fascinating horror legends that are part of Mexican folklore. Along the way, there will be stops to enjoy delicious bread of the dead accompanied by a comforting coffee, creating the perfect atmosphere to celebrate this emblematic festival."
+ 
 }

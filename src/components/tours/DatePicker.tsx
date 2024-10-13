@@ -165,6 +165,7 @@ const DatePicker = ({
 
       {/* Group or Private */}
 
+      {!isRentalBike && (
       <div className="flex flex-row w-full justify-evenly mb-5">
         <button
           onClick={() => setSelectedGroupOrPrivate("group")}
@@ -189,6 +190,7 @@ const DatePicker = ({
           })}
         </button>
       </div>
+      )}
 
       <div className="flex flex-row w-full justify-between">
         <GuestSelectDesktop
