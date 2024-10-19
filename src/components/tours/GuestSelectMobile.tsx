@@ -31,18 +31,22 @@ const GuestSelectMobile = ({
   };
   const intl = useIntl();
   useEffect(() => {
+    // Rental bike prices
     if (isRentalBike) {
       switch (selectedTime) {
         case "2hrs":
           setTotalPrice(quantity * 150);
           break;
-        case "6hrs":
-          setTotalPrice(quantity * 300);
+        case "4hrs":
+          setTotalPrice(quantity * 250);
           break;
-        case "24hrs":
+          case "6hrs":
+          setTotalPrice(quantity * 350);
+          break;
+          case "24hrs":
           setTotalPrice(quantity * 450);
           break;
-        case "1 week":
+          case "1 week":
           setTotalPrice(quantity * 1250);
           break;
       }
@@ -53,12 +57,15 @@ const GuestSelectMobile = ({
 
   // Update total price when isPrivateTour changes
   useEffect(() => {
-    if(isPrivateTour){
-      setTotalPrice(() => (ogPrice * quantity) + 150);
-    } else{
-      setTotalPrice(ogPrice * quantity);
+    if (!isRentalBike) {
+      if(isPrivateTour){
+        setTotalPrice(() => (ogPrice * quantity) + 150);
+      } else{
+        setTotalPrice(ogPrice * quantity);
+      }
     }
   }, [isPrivateTour, quantity, ogPrice]);
+
   return (
     <div className="flex flex-col md:hidden items-center h-full w-full">
       {isRentalBike && (
@@ -83,38 +90,51 @@ const GuestSelectMobile = ({
             type="radio"
             name="rentalTime"
             id="time2"
-            value="6hrs"
-            className="square-radio mr-2"
+            value="4hrs"
+            className="square-radio mr-2 flex-wrap"
             onChange={handleChange}
-            checked={selectedTime === "6hrs"}
+            checked={selectedTime === "4hrs"}
           />
           <label htmlFor="time2" className="mr-4">
-            6 Hrs
+            4 Hrs
           </label>
 
           <input
             type="radio"
             name="rentalTime"
             id="time3"
-            value="24hrs"
+            value="6hrs"
             className="square-radio mr-2"
             onChange={handleChange}
-            checked={selectedTime === "24hrs"}
+            checked={selectedTime === "6hrs"}
           />
           <label htmlFor="time3" className="mr-4">
-            24 Hrs
+            6 Hrs
           </label>
 
           <input
             type="radio"
             name="rentalTime"
             id="time4"
+            value="24hrs"
+            className="square-radio mr-2"
+            onChange={handleChange}
+            checked={selectedTime === "24hrs"}
+          />
+          <label htmlFor="time4" className="mr-4">
+            24 Hrs
+          </label>
+
+          <input
+            type="radio"
+            name="rentalTime"
+            id="time5"
             value="1 week"
             className="square-radio mr-2"
             onChange={handleChange}
             checked={selectedTime === "1 week"}
           />
-          <label htmlFor="time4">{intl.formatMessage(
+          <label htmlFor="time5">{intl.formatMessage(
             { id: "rental.week" }
           )}</label>
         </div>
