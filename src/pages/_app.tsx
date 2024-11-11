@@ -48,7 +48,6 @@ function MyApp({ Component, pageProps }: MyAppProps) {
       <DatePickerStyle FjallaOne={FjallaOne} SourceSansPro={SourceSansPro} />
       <IntlProvider locale={locale ?? "en"} messages={messages[locale ?? "en"]}>
         <NavBar />
-        <WhatsAppBtn/>
         <Component {...pageProps} />
         <Footer />
       </IntlProvider>
