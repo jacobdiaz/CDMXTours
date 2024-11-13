@@ -52,7 +52,7 @@ const GuestSelectDesktop = ({
   useEffect(() => {
     if (!isRentalBike) {
       if(isPrivateTour){
-        setTotalPrice(() => (ogPrice * quantity) + 150);
+        setTotalPrice(() => (ogPrice * quantity) + (quantity * 150));
       } else{
         setTotalPrice(ogPrice * quantity);
       }

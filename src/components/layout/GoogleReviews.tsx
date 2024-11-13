@@ -1,10 +1,8 @@
 import { reviews, Review, writeReviewLink } from "../../utils/reviews";
 import ReviewCard from "./ReviewCard";
-import SectionTitle from "../sections/SectionTitle";
 import StarRating from "./StarRating";
-import Link from "next/link";
-import CTALink from "../actions/CTALink";
 import { useState } from "react";
+import React from "react";
 type Props = {};
 
 const GoogleReviews = (props: Props) => {

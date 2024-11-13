@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState, useEffect, useRef, TouchEvent } from 'react';
 
 interface SwipableImageGalleryProps {
@@ -15,7 +16,7 @@ const SwipableImageGallery: React.FC<SwipableImageGalleryProps> = ({ images }) =
 
     const interval = setInterval(() => {
       nextImage();
-    }, 5000); // find seconds 
+    }, 3500); // find seconds 
 
     return () => clearInterval(interval);
   }, [currentIndex, isPaused]);
@@ -71,16 +72,19 @@ const SwipableImageGallery: React.FC<SwipableImageGalleryProps> = ({ images }) =
 
   return (
     <div
-      className="relative w-full h-3/5 max-h-[350px] overflow-hidden"
+      className="relative w-full h-3/5 max-h-[700px] overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img
+      <Image
         src={images[currentIndex]}
         alt={`Slide ${currentIndex}`}
+        loading="eager"
+        height={1080}
+        width={540}
         className="w-full h-full object-cover transition-transform duration-500"
       />
       {/* Left arrow */}

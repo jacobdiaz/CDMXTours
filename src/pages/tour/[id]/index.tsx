@@ -12,6 +12,7 @@ import PageHeader from "@/components/layout/PageHeader";
 import Share from "@/components/actions/Share";
 import { FormattedMessage, useIntl } from "react-intl";
 import SectionText from "@/components/tours/SectionText";
+import SwipableImageGallery from "@/components/layout/SwipableImageGallery";
 
 const TourPage = () => {
   const router = useRouter();
@@ -77,8 +78,17 @@ const TourPage = () => {
         <div className="flex flex-row justify-end items-center">
           <Share tour={tour} />
         </div>
+
+        {/* If mobile display swipable gallery */}
+        <div className="md:hidden block">
+          <SwipableImageGallery images={tour.gallery.map((img) => img.src)} />
+        </div>
+
+        <div className="hidden md:block">
+          <ImageGallery tour={tour} />
+        </div>
+
         {/* Images */}
-        <ImageGallery tour={tour} />
         {/* Tour Content */}
         <div className="md:grid grid-cols-3 pt-10 gap-5">
           {/* Col 1 */}
@@ -98,27 +108,77 @@ const TourPage = () => {
               </SectionText>
             </TourSection>
 
+            {/* Places we will visit */}
+            {tour.placesToVisit && (
+              <>
+                <TourSection
+                  title={Intl.formatMessage({ id: "tours.section.places" })}
+                >
+                  <ul>
+                    {tour &&
+                      tour.placesToVisit &&
+                      tour.placesToVisit.map((p, idx) => (
+                        <li key={idx} className="list-disc list-inside">
+                          {p}
+                        </li>
+                      ))}
+                  </ul>
+                </TourSection>
+              </>
+            )}
             {/* Whats Included & Group Capacity */}
-            <div className="flex flex-row gap-1 md:gap-0">
+            <div className="flex flex-row gap-1 justify-between md:gap-0">
               <TourSection
                 title={Intl.formatMessage({ id: "tours.section.included" })}
+                className="w-full text-center"
                 hideDivider
               >
-                <SectionText>
-                  <FormattedMessage id="tours.included" />
-                </SectionText>
+                {tour.included.map((item, idx) => (
+                  <p key={idx}>
+                    <FormattedMessage id={`tours.included.${item}`} />
+                    {tour.included.length - 1 > idx && ", "}
+                  </p>
+                ))}
               </TourSection>
               <Divider orientation="vertical" />
               <TourSection
                 title={Intl.formatMessage({ id: "tours.section.capacity" })}
+                className="w-full text-center"
                 hideDivider
               >
-                <SectionText>
-                  <FormattedMessage
-                    id="tours.capacity"
-                    values={{ capacity: tour?.cap }}
-                  />
-                </SectionText>
+                <p className="text-center">
+                  {tour.cap} <FormattedMessage id="datepicker.guest" />
+                </p>
+              </TourSection>
+            </div>
+            <Divider />
+
+            {/* Duration &  */}
+            <div className="flex flex-row justify-between gap-1 md:gap-0">
+              <TourSection
+                title={Intl.formatMessage({ id: "tours.section.duration" })}
+                className="w-full text-center"
+                hideDivider
+              >
+                {<p>{tour.duration}</p>}
+              </TourSection>
+              <Divider orientation="vertical" />
+              <TourSection
+                title={Intl.formatMessage({ id: "tours.section.tourtimes" })}
+                className="w-full text-center"
+                hideDivider
+              >
+                <p>
+                  {tour.availability.time &&
+                    tour.availability.time.map((time, idx) => (
+                      <span key={idx}>
+                        {time}
+                        {tour.availability.time &&
+                          idx < tour.availability.time.length - 1 &&
+                          ", "}
+                      </span>
+                    ))}
+                </p>
               </TourSection>
             </div>
             <Divider />

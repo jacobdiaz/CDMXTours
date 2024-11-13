@@ -21,7 +21,7 @@ export type Tour = {
   minGuests: string;
   description: string;
   shortDescription?: string;
-  included: string;
+  included: string[];
   imgSrc: string;
   imgAlt: string;
   meetingAddr: string;
@@ -47,7 +47,20 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "arch.desc",
-    included: "Dutch Bikes, Helmets, Tacos, Hydration",
+    included: ["rental", "taco", "guide"],
+    placesToVisit: [
+      "Ciudadela",
+      "Regina Street",
+      "Zocalo",
+      "Alameda Park",
+      "Revolution Monument",
+      "Reforma Avenue",
+      "Independence Angel",
+      "Chapultepec Castle",
+      "Condesa Neighborhood",
+      "Parque México",
+      "Roma Norte",
+    ],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
     thumbEN:
@@ -59,83 +72,35 @@ export const Tours: Tour[] = [
     googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_6.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert1-min.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert3-min.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_3.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert4-min.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_4.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert5-min.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_8.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert6-min.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
-    ],
-  },
-  {
-    id: "dia-de-los-muertos-bike-tour",
-    locales: ["en","es"],
-    availability: { type: [0, 1, 2, 3, 4, 5, 6], time: ["10:00am"] },
-    tourName: "muertos.name",
-    tourType: "Bike",
-    placesToVisit: [
-      "Col. Juarez",
-      "Col. Doctores",
-      "Centro Historica",
-      "Reforma",
-      "Col. Cuauhtemoc",
-    ],
-    price: 550,
-    duration: "3.5hrs - 12km",
-    cap: "15",
-    minGuests: "1",
-    description: "muertos.desc",
-    shortDescription: "muertos.desc",
-    included: "Bikes, Helmets, Day of the dead bread, Coffee ",
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/thumb-muertos.jpeg",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/thumb-muertos.jpeg",
-    thumbES: "",
-    imgAlt: "Image of Dia De Los Muertos Bike Tour in CDMX",
-    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
-    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
-    coords: { lat: 19.35203, lng: -99.17984 },
-    gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-1.jpg",
-        alt: "Image of dia de los muertos bike ride in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-2.jpg",
-        alt: "Image of dia de los muertos bike ride in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-3.jpg",
-        alt: "Image of dia de los muertos bike ride in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-4.jpg",
-        alt: "Image of dia de los muertos bike ride in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/muertos/muertos-5.jpg",
-        alt: "Image of dia de los muertos bike ride in Mexico City",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert7-min.jpg",
+        alt: "Image of Architectural Bike Tour in Mexico City",
       },
     ],
   },
   {
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
-    availability: { type: [3, 4, 5, 6], time: ["11:30am", "5:30pm"] },
+    availability: { type: [3, 4, 5, 6], time: ["11:30am", "3:00pm"] },
     tourName: "taco.name",
     tourType: "Bike",
     price: 750,
@@ -151,7 +116,7 @@ export const Tours: Tour[] = [
     cap: "10",
     minGuests: "1",
     description: "taco.desc",
-    included: "Bikes, Helmets, Tacos, Hydration",
+    included: ["bike", "food", "guide", "hydration"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_taco.png",
     thumbEN:
@@ -164,23 +129,31 @@ export const Tours: Tour[] = [
     coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_1.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert1-min.jpg",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert2-min.jpg",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_3v3.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert3-min.jpg",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_4.jpg%09	",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert4-min.jpg",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/TacoDowntown/taco_5v2.jpg",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert5-min.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert6-min.jpg",
+        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert7-min.jpg",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
     ],
@@ -204,7 +177,7 @@ export const Tours: Tour[] = [
     minGuests: "1",
     description: "coyo.desc",
     shortDescription: "coyo.shortDesc",
-    included: "Bikes, Helmets, Tacos, Hydration ",
+    included: ["rental", "carnitas", "wateroftheday", "beer","guide"], // these are the translation keys btw
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_frida.png",
     thumbEN:
@@ -216,24 +189,32 @@ export const Tours: Tour[] = [
     coords: { lat: 19.35203, lng: -99.17984 },
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert1-min.jpg",
+        alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_2.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert2-min.jpg",
+        alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_3.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert3-min.jpg",
+        alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_4.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert4-min.jpg",
+        alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
-        alt: "",
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert5-min.jpg",
+        alt: "Frida Bike Tour Coyoacán",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert8-min.jpg",
+        alt: "Frida Bike Tour Coyoacán",
+      },
+      {
+        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert9-min.jpg",
+        alt: "Frida Bike Tour Coyoacán",
       },
     ],
   },
@@ -256,7 +237,7 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "arch_walk_downtown.desc",
-    included: "Guide, Taco Stop, Hydration",
+    included: ["guide", "hydration",],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_downtown.png",
     thumbEN:
@@ -302,7 +283,7 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "arch_walk_reforma.desc",
-    included: "Guide, Taco Stop, Hydration",
+    included: ["guide", "hydration", "food"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_reforma.png",
     thumbEN:
@@ -354,7 +335,7 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "walkingroma.desc",
-    included: "Guide, Taco Stop, Hydration",
+    included: ["guide", "hydration", "taco"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_roma.png",
     thumbEN:
@@ -406,7 +387,7 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "walkingtaco.desc",
-    included: "Guide, 5-6 Tacos, Hydration, 1 Beer",
+    included: ["rental", "food", "hydration", "beer","guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
     thumbEN:
@@ -459,7 +440,7 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "taco-bike-nocturno.desc",
-    included: "Bicicleta, 5-6 Tacos, Hidratación, 1 Cerveza",
+    included: ["rental", "food", "hydration", "guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco_tour_nocturno.png",
     thumbEN:
@@ -514,7 +495,7 @@ export const Tours: Tour[] = [
     minGuests: "1",
     description: "galerias.desc",
     shortDescription: "galerias.shortDesc",
-    included: "Bicicleta, 5-6 Tacos, 1 cerveza, Hidratación",
+    included: ["rental", "food", "hydration", "guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_galleries.png",
     thumbEN:
@@ -566,7 +547,7 @@ export const Tours: Tour[] = [
     cap: "10",
     minGuests: "2",
     description: "contemporary.desc",
-    included: "Bicicleta, 5-6 Tacos, 1 cerveza, Hidratación",
+    included:["rental", "food", "hydration", "guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_modern.png",
     thumbEN:
@@ -609,7 +590,7 @@ export const Tours: Tour[] = [
     cap: "10",
     minGuests: "2",
     description: "urban.desc",
-    included: "Bikes, Helmets, Tacos, Hydration ",
+    included: ["bike", "food", "hydration", "guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_north_side.png",
     thumbEN:
@@ -662,7 +643,7 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "porfiriana.desc",
-    included: "Bicicleta, Alimentos, Hidratación ",
+    included: ["rental", "food", "hydration", "guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_porfiriano.png",
     thumbEN:
@@ -717,7 +698,7 @@ export const Tours: Tour[] = [
     cap: "15",
     minGuests: "1",
     description: "tlatelolco.desc",
-    included: "Bicicleta, Cafe y pan, Hidratación, Guia",
+    included: ["rental", "food", "hydration", "guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_tlatelolco.png	",
     thumbEN:
@@ -771,7 +752,7 @@ export const Tours: Tour[] = [
     cap: "12",
     minGuests: "2",
     description: "markets.desc",
-    included: "Bikes, Helmets, Tacos, Hydration ",
+    included: ["rental", "food", "hydration", "guide"],
     imgSrc:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_markets.png",
     thumbEN:
