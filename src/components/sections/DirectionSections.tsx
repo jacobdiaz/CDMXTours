@@ -15,27 +15,27 @@ const DirectionSections = () => {
         {intl.formatMessage({ id: "home.directions.description_1" })}
         <span>
           <Link
-            href='https://goo.gl/maps/7r4jXBxTbU3V6RQS7'
+            href='https://maps.app.goo.gl/mzJeRCR36R2p3aGG9'
             className='underline'
             target='_blank'
             rel='nofollow'
           >
-            Calle Versalles 88, 06600 Mexico City, Mexico
+            Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX
           </Link>
         </span>
         . {intl.formatMessage({ id: "home.directions.description_2" })}
       </p>
 
       <CTALink
-        href='https://goo.gl/maps/7r4jXBxTbU3V6RQS7'
+        href='https://maps.app.goo.gl/mzJeRCR36R2p3aGG9'
         variant='dark'
         className='w-full md:w-fit'
       >
         {intl.formatMessage({ id: "home.directions.getDirections" })}
       </CTALink>
       <Map
-        address='Calle Versalles 88, 06600 Mexico City'
-        googleMapsLink='https://goo.gl/maps/7r4jXBxTbU3V6RQS7'
+        address='Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX'
+        googleMapsLink='https://maps.app.goo.gl/mzJeRCR36R2p3aGG9'
         coords={{ lat: 19.42755, lng: -99.15569 }}
       />
     </section>

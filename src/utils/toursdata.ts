@@ -67,9 +67,9 @@ export const Tours: Tour[] = [
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
     thumbES: "",
     imgAlt: "Image of Architectural Bike Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert1-min.jpg",
@@ -124,8 +124,8 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco.png",
     imgAlt: "Image of Taco Bike Tour Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
@@ -245,9 +245,9 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_downtown.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
@@ -291,9 +291,9 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_reforma.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
@@ -343,9 +343,9 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_roma.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
@@ -395,9 +395,9 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
@@ -448,9 +448,9 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco_tour_nocturno.png",
     imgAlt: "Image of Taco bike Tour Nocturno",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
@@ -501,8 +501,8 @@ export const Tours: Tour[] = [
     thumbEN:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_galleries.png",
     imgAlt: "Image of Ruta Galerias Tour",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
@@ -553,8 +553,8 @@ export const Tours: Tour[] = [
     thumbEN:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_modern.png",
     imgAlt: "Image of Ruta Galerias Tour",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
@@ -598,9 +598,9 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-mansiones.jpg",
     imgAlt: "Image of Urban Bike Tour North in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_1.jpg",
@@ -760,9 +760,9 @@ export const Tours: Tour[] = [
     thumbES:
       "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_markets.png",
     imgAlt: "Image of Market Bike Tour in Mexico City",
-    meetingAddr: "Calle Versalles 88, 06600 Mexico City",
+    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://goo.gl/maps/7r4jXBxTbU3V6RQS7",
+    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
         src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets1.jpg",

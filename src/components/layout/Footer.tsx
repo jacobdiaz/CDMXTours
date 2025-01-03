@@ -5,8 +5,7 @@ const Footer = () => (
     <div>
       <p> Tours en Bici CDMX | Bike Tour Mexico City</p>
       <Link type='address' href='https://goo.gl/maps/HtKFvwCAUWStkY617'>
-        C. Versalles 88, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX,
-        Mexico
+      Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX
       </Link>
       <Link type='phone' href='/tel:5583333677'>
         +52 1 55 8333 3677
