@@ -86,7 +86,7 @@ const GoogleReviews = (props: Props) => {
           <p>
             Based On {" "}
             <a className="font-bold underline" href="https://g.co/kgs/ANcNN7F">
-              748 Reviews
+              903 Reviews
             </a>
           </p>
         </div>

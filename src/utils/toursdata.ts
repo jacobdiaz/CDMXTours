@@ -103,7 +103,7 @@ export const Tours: Tour[] = [
     availability: { type: [3, 4, 5, 6], time: ["11:30am", "3:00pm"] },
     tourName: "taco.name",
     tourType: "Bike",
-    price: 750,
+    price: 1100,
     duration: "4.5hrs - 20km",
     placesToVisit: [
       "Ciudadela",
@@ -585,7 +585,7 @@ export const Tours: Tour[] = [
     tourType: "Bike",
     locales: ["en"],
     availability: { type: [0, 3, 5], time: ["9:30am"] },
-    price: 750,
+    price: 950,
     duration: "4hrs",
     cap: "10",
     minGuests: "2",
