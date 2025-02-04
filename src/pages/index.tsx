@@ -44,15 +44,6 @@ export default function Home({ dir }: HomeProps) {
       <div className="page-container">
         <TourSection tourType="Bike" showRental />
         <ContactSection />
-        {locales === "es" && (
-          <Banner
-            alt="Discount Banner"
-            src="https://d252kj1i9nz0td.cloudfront.net/pages/Blog/blog_hero.jpg"
-          >
-            SI VIVES EN CDMX RECIBES UN 10% DE DESCUENTO Y SI DECIDES TRAER TU
-            PROPIA BICI OBTIENES UN 10% EXTRA.
-          </Banner>
-        )}
         <DirectionSections />
       </div>
     </main>

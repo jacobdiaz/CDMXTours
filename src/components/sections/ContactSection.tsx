@@ -43,7 +43,7 @@ const ContactSection = () => {
         <div className='hidden md:block w-full pl-5'>
           <Image
             className='w-full h-full object-cover'
-            src='https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_contact.jpg'
+            src='https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/home_contact-tQyIXiTa2EkJYA1y3nCJ3FI5wAoxFu.jpg'
             alt='Group of Bikers on a Bike Tour in Mexico City'
             height={900}
             width={720}

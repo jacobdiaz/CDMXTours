@@ -58,7 +58,7 @@ const TourSection = ({
           <div>
             <Link href="/cdmx-bike-rentals">
               <Image
-                src="https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_bike_rental.png"
+                src="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/thumb_card_bike_rental-9eTMa5thrTMmeOPtvhWF21l56XdMoQ.webp"
                 alt="Bike Rentals in Mexico City"
                 className="w-full h-full object-cover cursor-pointer hover:transform hover:scale-[101%] transition-transform duration-300"
                 height={500}
@@ -96,14 +96,14 @@ const TourSection = ({
         </div>
       )}
       {/* Row of english and espanol bottons */}
-      <div className="flex flex-row justify-between mb-10">
+      {/* <div className="flex flex-row justify-between mb-10">
         <Link href={currentPath} locale="en" className={`${langBtnStyle.en} rounded-md`}>
           English
         </Link>
         <Link href={currentPath} locale="es" className={`${langBtnStyle.es} rounded-md`}>
           Español
         </Link>
-      </div>
+      </div> */}
       <div className="flex flex-col justify-center items-center w-full">
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
           {filteredTours.map((t, idx) => (

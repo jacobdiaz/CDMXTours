@@ -29,10 +29,10 @@ const BikeRentalsPage = (props: Props) => {
   }
 
   const sources = [
-    "https://d252kj1i9nz0td.cloudfront.net/bike.jpeg",
-    "https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg",
-    "https://d252kj1i9nz0td.cloudfront.net/rental/rental_2.jpg",
-    "https://d252kj1i9nz0td.cloudfront.net/rental/rental_3.jpg",
+    "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/thumb_card_bike_rental-PnmRdci496QDDGGSZqCMqFOBqWwYyX.webp",
+    "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/rental_1-7vUL5tDGlyzQ9gpOE1heemMH3dWHQo.webp",
+    "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/rental_2-0cWKAiDHNsxXGS68mHdqYzY43kaZNz.webp",
+    "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/rental_3-ibULhdRje6dHOdp7jqSHSJJJgqXLAt.webp",
   ];
   return (
     <>
@@ -87,7 +87,7 @@ const BikeRentalsPage = (props: Props) => {
               onClick={() => openLightboxOnSlide(1)}
             >
               <Image
-                src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg"
+                src="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/rental_1-7vUL5tDGlyzQ9gpOE1heemMH3dWHQo.webp"
                 alt="Bike Rentals in Mexico City"
                 layout="responsive"
                 width={1080} // This is the aspect ratio width
@@ -103,7 +103,7 @@ const BikeRentalsPage = (props: Props) => {
                 onClick={() => openLightboxOnSlide(2)}
               >
                 <Image
-                  src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg"
+                  src="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/rental_1-7vUL5tDGlyzQ9gpOE1heemMH3dWHQo.webp"
                   alt="Photo of CDMX Rental Bike"
                   className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
                   height={200}
@@ -115,7 +115,7 @@ const BikeRentalsPage = (props: Props) => {
                 onClick={() => openLightboxOnSlide(3)}
               >
                 <Image
-                  src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_2.jpg"
+                  src="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/rental_2-0cWKAiDHNsxXGS68mHdqYzY43kaZNz.webp"
                   alt="Photo of CDMX Rental Bike"
                   className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
                   height={200}
@@ -127,7 +127,7 @@ const BikeRentalsPage = (props: Props) => {
                 onClick={() => openLightboxOnSlide(4)}
               >
                 <Image
-                  src="https://d252kj1i9nz0td.cloudfront.net/rental/rental_3.jpg"
+                  src="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/rental/rental_3-ibULhdRje6dHOdp7jqSHSJJJgqXLAt.webp"
                   alt="Photo of CDMX Rental Bike"
                   className="w-full h-full object-cover rounded-md cursor-pointer duration-300 transform hover:scale-105"
                   height={200}

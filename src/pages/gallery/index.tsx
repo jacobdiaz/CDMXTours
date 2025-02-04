@@ -32,7 +32,7 @@ const GalleryPage = () => {
       />
       <HeroSmall
         title={intl.formatMessage({ id: "gallery.hero.title" })}
-        image='https://d252kj1i9nz0td.cloudfront.net/pages/Gallery/hero.jpg'
+        image='https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/hero_home_desktop-5pAW69OtptXVorSKiAuPvFegYXBAAI.jpg'
         ariaLabel={intl.formatMessage({ id: "gallery.hero.title" })}
         backgroundPosition='center 20%'
       />

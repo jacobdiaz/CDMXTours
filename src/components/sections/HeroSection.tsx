@@ -8,7 +8,7 @@ const HeroSection = () => (
     {/* Desktop Hero Image */}
     <div className="hidden md:block">
       <Image
-        src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero_v3.jpeg"
+        src="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/hero_home_desktop-5pAW69OtptXVorSKiAuPvFegYXBAAI.jpg"
         alt="Bike Tours CDMX"
         className="w-full object-cover h-[85vh] md:h-[90vh]"
         height={1080}
@@ -20,7 +20,7 @@ const HeroSection = () => (
 
     {/* Mobile Hero Image */}
     <Image
-      src="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero_v4_mobile.jpeg"
+      src="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/hero_home_mobile-xWtAhzDevWq4YmFo9oGQzXnvrNFkH6.jpg"
       alt="Bike Tours CDMX"
       className="w-full object-cover h-[85vh] visible md:h-[90vh] md:hidden scale-105"
       height={1080}

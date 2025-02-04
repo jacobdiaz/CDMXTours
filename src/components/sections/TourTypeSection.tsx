@@ -47,18 +47,18 @@ const TourTypeData = [
     title: "Bike Tours",
     url: "/cdmx-bike-tours",
     bgImage:
-    "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Essentials/arch_2.jpg",
+    "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/home_card_bike_tour_section-OWdkyvn31KnqOoltFhnhx9NlOKXzBb.jpg",
   },
   {
     title: "Walking Tours",
     url: "/cdmx-walking-tours",
     bgImage:
-      "https://d252kj1i9nz0td.cloudfront.net/pages/Gallery/gallery_6.jpg",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/home_card_walking_tour_section-cpjRlqnNqNVzdg1GAyl1HTYxVFV7Be.jpg",
   },
   {
     title: "Bike Rentals",
     url: "/cdmx-bike-rentals",
-    bgImage: "https://d252kj1i9nz0td.cloudfront.net/rental/rental_1.jpg",
+    bgImage: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/home_card_bike_rental_card-hbMYbkiyYpIHzgRESPAg4lcLVWqocJ.jpg",
   },
 ];
 const TourTypeSection = () => (

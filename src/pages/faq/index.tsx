@@ -24,7 +24,7 @@ const FAQPage = () => {
       </PageHeader>
       <HeroSmall
         title={intl.formatMessage({ id: 'faq.hero.title' })}
-        image="https://d252kj1i9nz0td.cloudfront.net/pages/Home/home_hero.jpg"
+        image="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/Home/hero_home_desktop-5pAW69OtptXVorSKiAuPvFegYXBAAI.jpg"
         ariaLabel="Book a Bike Tour"
         backgroundPosition="center top 60%"
       />

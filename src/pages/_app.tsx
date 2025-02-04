@@ -1,6 +1,8 @@
 import { useRouter, NextRouter } from "next/router";
 import { IntlProvider } from "react-intl";
 import type { ComponentType } from "react";
+import { Analytics } from "@vercel/analytics/react"
+
 import es from "../translations/es";
 import en from "../translations/en";
 
@@ -48,6 +50,7 @@ function MyApp({ Component, pageProps }: MyAppProps) {
       <DatePickerStyle FjallaOne={FjallaOne} SourceSansPro={SourceSansPro} />
       <IntlProvider locale={locale ?? "en"} messages={messages[locale ?? "en"]}>
         <NavBar />
+        <Analytics/>
         <Component {...pageProps} />
         <Footer />
       </IntlProvider>
