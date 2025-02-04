@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Divider from "../layout/Divider";
 import { useIntl } from "react-intl";
+import { track } from '@vercel/analytics';
 
 export type GuestSelectProps = {
   price?: number;
@@ -173,6 +174,9 @@ const GuestSelectMobile = ({
       </div>
       <Link
         href={whatsAppLink(quantity, totalPrice)}
+        onClick={() => {
+          track('Book', { product: isRentalBike ? "Rental" : "Tour", price: totalPrice, quantity: quantity, isMobile: true });
+        }}
         target="_blank"
         className="btn rounded-md bg-green border-none w-full my-5"
       >

@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GuestSelectProps } from "./GuestSelectMobile";
 import { useIntl } from "react-intl";
+import { track } from '@vercel/analytics';
 
 const GuestSelectDesktop = ({
   price = 0,
@@ -162,6 +163,9 @@ const GuestSelectDesktop = ({
 
       <Link
         href={whatsAppLink(quantity, totalPrice)}
+        onClick={() => {
+          track('Book', { product: isRentalBike ? "Rental" : "Tour", price: totalPrice, quantity: quantity, isMobile: false});
+        }}
         target="_blank"
         className="btn rounded-md bg-green border-none w-full my-5 hover:bg-green hover:opacity-80"
       >

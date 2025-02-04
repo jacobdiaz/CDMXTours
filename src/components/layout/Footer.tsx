@@ -75,6 +75,7 @@ const Footer = () => (
         Copyright © 2023 Tours en Bici CDMX / Mexico City Bike Tours - Todos los
         derechos reservados.
       </p>
+      <span>Version 1.0.0</span>
     </div>
   </footer>
 );
