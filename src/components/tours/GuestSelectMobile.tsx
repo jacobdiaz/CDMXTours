@@ -175,7 +175,7 @@ const GuestSelectMobile = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         onClick={() => {
-          track('Book', { product: isRentalBike ? "Rental" : "Tour", price: totalPrice, quantity: quantity, isMobile: true });
+          track('Book', { product: isRentalBike ? "Rental" : "Tour", price: totalPrice});
         }}
         target="_blank"
         className="btn rounded-md bg-green border-none w-full my-5"
