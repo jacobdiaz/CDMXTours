@@ -62,9 +62,9 @@ export const Tours: Tour[] = [
       "Roma Norte",
     ],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/thumb_card_architecture_downtown-Xrjt2qR8AIBKXBqqSCXyzFX041dEmq.png",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_architecture_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/thumb_card_architecture_downtown-Xrjt2qR8AIBKXBqqSCXyzFX041dEmq.png",
     thumbES: "",
     imgAlt: "Image of Architectural Bike Tour in Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
@@ -72,27 +72,27 @@ export const Tours: Tour[] = [
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert1-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/arch_vert1-min-wdW7K1XVxO1KgUMev6sHIC7OyDj5B0.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert3-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/arch_vert3-min-W1xPmU2xk7JDGXx22tO6PRB5EKvNH1.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert4-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/arch_vert4-min-ZvKlrks91mljhF7wd0uO3eDl8vyInA.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert5-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/arch_vert5-min-19xnz7DODrPP3skPh3ZqCxOeUX6SLH.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert6-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/arch_vert6-min-0AjQwhL7mnUZHuF1Vec8GeqOkvnP1I.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/arch/arch_vert7-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-essentials-tour/arch_vert7-min-my0xiu0Si9IuqupnCjZflzTIkKeMz2.jpg",
         alt: "Image of Architectural Bike Tour in Mexico City",
       },
     ],
@@ -118,42 +118,34 @@ export const Tours: Tour[] = [
     description: "taco.desc",
     included: ["bike", "food", "guide", "hydration"],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_taco.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/thumbcard_taco-nF2Tixyz9x7Zrqkd1KJ2zF6BPSoNTy.png",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_taco.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/thumbcard_taco-nF2Tixyz9x7Zrqkd1KJ2zF6BPSoNTy.png",
     thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/thumbcard_taco-nF2Tixyz9x7Zrqkd1KJ2zF6BPSoNTy.png",
     imgAlt: "Image of Taco Bike Tour Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     coords: { lat: 19.42755, lng: -99.15569 },
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert1-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/taco_vert1-min-wvm6J9QDTtNZWHET7G6iLu5GpD6jat.webp",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert2-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/taco_vert2-min-YHb7PS0ZWVpLM89va7dNK4HLMIjJq5.webp",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert3-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/taco_vert3-min-jw56CJfBCAZzLx5PiOa3PVFjPkDolZ.webp",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert4-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/taco_vert4-min-QWDeUm72PrIkJG2giogkQYAIAWqlsO.webp",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert5-min.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert6-min.jpg",
-        alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/taco/taco_vert7-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-taco-tour/taco_vert4-min-QWDeUm72PrIkJG2giogkQYAIAWqlsO.webp",
         alt: "Photo from the Taco Bike Tour of Downtown Mexico City",
       },
     ],
@@ -179,9 +171,9 @@ export const Tours: Tour[] = [
     shortDescription: "coyo.shortDesc",
     included: ["rental", "carnitas", "wateroftheday", "beer","guide"], // these are the translation keys btw
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_frida.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/frida-coyoacan-tour/thumb_frida-ThktYvrLpi4ignm9Z4GvX7oKWsRkwD.webp",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_frida.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/frida-coyoacan-tour/thumb_frida-ThktYvrLpi4ignm9Z4GvX7oKWsRkwD.webp",
     thumbES: "",
     imgAlt: "Image of Coyoacán Bike Tour in CDMX",
     meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
@@ -189,31 +181,23 @@ export const Tours: Tour[] = [
     coords: { lat: 19.35203, lng: -99.17984 },
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert1-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/frida-coyoacan-tour/frida_vert1-min-jZZXMpf5OfdrVr5Te8qoEFO15ohj9E.webp",
         alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert2-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/frida-coyoacan-tour/frida_vert2-min-i9KEIU3USu3N9TCQZ2fAOFvAd5TspW.webp",
         alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert3-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/frida-coyoacan-tour/frida_vert3-min-Uj22XVKnDhSgwnw2Ejwk1jdxjmfBxu.webp",
         alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert4-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/frida-coyoacan-tour/frida_vert4-min-0s9BZ0ZMfchvb3Uo7uRnpC2APRIpbi.webp",
         alt: "Frida Bike Tour Coyoacán",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert5-min.jpg",
-        alt: "Frida Bike Tour Coyoacán",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert8-min.jpg",
-        alt: "Frida Bike Tour Coyoacán",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/tours/vertical/bike/frida/frida_vert9-min.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/frida-coyoacan-tour/frida_vert5-min-s5jRK3Yc8LUD0Xq7ZmipBTca20SKmt.webp",
         alt: "Frida Bike Tour Coyoacán",
       },
     ],
@@ -239,34 +223,34 @@ export const Tours: Tour[] = [
     description: "arch_walk_downtown.desc",
     included: ["guide", "hydration",],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_downtown-0jI9j6puk630T6rwaY5zXYq5YszM9y.png",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_downtown-0jI9j6puk630T6rwaY5zXYq5YszM9y.png",
     thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_downtown-0jI9j6puk630T6rwaY5zXYq5YszM9y.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_5-yxp1I2uVkd3E8836ySPNl3tlSaUnUT.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_2-U26wDoc2JXuKHa6wga6oIjs5F5dADR.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_3-3nGFXTefemM0TzCdpJ7DjlBgTEysXC.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_4-tqnhaJ6MArDfvHQfa4ywDiDpErH8YS.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_1v2-vL0VTumFGhiiKRQ12IchHuC7suxnUx.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
     ],
@@ -285,34 +269,34 @@ export const Tours: Tour[] = [
     description: "arch_walk_reforma.desc",
     included: ["guide", "hydration", "food"],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_reforma.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_reforma-mT54mdhthM558v159LwgmJIuLKrGiB.png",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_reforma.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_reforma-mT54mdhthM558v159LwgmJIuLKrGiB.png",
     thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_reforma.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_reforma-mT54mdhthM558v159LwgmJIuLKrGiB.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_5-yxp1I2uVkd3E8836ySPNl3tlSaUnUT.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_2-U26wDoc2JXuKHa6wga6oIjs5F5dADR.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_3-3nGFXTefemM0TzCdpJ7DjlBgTEysXC.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_4-tqnhaJ6MArDfvHQfa4ywDiDpErH8YS.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_1v2-vL0VTumFGhiiKRQ12IchHuC7suxnUx.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
     ],
@@ -337,34 +321,34 @@ export const Tours: Tour[] = [
     description: "walkingroma.desc",
     included: ["guide", "hydration", "taco"],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_roma.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_reforma-mT54mdhthM558v159LwgmJIuLKrGiB.png",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_roma.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_reforma-mT54mdhthM558v159LwgmJIuLKrGiB.png",
     thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_arch_roma.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_arch_reforma-mT54mdhthM558v159LwgmJIuLKrGiB.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_5-yxp1I2uVkd3E8836ySPNl3tlSaUnUT.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_2-U26wDoc2JXuKHa6wga6oIjs5F5dADR.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_3-3nGFXTefemM0TzCdpJ7DjlBgTEysXC.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_4-tqnhaJ6MArDfvHQfa4ywDiDpErH8YS.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_1v2-vL0VTumFGhiiKRQ12IchHuC7suxnUx.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
     ],
@@ -389,193 +373,35 @@ export const Tours: Tour[] = [
     description: "walkingtaco.desc",
     included: ["rental", "food", "hydration", "beer","guide"],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_taco_downtown-2zHBj9kSxYk6fqFjxGrO5VMZcZWUgC.png",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_taco_downtown-2zHBj9kSxYk6fqFjxGrO5VMZcZWUgC.png",
     thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/walking/walking_taco_downtown.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/walking_taco_downtown-2zHBj9kSxYk6fqFjxGrO5VMZcZWUgC.png",
     imgAlt: "Image of Architectural Walking Tour in Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_5-yxp1I2uVkd3E8836ySPNl3tlSaUnUT.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_2-U26wDoc2JXuKHa6wga6oIjs5F5dADR.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_3-3nGFXTefemM0TzCdpJ7DjlBgTEysXC.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_4-tqnhaJ6MArDfvHQfa4ywDiDpErH8YS.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/WalkingTours/wt_downtown_mexico_city/arch_1v2-vL0VTumFGhiiKRQ12IchHuC7suxnUx.jpg",
         alt: "Image of Architectural Walking Tour in Mexico City",
-      },
-    ],
-  },
-  {
-    id: "taco-bike-nocturno-cdmx",
-    locales: ["es"],
-    availability: { type: "Weekend", time: [] },
-    tourName: "taco-bike-nocturno.name",
-    tourType: "Bike",
-    placesToVisit: [
-      "Ciudadela",
-      "Regina",
-      "Zocalo",
-      "Templo Mayor",
-      "Garibaldi",
-      "Alameda",
-    ],
-    price: 950,
-    duration: "4.5hrs - 14km",
-    cap: "15",
-    minGuests: "1",
-    description: "taco-bike-nocturno.desc",
-    included: ["rental", "food", "hydration", "guide"],
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco_tour_nocturno.png",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco_tour_nocturno.png",
-    thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_taco_tour_nocturno.png",
-    imgAlt: "Image of Taco bike Tour Nocturno",
-    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
-    coords: { lat: 19.42755, lng: -99.15569 },
-    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_5.jpg",
-        alt: "Image of Taco bike Tour in Centro Historico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_2.jpg",
-        alt: "Image of Taco bike Tour in Centro Historico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_3.jpg",
-        alt: "Image of Taco bike Tour in Centro Historico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_4.jpg",
-        alt: "Image of Taco bike Tour in Centro Historico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Architectural/arch_1v2.jpg",
-        alt: "Image of Taco bike Tour in Centro Historico",
-      },
-    ],
-  },
-
-  {
-    id: "ruta-galerias",
-    locales: ["es"],
-    availability: { type: [6], time: ["10:00am"] },
-    tourName: "galerias.name", // Translation ID in /translations/Tours.json
-    tourType: "Bike",
-    price: 750,
-    duration: "4.5hrs - 20km",
-    placesToVisit: [
-      "Ciudadela",
-      "Regina",
-      "Zocalo",
-      "Templo Mayor",
-      "Garibaldi",
-      "Alameda",
-    ],
-    cap: "10",
-    minGuests: "1",
-    description: "galerias.desc",
-    shortDescription: "galerias.shortDesc",
-    included: ["rental", "food", "hydration", "guide"],
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_galleries.png",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_galleries.png",
-    imgAlt: "Image of Ruta Galerias Tour",
-    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
-    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
-    coords: { lat: 19.42755, lng: -99.15569 },
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-1.jpeg",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-4.jpeg",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-3.jpeg",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-2.jpeg",
-        alt: "Photo from the essentials tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-5.jpeg",
-        alt: "Photo from the essentials tour mexico",
-      },
-    ],
-  },
-  {
-    id: "contemporary-bike-tour",
-    locales: ["es"],
-    availability: { type: [5, 6], time: ["10:30am"] },
-    tourName: "contemporary.name", // Translation ID in /translations/Tours.json
-    tourType: "Bike",
-    price: 750,
-    duration: "4.5hrs - 15km",
-    placesToVisit: [
-      "Guadalupe Inn",
-      "San José Insurg.",
-      "Mixcoac",
-      "P. Toros / E. Azul",
-      "CUPA",
-      "Del Valle",
-      "Xoco",
-    ],
-    cap: "10",
-    minGuests: "2",
-    description: "contemporary.desc",
-    included:["rental", "food", "hydration", "guide"],
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_modern.png",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_modern.png",
-    imgAlt: "Image of Ruta Galerias Tour",
-    meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
-    googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
-    coords: { lat: 19.42755, lng: -99.15569 },
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-1.jpeg",
-        alt: "Photo from the contemporary tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-4.jpeg",
-        alt: "Photo from the contemporary tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-3.jpeg",
-        alt: "Photo from the contemporary tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-2.jpeg",
-        alt: "Photo from the contemporary tour mexico",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/RutaGalerias/ruta-5.jpeg",
-        alt: "Photo from the contemporary tour mexico",
       },
     ],
   },
@@ -592,147 +418,38 @@ export const Tours: Tour[] = [
     description: "urban.desc",
     included: ["bike", "food", "hydration", "guide"],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_north_side.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/thumb_card_north_side-MlHjHZVjOsJps5TxTO8eLQzaLd4mp3.webp",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_north_side.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/thumb_card_north_side-MlHjHZVjOsJps5TxTO8eLQzaLd4mp3.webp",
     thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/thumbnails/ES/thumb-mansiones.jpg",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/thumb_card_north_side-MlHjHZVjOsJps5TxTO8eLQzaLd4mp3.webp",
     imgAlt: "Image of Urban Bike Tour North in Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_1.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/urban_1-RuxVRo7a4pOQBOwmjopmkQsfjjpxVD.webp",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_2_v2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/urban_2-9ljc5T3wlsaLBN9GeSVM431KvpzDVw.webp",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_3v2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/urban_3-4tl7dspu3xzhW2GmvL8puIWT9yxHcP.webp",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_4v2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/urban_4-FpdpoJGNE56I1rvp2p6lqP8q1A7mdk.webp",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Urban/urban_5.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/urban_5-rCmRgNdsJx6PmAz8SsTXXD6D4O3tzw.webp",
         alt: "Photo from the Urban Bike Tour CDMX",
       },
     ],
   },
-
-  {
-    id: "porfiriana-bike-tour",
-    locales: ["es"],
-    availability: { type: "Weekday", time: ["10:00am"] },
-    tourName: "porfiriana.name",
-    tourType: "Bike",
-    placesToVisit: [
-      "Col. Juárez",
-      "San Rafael",
-      "Sta Maria La Ribera",
-      "Atlampa",
-      "Clavería",
-    ],
-    price: 750,
-    duration: "4hrs - 20km",
-    cap: "15",
-    minGuests: "1",
-    description: "porfiriana.desc",
-    included: ["rental", "food", "hydration", "guide"],
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_porfiriano.png",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_porfiriano.png",
-    thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_porfiriano.png",
-    imgAlt: "Image of Coyoacán Bike Tour in CDMX",
-    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
-    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
-    coords: { lat: 19.35203, lng: -99.17984 },
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg",
-        alt: "Image of porfiriana bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_2.jpg",
-        alt: "Image of porfiriana bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_3.jpg",
-        alt: "Image of porfiriana bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_4.jpg",
-        alt: "Image of porfiriana bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
-        alt: "Image of porfiriana bike tour in Mexico City",
-      },
-    ],
-  },
-
-  {
-    id: "tlatelolco-bike-tour",
-    locales: ["es"],
-    availability: { type: [5, 6], time: ["2:30"] },
-    tourName: "tlatelolco.name",
-    tourType: "Bike",
-    placesToVisit: [
-      "M. A la Rev.",
-      "B. Vasconcelos",
-      "T. Chopo (Sab)",
-      "T. Lagunilla (Dom)",
-      "U.H. Tlatelolco",
-      "P. 3 culturas",
-      "Terraza Kaluz",
-    ],
-    price: 750,
-    duration: "4.5hrs - 20km",
-    cap: "15",
-    minGuests: "1",
-    description: "tlatelolco.desc",
-    included: ["rental", "food", "hydration", "guide"],
-    imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_tlatelolco.png	",
-    thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_tlatelolco.png	",
-    thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_tlatelolco.png	",
-    imgAlt: "Image of Tlatelolco Bike Tour in CDMX",
-    meetingAddr: "Vito Alessio Robles 182, Florida, Mexico City, CDMX, Mexico",
-    googleMapsLink: "https://goo.gl/maps/jd1YJMJFVGNiykkM9",
-    coords: { lat: 19.35203, lng: -99.17984 },
-    gallery: [
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg",
-        alt: "Image of Tlatelolco bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_2.jpg",
-        alt: "Image of Tlatelolco bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_3.jpg",
-        alt: "Image of Tlatelolco bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_4.jpg",
-        alt: "Image of Tlatelolco bike tour in Mexico City",
-      },
-      {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_5.jpg",
-        alt: "Image of Tlatelolco bike tour in Mexico City",
-      },
-    ],
-  },
-
   {
     id: "cdmx-markets-tour",
     locales: ["es", "en"],
@@ -754,34 +471,34 @@ export const Tours: Tour[] = [
     description: "markets.desc",
     included: ["rental", "food", "hydration", "guide"],
     imgSrc:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_markets.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/thumb_card_markets-xMcF4S3FoWm9cOonwPdVphHhRWMRT7.webp",
     thumbEN:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/en/card_markets.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/thumb_card_markets-xMcF4S3FoWm9cOonwPdVphHhRWMRT7.webp",
     thumbES:
-      "https://d252kj1i9nz0td.cloudfront.net/small_card_thumbnails/es/card_markets.png",
+      "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/thumb_card_markets-xMcF4S3FoWm9cOonwPdVphHhRWMRT7.webp",
     imgAlt: "Image of Market Bike Tour in Mexico City",
     meetingAddr: "Londres 17, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
     coords: { lat: 19.42755, lng: -99.15569 },
     googleMapsLink: "https://maps.app.goo.gl/mzJeRCR36R2p3aGG9",
     gallery: [
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets1.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/markets1-QBRRgPBJKDxDXWHp1AY5yYpLgBpwNf.webp",
         alt: "Photo from Mexico City markets bike tour",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets2.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/markets2-oQosEl1GKdLi8m073ktmsEeQmEDogL.webp",
         alt: "Photo from Mexico City markets bike tour",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets3.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/markets3-oHTghitFvA1uJghW3M92ZwvaWBOtKY.webp",
         alt: "Photo from Mexico City markets bike tour",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets4.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/markets4-AP6nmV0ByxxnynfOLUb1ooiJY4omIh.webp",
         alt: "Photo from Mexico City markets bike tour",
       },
       {
-        src: "https://d252kj1i9nz0td.cloudfront.net/gallery_images/Markets/markets5.jpg",
+        src: "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-markets-tour/markets5-O2EMtD94HrnjvWJMj22t1qmMIuzXT4.webp",
         alt: "Photo from Mexico City markets bike tour",
       },
     ],

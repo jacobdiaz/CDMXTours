@@ -7,7 +7,7 @@ const nextConfig = {
     DOMAIN_NAME: process.env.DOMAIN_NAME,
   },
   images: {
-    domains: ["d252kj1i9nz0td.cloudfront.net", "lh3.googleusercontent.com"],
+    domains: ["lh3.googleusercontent.com", "sl0augsoqrtozrln.public.blob.vercel-storage.com"],
   },
   i18n: {
     locales: ["en", "es"],

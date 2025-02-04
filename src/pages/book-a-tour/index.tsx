@@ -18,7 +18,7 @@ function BookATourPage() {
       </PageHeader>
       <HeroSmall
         title={title}
-        image="https://d252kj1i9nz0td.cloudfront.net/gallery_images/Coyoacan/coy_v3_1.jpg	"
+        image="https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Pages/WalkingTours/walking_banner-dZTE8N8ZQapfx7EXddln0nM7JzCKbz.jpg"
         ariaLabel="Book a Bike Tour"
         backgroundPosition="center top 60%"
       />
