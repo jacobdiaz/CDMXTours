@@ -11,6 +11,7 @@ const GuestSelectDesktop = ({
   maxQuantity = 9,
   isRentalBike,
   isPrivateTour,
+  tourName,
 }: GuestSelectProps) => {
   const [quantity, setQuantity] = useState<number>(minQuantity || 1);
   const [ogPrice] = useState<number>(price || 0);
@@ -164,7 +165,7 @@ const GuestSelectDesktop = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         onClick={() => {
-          track('Book', { product: isRentalBike ? "Rental" : "Tour", price: totalPrice});
+          track('Book', { product: isRentalBike ? "Rental" : tourName, price: totalPrice});
         }}
         target="_blank"
         className="btn rounded-md bg-green border-none w-full my-5 hover:bg-green hover:opacity-80"

@@ -200,6 +200,7 @@ const DatePicker = ({
           price={price}
           isRentalBike={isRentalBike}
           isPrivateTour={selectedGroupOrPrivate === "private"}
+          tourName={tourName ? tourName : "tour"}
         />
         <GuestSelectMobile
           maxQuantity={cap}
@@ -208,6 +209,7 @@ const DatePicker = ({
           price={price}
           isRentalBike={isRentalBike}
           isPrivateTour={selectedGroupOrPrivate === "private"}
+          tourName={tourName ? tourName : "tour"}
         />
       </div>
       <p className="text-xs opacity-50">

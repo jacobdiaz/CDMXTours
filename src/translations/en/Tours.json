@@ -70,10 +70,10 @@
   "taco_walking_downtown.name": "Walking Taco Tour - Downtown Mexico City",
   "taco_walking_downtown.desc": "Come and discover the origins of Mexico City, going from the main streets and squares to the lesser-known corners of the Historic Center. During the tour you will eat a wide variety of tacos, from pastor tacos to sweat basket tacos.",
 
-  "urban.name": "Mexico City North Side",
-  "urban.desc": "The Urban Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City.",
+  "northside.name": "Mexico City North Side",
+  "northside.desc": "The North Side Tour focuses on the urban growth that the city had, from the first neighborhoods of the 19th century to the industrial zones of the 50s in Mexico City.",
 
-  "markets.name": "Markets Tour / From jamaica flowers market to san juan gourmet market",
+  "markets.name": "Street Art and Markets Tour",
   "markets.desc": "Mexico its one of the most famous tourist destinies in terms of gastonomy around the world. Join us to visit the epicenter of food and culture: the markets. During the experience your 5 senses will turn on, due to  the large amount of food, people, products and places you are going to visit.",
 
   "modernarch.name": "Modern Architecture / De San Angel a C.U",

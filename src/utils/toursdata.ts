@@ -100,7 +100,7 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-taco-tour",
     locales: ["en", "es"],
-    availability: { type: [3, 4, 5, 6], time: ["11:30am", "3:00pm"] },
+    availability: { type: [3, 4, 5, 6], time: ["3:00pm"] },
     tourName: "taco.name",
     tourType: "Bike",
     price: 1100,
@@ -114,7 +114,7 @@ export const Tours: Tour[] = [
       "Alameda",
     ],
     cap: "10",
-    minGuests: "1",
+    minGuests: "2",
     description: "taco.desc",
     included: ["bike", "food", "guide", "hydration"],
     imgSrc:
@@ -166,7 +166,7 @@ export const Tours: Tour[] = [
     price: 950,
     duration: "4hrs - 14km",
     cap: "15",
-    minGuests: "1",
+    minGuests: "2",
     description: "coyo.desc",
     shortDescription: "coyo.shortDesc",
     included: ["rental", "carnitas", "wateroftheday", "beer","guide"], // these are the translation keys btw
@@ -219,7 +219,7 @@ export const Tours: Tour[] = [
     price: 550,
     duration: "3hrs -4km",
     cap: "15",
-    minGuests: "1",
+    minGuests: "2",
     description: "arch_walk_downtown.desc",
     included: ["guide", "hydration",],
     imgSrc:
@@ -265,7 +265,7 @@ export const Tours: Tour[] = [
     price: 550,
     duration: "3hrs - 5km",
     cap: "15",
-    minGuests: "1",
+    minGuests: "2",
     description: "arch_walk_reforma.desc",
     included: ["guide", "hydration", "food"],
     imgSrc:
@@ -317,7 +317,7 @@ export const Tours: Tour[] = [
     price: 550,
     duration: "3hrs - 5km",
     cap: "15",
-    minGuests: "1",
+    minGuests: "2",
     description: "walkingroma.desc",
     included: ["guide", "hydration", "taco"],
     imgSrc:
@@ -369,7 +369,7 @@ export const Tours: Tour[] = [
     price: 750,
     duration: "4hrs - 5km",
     cap: "15",
-    minGuests: "1",
+    minGuests: "2",
     description: "walkingtaco.desc",
     included: ["rental", "food", "hydration", "beer","guide"],
     imgSrc:
@@ -406,8 +406,8 @@ export const Tours: Tour[] = [
     ],
   },
   {
-    id: "cdmx-urban-tour",
-    tourName: "urban.name",
+    id: "mexico-city-north-side-tour",
+    tourName: "northside.name",
     tourType: "Bike",
     locales: ["en"],
     availability: { type: [0, 3, 5], time: ["9:30am"] },
@@ -415,7 +415,7 @@ export const Tours: Tour[] = [
     duration: "4hrs",
     cap: "10",
     minGuests: "2",
-    description: "urban.desc",
+    description: "northside.desc",
     included: ["bike", "food", "hydration", "guide"],
     imgSrc:
       "https://sl0augsoqrtozrln.public.blob.vercel-storage.com/Tours/cdmx-urban-tour/thumb_card_north_side-MlHjHZVjOsJps5TxTO8eLQzaLd4mp3.webp",
@@ -453,16 +453,15 @@ export const Tours: Tour[] = [
   {
     id: "cdmx-markets-tour",
     locales: ["es", "en"],
-    availability: { type: [0], time: ["9:30am"] },
+    availability: { type: [0,1,4,6], time: ["10:00am"] },
     tourName: "markets.name",
     tourType: "Bike",
-    price: 850,
+    price: 1100,
     duration: "5hrs - 15km",
     placesToVisit: [
       "Juárez",
       "Ant. Doctores",
       "Hidalgo",
-      "Jamaica",
       "San Juan",
       "Ciudadela",
     ],

@@ -11,6 +11,7 @@ export type GuestSelectProps = {
   whatsAppLink: (quantity: number, totalPrice: number) => string;
   isRentalBike?: Boolean | undefined;
   isPrivateTour?: Boolean | undefined;
+  tourName: string;
 };
 
 const GuestSelectMobile = ({
@@ -20,6 +21,7 @@ const GuestSelectMobile = ({
   maxQuantity = 0,
   isRentalBike,
   isPrivateTour,
+  tourName,
 }: GuestSelectProps) => {
   const [quantity, setQuantity] = useState<number>(minQuantity || 1);
   const [ogPrice] = useState<number>(price || 0);
@@ -175,7 +177,7 @@ const GuestSelectMobile = ({
       <Link
         href={whatsAppLink(quantity, totalPrice)}
         onClick={() => {
-          track('Book', { product: isRentalBike ? "Rental" : "Tour", price: totalPrice});
+          track('Book', { product: isRentalBike ? "Rental" : tourName, price: totalPrice});
         }}
         target="_blank"
         className="btn rounded-md bg-green border-none w-full my-5"
